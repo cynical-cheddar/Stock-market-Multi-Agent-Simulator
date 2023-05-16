@@ -1,0 +1,108 @@
+﻿2023-05-16 13:40:23,393 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Using Server GC:True
+2023-05-16 13:40:23,410 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Using GC LatencyMode:Interactive
+2023-05-16 13:40:23,411 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Setup: serverId=c053d66a-6a0a-4e13-8b63-b8df923e6891
+2023-05-16 13:40:23,432 [1] INFO  Photon.Hive.Plugin.PluginManager - Plugin configured: name=TestPlugins
+2023-05-16 13:40:23,432 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: AsyncJoin=False
+2023-05-16 13:40:23,432 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: BaseUrl=http://localhost:55557/realtime-webhooks-1.2
+2023-05-16 13:40:23,432 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: HasErrorInfo=true
+2023-05-16 13:40:23,433 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: IsPersistent=true
+2023-05-16 13:40:23,433 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathClose=GameClose
+2023-05-16 13:40:23,434 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathCreate=GameCreate
+2023-05-16 13:40:23,434 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathEvent=GameEvent
+2023-05-16 13:40:23,434 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathGameProperties=GameProperties
+2023-05-16 13:40:23,434 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathJoin=GameJoin
+2023-05-16 13:40:23,434 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathLeave=GameLeave
+2023-05-16 13:40:23,434 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathLoad=GameCreate
+2023-05-16 13:40:23,437 [1] DEBUG Photon.Hive.Plugin.PluginManager - Plugin path is set to 'D:\Repos\Stocks Simulator\Stock-marget-Multi-Agent-Simulator\Server\deploy\Plugins/TestPlugins//bin/TestPlugins.dll'
+2023-05-16 13:40:23,452 [1] ERROR Photon.Hive.Plugin.PluginManager - Got Exception during either loading of assembly D:\Repos\Stocks Simulator\Stock-marget-Multi-Agent-Simulator\Server\deploy\Plugins/TestPlugins//bin/TestPlugins.dll or type TestPlugins.PluginFactory. Exception Msg: An attempt was made to load an assembly from a network location which would have caused the assembly to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. See http://go.microsoft.com/fwlink/?LinkId=155569 for more information.
+System.NotSupportedException: An attempt was made to load an assembly from a network location which would have caused the assembly to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. See http://go.microsoft.com/fwlink/?LinkId=155569 for more information.
+   at System.Reflection.RuntimeAssembly.nLoadFile(String path, Evidence evidence)
+   at System.Reflection.Assembly.LoadFile(String path)
+   at Photon.Hive.Plugin.PluginManager.SetupPluginManager(String path, String typeName, Dictionary`2 config)
+2023-05-16 13:40:28,423 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - PerformanceCounter category 'Photon: Http Queue Counters' does not exists and will be created
+2023-05-16 13:40:28,969 [1] INFO  Photon.SocketServer.Diagnostics.EncryptionQueuePerfCounters - PerformanceCounter category 'Photon: Encryption Queue Counters' does not exists and will be created
+2023-05-16 13:40:29,445 [1] INFO  Photon.SocketServer.Diagnostics.ManagedCorePerformanceCounters - PerformanceCounter category 'Photon Managed Core' does not exists and will be created
+2023-05-16 13:40:29,938 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - TokenCreator initialized with an expiration of 01:00:00
+2023-05-16 13:40:29,956 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Bandwidth counters are not valid
+2023-05-16 13:40:29,958 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter Business Logic Queue
+2023-05-16 13:40:29,958 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter ENet Queue
+2023-05-16 13:40:29,958 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter ENet Threads Processing
+2023-05-16 13:40:29,958 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter ENet Threads Active
+2023-05-16 13:40:29,958 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter TCP: Disconnected Peers +/sec
+2023-05-16 13:40:29,959 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter TCP: Disconnected Peers (C) +/sec
+2023-05-16 13:40:29,959 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter TCP: Peers
+2023-05-16 13:40:29,959 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter UDP: Disconnected Peers +/sec
+2023-05-16 13:40:29,959 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter UDP: Disconnected Peers (C) +/sec
+2023-05-16 13:40:29,959 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter UDP: Peers
+2023-05-16 13:40:29,974 [1] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackControlSystem - Initialized FeedbackControlSystem with 1 controllers from config file.
+2023-05-16 13:40:29,980 [1] INFO  Photon.Common.LoadBalancer.LoadShedding.Diagnostics.WorkloadPerformanceCounters - PerformanceCounter category 'Photon: Workload' does not exists and will be created
+2023-05-16 13:40:30,465 [1] INFO  Photon.Common.LoadBalancer.ServerStateManager - Watching for application state file in D:\Repos\Stocks Simulator\Stock-marget-Multi-Agent-Simulator\Server\deploy\ServerState.txt
+2023-05-16 13:40:30,467 [1] INFO  Photon.Common.LoadBalancer.ServerStateManager - Server state is set to online
+2023-05-16 13:40:30,468 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Initializing master server connection ...
+2023-05-16 13:40:30,469 [1] DEBUG Photon.LoadBalancing.GameServer.MasterServerConnectionBase - ConnectionId=f5b2d711-0aac-4c8c-88d7-54937da0f38b
+2023-05-16 13:40:30,472 [1] DEBUG Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: MasterServer endpoint for address 127.0.0.1 updated to 127.0.0.1:4520
+2023-05-16 13:40:30,488 [1] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: Parameters to register on master: address 127.0.0.1, TCP 4531, UDP 5056, WebSocket 9091, Secure WebSocket 19091, ServerID c053d66a-6a0a-4e13-8b63-b8df923e6891, Hostname localhost, IPv6Address , WebRTC 7072
+2023-05-16 13:40:30,505 [1] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: Connecting to master at 127.0.0.1:4520, serverId=c053d66a-6a0a-4e13-8b63-b8df923e6891
+2023-05-16 13:40:30,507 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=Game; AppPath=D:\Repos\Stocks Simulator\Stock-marget-Multi-Agent-Simulator\Server\deploy\LoadBalancing\GameServer, Type=Photon.LoadBalancing.GameServer.GameApplication 
+2023-05-16 13:40:30,507 [1] INFO  Photon.SocketServer.ApplicationBase - Using Server GC:True
+2023-05-16 13:40:30,508 [1] INFO  Photon.SocketServer.ApplicationBase - Using GC LatencyMode:Interactive
+2023-05-16 13:40:32,608 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 14
+2023-05-16 13:40:32,674 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 13:40:34,083 [15] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: connection established: address:127.0.0.1, ConnectionId:f5b2d711-0aac-4c8c-88d7-54937da0f38b
+2023-05-16 13:40:34,084 [15] INFO  Photon.Common.LoadBalancer.ServerStateManager - Server state is set to online
+2023-05-16 13:40:34,089 [15] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer - Successfully registered at master server: serverId=c053d66a-6a0a-4e13-8b63-b8df923e6891
+2023-05-16 13:40:34,090 [15] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: connection registered on master: address:127.0.0.1
+2023-05-16 13:40:34,092 [15] DEBUG Photon.LoadBalancing.GameServer.MasterServerConnection - Update Expected Games Count event sent. endpoint:127.0.0.1:4520, connectionId:f5b2d711-0aac-4c8c-88d7-54937da0f38b
+2023-05-16 13:40:41,711 [13] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Lowest with input 8
+2023-05-16 13:40:41,717 [13] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Lowest
+2023-05-16 13:41:50,569 [10] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 11
+2023-05-16 13:41:50,569 [10] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 13:50:52,097 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Lowest with input 8
+2023-05-16 13:50:52,098 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Lowest
+2023-05-16 13:52:10,914 [15] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 11
+2023-05-16 13:52:10,915 [15] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 14:01:17,205 [15] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Lowest with input 8
+2023-05-16 14:01:17,205 [15] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Lowest
+2023-05-16 14:03:58,951 [10] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 11
+2023-05-16 14:03:58,952 [10] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 14:04:35,310 [9] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Level2 with input 21
+2023-05-16 14:04:35,310 [9] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Level2
+2023-05-16 14:05:03,602 [15] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level2 to Level3 with input 31
+2023-05-16 14:05:03,602 [15] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level2, new=Level3
+2023-05-16 14:05:35,973 [24] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level3 to Level2 with input 28
+2023-05-16 14:05:35,973 [24] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level3, new=Level2
+2023-05-16 14:06:13,399 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level2 to Level1 with input 18
+2023-05-16 14:06:13,400 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level2, new=Level1
+2023-05-16 14:06:39,702 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Lowest with input 8
+2023-05-16 14:06:39,702 [11] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Lowest
+2023-05-16 14:09:43,828 [25] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 11
+2023-05-16 14:09:43,828 [25] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 14:10:47,278 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Level2 with input 21
+2023-05-16 14:10:47,278 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Level2
+2023-05-16 14:12:06,961 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level2 to Level1 with input 18
+2023-05-16 14:12:06,962 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level2, new=Level1
+2023-05-16 14:13:02,558 [9] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Lowest with input 8
+2023-05-16 14:13:02,559 [9] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Lowest
+2023-05-16 15:03:08,398 [32] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 11
+2023-05-16 15:03:08,399 [32] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 15:03:59,959 [8] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Level2 with input 21
+2023-05-16 15:03:59,960 [8] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Level2
+2023-05-16 15:06:52,828 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level2 to Level1 with input 18
+2023-05-16 15:06:52,829 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level2, new=Level1
+2023-05-16 15:07:57,454 [30] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Level2 with input 21
+2023-05-16 15:07:57,455 [30] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Level2
+2023-05-16 15:09:11,148 [33] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level2 to Level1 with input 18
+2023-05-16 15:09:11,148 [33] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level2, new=Level1
+2023-05-16 15:18:21,360 [27] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Level2 with input 21
+2023-05-16 15:18:21,360 [27] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Level2
+2023-05-16 15:19:29,049 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level2 to Level1 with input 18
+2023-05-16 15:19:29,049 [12] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level2, new=Level1
+2023-05-16 15:20:56,916 [8] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Level1 to Lowest with input 8
+2023-05-16 15:20:56,917 [8] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Level1, new=Lowest
+2023-05-16 15:21:37,320 [27] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackController - Transit CpuUsage from Lowest to Level1 with input 11
+2023-05-16 15:21:37,320 [27] INFO  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - FeedbackLevel changed: old=Lowest, new=Level1
+2023-05-16 15:29:06,976 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - OnStopRequested: serverid=c053d66a-6a0a-4e13-8b63-b8df923e6891
+2023-05-16 15:29:06,997 [33] WARN  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer - s2s MS connection: connection closed (id=1, reason=0, detail=), serverId=c053d66a-6a0a-4e13-8b63-b8df923e6891
+2023-05-16 15:29:07,991 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=Game
+2023-05-16 15:29:08,001 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - TearDown: serverId=c053d66a-6a0a-4e13-8b63-b8df923e6891
+2023-05-16 15:29:08,002 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=Game
