@@ -1,12 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - PythonCommunicator
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
-    - Photon.Pun.Demo.Asteroids.LobbyMainPanel
-    - Photon.Pun.Demo.Asteroids.LobbyTopPanel
-    - Photon.Pun.Demo.Asteroids.PlayerListEntry
-    - Photon.Pun.Demo.Asteroids.RoomListEntry
     - Photon.Pun.Demo.Asteroids.Spaceship
     - Photon.Pun.Demo.PunBasics.CameraWork
     - Photon.Pun.Demo.PunBasics.PlayerAnimatorManager
@@ -16,10 +14,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
-    PhotonUnityNetworking.Utilities.dll:
-    - Photon.Pun.UtilityScripts.EventSystemSpawner
-    - Photon.Pun.UtilityScripts.PlayerNumbering
-    - Photon.Pun.UtilityScripts.TextButtonTransition
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -36,6 +30,8 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -47,23 +43,12 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
-    - UnityEngine.UI.Button
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.GridLayoutGroup
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
-    - UnityEngine.UI.LayoutElement
-    - UnityEngine.UI.Mask
-    - UnityEngine.UI.ScrollRect
-    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
-    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity:
+    Assets/Scenes/PythonCommsTest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -90,8 +75,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -100,81 +83,47 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1436}
-    - Class: 114
-      Script: {instanceID: 1438}
-    - Class: 114
-      Script: {instanceID: 1440}
-    - Class: 114
-      Script: {instanceID: 1442}
-    - Class: 114
-      Script: {instanceID: 1490}
-    - Class: 114
-      Script: {instanceID: 1530}
-    - Class: 114
-      Script: {instanceID: 1594}
-    - Class: 114
-      Script: {instanceID: 1642}
-    - Class: 114
-      Script: {instanceID: 1652}
-    - Class: 114
-      Script: {instanceID: 1740}
-    - Class: 114
-      Script: {instanceID: 2028}
-    - Class: 114
-      Script: {instanceID: 2070}
-    - Class: 114
-      Script: {instanceID: 2138}
-    - Class: 114
-      Script: {instanceID: 2238}
-    - Class: 114
-      Script: {instanceID: 2462}
-    - Class: 114
-      Script: {instanceID: 2502}
-    - Class: 114
-      Script: {instanceID: 2634}
-    - Class: 114
-      Script: {instanceID: 2642}
-    - Class: 114
-      Script: {instanceID: 2644}
-    - Class: 114
-      Script: {instanceID: 2964}
-    - Class: 114
-      Script: {instanceID: 3090}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3344}
-    - Class: 114
-      Script: {instanceID: 3360}
-    - Class: 114
-      Script: {instanceID: 3376}
-    - Class: 114
-      Script: {instanceID: 3426}
-    - Class: 114
-      Script: {instanceID: 3480}
-    - Class: 114
-      Script: {instanceID: 3516}
-    - Class: 114
-      Script: {instanceID: 3520}
-    - Class: 114
-      Script: {instanceID: 3738}
-    - Class: 114
-      Script: {instanceID: 3770}
-    - Class: 114
-      Script: {instanceID: 3824}
-    - Class: 114
-      Script: {instanceID: 3962}
-    - Class: 114
-      Script: {instanceID: 4168}
-    - Class: 114
-      Script: {instanceID: 4178}
-    - Class: 114
-      Script: {instanceID: 4234}
-    - Class: 115
+    - Class: 108
       Script: {instanceID: 0}
-    - Class: 124
+    - Class: 114
+      Script: {instanceID: 1480}
+    - Class: 114
+      Script: {instanceID: 1484}
+    - Class: 114
+      Script: {instanceID: 1486}
+    - Class: 114
+      Script: {instanceID: 1534}
+    - Class: 114
+      Script: {instanceID: 1582}
+    - Class: 114
+      Script: {instanceID: 1720}
+    - Class: 114
+      Script: {instanceID: 2162}
+    - Class: 114
+      Script: {instanceID: 2208}
+    - Class: 114
+      Script: {instanceID: 2874}
+    - Class: 114
+      Script: {instanceID: 2882}
+    - Class: 114
+      Script: {instanceID: 3402}
+    - Class: 114
+      Script: {instanceID: 3702}
+    - Class: 114
+      Script: {instanceID: 3706}
+    - Class: 114
+      Script: {instanceID: 3860}
+    - Class: 114
+      Script: {instanceID: 3900}
+    - Class: 114
+      Script: {instanceID: 4252}
+    - Class: 114
+      Script: {instanceID: 4256}
+    - Class: 114
+      Script: {instanceID: 4408}
+    - Class: 114
+      Script: {instanceID: 4702}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -198,15 +147,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
-      Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -469,6 +412,18 @@ ScriptsOnlyBuild:
     className: IngameControlPanel
   - hash:
       serializedVersion: 2
+      Hash: 303ad70ce203ad874efe2965d0fbcff9
+    assemblyName: Unity.Analytics.Tracker.dll
+    namespaceName: UnityEngine.Analytics
+    className: AnalyticsEventTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 7fb9de8dcf73854b6b328eca1f7a6e6d
+    assemblyName: Unity.Analytics.Tracker.dll
+    namespaceName: UnityEngine.Analytics
+    className: AnalyticsTracker
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -589,6 +544,12 @@ ScriptsOnlyBuild:
     className: PlayerListCell
   - hash:
       serializedVersion: 2
+      Hash: a325152ad9563ed900af221c132fea36
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
+  - hash:
+      serializedVersion: 2
       Hash: f941c3a384168571b7d90f58ec4986bc
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -629,6 +590,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
@@ -683,6 +650,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: OnEscapeQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -878,6 +851,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Analytics.Editor.dll
+    namespaceName: UnityEditor.Analytics
+    className: AnalyticsEventTrackerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: CullingHandler
@@ -938,6 +917,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
@@ -953,6 +938,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 88e2c6f501bf5dead831a3e44c30de40
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
   - hash:
       serializedVersion: 2
       Hash: 632731657c90f101a2dca0a2b7a6245c
@@ -1369,6 +1360,12 @@ ScriptsOnlyBuild:
     className: CrcCheckToggle
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PythonCommunicator
+  - hash:
+      serializedVersion: 2
       Hash: adb92691ab0496634b4241d3545a0010
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
@@ -1409,6 +1406,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Procedural
     className: Block
+  - hash:
+      serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: Unity.Analytics.DataPrivacy.dll
+    namespaceName: UnityEngine.Analytics
+    className: DataPrivacyButton
   - hash:
       serializedVersion: 2
       Hash: e7f4e9cb5468a346609dfdb36da26dcc
@@ -1549,6 +1552,6 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   platform: 5
   scenePathNames:
-  - Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
-  playerPath: D:/Repos/Stocks Simulator/Stock-marget-Multi-Agent-Simulator/CDA Sim/Multi
-    Agent CDA/Builds/DemoParticle-Unity.exe
+  - Assets/Scenes/PythonCommsTest.unity
+  playerPath: E:/_Stock_Simulator/Stock-market-Multi-Agent-Simulator/CDA Sim/Multi
+    Agent CDA/Builds/PythonForUnity.exe
