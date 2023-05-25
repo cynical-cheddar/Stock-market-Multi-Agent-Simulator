@@ -1,0 +1,2419 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 1536.8
+    y: 50.4
+    width: 1534.4
+    height: 1636.8
+  m_ShowMode: 4
+  m_Title: Console
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 371}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1534.4
+    height: 1636.8
+  m_MinSize: {x: 875, y: 371}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1534.4
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LoadedToolbars:
+  - {fileID: 26}
+  m_MainToolbar: {fileID: 26}
+  m_LastLoadedLayoutName: 
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 1616.8
+    width: 1534.4
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1534.4
+    height: 1586.8
+  m_MinSize: {x: 403, y: 321}
+  m_MaxSize: {x: 12003, y: 8042}
+  vertical: 1
+  controlID: 212
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 12}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1534.4
+    height: 1586.8
+  m_MinSize: {x: 403, y: 321}
+  m_MaxSize: {x: 12003, y: 8042}
+  vertical: 0
+  controlID: 213
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1092.8
+    height: 1586.8
+  m_MinSize: {x: 302, y: 321}
+  m_MaxSize: {x: 8002, y: 8042}
+  vertical: 1
+  controlID: 185
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1092.8
+    height: 920
+  m_MinSize: {x: 302, y: 200}
+  m_MaxSize: {x: 8002, y: 4021}
+  vertical: 0
+  controlID: 186
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 245.6
+    height: 920
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 245.6
+    y: 0
+    width: 847.2001
+    height: 920
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 14}
+  - {fileID: 17}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 2
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 920
+    width: 1092.8
+    height: 666.80005
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 19}
+  - {fileID: 20}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: NugetWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1092.8
+    y: 0
+    width: 441.59998
+    height: 1586.8
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 22}
+  - {fileID: 23}
+  - {fileID: 24}
+  - {fileID: 25}
+  - {fileID: 13}
+  m_Selected: 5
+  m_LastSelected: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf6ea9ed8fc4074da149ff7d600ca45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: NuGet
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2629.6
+    y: 80.8
+    width: 440.59998
+    height: 1565.8
+  m_ViewDataDictionary: {fileID: 0}
+  availablePackages:
+  - Id: NetMQ
+    Version: 4.0.1.12
+    Authors: NetMQ
+    Description: A 100% native C# port of the lightweight high performance messaging
+      library ZeroMQ
+    DownloadCount: 3754891
+    DownloadUrl: https://www.nuget.org/api/v2/package/NetMQ/4.0.1.12
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/netmq/4.0.1.12/icon
+    LicenseUrl: https://github.com/zeromq/netmq/blob/master/COPYING.LESSER
+    ProjectUrl: https://github.com/zeromq/netmq
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: NetMQ
+  - Id: RabbitMQ.Client
+    Version: 6.5.0
+    Authors: VMware
+    Description: The RabbitMQ .NET client is the official client library for C# (and,
+      implicitly, other .NET languages)
+    DownloadCount: 160125682
+    DownloadUrl: https://www.nuget.org/api/v2/package/RabbitMQ.Client/6.5.0
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/rabbitmq.client/6.5.0/icon
+    LicenseUrl: https://www.nuget.org/packages/RabbitMQ.Client/6.5.0/license
+    ProjectUrl: https://www.rabbitmq.com/dotnet.html
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: RabbitMQ.Client
+  - Id: Apache.NMS.ActiveMQ
+    Version: 2.1.0
+    Authors: Apache ActiveMQ
+    Description: 'Apache NMS (.Net Standard Messaging Library): Openwire implementation
+      of Apache NMS API'
+    DownloadCount: 3123870
+    DownloadUrl: https://www.nuget.org/api/v2/package/Apache.NMS.ActiveMQ/2.1.0
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/apache.nms.activemq/2.1.0/icon
+    LicenseUrl: https://www.nuget.org/packages/Apache.NMS.ActiveMQ/2.1.0/license
+    ProjectUrl: https://activemq.apache.org/components/nms/
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Apache.NMS.ActiveMQ
+  - Id: EasyNetQ
+    Version: 7.5.2
+    Authors: Mike Hadlow,Michael Denny,Yury Pliner,Wiebe Tijsma,Contributors (see
+      GitHub repo)
+    Description: A nice .NET API for RabbitMQ
+    DownloadCount: 19563655
+    DownloadUrl: https://www.nuget.org/api/v2/package/EasyNetQ/7.5.2
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/easynetq/7.5.2/icon
+    LicenseUrl: https://www.nuget.org/packages/EasyNetQ/7.5.2/license
+    ProjectUrl: https://github.com/EasyNetQ/EasyNetQ
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: EasyNetQ
+  - Id: NetMQ.ReactiveExtensions
+    Version: 0.9.3
+    Authors: NetMQ
+    Description: Reactive Extensions (RX) with NetMQ as the transport layer. Send
+      messages anywhere on the network!
+    DownloadCount: 93086
+    DownloadUrl: https://www.nuget.org/api/v2/package/NetMQ.ReactiveExtensions/0.9.3
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/netmq.reactiveextensions/0.9.3/icon
+    LicenseUrl: https://github.com/NetMQ/NetMQ.ReactiveExtensions/blob/master/LICENSE
+    ProjectUrl: https://github.com/NetMQ/NetMQ.ReactiveExtensions
+    ReleaseNotes: Second stable release. Feedback welcome.
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: NetMQ Reactive Extensions
+  - Id: Apache.NMS.ActiveMQ.NetStd
+    Version: 1.8.0
+    Authors: Apache Software Foundation, William D Cossey
+    Description: 'Apache NMS for ActiveMQ Class Library (.Net Standard Messaging
+      Library Implementation): An implementation of the NMS API for ActiveMQ'
+    DownloadCount: 2378295
+    DownloadUrl: https://www.nuget.org/api/v2/package/Apache.NMS.ActiveMQ.NetStd/1.8.0
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/apache.nms.activemq.netstd/1.8.0/icon
+    LicenseUrl: https://www.nuget.org/packages/Apache.NMS.ActiveMQ.NetStd/1.8.0/license
+    ProjectUrl: https://github.com/wdcossey/Apache.NMS.ActiveMQ.NetStd
+    ReleaseNotes: Migrated to official Apache.NMS package.
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Apache.NMS.ActiveMQ.NetStd
+  - Id: DotNetCore.CAP.RabbitMQ
+    Version: 7.1.3
+    Authors: NCC,Savorboard
+    Description: Distributed transaction solution in micro-service base on eventually
+      consistency, also an eventbus with Outbox pattern.
+    DownloadCount: 2673211
+    DownloadUrl: https://www.nuget.org/api/v2/package/DotNetCore.CAP.RabbitMQ/7.1.3
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/dotnetcore.cap.rabbitmq/7.1.3/icon
+    LicenseUrl: https://www.nuget.org/packages/DotNetCore.CAP.RabbitMQ/7.1.3/license
+    ProjectUrl: https://github.com/dotnetcore/CAP
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: DotNetCore.CAP.RabbitMQ
+  - Id: AspNetCore.HealthChecks.Rabbitmq
+    Version: 6.0.2
+    Authors: Xabaril Contributors
+    Description: HealthChecks.RabbitMQ is the health check package for RabbitMQ.
+    DownloadCount: 14307492
+    DownloadUrl: https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.Rabbitmq/6.0.2
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/aspnetcore.healthchecks.rabbitmq/6.0.2/icon
+    LicenseUrl: https://www.nuget.org/packages/AspNetCore.HealthChecks.Rabbitmq/6.0.2/license
+    ProjectUrl: https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: AspNetCore.HealthChecks.Rabbitmq
+  - Id: Apache.NMS
+    Version: 2.0.0
+    Authors: Apache ActiveMQ
+    Description: 'Apache NMS (.Net Standard Messaging Library): An abstract interface
+      to Message Oriented Middleware (MOM) providers'
+    DownloadCount: 4819609
+    DownloadUrl: https://www.nuget.org/api/v2/package/Apache.NMS/2.0.0
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/apache.nms/2.0.0/icon
+    LicenseUrl: https://www.nuget.org/packages/Apache.NMS/2.0.0/license
+    ProjectUrl: https://activemq.apache.org/components/nms/
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Apache.NMS
+  - Id: Obvs.NetMQ
+    Version: 6.0.10
+    Authors: Christopher Read
+    Description: NetMQ transport support for Obvs
+    DownloadCount: 16232
+    DownloadUrl: https://www.nuget.org/api/v2/package/Obvs.NetMQ/6.0.10
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://www.nuget.org/packages/Obvs.NetMQ/6.0.10/license
+    ProjectUrl: http://christopherread.github.io/Obvs
+    ReleaseNotes: Updated to NetMQ 4.0.1
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Obvs.NetMQ
+  - Id: EasyNetQ.Management.Client
+    Version: 2.0.0
+    Authors: Mike Hadlow
+    Description: A .NET client for the RabbitMQ RESTful management API
+    DownloadCount: 2581951
+    DownloadUrl: https://www.nuget.org/api/v2/package/EasyNetQ.Management.Client/2.0.0
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/easynetq.management.client/2.0.0/icon
+    LicenseUrl: https://www.nuget.org/packages/EasyNetQ.Management.Client/2.0.0/license
+    ProjectUrl: https://github.com/EasyNetQ/EasyNetQ.Management.Client
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: EasyNetQ.Management.Client
+  - Id: NetMQ.High
+    Version: 1.4.4
+    Authors: Doron Somech, Jeremiah Jeschke
+    Description: NetMQ high is a sample project on how to write NetMQ components
+      with the Actor pattern and ZProto. Additionally, it was adapted to work with
+      MessagePack.
+    DownloadCount: 6569
+    DownloadUrl: https://www.nuget.org/api/v2/package/NetMQ.High/1.4.4
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: 
+    ProjectUrl: https://github.com/OfficeAutomata/NetMQ.High
+    ReleaseNotes: Fix wrong lib assets
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: NetMQ.High
+  - Id: NetMQ.zproto
+    Version: 0.1.5
+    Authors: somdoron
+    Description: Generate NetMQ binary messages.
+    DownloadCount: 6696
+    DownloadUrl: https://www.nuget.org/api/v2/package/NetMQ.zproto/0.1.5
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://raw.github.com/zeromq/zproto/blob/master/LICENSE
+    ProjectUrl: https://github.com/zeromq/zproto
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: NetMQ ZProto
+  - Id: NetMQ.Security
+    Version: 1.0.0.0
+    Authors: NetMQ.Security
+    Description: SSL implemenation over NetMQ, used to be part of NetMQ and now separate
+      project
+    DownloadCount: 4889
+    DownloadUrl: https://www.nuget.org/api/v2/package/NetMQ.Security/1.0.0
+    icon: {fileID: 0}
+    IconUrl: https://api.nuget.org/v3-flatcontainer/netmq.security/1.0.0/icon
+    LicenseUrl: https://github.com/netmq/NetMQ.Devices/blob/master/COPYING.LESSER
+    ProjectUrl: 
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: NetMQ.Security
+  - Id: Apache.NMS.ActiveMQ.NetCore
+    Version: 1.7.3
+    Authors: The Apache Software Foundation
+    Description: 'Apache NMS (.Net Messaging Library): An abstract interface to Message
+      Oriented Middleware (MOM) providers - based on net standard 2.0'
+    DownloadCount: 368408
+    DownloadUrl: https://www.nuget.org/api/v2/package/Apache.NMS.ActiveMQ.NetCore/1.7.3
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    ProjectUrl: 
+    ReleaseNotes: '1.7.3
+
+      * change the target framework from .net core 2.0
+      to .net standard 2.0'
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Apache.NMS.ActiveMQ.NetCore
+  defaultIcon: {fileID: 2800000, guid: 0efa0a38ec1ce484896502259d7ee8f7, type: 3}
+  hasRefreshed: 1
+  numberToSkip: 0
+  updatePackages:
+  - Id: Microsoft.Bcl.AsyncInterfaces
+    Version: 7.0.0
+    Authors: Microsoft
+    Description: 'Provides the IAsyncEnumerable<T> and IAsyncDisposable interfaces
+      and helper types for .NET Standard 2.0. This package is not required starting
+      with .NET Standard 2.1 and .NET Core 3.0.
+
+
+      Commonly Used Types:
+
+      System.IAsyncDisposable
+
+      System.Collections.Generic.IAsyncEnumerable
+
+      System.Collections.Generic.IAsyncEnumerator'
+    DownloadCount: 917646728
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/7.0.0
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Microsoft.Bcl.AsyncInterfaces
+  - Id: Microsoft.Extensions.ObjectPool
+    Version: 7.0.5
+    Authors: Microsoft
+    Description: 'A simple object pool implementation.
+
+
+      This package was built
+      from the source code at https://github.com/dotnet/aspnetcore/tree/d47e49e9c1e173ac90821f7e89cc38e710274241'
+    DownloadCount: 899367831
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Extensions.ObjectPool/7.0.5
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://asp.net/
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: Microsoft.Extensions.ObjectPool
+  - Id: System.Formats.Asn1
+    Version: 7.0.0
+    Authors: Microsoft
+    Description: 'Provides classes that can read and write the ASN.1 BER, CER, and
+      DER data formats.
+
+
+      Commonly Used Types:
+
+      System.Formats.Asn1.AsnReader
+
+      System.Formats.Asn1.AsnWriter'
+    DownloadCount: 164120778
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Formats.Asn1/7.0.0
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Formats.Asn1
+  - Id: System.Memory
+    Version: 4.5.5
+    Authors: Microsoft
+    Description: "Provides types for efficient representation and pooling of managed,
+      stack, and native memory segments and sequences of such segments, along with
+      primitives to parse and format UTF-8 encoded text stored in those memory segments.\n\nCommonly
+      Used Types:\nSystem.Span\nSystem.ReadOnlySpan\nSystem.Memory\nSystem.ReadOnlyMemory\nSystem.Buffers.MemoryPool\nSystem.Buffers.ReadOnlySequence\nSystem.Buffers.Text.Utf8Parser\nSystem.Buffers.Text.Utf8Formatter\n
+      \n32b491939fbd125f304031c35038b1e14b4e3958 \nWhen using NuGet 3.x this package
+      requires at least version 3.4."
+    DownloadCount: 1998355977
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Memory/4.5.5
+    icon: {fileID: 0}
+    IconUrl: http://go.microsoft.com/fwlink/?LinkID=288859
+    LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Memory
+  - Id: System.Private.ServiceModel
+    Version: 4.10.2
+    Authors: Microsoft
+    Description: Package Description
+    DownloadCount: 216420947
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.10.2
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://github.com/dotnet/wcf
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Private.ServiceModel
+  - Id: System.Runtime.CompilerServices.Unsafe
+    Version: 6.0.0
+    Authors: Microsoft
+    Description: 'Provides the System.Runtime.CompilerServices.Unsafe class, which
+      provides generic, low-level functionality for manipulating pointers.
+
+
+      Commonly
+      Used Types:
+
+      System.Runtime.CompilerServices.Unsafe'
+    DownloadCount: 2147483647
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Runtime.CompilerServices.Unsafe
+  - Id: System.Security.AccessControl
+    Version: 6.0.0
+    Authors: Microsoft
+    Description: 'Provides base classes that enable managing access and audit control
+      lists on securable objects.
+
+
+      Commonly Used Types:
+
+      System.Security.AccessControl.AccessRule
+
+      System.Security.AccessControl.AuditRule
+
+      System.Security.AccessControl.ObjectAccessRule
+
+      System.Security.AccessControl.ObjectAuditRule
+
+      System.Security.AccessControl.ObjectSecurity'
+    DownloadCount: 1362863660
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.AccessControl/6.0.0
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Security.AccessControl
+  - Id: System.Security.Cryptography.Pkcs
+    Version: 7.0.1
+    Authors: Microsoft
+    Description: 'Provides support for PKCS and CMS algorithms.
+
+
+      Commonly
+      Used Types:
+
+      System.Security.Cryptography.Pkcs.EnvelopedCms'
+    DownloadCount: 449442119
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/7.0.1
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Security.Cryptography.Pkcs
+  - Id: System.Security.Cryptography.Xml
+    Version: 7.0.1
+    Authors: Microsoft
+    Description: 'Provides classes to support the creation and validation of XML
+      digital signatures. The classes in this namespace implement the World Wide
+      Web Consortium Recommendation, "XML-Signature Syntax and Processing", described
+      at http://www.w3.org/TR/xmldsig-core/.
+
+
+      Commonly Used Types:
+
+      System.Security.Cryptography.Xml.CipherData
+
+      System.Security.Cryptography.Xml.CipherReference
+
+      System.Security.Cryptography.Xml.DataObject
+
+      System.Security.Cryptography.Xml.DataReference
+
+      System.Security.Cryptography.Xml.DSAKeyValue
+
+      System.Security.Cryptography.Xml.EncryptedData
+
+      System.Security.Cryptography.Xml.EncryptedKey
+
+      System.Security.Cryptography.Xml.EncryptedReference
+
+      System.Security.Cryptography.Xml.EncryptedType
+
+      System.Security.Cryptography.Xml.EncryptedXml
+
+      System.Security.Cryptography.Xml.EncryptionMethod
+
+      System.Security.Cryptography.Xml.EncryptionProperty
+
+      System.Security.Cryptography.Xml.EncryptionPropertyCollection
+
+      System.Security.Cryptography.Xml.KeyInfo
+
+      System.Security.Cryptography.Xml.KeyInfoClause
+
+      System.Security.Cryptography.Xml.KeyInfoEncryptedKey
+
+      System.Security.Cryptography.Xml.KeyInfoName
+
+      System.Security.Cryptography.Xml.KeyInfoNode
+
+      System.Security.Cryptography.Xml.KeyInfoRetrievalMethod
+
+      System.Security.Cryptography.Xml.KeyInfoX509Data
+
+      System.Security.Cryptography.Xml.KeyReference
+
+      System.Security.Cryptography.Xml.Reference
+
+      System.Security.Cryptography.Xml.ReferenceList
+
+      System.Security.Cryptography.Xml.RSAKeyValue
+
+      System.Security.Cryptography.Xml.Signature
+
+      System.Security.Cryptography.Xml.SignedInfo
+
+      System.Security.Cryptography.Xml.SignedXml
+
+      System.Security.Cryptography.Xml.Transform
+
+      System.Security.Cryptography.Xml.TransformChain
+
+      System.Security.Cryptography.Xml.XmlDecryptionTransform
+
+      System.Security.Cryptography.Xml.XmlDsigBase64Transform
+
+      System.Security.Cryptography.Xml.XmlDsigC14NTransform
+
+      System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform
+
+      System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform
+
+      System.Security.Cryptography.Xml.XmlDsigExcC14NTransform
+
+      System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform
+
+      System.Security.Cryptography.Xml.XmlDsigXPathTransform
+
+      System.Security.Cryptography.Xml.XmlDsigXsltTransform
+
+      System.Security.Cryptography.Xml.XmlLicenseTransform'
+    DownloadCount: 426284888
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/7.0.1
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Security.Cryptography.Xml
+  - Id: System.Security.Permissions
+    Version: 7.0.0
+    Authors: Microsoft
+    Description: Provides types supporting Code Access Security (CAS).
+    DownloadCount: 977526431
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.Permissions/7.0.0
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://dot.net/
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.Security.Permissions
+  - Id: System.ServiceModel.Primitives
+    Version: 6.0.0
+    Authors: Microsoft
+    Description: Provides the common types used by all of the WCF libraries.
+    DownloadCount: 222348128
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/6.0.0
+    icon: {fileID: 0}
+    IconUrl: 
+    LicenseUrl: https://licenses.nuget.org/MIT
+    ProjectUrl: https://github.com/dotnet/wcf
+    ReleaseNotes: 
+    RepositoryBranch: 
+    RepositoryCommit: 
+    RepositoryType: 0
+    RepositoryUrl: 
+    Summary: 
+    Title: System.ServiceModel.Primitives
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1782.4
+    y: 80.8
+    width: 845.2001
+    height: 899
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 845.2001, y: 475}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -338.08005
+    m_HBaseRangeMax: 338.08005
+    m_VBaseRangeMin: -190
+    m_VBaseRangeMax: 190
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 845.2001
+      height: 878
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 422.60004, y: 439}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -422.60004
+      y: -439
+      width: 845.2001
+      height: 878
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1056.5001, y: 1123.75}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1536.8
+    y: 80.8
+    width: 244.6
+    height: 899
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: c2100000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 96f6ffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 9}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 320.80002
+    y: 98.4
+    width: 845.2001
+    height: 895
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 0
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 414.34406, y: 240.04263, z: 163.78345}
+    speed: 2
+    m_Value: {x: 414.34406, y: 240.04263, z: 163.78345}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 0
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 0
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    yGrid:
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 1
+  m_Rotation:
+    m_Target: {x: 0.02123276, y: 0.08387769, z: -0.0017878825, w: 0.99624866}
+    speed: 2
+    m_Value: {x: 0.021232752, y: 0.08387766, z: -0.001787882, w: 0.9962483}
+  m_Size:
+    m_Target: 355.71838
+    speed: 2
+    m_Value: 355.71838
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_CameraSettings:
+    m_Speed: 0.001
+    m_SpeedNormalized: 0
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: 0.08941949, y: 0.8968414, z: -0.21175623, w: 0.37832767}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1782.4
+    y: 80.8
+    width: 845.2001
+    height: 899
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 308
+    y: 73
+    width: 1057
+    height: 415
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -4826356502908765758, guid: ce2f3f0c76f8497488b849e060f861be, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: ce2f3f0c76f8497488b849e060f861be, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -4826356502908765758, guid: ce2f3f0c76f8497488b849e060f861be, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1536.8
+    y: 1000.8
+    width: 1091.8
+    height: 645.80005
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: E:\_Stock_Simulator\Stock-market-Multi-Agent-Simulator\CDA Sim\Multi
+    Agent CDA
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2c4d0000
+    m_LastClickedID: 19756
+    m_ExpandedIDs: 00000000e83d0000a64b0000344d0000364d0000be4d0000c04d000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 11}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000e83d000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: c2100000
+    m_LastClickedInstanceID: 4290
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000568afaff765f0000043d0000688900002097000054450000229700008a732c00a48a00001aaf2100f66d0000c4df00005084000036c40000c6c30000c0830000288d000098860000ba81000048840000545e0000184e000078510000725f00000e6400004038010000000000d6820400ea5a0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 11}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1536.8
+    y: 1000.8
+    width: 1091.8
+    height: 645.80005
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2184.8
+    y: 80.8
+    width: 879
+    height: 1559.4
+  m_ViewDataDictionary: {fileID: 0}
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 303
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: 4290
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 390, y: 390}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Lighting
+    m_Image: {fileID: -1477008817101679558, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2075.2
+    y: 73.6
+    width: 996
+    height: 1574
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &23
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12090, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Occlusion
+    m_Image: {fileID: -6304520642066340446, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2075.2
+    y: 73.6
+    width: 996
+    height: 1574
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &24
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12070, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 880, y: 216}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Profiler
+    m_Image: {fileID: 2169972056302973491, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2075.2
+    y: 73.6
+    width: 996
+    height: 1574
+  m_ViewDataDictionary: {fileID: 0}
+  m_VertSplit:
+    ID: 751
+    splitterInitialOffset: 1222
+    currentActiveSplitter: -1
+    realSizes:
+    - 1200
+    - 353
+    relativeSizes:
+    - 0.772698
+    - 0.22730201
+    minSizes:
+    - 100
+    - 100
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 1553
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: b004000061010000
+    oldMinSizes: 6400000064000000
+    oldMaxSizes: 0000000000000000
+    oldSplitSize: 6
+  m_Recording: 1
+  m_ActiveNativePlatformSupportModuleName: 
+  m_SelectedModuleIndex: 0
+  m_Modules:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  - id: 5
+  - id: 6
+  - id: 7
+  - id: 8
+  - id: 9
+  - id: 10
+  - id: 11
+  - id: 12
+  - id: 13
+  m_ProfilerWindowControllerProxy:
+    id: 14
+  m_CallstackRecordMode: 1
+  m_ClearOnPlay: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: CPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: CPU Usage
+        m_IconName: Profiler.CPU
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Rendering
+        - m_Category: NoCategory
+          m_Name: Scripts
+        - m_Category: NoCategory
+          m_Name: Physics
+        - m_Category: NoCategory
+          m_Name: Animation
+        - m_Category: NoCategory
+          m_Name: GarbageCollector
+        - m_Category: NoCategory
+          m_Name: VSync
+        - m_Category: NoCategory
+          m_Name: Global Illumination
+        - m_Category: NoCategory
+          m_Name: UI
+        - m_Category: NoCategory
+          m_Name: Others
+        m_DetailCounters: []
+        m_ChartType: 0
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewType: 0
+        updateViewLive: 0
+        m_ProfilerViewFilteringOptions: 1
+        m_FrameDataHierarchyView:
+          m_Serialized: 0
+          m_TreeViewState:
+            scrollPos: {x: 0, y: 0}
+            m_SelectedIDs: 
+            m_LastClickedID: 0
+            m_ExpandedIDs: 
+            m_RenameOverlay:
+              m_UserAcceptedRename: 0
+              m_Name: 
+              m_OriginalName: 
+              m_EditFieldRect:
+                serializedVersion: 2
+                x: 0
+                y: 0
+                width: 0
+                height: 0
+              m_UserData: 0
+              m_IsWaitingForDelay: 0
+              m_IsRenaming: 0
+              m_OriginalEventType: 11
+              m_IsRenamingFilename: 0
+              m_ClientGUIView: {fileID: 0}
+            m_SearchString: 
+          m_MultiColumnHeaderState:
+            m_Columns: []
+            m_VisibleColumns: 
+            m_SortedColumns: 
+          m_ThreadIndex: 0
+          m_DetailedViewType: 0
+          m_DetailedViewSpliterState:
+            ID: 0
+            splitterInitialOffset: 0
+            currentActiveSplitter: 0
+            realSizes: []
+            relativeSizes: []
+            minSizes: []
+            maxSizes: []
+            lastTotalSize: 0
+            splitSize: 0
+            xOffset: 0
+            m_Version: 1
+            oldRealSizes: 
+            oldMinSizes: 
+            oldMaxSizes: 
+            oldSplitSize: 0
+          m_DetailedObjectsView:
+            m_SelectedID: 0
+            m_TreeViewState:
+              scrollPos: {x: 0, y: 0}
+              m_SelectedIDs: 
+              m_LastClickedID: 0
+              m_ExpandedIDs: 
+              m_RenameOverlay:
+                m_UserAcceptedRename: 0
+                m_Name: 
+                m_OriginalName: 
+                m_EditFieldRect:
+                  serializedVersion: 2
+                  x: 0
+                  y: 0
+                  width: 0
+                  height: 0
+                m_UserData: 0
+                m_IsWaitingForDelay: 0
+                m_IsRenaming: 0
+                m_OriginalEventType: 11
+                m_IsRenamingFilename: 0
+                m_ClientGUIView: {fileID: 0}
+              m_SearchString: 
+            m_MultiColumnHeaderState:
+              m_Columns: []
+              m_VisibleColumns: 
+              m_SortedColumns: 
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+          m_DetailedCallsView:
+            m_SelectedID: -1
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+            m_CalleesTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+            m_CallersTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+          m_ThreadName: Main Thread
+    00000001:
+      type: {class: GPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: GPU Usage
+        m_IconName: Profiler.GPU
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Opaque
+        - m_Category: NoCategory
+          m_Name: Transparent
+        - m_Category: NoCategory
+          m_Name: Shadows/Depth
+        - m_Category: NoCategory
+          m_Name: Deferred PrePass
+        - m_Category: NoCategory
+          m_Name: Deferred Lighting
+        - m_Category: NoCategory
+          m_Name: PostProcess
+        - m_Category: NoCategory
+          m_Name: Other
+        m_DetailCounters: []
+        m_ChartType: 0
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewType: 0
+        updateViewLive: 0
+        m_ProfilerViewFilteringOptions: 1
+        m_FrameDataHierarchyView:
+          m_Serialized: 0
+          m_TreeViewState:
+            scrollPos: {x: 0, y: 0}
+            m_SelectedIDs: 
+            m_LastClickedID: 0
+            m_ExpandedIDs: 
+            m_RenameOverlay:
+              m_UserAcceptedRename: 0
+              m_Name: 
+              m_OriginalName: 
+              m_EditFieldRect:
+                serializedVersion: 2
+                x: 0
+                y: 0
+                width: 0
+                height: 0
+              m_UserData: 0
+              m_IsWaitingForDelay: 0
+              m_IsRenaming: 0
+              m_OriginalEventType: 11
+              m_IsRenamingFilename: 0
+              m_ClientGUIView: {fileID: 0}
+            m_SearchString: 
+          m_MultiColumnHeaderState:
+            m_Columns: []
+            m_VisibleColumns: 
+            m_SortedColumns: 
+          m_ThreadIndex: 0
+          m_DetailedViewType: 0
+          m_DetailedViewSpliterState:
+            ID: 0
+            splitterInitialOffset: 0
+            currentActiveSplitter: 0
+            realSizes: []
+            relativeSizes: []
+            minSizes: []
+            maxSizes: []
+            lastTotalSize: 0
+            splitSize: 0
+            xOffset: 0
+            m_Version: 1
+            oldRealSizes: 
+            oldMinSizes: 
+            oldMaxSizes: 
+            oldSplitSize: 0
+          m_DetailedObjectsView:
+            m_SelectedID: 0
+            m_TreeViewState:
+              scrollPos: {x: 0, y: 0}
+              m_SelectedIDs: 
+              m_LastClickedID: 0
+              m_ExpandedIDs: 
+              m_RenameOverlay:
+                m_UserAcceptedRename: 0
+                m_Name: 
+                m_OriginalName: 
+                m_EditFieldRect:
+                  serializedVersion: 2
+                  x: 0
+                  y: 0
+                  width: 0
+                  height: 0
+                m_UserData: 0
+                m_IsWaitingForDelay: 0
+                m_IsRenaming: 0
+                m_OriginalEventType: 11
+                m_IsRenamingFilename: 0
+                m_ClientGUIView: {fileID: 0}
+              m_SearchString: 
+            m_MultiColumnHeaderState:
+              m_Columns: []
+              m_VisibleColumns: 
+              m_SortedColumns: 
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+          m_DetailedCallsView:
+            m_SelectedID: -1
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+            m_CalleesTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+            m_CallersTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                - width: 60
+                  sortedAscending: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+          m_ThreadName: Main Thread
+    00000002:
+      type: {class: RenderingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Rendering
+        m_IconName: Profiler.Rendering
+        m_ChartCounters:
+        - m_Category: Render
+          m_Name: Batches Count
+        - m_Category: Render
+          m_Name: SetPass Calls Count
+        - m_Category: Render
+          m_Name: Triangles Count
+        - m_Category: Render
+          m_Name: Vertices Count
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+    00000003:
+      type: {class: MemoryProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Memory
+        m_IconName: Profiler.Memory
+        m_ChartCounters:
+        - m_Category: Memory
+          m_Name: Total Used Memory
+        - m_Category: Memory
+          m_Name: Texture Memory
+        - m_Category: Memory
+          m_Name: Mesh Memory
+        - m_Category: Memory
+          m_Name: Material Count
+        - m_Category: Memory
+          m_Name: Object Count
+        - m_Category: Memory
+          m_Name: GC Used Memory
+        - m_Category: Memory
+          m_Name: GC Allocated In Frame
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewSplit:
+          ID: 0
+          splitterInitialOffset: 0
+          currentActiveSplitter: -1
+          realSizes:
+          - 0
+          - 0
+          relativeSizes:
+          - 0.7
+          - 0.3
+          minSizes:
+          - 450
+          - 50
+          maxSizes:
+          - 0
+          - 0
+          lastTotalSize: 0
+          splitSize: 6
+          xOffset: 0
+          m_Version: 1
+          oldRealSizes: 
+          oldMinSizes: 
+          oldMaxSizes: 
+          oldSplitSize: 0
+    00000004:
+      type: {class: AudioProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Audio
+        m_IconName: Profiler.Audio
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Playing Audio Sources
+        - m_Category: NoCategory
+          m_Name: Audio Voices
+        - m_Category: NoCategory
+          m_Name: Total Audio CPU
+        - m_Category: NoCategory
+          m_Name: Total Audio Memory
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+        m_ShowInactiveDSPChains: 0
+        m_HighlightAudibleDSPChains: 1
+        m_DSPGraphZoomFactor: 1
+    00000005:
+      type: {class: VideoProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Video
+        m_IconName: Profiler.Video
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Total Video Sources
+        - m_Category: NoCategory
+          m_Name: Playing Video Sources
+        - m_Category: NoCategory
+          m_Name: Pre-buffered frames
+        - m_Category: NoCategory
+          m_Name: Total Video Memory
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+    00000006:
+      type: {class: PhysicsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Physics
+        m_IconName: Profiler.Physics
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Active Dynamic
+        - m_Category: NoCategory
+          m_Name: Active Kinematic
+        - m_Category: NoCategory
+          m_Name: Static Colliders
+        - m_Category: NoCategory
+          m_Name: Rigidbody
+        - m_Category: NoCategory
+          m_Name: Trigger Overlaps
+        - m_Category: NoCategory
+          m_Name: Active Constraints
+        - m_Category: NoCategory
+          m_Name: Contacts
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+    00000007:
+      type: {class: Physics2DProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Physics (2D)
+        m_IconName: Profiler.Physics2D
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Total Bodies
+        - m_Category: NoCategory
+          m_Name: Active Bodies
+        - m_Category: NoCategory
+          m_Name: Sleeping Bodies
+        - m_Category: NoCategory
+          m_Name: Dynamic Bodies
+        - m_Category: NoCategory
+          m_Name: Kinematic Bodies
+        - m_Category: NoCategory
+          m_Name: Static Bodies
+        - m_Category: NoCategory
+          m_Name: Contacts
+        - m_Category: NoCategory
+          m_Name: Discrete Island Count
+        - m_Category: NoCategory
+          m_Name: Continuous Island Count
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+    00000008:
+      type: {class: NetworkingMessagesProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Network Messages
+        m_IconName: Profiler.NetworkMessages
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Protocol Packets In
+        - m_Category: NoCategory
+          m_Name: Buffered Msgs In
+        - m_Category: NoCategory
+          m_Name: Unbuffered Msgs In
+        - m_Category: NoCategory
+          m_Name: Protocol Packets Out
+        - m_Category: NoCategory
+          m_Name: Buffered Msgs Out
+        - m_Category: NoCategory
+          m_Name: Unbuffered Msgs Out
+        - m_Category: NoCategory
+          m_Name: Pending Buffers
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+    00000009:
+      type: {class: NetworkingOperationsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Network Operations
+        m_IconName: Profiler.NetworkOperations
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Command
+        - m_Category: NoCategory
+          m_Name: ClientRPC
+        - m_Category: NoCategory
+          m_Name: SyncVar
+        - m_Category: NoCategory
+          m_Name: Sync List
+        - m_Category: NoCategory
+          m_Name: Sync Event
+        - m_Category: NoCategory
+          m_Name: User Message
+        - m_Category: NoCategory
+          m_Name: Object Destroy
+        - m_Category: NoCategory
+          m_Name: Object Create
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+        m_NetworkSplit:
+          ID: 0
+          splitterInitialOffset: 0
+          currentActiveSplitter: -1
+          realSizes:
+          - 0
+          - 0
+          relativeSizes:
+          - 0.2
+          - 0.8
+          minSizes:
+          - 100
+          - 100
+          maxSizes:
+          - 0
+          - 0
+          lastTotalSize: 0
+          splitSize: 6
+          xOffset: 0
+          m_Version: 1
+          oldRealSizes: 
+          oldMinSizes: 
+          oldMaxSizes: 
+          oldSplitSize: 0
+        msgNames:
+        - UserMessage
+        - ObjectDestroy
+        - ClientRpc
+        - ObjectSpawn
+        - Owner
+        - Command
+        - LocalPlayerTransform
+        - SyncEvent
+        - SyncVars
+        - SyncList
+        - ObjectSpawnScene
+        - NetworkInfo
+        - SpawnFinished
+        - ObjectHide
+        - CRC
+        - ClientAuthority
+    0000000A:
+      type: {class: UIProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: UI
+        m_IconName: Profiler.UI
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Layout
+        - m_Category: NoCategory
+          m_Name: Render
+        m_DetailCounters: []
+        m_ChartType: 0
+        m_PaneScroll: {x: 0, y: 0}
+    0000000B:
+      type: {class: UIDetailsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: UI Details
+        m_IconName: Profiler.UIDetails
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Batches
+        - m_Category: NoCategory
+          m_Name: Vertices
+        m_DetailCounters: []
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+    0000000C:
+      type: {class: GlobalIlluminationProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Global Illumination
+        m_IconName: Profiler.GlobalIllumination
+        m_ChartCounters:
+        - m_Category: NoCategory
+          m_Name: Total CPU
+        - m_Category: NoCategory
+          m_Name: Light Probe
+        - m_Category: NoCategory
+          m_Name: Setup
+        - m_Category: NoCategory
+          m_Name: Environment
+        - m_Category: NoCategory
+          m_Name: Input Lighting
+        - m_Category: NoCategory
+          m_Name: Systems
+        - m_Category: NoCategory
+          m_Name: Solve Tasks
+        - m_Category: NoCategory
+          m_Name: Dynamic Objects
+        - m_Category: NoCategory
+          m_Name: Other Commands
+        - m_Category: NoCategory
+          m_Name: Blocked Command Write
+        m_DetailCounters: []
+        m_ChartType: 0
+        m_PaneScroll: {x: 0, y: 0}
+    0000000D:
+      type: {class: VirtualTexturingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_ProfilerWindow:
+          id: 14
+        m_Name: Virtual Texturing
+        m_IconName: Profiler.VirtualTexturing
+        m_ChartCounters:
+        - m_Category: Virtual Texturing
+          m_Name: Required Tiles
+        - m_Category: Virtual Texturing
+          m_Name: Max Cache Mip Bias
+        - m_Category: Virtual Texturing
+          m_Name: Max Cache Demand
+        - m_Category: Virtual Texturing
+          m_Name: Missing Streaming Tiles
+        - m_Category: Virtual Texturing
+          m_Name: Missing Disk Data
+        m_DetailCounters:
+        - m_Category: Virtual Texturing
+          m_Name: Max Cache Mip Bias
+        m_ChartType: 1
+        m_PaneScroll: {x: 0, y: 0}
+        m_VTProfilerView:
+          m_ScrollAggregate: {x: 0, y: 0}
+          m_ScrollDemand: {x: 0, y: 0}
+          m_ScrollBias: {x: 0, y: 0}
+    0000000E:
+      type: {class: ProfilerWindow/ProfilerWindowControllerProxy, ns: UnityEditor, asm: UnityEditor.CoreModule}
+--- !u!114 &25
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -3237396543322336831, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1326
+    y: 73
+    width: 593
+    height: 926
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: -2980
+--- !u!114 &26
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13963, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DontSaveToLayout: 0

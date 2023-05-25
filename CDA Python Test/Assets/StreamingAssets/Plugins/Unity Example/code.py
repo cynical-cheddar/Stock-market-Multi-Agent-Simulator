@@ -1,1 +1,0 @@
-GameObject.CreatePrimitive(PrimitiveType.Sphere)
