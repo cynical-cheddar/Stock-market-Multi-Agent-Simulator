@@ -65,6 +65,9 @@ class Trader():
 
         if(windows_debug):
             subprocess.Popen('start /wait ' + runString, shell=True)
+            #os.system('cmd /k ' + runString)
+            #runString = traderScriptPath + " " + str(pid) + " " + str(name[:-3]) + " &"
+            #os.startfile(runString)
         else:
             self.traderProcess = os.system(runString)
         

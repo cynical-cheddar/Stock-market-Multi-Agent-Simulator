@@ -21,7 +21,7 @@ public class TraderBotManager : MonoBehaviour
 
     public void CreateTraderBot(string scriptName)
     {
-        TraderBot traderBot = new TraderBot();
+        TraderBot traderBot = FindObjectOfType<TraderBotsGoIdentifier>().gameObject.AddComponent<TraderBot>();
         traderBot.SetScriptName(scriptName);
         traderBot.SetPid(pid);
         LaunchTraderBot(traderBot);

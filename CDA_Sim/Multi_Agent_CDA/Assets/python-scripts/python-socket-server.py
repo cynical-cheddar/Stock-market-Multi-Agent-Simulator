@@ -43,8 +43,11 @@ def HandleIncomingMessage(message):
     elif(msg_dict['messageType'] == comms.MessageType.Data):
         pass
     
-    
-    
+
+def GetSourceFromMessage(message):
+    msg_dict = json.loads(message)
+    source = msg_dict['source_pid']
+    return int(source)
 
 
 
@@ -60,27 +63,42 @@ traderManager = TraderManager()
 
 
 #""" Socket for communicating with Unity """
-sock = U.UdpComms(udpIP="127.0.0.1", portTX=8000, portRX=8001, enableRX=True, suppressWarnings=True)
-
+unity_socket = U.UdpComms(udpIP="127.0.0.1", portTX=8000, portRX=8001, enableRX=True, suppressWarnings=True)
+print("1")
 
 #""" Trader bot socket """
-trader_context = zmq.Context()
-trader_socket = trader_context.socket(zmq.REP)
-trader_socket.bind("tcp://*:5555")
+server_context = zmq.Context()
+print("2")
+server_socket_pub = server_context.socket(zmq.PUB)
+print("3")
+server_socket_pub.bind("tcp://*:5555")
+print("4")
+server_socket_sub = server_context.socket(zmq.SUB)
+print("5")
+server_socket_sub.bind("tcp://*:5556")
+print("6")
+server_socket_sub.subscribe('0')
+#server_socket_sub.subscribe("")
 
-
+poller = zmq.Poller()
+print("7")
+poller.register(server_socket_sub, zmq.POLLIN)
+print("8")
 i = 0
 while True:
 
     # ========= TRADERS =============
     #  Wait for next request from client
-    if(trader_socket.poll(timeout=1)):
-        message = trader_socket.recv()
-        print(f"Trader socket rec request: {message}")
-        #  Send reply back to client
-        trader_socket.send(b"World T")
+    socks = dict(poller.poll(timeout=0.01))
+    if(server_socket_sub in socks and socks[server_socket_sub] == zmq.POLLIN):
+        message_whole = server_socket_sub.recv_string()
+        topic, message = message_whole.split("@")
+        print(f"Trader socket rec request: {message_whole}")
         
-        sock.SendData(message.decode('utf-8')) # Send this string to other application
+        #  Send reply back to client
+        #server_socket_pub.send_string(str (topic) + "@" + "ACKNOWLEDGE: " + message)
+        
+        unity_socket.SendData(message) # Send this string to other application
     else:
         pass
 
@@ -89,7 +107,7 @@ while True:
 
     
     # ========= UNITY =============
-    message = sock.ReadReceivedData() # read data
+    message = unity_socket.ReadReceivedData() # read data
 
     if message != None: # if NEW data has been received since last ReadReceivedData function call
         

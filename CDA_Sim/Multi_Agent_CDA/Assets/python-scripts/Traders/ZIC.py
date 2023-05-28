@@ -59,34 +59,43 @@ name = args[1]
 # Instantiate Trader
 trader = ZIC(pid, name)
 
+
+
 i = 0
 # Connect to socket server
 context = zmq.Context()
-socket = context.socket(zmq.REQ)
-print('going to create socket client')
-socket = context.socket(zmq.REQ)
-socket.connect("tcp://localhost:5555")
+print('going to create sub socket client')
+socket_sub = context.socket(zmq.SUB)
+socket_sub.connect("tcp://localhost:5555")
+socket_sub.subscribe(pid)
+print('sub client_socket_created')
 
-print('client_socket_created')
+print('going to create pub socket client')
+socket_pub = context.socket(zmq.PUB)
+socket_pub.connect("tcp://localhost:5556")
+print('pub client_socket_created')
 
 # inform the Unity manager that we have set up sucessfully
 trader.setup = True
 status_acknowledgement = comms.StatusAcknowledgement(trader.setup, trader.active).__dict__
 setup_successful_message = json.dumps(comms.OutgoingRequestMessage(messageType= comms.MessageType.Request, pid=trader.pid, dataString=json.dumps(status_acknowledgement), requestType= comms.RequestType.ActiveStatus).__dict__)
+setup_successful_message = (str(0) + "@" + setup_successful_message)
+time.sleep(1)
+socket_pub.send_string(setup_successful_message)
 print(setup_successful_message)
-socket.send(setup_successful_message.encode('utf-8'))
-
 # busywait for confirmation
 
 
 while(True):
 
     
-    if(socket.poll(timeout=0.2)):
+    if(socket_sub.poll(timeout=0.2)):
         #  Get the reply.
-        message = socket.recv()
-        print(f"Received reply {0} [ {message} ]")
-
+        message = socket_sub.recv_string()
+        topic, actual_message = message.split("@")
+        print(f"Received reply {topic} [ {actual_message} ]")
+    else:
+        pass
 while (True):
     data = client_socket.client_socket.recv(4096)
     if(data):
