@@ -49,7 +49,7 @@ class Trader():
         self.pid = pid
         self.name = name
 
-        "initialise the trader in a separate python process - completely decoupling the logic"
+        # initialise the trader in a separate python process - completely decoupling the logic
 
 
         traderScriptPath = GetTraderScriptPath(self.name)

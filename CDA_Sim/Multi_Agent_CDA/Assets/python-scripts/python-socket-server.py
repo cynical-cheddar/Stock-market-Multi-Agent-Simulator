@@ -2,7 +2,6 @@ import socket
 import time
 import os
 from _thread import *
-from Traders.Trader import Trader
 from TraderManager import TraderManager
 from multiprocessing.connection import Listener
 import zmq
@@ -27,10 +26,20 @@ def HandleIncomingCommand(msg_dict):
 
 def HandleIncomingData(msg_dict):
     dataType = msg_dict['dataType']
-
+    target_pid = str(msg_dict['target_pid'])
     if(dataType == comms.DataType.LimitOrderBook):
+        # send LOB to target_pid
+        forward_lob = target_pid + '@' + json.dumps(msg_dict)
+        server_socket_pub.send_string(forward_lob)
         print("LOB incoming")
 
+def HandleIncomingAcknowledgement(msg_dict):
+    # route acknowledgement to correct trader
+    target_pid = str(msg_dict['target_pid'])
+    acknowledgement_message = target_pid + "@" + json.dumps(msg_dict)
+    server_socket_pub.send_string(acknowledgement_message)
+
+    
 
 # ============ OUTGOING ==============
 
@@ -41,7 +50,10 @@ def HandleIncomingMessage(message):
     if(msg_dict['messageType'] == comms.MessageType.Command):
         HandleIncomingCommand(msg_dict)
     elif(msg_dict['messageType'] == comms.MessageType.Data):
-        pass
+        HandleIncomingData(msg_dict)
+    elif(msg_dict['messageType'] == comms.MessageType.Acknowledgement):
+        print("acknowledgement recieved   " + message)
+        HandleIncomingAcknowledgement(msg_dict)
     
 
 def GetSourceFromMessage(message):

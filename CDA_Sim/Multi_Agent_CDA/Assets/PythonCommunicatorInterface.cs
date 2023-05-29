@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
 public enum MessageType{
     Command,
     Data,
-    Request
+    Request,
+    Acknowledgement
 }
 
 public enum CommandType
@@ -25,7 +27,15 @@ public enum DataType
 public enum RequestType
 {
     ActiveStatus,
-    LimitOrderBook
+    LimitOrderBook,
+    PlaceBuyOrder,
+    PlaceSellOrder
+}
+
+public enum OrderType
+{
+    Bid,
+    Ask
 }
 
 
@@ -43,7 +53,19 @@ public class StatusAcknowledgement
     public bool active;
 }
 
+[Serializable]
+public class Order
+{
+    public OrderType orderType;
+    public int quantity;
+    public float unit_price;
+}
 
+[Serializable]
+public class DummyLOB
+{
+    public string dummy_lob_text;
+}
 
 
 [Serializable]
@@ -51,6 +73,8 @@ public class Message
 {
     public MessageType messageType;
     // pid 0 corresponds to the controller / trader manager
+    public string source_trader_id;
+    public string target_trader_id;
     public int source_pid;
     public int target_pid;
     public string data;
@@ -73,6 +97,11 @@ public class IncomingRequestMessage : Message
 {
     public RequestType requestType;
 }
+[Serializable]
+public class OutgoingAcknowledgementMessage : Message
+{
+   
+}
 
 
 
@@ -80,7 +109,7 @@ public class IncomingRequestMessage : Message
 public class PythonCommunicatorInterface : MonoBehaviour
 {
 
-
+    PythonCommunicationHandler pythonCommunicationHandler;
     TraderBotManager traderBotManager;
     PythonCommunicator pythonCommunicator;
 
@@ -88,6 +117,7 @@ public class PythonCommunicatorInterface : MonoBehaviour
     {
         pythonCommunicator = FindObjectOfType<PythonCommunicator>();
         traderBotManager = FindObjectOfType<TraderBotManager>();
+        pythonCommunicationHandler = FindObjectOfType<PythonCommunicationHandler>();
     }
 
     public void LaunchTraderBotCommand(TraderBot traderBot)
@@ -106,7 +136,8 @@ public class PythonCommunicatorInterface : MonoBehaviour
         launchTraderCommand.data = JsonUtility.ToJson(launchTraderData);
 
 
-        pythonCommunicator.SendData(JsonUtility.ToJson(launchTraderCommand));
+        
+        SendOutgoingMessage(launchTraderCommand);
     }
 
 
@@ -116,33 +147,43 @@ public class PythonCommunicatorInterface : MonoBehaviour
     public void HandleIncomingMessage(string msg)
     {
         Debug.Log(">> " + msg);
+        IncomingRequestMessage reqMessage = JsonUtility.FromJson<IncomingRequestMessage>(msg);
+        // pass req message to handler
+        pythonCommunicationHandler.HandleRequestMessage(reqMessage);
+        /*
         try
         {
-            IncomingRequestMessage reqMessage = JsonUtility.FromJson<IncomingRequestMessage>(msg);
             
+
         }
         catch
         {
             Debug.Log("Json parse failure of " + msg + " to IncomingRequestMessage");
         }
+        */
     }
 
-    public void HandleIncomingRequest(IncomingRequestMessage reqMessage)
+
+    public void SendOutgoingMessage(OutgoingCommandMessage msg)
     {
-        if(reqMessage.requestType == RequestType.ActiveStatus)
-        {
-            StatusAcknowledgement statusAcknowledgement = JsonUtility.FromJson<StatusAcknowledgement>(reqMessage.data);
-            bool setup = statusAcknowledgement.setup;
-            bool active = statusAcknowledgement.active;
-            
-            int pid = reqMessage.source_pid;
-            // alert the trader bot manager to set bot[pid] to have setup and active values
-            traderBotManager.SetBotSetupStatus(pid, setup);
-            traderBotManager.SetBotActiveStatus(pid, active);
-        }
-        if (reqMessage.requestType == RequestType.LimitOrderBook)
-        {
-            Debug.Log("Not implemented yet - LOB requested");
-        }
+        Debug.Log("sending command msg");
+        pythonCommunicator.SendData(JsonUtility.ToJson(msg));
     }
+
+    public void SendOutgoingMessage(OutgoingDataMessage msg)
+    {
+        Debug.Log("sending data msg");
+        pythonCommunicator.SendData(JsonUtility.ToJson(msg));
+    }
+    public void SendOutgoingMessage(OutgoingAcknowledgementMessage msg)
+    {
+        Debug.Log("sending ack msg");
+        pythonCommunicator.SendData(JsonUtility.ToJson(msg));
+    }
+    public void SendOutgoingMessage(Message msg)
+    {
+        Debug.LogError("Message " + msg.ToString() + " has no proper type! Set it to a child class");
+    }
+
+
 }
