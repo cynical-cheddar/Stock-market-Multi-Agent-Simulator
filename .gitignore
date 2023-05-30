@@ -48,7 +48,8 @@ ExportedObj/
 *.VC.db
 
 *.7z
-
+*.bin
+*.mvfrm
 *.env
 
 # Unity3D generated meta files

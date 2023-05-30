@@ -7,13 +7,48 @@ import time
 import importlib
 import json
 import zmq
+
 debug = True
 import CommunicationClasses as comms
 import MessageConstants as msg_consts
 import Trader
 from Trader import Trader
+from Trader import KeyboardThread
 
+# TEST FUNCTION CONSOLE
+def keyboard_callback(inp):
+    global trader
+    #evaluate the keyboard input
+    print(">>> ", inp)
 
+    inp_split = inp.split()
+    if(inp_split[0] == 'LOB'):
+        trader.RequestLOB()
+    elif(inp_split[0] == "BID"):
+        if(len(inp_split) == 3):
+            try:
+                quantity = int(inp_split[1])
+                unit_price = int(inp_split[2])
+                trader.PlaceBuyOrder(quantity=quantity, unit_price=unit_price)
+                pass
+            except:
+                print("bid format error")
+        else:
+            print("bid length format error")
+
+    elif(inp_split[0] == "ASK"):
+        if(len(inp_split) > 2):
+            try:
+                quantity = int(inp_split[1])
+                unit_price = int(inp_split[2])
+                trader.PlaceSellOrder(quantity=quantity, unit_price=unit_price)
+                pass
+            except:
+                print("ask format error")
+        pass
+
+    else:
+        print("command not recognised")
 
 
 
@@ -24,22 +59,22 @@ from Trader import Trader
 
     
 "boot up and read arguments"
-"arguments should include pid and name"
+"arguments should include pid and name and trader id "
 args = []
 for i in range(1, len(sys.argv)):
     if(debug): print('argument:', i, 'value:', sys.argv[i])
     args.append(sys.argv[i])
 pid = args[0]
 name = args[1]
-
+tid = args[2]
 
 
 # Instantiate Trader
-trader = Trader(pid, name)
+trader = Trader(pid, name, tid)
 # inform the Unity manager that we have set up sucessfully
-if(trader.SetupTrader_Blocking(True) == False):
+if(trader.SetupTrader_Blocking(True, 5) == False):
     print("trader setup error, trying again")
-    if(trader.SetupTrader_Blocking(True) == False):
+    if(trader.SetupTrader_Blocking(True, 5) == False):
         print("trader setup error twice")
 else:
     pass
@@ -51,25 +86,23 @@ else:
 print("====================================================")
 print("setup completely done")
 print("My PID is: " + str(trader.pid))
+print("My TID is: " + str(trader.tid))
 print("Trader type: " + trader.trader_name)
-input()
 
 
 
+import msvcrt
 
 # trader control loop
+
+
+
+input_thread = KeyboardThread(keyboard_callback)
+
 while (True):
-    if(trader.socket_sub.poll(timeout=0.2)):
-        #  Get the reply.
-        message = trader.socket_sub.recv_string()
-        topic, actual_message = message.split("@")
-        msg_dict = json.loads(actual_message)
-        print("recieved:" + actual_message)
-    else:
-        pass
-
-
-
+    last_message_type = trader.PollForMessages()
+    if(last_message_type != comms.MessageType.No_message):
+        print(" message recieved:    pid " + str(trader.pid) + " tid: " +  str(trader.tid) + " messageType: " +  str(last_message_type))
 
 
 

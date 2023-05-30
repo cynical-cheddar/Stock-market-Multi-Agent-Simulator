@@ -45,20 +45,14 @@ def GetTraderScriptPath(scriptName):
 
 
 class Trader():
-    def __init__(self, pid, name):
+    def __init__(self, pid, name, tid):
         self.pid = pid
         self.name = name
+        self.tid = tid
 
         # initialise the trader in a separate python process - completely decoupling the logic
-
-
-        traderScriptPath = GetTraderScriptPath(self.name)
-        #command = "python " + traderScriptPath + " " + str(pid) + " " + str(name[:-3]) 
-        
-        #self.traderProcess = subprocess.Popen(['python', traderScriptPath, str(pid), str(name[:-3])], start_new_session=True, stdin=PIPE, stderr=PIPE, stdout=PIPE, bufsize=3)
-        #['python', traderScriptPath, str(pid), str(name[:-3])]
-        
-        runString = "python " + traderScriptPath + " " + str(pid) + " " + str(name[:-3]) + " &"
+        traderScriptPath = GetTraderScriptPath(self.name)      
+        runString = "python " + traderScriptPath + " " + str(pid) + " " + str(name[:-3]) + " " + str(tid) + " &"
 
         print("trader process runString: " + runString)
         #runString = 'r' + runString
@@ -72,15 +66,6 @@ class Trader():
             self.traderProcess = os.system(runString)
         
         print("done")
-        #msg_input = "Begin with id: " + str(self.pid)
-        #msg_input_bytes = bytearray()
-        #msg_input_bytes.extend(map(ord, msg_input))
-        #try:
-        #    outs, errs = self.traderProcess.communicate(input=msg_input_bytes, timeout= 4)
-        #    print(outs, errs)
-        #except:
-        #    self.traderProcess.kill()
-        #    print("no communication from: " + str(self.pid) + " : " + self.name)
             
 
     
@@ -121,8 +106,9 @@ class TraderManager():
         traderName = instantiationParameters['scriptName']
         
         pid = instantiationParameters['instantiation_pid']
+        tid = instantiationParameters['instantiation_tid']
         if(traderName in self.validTraders):
-            newTrader = Trader(pid, traderName)
+            newTrader = Trader(pid, traderName, tid)
             self.activeTraderInterfaces.append(newTrader)
             print("self.activeTraderInterfaces.append(newTrader)" )
         else:

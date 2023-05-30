@@ -19,6 +19,7 @@ public class PythonCommunicationHandler : MonoBehaviour
     public void HandleRequestMessage(IncomingRequestMessage iqm)
     {
         int trader_pid = iqm.source_pid;
+        string trader_tid = iqm.source_trader_id;
         if(iqm.requestType == RequestType.ActiveStatus)
         {
             // data contains active/setup status
@@ -34,6 +35,7 @@ public class PythonCommunicationHandler : MonoBehaviour
             // send an acknowledgement message back to the trader
             OutgoingAcknowledgementMessage msg = new OutgoingAcknowledgementMessage();
             msg.source_pid = -1;
+            msg.source_trader_id = "";
             msg.target_pid = trader_pid;
             msg.messageType = MessageType.Acknowledgement;
             msg.data = "active_status_ack";
@@ -52,6 +54,34 @@ public class PythonCommunicationHandler : MonoBehaviour
             DummyLOB dummyLOB = new DummyLOB();
             dummyLOB.dummy_lob_text = "dummyLOB text";
             msg.data = JsonUtility.ToJson(dummyLOB);
+            // send command
+            pythonCommunicatorInterface.SendOutgoingMessage(msg);
+        }
+        else if(iqm.requestType == RequestType.BuyOrder)
+        {
+            Debug.Log("not yet implemented - buy order requested");
+            // ^ do normal handling
+            OutgoingAcknowledgementMessage msg = new OutgoingAcknowledgementMessage();
+            msg.source_pid = -1;
+            msg.source_trader_id = "";
+            msg.target_trader_id = trader_tid;
+            msg.target_pid = trader_pid;
+            msg.messageType = MessageType.Acknowledgement;
+            msg.data = "buy order acknowledge";
+            // send command
+            pythonCommunicatorInterface.SendOutgoingMessage(msg);
+        }
+        else if (iqm.requestType == RequestType.SellOrder)
+        {
+            Debug.Log("not yet implemented - sell order requested");
+            // ^ do normal handling
+            OutgoingAcknowledgementMessage msg = new OutgoingAcknowledgementMessage();
+            msg.source_pid = -1;
+            msg.source_trader_id = "";
+            msg.target_trader_id = trader_tid;
+            msg.target_pid = trader_pid;
+            msg.messageType = MessageType.Acknowledgement;
+            msg.data = "sell order acknowledge";
             // send command
             pythonCommunicatorInterface.SendOutgoingMessage(msg);
         }

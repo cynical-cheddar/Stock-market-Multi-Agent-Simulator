@@ -12,6 +12,10 @@ public class TraderBotManager : MonoBehaviour
     PythonCommunicatorInterface pythonCommunicatorInterface;
 
     int pid = 1;
+    // B denotes bot
+    // H denotes human
+    string tid = "B1";
+
 
     private void Start()
     {
@@ -19,13 +23,20 @@ public class TraderBotManager : MonoBehaviour
         pythonCommunicatorInterface = FindObjectOfType<PythonCommunicatorInterface>();
     }
 
+    void IncrementBotTid(int new_pid)
+    {
+        tid = "B" + new_pid.ToString();
+    }
+
     public void CreateTraderBot(string scriptName)
     {
         TraderBot traderBot = FindObjectOfType<TraderBotsGoIdentifier>().gameObject.AddComponent<TraderBot>();
         traderBot.SetScriptName(scriptName);
         traderBot.SetPid(pid);
+        traderBot.SetTraderTid(tid);
         LaunchTraderBot(traderBot);
         pid++;
+        IncrementBotTid(pid);
     }
 
     public void LaunchTraderBot(TraderBot traderBot)

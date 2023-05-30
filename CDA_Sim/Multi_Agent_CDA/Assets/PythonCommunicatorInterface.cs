@@ -11,6 +11,8 @@ public enum MessageType{
     Acknowledgement
 }
 
+
+// sent from unity
 public enum CommandType
 {
     LaunchTrader,
@@ -28,8 +30,8 @@ public enum RequestType
 {
     ActiveStatus,
     LimitOrderBook,
-    PlaceBuyOrder,
-    PlaceSellOrder
+    BuyOrder,
+    SellOrder
 }
 
 public enum OrderType
@@ -44,6 +46,7 @@ public class LaunchTraderData
 {
     public string scriptName;
     public int instantiation_pid;
+    public string instantiation_tid;
 }
 
 [Serializable]
@@ -128,10 +131,13 @@ public class PythonCommunicatorInterface : MonoBehaviour
         OutgoingCommandMessage launchTraderCommand = new OutgoingCommandMessage();
         launchTraderCommand.messageType = MessageType.Command;
         launchTraderCommand.source_pid = -1;
-        
+        launchTraderCommand.target_trader_id = traderBot.tid;
+        launchTraderCommand.source_trader_id = "";
+
         LaunchTraderData launchTraderData = new LaunchTraderData();
         launchTraderData.scriptName = traderBot.tradingScriptName;
         launchTraderData.instantiation_pid = traderBot.pid;
+        launchTraderData.instantiation_tid = traderBot.tid;
         launchTraderCommand.target_pid = launchTraderData.instantiation_pid;
         launchTraderCommand.data = JsonUtility.ToJson(launchTraderData);
 
