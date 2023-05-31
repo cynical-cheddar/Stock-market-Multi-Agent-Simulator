@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class SessionSettings : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameSettings gameSettings;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

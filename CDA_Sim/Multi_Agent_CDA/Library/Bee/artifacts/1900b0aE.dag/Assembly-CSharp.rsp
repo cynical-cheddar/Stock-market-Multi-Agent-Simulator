@@ -400,6 +400,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
+"Assets/BotSettingMenuItem.cs"
+"Assets/BotSettingsWriter.cs"
 "Assets/c-sharp scripts/PythonNetTest.cs"
 "Assets/c-sharp scripts/Traders/Trader.cs"
 "Assets/c-sharp scripts/Traders/TraderBot.cs"
@@ -425,6 +427,7 @@
 "Assets/PythonCommunicatorInterface.cs"
 "Assets/SessionSettings.cs"
 "Assets/SessionSettingsManager.cs"
+"Assets/SettingsButton.cs"
 "Assets/TestInputManager.cs"
 "Assets/TraderBotsGoIdentifier.cs"
 -langversion:9.0
