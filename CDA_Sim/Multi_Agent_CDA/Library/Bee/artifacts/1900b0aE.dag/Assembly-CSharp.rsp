@@ -425,6 +425,7 @@
 "Assets/PythonCommunicationHandler.cs"
 "Assets/PythonCommunicator.cs"
 "Assets/PythonCommunicatorInterface.cs"
+"Assets/SchemaButton.cs"
 "Assets/SessionSettings.cs"
 "Assets/SessionSettingsManager.cs"
 "Assets/SettingsButton.cs"
