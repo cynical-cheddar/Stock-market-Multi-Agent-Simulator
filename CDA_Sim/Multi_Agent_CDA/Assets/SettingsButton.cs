@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SettingsButton : MonoBehaviour
+namespace Photon.Pun.Demo.Asteroids
+
 {
-    public GameSettingsWriter gameSettingsWriter;
-
-    public int settingsIndex = 0;
-
-    public void Click()
+    public class SettingsButton : MonoBehaviour
     {
-        gameSettingsWriter.ClickSettings(settingsIndex);
+        public GameSettingsWriter gameSettingsWriter;
+
+        public int settingsIndex = 0;
+
+        public void Click()
+        {
+            gameSettingsWriter.ClickSettings(settingsIndex);
+        }
     }
 }

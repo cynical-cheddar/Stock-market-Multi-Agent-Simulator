@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SessionSettings : MonoBehaviour
+
+namespace Photon.Pun.Demo.Asteroids
+
 {
-    public GameSettings gameSettings;
+    public class SessionSettings : MonoBehaviour
+    {
+        public GameSettings gameSettings;
 
 
+    }
 }

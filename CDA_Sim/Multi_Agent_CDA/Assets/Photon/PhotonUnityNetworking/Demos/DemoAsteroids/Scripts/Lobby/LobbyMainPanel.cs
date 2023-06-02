@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 namespace Photon.Pun.Demo.Asteroids
 {
     public class LobbyMainPanel : MonoBehaviourPunCallbacks
@@ -51,6 +53,9 @@ namespace Photon.Pun.Demo.Asteroids
             roomListEntries = new Dictionary<string, GameObject>();
             
             PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
+
+            RoomNameInputField.text = "Session " + Random.Range(1000, 10000);
+            MaxPlayersInputField.text = "10";
         }
 
         #endregion
@@ -218,6 +223,9 @@ namespace Photon.Pun.Demo.Asteroids
 
         public void OnCreateRoomButtonClicked()
         {
+            // check gamesettingswriter
+            
+
             string roomName = RoomNameInputField.text;
             roomName = (roomName.Equals(string.Empty)) ? "Room " + Random.Range(1000, 10000) : roomName;
 
@@ -242,6 +250,8 @@ namespace Photon.Pun.Demo.Asteroids
             PhotonNetwork.LeaveRoom();
         }
 
+        public Toggle offlineModeToggle;
+
         public void OnLoginButtonClicked()
         {
             string playerName = PlayerNameInput.text;
@@ -249,7 +259,15 @@ namespace Photon.Pun.Demo.Asteroids
             if (!playerName.Equals(""))
             {
                 PhotonNetwork.LocalPlayer.NickName = playerName;
-                PhotonNetwork.ConnectUsingSettings();
+                if (offlineModeToggle.isOn)
+                {
+                    PhotonNetwork.OfflineMode = true;
+                    Debug.Log("PhotonNetwork.offline mode = true");
+                }
+                else
+                {
+                    PhotonNetwork.ConnectUsingSettings();
+                }
             }
             else
             {
@@ -271,6 +289,8 @@ namespace Photon.Pun.Demo.Asteroids
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
+
+            // load CDA instead
 
             PhotonNetwork.LoadLevel("DemoAsteroids-GameScene");
         }

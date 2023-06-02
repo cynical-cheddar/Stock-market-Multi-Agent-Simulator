@@ -2,30 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SessionSettingsManager : MonoBehaviour
+
+namespace Photon.Pun.Demo.Asteroids
+
 {
-
-    public GameObject sessionSettingsPrefab;
-    GameObject currentSessionSettings;
-    // Start is called before the first frame update
-    public void CreateSessionSettings()
+    public class SessionSettingsManager : MonoBehaviour
     {
-        SessionSettings[] sessionSettings = FindObjectsOfType<SessionSettings>();
-        foreach(SessionSettings ss in sessionSettings)
+
+        public GameObject sessionSettingsPrefab;
+        GameObject currentSessionSettings;
+        // Start is called before the first frame update
+        public void CreateSessionSettings()
         {
-            Destroy(ss.gameObject);
+            SessionSettings[] sessionSettings = FindObjectsOfType<SessionSettings>();
+            foreach (SessionSettings ss in sessionSettings)
+            {
+                Destroy(ss.gameObject);
+            }
+            currentSessionSettings = Instantiate(sessionSettingsPrefab);
         }
-        currentSessionSettings = Instantiate(sessionSettingsPrefab);
-    }
 
-    public void DeleteSessionSettings()
-    {
-        SessionSettings[] sessionSettings = FindObjectsOfType<SessionSettings>();
-        foreach (SessionSettings ss in sessionSettings)
+        public void DeleteSessionSettings()
         {
-            Destroy(ss.gameObject);
+            SessionSettings[] sessionSettings = FindObjectsOfType<SessionSettings>();
+            foreach (SessionSettings ss in sessionSettings)
+            {
+                Destroy(ss.gameObject);
+            }
         }
+
+
     }
-
-
 }
