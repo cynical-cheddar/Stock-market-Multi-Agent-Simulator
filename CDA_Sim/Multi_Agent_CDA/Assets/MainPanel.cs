@@ -224,8 +224,11 @@ public class MainPanel : MonoBehaviourPunCallbacks
 
         public void OnCreateRoomButtonClicked()
         {
-            // check gamesettingswriter
+        // check gamesettingswriter
+        GameSettingsWriter gsw = FindObjectOfType<GameSettingsWriter>();
 
+        // instantiate session settings prefab with dont destroy on load
+        SessionSettings session_settings = FindObjectOfType<SessionSettings>();
 
 
             string roomName = RoomNameInputField.text;
