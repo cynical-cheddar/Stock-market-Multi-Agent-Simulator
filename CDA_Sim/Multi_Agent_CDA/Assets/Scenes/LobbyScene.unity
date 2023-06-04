@@ -787,7 +787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnLeaveGameButtonClicked
         m_Mode: 1
@@ -1187,9 +1187,9 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &101833914
 MonoBehaviour:
@@ -2458,8 +2458,8 @@ RectTransform:
   m_Father: {fileID: 2114883168}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.03766662}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2905,10 +2905,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnBackButtonClicked
-        m_Mode: 1
+      - m_Target: {fileID: 1406502566}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3437,8 +3437,8 @@ RectTransform:
   m_Father: {fileID: 1864660465}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.00000017881393, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4857,9 +4857,9 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &488963432
 MonoBehaviour:
@@ -6165,7 +6165,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.9999999, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7801,8 +7801,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1310044704}
+        m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: OnStartGameButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -10272,7 +10272,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 340491866}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10400,17 +10400,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnRoomListButtonClicked
-        m_Mode: 1
+      - m_Target: {fileID: 953796484}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: RoomListPanel
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1020245482
 MonoBehaviour:
@@ -11619,9 +11619,9 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1204458380
 MonoBehaviour:
@@ -12248,6 +12248,7 @@ GameObject:
   - component: {fileID: 1310044702}
   - component: {fileID: 1310044701}
   - component: {fileID: 1310044703}
+  - component: {fileID: 1310044704}
   m_Layer: 5
   m_Name: MainPanel
   m_TagString: Untagged
@@ -12517,6 +12518,32 @@ MonoBehaviour:
   heightIncreasePerButton: 50
   currentSchemaText: {fileID: 2133447047}
   editButton: {fileID: 1874921578}
+--- !u!114 &1310044704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310044695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e40fe54f45ec245b18fd04aa054fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoginPanel: {fileID: 964844637}
+  PlayerNameInput: {fileID: 328590478}
+  SelectionPanel: {fileID: 1771933899}
+  CreateRoomPanel: {fileID: 1406502566}
+  RoomNameInputField: {fileID: 1541721128}
+  MaxPlayersInputField: {fileID: 1856119463}
+  JoinRandomRoomPanel: {fileID: 751292280}
+  RoomListPanel: {fileID: 953796484}
+  RoomListContent: {fileID: 889509550}
+  RoomListEntryPrefab: {fileID: 114706, guid: 03c5e15309335324fba99d68e38cb08b, type: 3}
+  InsideRoomPanel: {fileID: 1370510199}
+  StartGameButton: {fileID: 800069350}
+  PlayerListEntryPrefab: {fileID: 195212, guid: d68bf8413681d9b4aa7328277e632e3f, type: 3}
+  offlineModeToggle: {fileID: 2116528005}
 --- !u!1 &1317124170
 GameObject:
   m_ObjectHideFlags: 0
@@ -12845,8 +12872,8 @@ RectTransform:
   m_Father: {fileID: 522111045}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.03766662}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13682,7 +13709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1406502567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14039,21 +14066,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActivePanel
-        m_Mode: 5
+      - m_Target: {fileID: 1406502566}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: CreateRoomPanel
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1310044700}
         m_TargetAssemblyTypeName: SessionSettingsManager, Assembly-CSharp
-        m_MethodName: CreateSessionSettingsPrefab
+        m_MethodName: CreateSessionSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14157,9 +14184,9 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1470780195
 MonoBehaviour:
@@ -15449,8 +15476,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1310044704}
+        m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: OnCreateRoomButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -15762,9 +15789,9 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1608432081
 MonoBehaviour:
@@ -15938,7 +15965,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnJoinRandomRoomButtonClicked
         m_Mode: 1
@@ -16692,9 +16719,9 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1675815948
 MonoBehaviour:
@@ -17623,10 +17650,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnBackButtonClicked
-        m_Mode: 1
+      - m_Target: {fileID: 953796484}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17877,8 +17904,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1310044697}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1310044704}
+        m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: OnLoginButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -18867,8 +18894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 972.19775, y: -440}
-  m_SizeDelta: {x: 1344.3955, y: 680}
+  m_AnchoredPosition: {x: 960, y: -440}
+  m_SizeDelta: {x: 1320, y: 680}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1953198249
 MonoBehaviour:

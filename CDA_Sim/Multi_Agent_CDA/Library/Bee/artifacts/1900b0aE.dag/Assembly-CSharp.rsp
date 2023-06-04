@@ -408,6 +408,7 @@
 "Assets/c-sharp scripts/Traders/TraderBotManager.cs"
 "Assets/c-sharp scripts/Traders/TraderHuman.cs"
 "Assets/GameSettingsWriter.cs"
+"Assets/MainPanel.cs"
 "Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
 "Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
 "Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"
@@ -430,6 +431,7 @@
 "Assets/SessionSettingsManager.cs"
 "Assets/SettingsButton.cs"
 "Assets/TestInputManager.cs"
+"Assets/TestNamespace.cs"
 "Assets/TraderBotsGoIdentifier.cs"
 -langversion:9.0
 

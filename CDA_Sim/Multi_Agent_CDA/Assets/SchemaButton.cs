@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Photon.Pun.Demo.Asteroids
 
-{
     public class SchemaButton : MonoBehaviour
     {
         public BotSettingsWriter botSettingsWriter;
@@ -14,5 +12,4 @@ namespace Photon.Pun.Demo.Asteroids
         {
             botSettingsWriter.ClickSettings(settingsIndex);
         }
-    }
 }

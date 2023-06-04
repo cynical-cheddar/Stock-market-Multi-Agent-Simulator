@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-namespace Photon.Pun.Demo.Asteroids
-{
+
     public class BotSettingMenuItem : MonoBehaviour
     {
 
@@ -25,4 +24,4 @@ namespace Photon.Pun.Demo.Asteroids
             botSettingsWriter.RemoveFromSchema(id);
         }
     }
-}
+

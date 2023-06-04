@@ -5,9 +5,6 @@ using System;
 using UnityEngine.UI;
 using System.IO;
 
-namespace Photon.Pun.Demo.Asteroids
-
-{
     [Serializable]
     public enum Stepmode
     {
@@ -43,14 +40,11 @@ namespace Photon.Pun.Demo.Asteroids
 
         public Allocation allocation;
     }
-}
 
 
 
 
-namespace Photon.Pun.Demo.Asteroids
 
-{
 
 
     public class GameSettingsWriter : MonoBehaviour
@@ -312,5 +306,5 @@ namespace Photon.Pun.Demo.Asteroids
             // etc CONTINUE LATER
         }
     }
-}
+
 

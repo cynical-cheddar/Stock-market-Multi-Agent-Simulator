@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Photon.Pun.Demo.Asteroids
 
-{
     public class SettingsButton : MonoBehaviour
     {
         public GameSettingsWriter gameSettingsWriter;
@@ -15,5 +13,4 @@ namespace Photon.Pun.Demo.Asteroids
         {
             gameSettingsWriter.ClickSettings(settingsIndex);
         }
-    }
 }

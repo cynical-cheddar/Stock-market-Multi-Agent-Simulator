@@ -92,6 +92,9 @@ print("6")
 server_socket_sub.subscribe('0')
 #server_socket_sub.subscribe("")
 
+
+
+
 poller = zmq.Poller()
 print("7")
 poller.register(server_socket_sub, zmq.POLLIN)

@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace Photon.Pun.Demo.Asteroids
-
-{
     public class SessionSettingsManager : MonoBehaviour
     {
 
@@ -33,4 +30,3 @@ namespace Photon.Pun.Demo.Asteroids
 
 
     }
-}

@@ -4,8 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using System.IO;
-namespace Photon.Pun.Demo.Asteroids
-{
+
     public class BotSettingsWriter : MonoBehaviour
     {
 
@@ -330,4 +329,4 @@ namespace Photon.Pun.Demo.Asteroids
 
 
     }
-}
+

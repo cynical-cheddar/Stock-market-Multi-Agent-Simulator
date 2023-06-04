@@ -56,6 +56,8 @@ namespace Photon.Pun.Demo.Asteroids
 
             RoomNameInputField.text = "Session " + Random.Range(1000, 10000);
             MaxPlayersInputField.text = "10";
+
+            
         }
 
         #endregion
@@ -224,6 +226,7 @@ namespace Photon.Pun.Demo.Asteroids
         public void OnCreateRoomButtonClicked()
         {
             // check gamesettingswriter
+
             
 
             string roomName = RoomNameInputField.text;
