@@ -1,4 +1,4 @@
-Base path: 'E:/_Unity 2023/2022.1.23f1/Editor/Data', plugins path 'E:/_Unity 2023/2022.1.23f1/Editor/Data/PlaybackEngines'
+Base path: 'D:/Unitys/2022.1.23f1/Editor/Data', plugins path 'D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
 Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)

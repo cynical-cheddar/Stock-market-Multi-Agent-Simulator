@@ -5,28 +5,33 @@ using System;
 using UnityEngine.UI;
 using System.IO;
 
-    public class BotSettingsWriter : MonoBehaviour
+[Serializable]
+public class BotSchema
+{
+    public string botName;
+    public int botQuantity;
+    public int id;
+}
+
+
+
+
+[Serializable]
+public class BotSettings
+{
+    public string trader_config_id;
+    public List<BotSchema> botSchemas;
+}
+
+
+
+
+public class BotSettingsWriter : MonoBehaviour
     {
 
-        [Serializable]
-        public class BotSchema
-        {
-            public string botName;
-            public int botQuantity;
-            public int id;
-        }
+        public List<string> blacklistedBotNames = new List<string>();
 
-
-
-
-        [Serializable]
-        public class BotSettings
-        {
-            public string trader_config_id;
-            public List<BotSchema> botSchemas;
-        }
-
-        BotSettings current_bot_settings;
+        public BotSettings current_bot_settings;
         List<BotSettings> existing_bot_settings_list = new List<BotSettings>();
 
         List<String> botTypesPaths = new List<String>();
@@ -70,11 +75,13 @@ using System.IO;
         {
             current_bot_settings = new BotSettings();
             current_bot_settings.botSchemas = new List<BotSchema>();
-            var folder = Directory.CreateDirectory(Application.persistentDataPath + "/traders/");
-            Debug.Log("created dir: " + folder.ToString());
+            var folder0 = Directory.CreateDirectory(Application.persistentDataPath + GlobalPaths.PYTHON_FOLDER);
 
-            var folder2 = Directory.CreateDirectory(Application.persistentDataPath + "/traderSchemas/");
-            Debug.Log("created dir: " + folder.ToString());
+            var folder1 = Directory.CreateDirectory(Application.persistentDataPath + GlobalPaths.TRADERS_FOLDER);
+            Debug.Log("created dir: " + folder1.ToString());
+
+            var folder2 = Directory.CreateDirectory(Application.persistentDataPath + GlobalPaths.TRADER_CONFIGS_FOLDER);
+            Debug.Log("created dir: " + folder2.ToString());
 
             LoadExistingBots();
             LoadExistingBotsSchema();
@@ -132,7 +139,7 @@ using System.IO;
             {
                 Destroy(t.gameObject);
             }
-            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + "/traderSchemas/"))
+            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + GlobalPaths.TRADER_CONFIGS_FOLDER))
             {
                 Debug.Log(file);
                 string path = file;
@@ -195,7 +202,7 @@ using System.IO;
             botTypesPaths.Clear();
             botTypes.Clear();
 
-            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + "/traders/"))
+            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + GlobalPaths.TRADERS_FOLDER))
             {
                 Debug.Log(file);
                 string path = file;
@@ -214,7 +221,11 @@ using System.IO;
                 //Debug.Log(Application.persistentDataPath + "/session_settings/" + file);
                 string filePath = file;
                 string botname = Path.GetFileName(filePath);
-                botTypes.Add(botname);
+                if (!blacklistedBotNames.Contains(botname))
+                {
+                     botTypes.Add(botname);
+                }
+                
             }
 
             // now load all their names to dropdown
@@ -308,7 +319,7 @@ using System.IO;
                     string json = JsonUtility.ToJson(current_bot_settings);
                     Debug.Log("JSON: " + current_bot_settings.trader_config_id + " " + json);
 
-                    System.IO.File.WriteAllText(Application.persistentDataPath + "/traderSchemas/" + current_bot_settings.trader_config_id + ".json", json);
+                    System.IO.File.WriteAllText(Application.persistentDataPath + GlobalPaths.TRADER_CONFIGS_FOLDER + current_bot_settings.trader_config_id + ".json", json);
 
                     audioSource.PlayOneShot(successSound);
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using ExitGames.Client.Photon;
 using Photon.Realtime;
 using Photon.Pun;
-
+using System.IO;
 public class MainPanel : MonoBehaviourPunCallbacks
 {
         [Header("Login Panel")]
@@ -42,6 +42,11 @@ public class MainPanel : MonoBehaviourPunCallbacks
         private Dictionary<string, GameObject> roomListEntries;
         private Dictionary<int, GameObject> playerListEntries;
 
+
+
+    public AudioSource audioSource;
+    public AudioClip error_sound;
+    public Text output;
         #region UNITY
 
         public void Awake()
@@ -104,13 +109,22 @@ public class MainPanel : MonoBehaviourPunCallbacks
         {
             string roomName = "Room " + Random.Range(1000, 10000);
 
-            RoomOptions options = new RoomOptions { MaxPlayers = 8 };
+            RoomOptions options = new RoomOptions { MaxPlayers = 8, PublishUserId = true };
 
             PhotonNetwork.CreateRoom(roomName, options, null);
         }
 
         public override void OnJoinedRoom()
         {
+
+            if (!PhotonNetwork.IsMasterClient)
+            {
+                if(FindObjectOfType<SessionSettings>() != null)
+                {
+                    Destroy(FindObjectOfType<SessionSettings>().gameObject);
+                }
+            }
+
             // joining (or entering) a room invalidates any cached lobby room list (even if LeaveLobby was not called due to just joining a room)
             cachedRoomList.Clear();
 
@@ -214,7 +228,8 @@ public class MainPanel : MonoBehaviourPunCallbacks
 
         public void OnBackButtonClicked()
         {
-            if (PhotonNetwork.InLobby)
+        output.text = "";
+        if (PhotonNetwork.InLobby)
             {
                 PhotonNetwork.LeaveLobby();
             }
@@ -222,25 +237,105 @@ public class MainPanel : MonoBehaviourPunCallbacks
             SetActivePanel(SelectionPanel.name);
         }
 
+
+        bool CheckBotsExistInDir(List<string> bots_in_schema)
+        {
+            List<string> botTypes = new List<string>();
+            List<string> botTypesPaths = new List<string>();
+            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + GlobalPaths.TRADERS_FOLDER))
+            {
+                Debug.Log(file);
+                string path = file;
+                string ext = Path.GetExtension(path);
+                if (ext == ".py")
+                {
+                    botTypesPaths.Add(file);
+                    Debug.Log("added file: " + file);
+                }
+
+            }
+
+
+            foreach (string file in botTypesPaths)
+            {
+                //Debug.Log(Application.persistentDataPath + "/session_settings/" + file);
+                string filePath = file;
+                string botname = Path.GetFileName(filePath);
+                botTypes.Add(botname);
+            }
+
+
+            foreach(string bot in bots_in_schema)
+            {
+                if (!(botTypes.Contains(bot)))
+                {
+                    return false;
+                    Debug.LogError("Bot " + bot + " is not in trader directory");
+                }
+            }
+
+
+
+        return true;
+        }
+
+       
         public void OnCreateRoomButtonClicked()
         {
-        // check gamesettingswriter
-        GameSettingsWriter gsw = FindObjectOfType<GameSettingsWriter>();
+            // check gamesettingswriter
+            GameSettingsWriter gsw = FindObjectOfType<GameSettingsWriter>();
+            BotSettingsWriter bsw = FindObjectOfType<BotSettingsWriter>();
+        
+            SessionSettings session_settings = FindObjectOfType<SessionSettings>();
 
-        // instantiate session settings prefab with dont destroy on load
-        SessionSettings session_settings = FindObjectOfType<SessionSettings>();
+            session_settings.gameSettings = gsw.current_settings;
+            session_settings.botSettings = bsw.current_bot_settings;
+
+            if (session_settings.gameSettings.config_id == null)
+            {
+            audioSource.PlayOneShot(error_sound, 0.5f);
+            output.text = "No game selected";
+            return;
+            }
+
+            if (session_settings.botSettings.trader_config_id == null)
+            {
+                audioSource.PlayOneShot(error_sound, 0.5f);
+                output.text = "No trader config selected";
+                return;
+            }
+
+        // now check that all the bots exist 
+        List<string> names = new List<string>();
+             foreach(BotSchema bot in session_settings.botSettings.botSchemas)
+             {
+                names.Add(bot.botName);
+             }
+
+             bool botsExist = CheckBotsExistInDir(names);
+
+            
+            if (botsExist)
+            {
 
 
-            string roomName = RoomNameInputField.text;
-            roomName = (roomName.Equals(string.Empty)) ? "Room " + Random.Range(1000, 10000) : roomName;
+                string roomName = RoomNameInputField.text;
+                roomName = (roomName.Equals(string.Empty)) ? "Room " + Random.Range(1000, 10000) : roomName;
 
-            byte maxPlayers;
-            byte.TryParse(MaxPlayersInputField.text, out maxPlayers);
-            maxPlayers = (byte)Mathf.Clamp(maxPlayers, 2, 8);
+                byte maxPlayers;
+                byte.TryParse(MaxPlayersInputField.text, out maxPlayers);
+                maxPlayers = (byte)Mathf.Clamp(maxPlayers, 2, 8);
 
-            RoomOptions options = new RoomOptions { MaxPlayers = maxPlayers, PlayerTtl = 10000 };
+                RoomOptions options = new RoomOptions { MaxPlayers = maxPlayers, PlayerTtl = 10000 };
 
-            PhotonNetwork.CreateRoom(roomName, options, null);
+                PhotonNetwork.CreateRoom(roomName, options, null);
+                output.text = "";
+            }
+            else
+            {
+            audioSource.PlayOneShot(error_sound, 0.5f);
+            output.text = "Not all trader types are in the trader directory";
+            }
         }
 
         public void OnJoinRandomRoomButtonClicked()
@@ -295,7 +390,9 @@ public class MainPanel : MonoBehaviourPunCallbacks
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
 
-            // load CDA instead
+        
+
+            // load CDA scene instead
 
             PhotonNetwork.LoadLevel("PythonCommsTest");
         }

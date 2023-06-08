@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Collections.Generic;
+using AsyncIO;
 
 public class PythonCommunicator : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class PythonCommunicator : MonoBehaviour
 
 
     PythonCommunicatorInterface pythonCommunicatorInterface;
+
+    Queue<string> messages = new Queue<string>();
+
+ 
 
     public void SendData(string message) // Use to send data to Python
     {
@@ -68,8 +73,18 @@ public class PythonCommunicator : MonoBehaviour
 
     void AddIncomingMessageToQueue(string msg)
     {
+        messages.Enqueue(msg);
         
-        pythonCommunicatorInterface.HandleIncomingMessage(msg);
+    }
+
+    private void Update()
+    {
+        if(messages.Count > 0)
+        {
+            //pythonCommunicatorInterface.HandleIncomingMessage(msg);
+            string msg = messages.Dequeue();
+            pythonCommunicatorInterface.HandleIncomingMessage(msg);
+        }
     }
 
 
@@ -79,8 +94,6 @@ public class PythonCommunicator : MonoBehaviour
     {
         while (true)
         {
-            try
-            {
                 IPEndPoint anyIP = new IPEndPoint(IPAddress.Any, 0);
                 byte[] data = client.Receive(ref anyIP);
                 string text = Encoding.UTF8.GetString(data);
@@ -88,12 +101,8 @@ public class PythonCommunicator : MonoBehaviour
                 ProcessInput(text);
                 AddIncomingMessageToQueue(text);
             }
-            catch (Exception err)
-            {
-                Debug.Log(err.ToString());
-            }
         }
-    }
+    
 
     private void ProcessInput(string input)
     {

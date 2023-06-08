@@ -10,7 +10,7 @@ import time
 import json
 import enum
 import Traders.CommunicationClasses as comms
-
+import MessageConstants as msg_consts
 
     
 
@@ -100,6 +100,13 @@ print("7")
 poller.register(server_socket_sub, zmq.POLLIN)
 print("8")
 i = 0
+
+
+
+
+
+lasttime = time.time()
+
 while True:
 
     # ========= TRADERS =============
@@ -117,8 +124,18 @@ while True:
     else:
         pass
 
+    # ping unity once per second
+    if(time.time() - lasttime > 1):
+        lasttime = time.time()
+        # define a ping
 
+        ping = json.dumps(comms.OutgoingRequestMessage(messageType= comms.MessageType.Request, source_pid=msg_consts.ZMQ_SERVER_PID, target_pid=msg_consts.UNITY_PID, dataString="ping", requestType= comms.RequestType.Ping).__dict__)
+        ping = (msg_consts.ZMQ_SERVER_TOPIC + "@" + ping)
+        print("ping")
 
+        unity_socket.SendData(ping) 
+
+    
 
     
     # ========= UNITY =============
@@ -127,21 +144,4 @@ while True:
     if message != None: # if NEW data has been received since last ReadReceivedData function call
         
         HandleIncomingMessage(message)
-
-
-
-    #data = connection.recv(4096)
-    #if data:
-    #    print("Received:", data.decode('utf-8'))
-    #    response = "Message received by server"
-    #    connection.sendall(response.encode('utf-8'))
-
-while True:
-    data = connection.recv(4096)
-    if data:
-        print("Received:", data.decode('utf-8'))
-        response = "Message received by server"
-        connection.sendall(response.encode('utf-8'))
-    else:
-        break
 

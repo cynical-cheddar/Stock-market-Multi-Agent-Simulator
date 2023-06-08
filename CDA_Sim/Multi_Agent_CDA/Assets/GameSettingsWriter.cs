@@ -147,7 +147,7 @@ using System.IO;
             {
                 Destroy(go);
             }
-            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + "/session_settings/"))
+            foreach (string file in System.IO.Directory.GetFiles(Application.persistentDataPath + GlobalPaths.SESSION_SETTINGS_FOLDER))
             {
                 Debug.Log(file);
                 string path = file;
@@ -235,7 +235,7 @@ using System.IO;
         void Start()
         {
             current_settings = new GameSettings();
-            var folder = Directory.CreateDirectory(Application.persistentDataPath + "/session_settings/");
+            var folder = Directory.CreateDirectory(Application.persistentDataPath + GlobalPaths.SESSION_SETTINGS_FOLDER);
             Debug.Log("created dir: " + folder.ToString());
             ListExistingSettings();
         }
@@ -291,7 +291,7 @@ using System.IO;
                 string json = JsonUtility.ToJson(current_settings);
                 Debug.Log("JSON: " + current_settings.config_id + " " + json);
 
-                System.IO.File.WriteAllText(Application.persistentDataPath + "/session_settings/" + current_settings.config_id + ".json", json);
+                System.IO.File.WriteAllText(Application.persistentDataPath + GlobalPaths.SESSION_SETTINGS_FOLDER + current_settings.config_id + ".json", json);
 
                 audioSource.PlayOneShot(successSound);
 

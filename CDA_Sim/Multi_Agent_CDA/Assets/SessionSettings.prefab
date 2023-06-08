@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7473714944366494201}
   - component: {fileID: 7473714944366494182}
+  - component: {fileID: 1324207132245621864}
   m_Layer: 0
   m_Name: SessionSettings
   m_TagString: Untagged
@@ -44,3 +45,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115d3d2ca99d25a43ba075fedf78f5e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameSettings:
+    config_id: 
+    running_time: 0
+    supply_min: 0
+    supply_max: 0
+    supply_stepmode: 0
+    demand_min: 0
+    demand_max: 0
+    demand_stepmode: 0
+    offset_function: 
+    assignment_volume: 0
+    assignment_cycle: 0
+    allocation: 0
+  botSettings:
+    trader_config_id: 
+    botSchemas: []
+--- !u!114 &1324207132245621864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473714944366494183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0163df1354c8e41be26aa0a8db4aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteLevelNames:
+  - PythonCommsTest

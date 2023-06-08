@@ -24,6 +24,7 @@ class RequestType(enum.IntEnum):
     LimitOrderBook = 1
     BuyOrder = 2
     SellOrder = 3
+    Ping = 4
 
 class OrderType(enum.IntEnum):
     Bid = 0

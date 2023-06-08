@@ -18,7 +18,9 @@ public enum CommandType
     LaunchTrader,
     DeactivateTrader,
     RequestTraderStatus,
-    RequestAllTradersStatus
+    RequestAllTradersStatus,
+    NewRole,
+    NewActiveStatus
 }
 
 public enum DataType
@@ -31,7 +33,8 @@ public enum RequestType
     ActiveStatus,
     LimitOrderBook,
     BuyOrder,
-    SellOrder
+    SellOrder,
+    Ping
 }
 
 public enum OrderType
@@ -144,6 +147,23 @@ public class PythonCommunicatorInterface : MonoBehaviour
 
         
         SendOutgoingMessage(launchTraderCommand);
+    }
+
+    public void SetActiveTraderBotCommand(TraderBot traderBot, bool set)
+    {
+        OutgoingCommandMessage setActiveTraderCommand = new OutgoingCommandMessage();
+        setActiveTraderCommand.messageType = MessageType.Command;
+        setActiveTraderCommand.source_pid = -1;
+
+        setActiveTraderCommand.target_trader_id = traderBot.tid;
+        setActiveTraderCommand.source_trader_id = "";
+
+
+        StatusAcknowledgement activePayload = new StatusAcknowledgement();
+        activePayload.setup = traderBot.setup;
+        activePayload.active = set;
+
+        setActiveTraderCommand.data = JsonUtility.ToJson(activePayload);
     }
 
 

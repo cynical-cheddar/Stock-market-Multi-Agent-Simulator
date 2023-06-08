@@ -41,6 +41,8 @@ public class PythonCommunicationHandler : MonoBehaviour
             msg.data = "active_status_ack";
             // send command
             pythonCommunicatorInterface.SendOutgoingMessage(msg);
+
+            
         }
 
         else if(iqm.requestType == RequestType.LimitOrderBook)
@@ -84,6 +86,11 @@ public class PythonCommunicationHandler : MonoBehaviour
             msg.data = "sell order acknowledge";
             // send command
             pythonCommunicatorInterface.SendOutgoingMessage(msg);
+        }
+        else if(iqm.requestType == RequestType.Ping)
+        {
+            Debug.Log("PING");
+            traderBotManager.HandlePing();
         }
     }
 

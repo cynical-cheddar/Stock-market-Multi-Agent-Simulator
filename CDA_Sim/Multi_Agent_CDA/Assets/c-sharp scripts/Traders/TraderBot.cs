@@ -30,6 +30,7 @@ public class TraderBot : Trader
 
     public void SetScriptName(string scriptName)
     {
+        ttype = scriptName;
         tradingScriptName = scriptName;
     }
     public void SetPid(int pid_local)

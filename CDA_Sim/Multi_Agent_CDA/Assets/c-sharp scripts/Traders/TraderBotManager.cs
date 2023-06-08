@@ -10,17 +10,36 @@ public class TraderBotManager : MonoBehaviour
 
     TestInputManager testInputManager;
     PythonCommunicatorInterface pythonCommunicatorInterface;
+    AuctionSessionManager auctionSessionManager;
+    AuctionMenuManager auctionMenuManager;
 
     int pid = 1;
     // B denotes bot
     // H denotes human
     string tid = "B1";
 
+    bool message_server_connected = false;
 
     private void Start()
     {
         testInputManager = FindObjectOfType<TestInputManager>();
         pythonCommunicatorInterface = FindObjectOfType<PythonCommunicatorInterface>();
+        auctionSessionManager = FindObjectOfType<AuctionSessionManager>();
+        auctionMenuManager = FindObjectOfType<AuctionMenuManager>();
+    }
+
+
+    public void HandlePing()
+    {
+        if (!message_server_connected)
+        {
+            message_server_connected = true;
+            if (auctionMenuManager != null)
+            {
+                auctionMenuManager.connectedToSocket = true;
+            }
+        }
+        
     }
 
     void IncrementBotTid(int new_pid)
@@ -60,9 +79,44 @@ public class TraderBotManager : MonoBehaviour
         return null;
     }
 
+    TraderBot GetTraderBotByTid(string tid)
+    {
+        foreach (TraderBot traderBot in traderBots)
+        {
+            if (traderBot.tid == tid)
+            {
+                return traderBot;
+            }
+        }
+        return null;
+    }
+
     public void SetBotSetupStatus(int pid, bool setup_bool)
     {
         GetTraderBotByPid(pid).SetSetup(setup_bool);
+
+        // inform 
+        FindObjectOfType<AuctionSessionManager>().BotLoaded();
+        FindObjectOfType<AuctionMenuManager>().UpdateLoadedBots();
+    }
+
+    public void SetTraderBotActiveCommand(int pid, bool active_bool)
+    {
+        // 
+        pythonCommunicatorInterface.SetActiveTraderBotCommand(GetTraderBotByPid(pid), active_bool);
+    }
+
+    public void SetAllTraderBotsActiveCommand(bool active_bool)
+    {
+        foreach(TraderBot tb in traderBots)
+        {
+            pythonCommunicatorInterface.SetActiveTraderBotCommand(tb, active_bool);
+        }
+    }
+
+    public void SetTraderBotActiveCommand(string tid, bool active_bool)
+    {
+        pythonCommunicatorInterface.SetActiveTraderBotCommand(GetTraderBotByTid(tid), active_bool);
     }
     public void SetBotActiveStatus(int pid, bool active_bool)
     {
