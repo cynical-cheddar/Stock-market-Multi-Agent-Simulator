@@ -2,6 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
+
+public enum TraderRole
+{
+    buyer,
+    seller
+}
+
+
+
 public class Trader : MonoBehaviour
 {
     protected TestInputManager inputManager;

@@ -30,19 +30,41 @@ public class PythonCommunicator : MonoBehaviour
     PythonCommunicatorInterface pythonCommunicatorInterface;
 
     Queue<string> messages = new Queue<string>();
-
+    Queue<string> out_messages = new Queue<string>();
  
 
     public void SendData(string message) // Use to send data to Python
     {
+
+        out_messages.Enqueue(message);
+        
+    }
+
+    void SendDataViaSocket(string message)
+    {
         try
         {
+            Debug.Log("sending: " + message);
             byte[] data = Encoding.UTF8.GetBytes(message);
             client.Send(data, data.Length, remoteEndPoint);
         }
         catch (Exception err)
         {
             print(err.ToString());
+        }
+    }
+
+    IEnumerator Out_Message_Spooler()
+    {
+        while (true)
+        {
+            if(out_messages.Count > 0)
+            {
+                string msg = out_messages.Dequeue();
+                SendDataViaSocket(msg);
+                yield return new WaitForEndOfFrame();
+            }
+            yield return new WaitForEndOfFrame();
         }
     }
 
@@ -63,8 +85,11 @@ public class PythonCommunicator : MonoBehaviour
         // Initialize (seen in comments window)
         Debug.Log("UDP Comms Initialised");
 
+        
+
         pythonCommunicatorInterface = FindObjectOfType<PythonCommunicatorInterface>();
 
+        StartCoroutine(nameof(Out_Message_Spooler));
        
     }
 

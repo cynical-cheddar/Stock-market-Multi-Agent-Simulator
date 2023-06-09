@@ -60,6 +60,12 @@ public class StatusAcknowledgement
 }
 
 [Serializable]
+public class NewRolePayload
+{
+    public TraderRole traderRole;
+}
+
+[Serializable]
 public class Order
 {
     public OrderType orderType;
@@ -136,6 +142,7 @@ public class PythonCommunicatorInterface : MonoBehaviour
         launchTraderCommand.source_pid = -1;
         launchTraderCommand.target_trader_id = traderBot.tid;
         launchTraderCommand.source_trader_id = "";
+        launchTraderCommand.commandType = CommandType.LaunchTrader;
 
         LaunchTraderData launchTraderData = new LaunchTraderData();
         launchTraderData.scriptName = traderBot.tradingScriptName;
@@ -154,9 +161,12 @@ public class PythonCommunicatorInterface : MonoBehaviour
         OutgoingCommandMessage setActiveTraderCommand = new OutgoingCommandMessage();
         setActiveTraderCommand.messageType = MessageType.Command;
         setActiveTraderCommand.source_pid = -1;
+        setActiveTraderCommand.target_pid = traderBot.pid;
 
         setActiveTraderCommand.target_trader_id = traderBot.tid;
         setActiveTraderCommand.source_trader_id = "";
+
+        setActiveTraderCommand.commandType = CommandType.NewActiveStatus;
 
 
         StatusAcknowledgement activePayload = new StatusAcknowledgement();
@@ -164,6 +174,30 @@ public class PythonCommunicatorInterface : MonoBehaviour
         activePayload.active = set;
 
         setActiveTraderCommand.data = JsonUtility.ToJson(activePayload);
+
+        SendOutgoingMessage(setActiveTraderCommand);
+    }
+
+    public void SetNewRoleTraderBotCommand(TraderBot traderBot, TraderRole traderRole)
+    {
+        OutgoingCommandMessage setNewRoleCommand = new OutgoingCommandMessage();
+        setNewRoleCommand.messageType = MessageType.Command;
+        setNewRoleCommand.source_pid = -1;
+        setNewRoleCommand.target_pid = traderBot.pid;
+
+        setNewRoleCommand.target_trader_id = traderBot.tid;
+        setNewRoleCommand.source_trader_id = "";
+
+        setNewRoleCommand.commandType = CommandType.NewRole;
+
+
+        NewRolePayload rolePayload = new NewRolePayload();
+        rolePayload.traderRole = traderRole;
+
+
+        setNewRoleCommand.data = JsonUtility.ToJson(rolePayload);
+
+        SendOutgoingMessage(setNewRoleCommand);
     }
 
 

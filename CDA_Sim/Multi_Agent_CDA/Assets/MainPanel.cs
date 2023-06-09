@@ -326,7 +326,7 @@ public class MainPanel : MonoBehaviourPunCallbacks
                 byte.TryParse(MaxPlayersInputField.text, out maxPlayers);
                 maxPlayers = (byte)Mathf.Clamp(maxPlayers, 2, 8);
 
-                RoomOptions options = new RoomOptions { MaxPlayers = maxPlayers, PlayerTtl = 10000 };
+                RoomOptions options = new RoomOptions { MaxPlayers = maxPlayers, PlayerTtl = 10000, IsVisible = true };
 
                 PhotonNetwork.CreateRoom(roomName, options, null);
                 output.text = "";
@@ -380,7 +380,9 @@ public class MainPanel : MonoBehaviourPunCallbacks
             if (!PhotonNetwork.InLobby)
             {
                 PhotonNetwork.JoinLobby();
-            }
+                 Debug.Log(PhotonNetwork.CountOfRooms);
+
+        }
 
             SetActivePanel(RoomListPanel.name);
         }
