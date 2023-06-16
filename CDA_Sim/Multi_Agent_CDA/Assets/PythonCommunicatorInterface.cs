@@ -140,14 +140,14 @@ public class PythonCommunicatorInterface : MonoBehaviour
         OutgoingCommandMessage launchTraderCommand = new OutgoingCommandMessage();
         launchTraderCommand.messageType = MessageType.Command;
         launchTraderCommand.source_pid = -1;
-        launchTraderCommand.target_trader_id = traderBot.tid;
+        launchTraderCommand.target_trader_id = traderBot.traderDetails.tid;
         launchTraderCommand.source_trader_id = "";
         launchTraderCommand.commandType = CommandType.LaunchTrader;
 
         LaunchTraderData launchTraderData = new LaunchTraderData();
         launchTraderData.scriptName = traderBot.tradingScriptName;
         launchTraderData.instantiation_pid = traderBot.pid;
-        launchTraderData.instantiation_tid = traderBot.tid;
+        launchTraderData.instantiation_tid = traderBot.traderDetails.tid;
         launchTraderCommand.target_pid = launchTraderData.instantiation_pid;
         launchTraderCommand.data = JsonUtility.ToJson(launchTraderData);
 
@@ -163,7 +163,7 @@ public class PythonCommunicatorInterface : MonoBehaviour
         setActiveTraderCommand.source_pid = -1;
         setActiveTraderCommand.target_pid = traderBot.pid;
 
-        setActiveTraderCommand.target_trader_id = traderBot.tid;
+        setActiveTraderCommand.target_trader_id = traderBot.traderDetails.tid;
         setActiveTraderCommand.source_trader_id = "";
 
         setActiveTraderCommand.commandType = CommandType.NewActiveStatus;
@@ -185,7 +185,7 @@ public class PythonCommunicatorInterface : MonoBehaviour
         setNewRoleCommand.source_pid = -1;
         setNewRoleCommand.target_pid = traderBot.pid;
 
-        setNewRoleCommand.target_trader_id = traderBot.tid;
+        setNewRoleCommand.target_trader_id = traderBot.traderDetails.tid;
         setNewRoleCommand.source_trader_id = "";
 
         setNewRoleCommand.commandType = CommandType.NewRole;

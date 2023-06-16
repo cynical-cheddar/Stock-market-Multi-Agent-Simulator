@@ -83,7 +83,7 @@ public class TraderBotManager : MonoBehaviour
     {
         foreach (TraderBot traderBot in traderBots)
         {
-            if (traderBot.tid == tid)
+            if (traderBot.traderDetails.tid == tid)
             {
                 return traderBot;
             }
