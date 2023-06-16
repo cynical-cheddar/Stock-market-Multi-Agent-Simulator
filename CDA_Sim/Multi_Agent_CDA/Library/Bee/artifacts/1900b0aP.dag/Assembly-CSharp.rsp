@@ -358,6 +358,7 @@
 "Assets/GameSettingsWriter.cs"
 "Assets/Globalpaths.cs"
 "Assets/HumanTraderInterface.cs"
+"Assets/LOB_ReaderTest.cs"
 "Assets/MainPanel.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"

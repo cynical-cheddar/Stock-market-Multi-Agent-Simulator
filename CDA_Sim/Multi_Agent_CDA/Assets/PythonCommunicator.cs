@@ -8,6 +8,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Collections.Generic;
 using AsyncIO;
+using Photon.Pun;
 
 public class PythonCommunicator : MonoBehaviour
 {
@@ -70,26 +71,29 @@ public class PythonCommunicator : MonoBehaviour
 
     void Awake()
     {
-        // Create remote endpoint (to python) 
-        remoteEndPoint = new IPEndPoint(IPAddress.Parse(IP), txPort);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // Create remote endpoint (to python) 
+            remoteEndPoint = new IPEndPoint(IPAddress.Parse(IP), txPort);
 
-        // Create local client
-        client = new UdpClient(rxPort);
+            // Create local client
+            client = new UdpClient(rxPort);
 
-        // local endpoint define (where messages are received)
-        // Create a new thread for reception of incoming messages
-        receiveThread = new Thread(new ThreadStart(ReceiveData));
-        receiveThread.IsBackground = true;
-        receiveThread.Start();
+            // local endpoint define (where messages are received)
+            // Create a new thread for reception of incoming messages
+            receiveThread = new Thread(new ThreadStart(ReceiveData));
+            receiveThread.IsBackground = true;
+            receiveThread.Start();
 
-        // Initialize (seen in comments window)
-        Debug.Log("UDP Comms Initialised");
+            // Initialize (seen in comments window)
+            Debug.Log("UDP Comms Initialised");
 
-        
 
-        pythonCommunicatorInterface = FindObjectOfType<PythonCommunicatorInterface>();
 
-        StartCoroutine(nameof(Out_Message_Spooler));
+            pythonCommunicatorInterface = FindObjectOfType<PythonCommunicatorInterface>();
+
+            StartCoroutine(nameof(Out_Message_Spooler));
+        }
        
     }
 
@@ -104,11 +108,14 @@ public class PythonCommunicator : MonoBehaviour
 
     private void Update()
     {
-        if(messages.Count > 0)
+        if (PhotonNetwork.IsMasterClient)
         {
-            //pythonCommunicatorInterface.HandleIncomingMessage(msg);
-            string msg = messages.Dequeue();
-            pythonCommunicatorInterface.HandleIncomingMessage(msg);
+            if (messages.Count > 0)
+            {
+                //pythonCommunicatorInterface.HandleIncomingMessage(msg);
+                string msg = messages.Dequeue();
+                pythonCommunicatorInterface.HandleIncomingMessage(msg);
+            }
         }
     }
 

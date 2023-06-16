@@ -201,7 +201,46 @@
         193,
         194,
         195,
-        196
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -2066,6 +2105,424 @@
       "DebugActionIndex": 169
     },
     {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Assembly-CSharp.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Assembly-CSharp.pdb"
+      ],
+      "DebugActionIndex": 170
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonChat.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonChat.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonChat.pdb"
+      ],
+      "DebugActionIndex": 171
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Purchasing.Common.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Purchasing.Common.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Purchasing.Common.pdb"
+      ],
+      "DebugActionIndex": 172
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.pdb"
+      ],
+      "DebugActionIndex": 173
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTCore.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.WinRTCore.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTCore.pdb"
+      ],
+      "DebugActionIndex": 174
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Telemetry.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Telemetry.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Telemetry.pdb"
+      ],
+      "DebugActionIndex": 175
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.pdb"
+      ],
+      "DebugActionIndex": 176
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Timeline.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Timeline.pdb"
+      ],
+      "DebugActionIndex": 177
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.TextMeshPro.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.TextMeshPro.pdb"
+      ],
+      "DebugActionIndex": 178
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityStub.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.SecurityStub.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityStub.pdb"
+      ],
+      "DebugActionIndex": 179
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Networking.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Networking.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Networking.pdb"
+      ],
+      "DebugActionIndex": 180
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Analytics.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Analytics.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Analytics.pdb"
+      ],
+      "DebugActionIndex": 181
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Advertisements.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Advertisements.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Advertisements.pdb"
+      ],
+      "DebugActionIndex": 182
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonRealtime.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonRealtime.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonRealtime.pdb"
+      ],
+      "DebugActionIndex": 183
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Internal.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Internal.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Internal.pdb"
+      ],
+      "DebugActionIndex": 184
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.UI.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.UI.pdb"
+      ],
+      "DebugActionIndex": 185
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.SpatialTracking.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.SpatialTracking.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.SpatialTracking.pdb"
+      ],
+      "DebugActionIndex": 186
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Configuration.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Configuration.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Configuration.pdb"
+      ],
+      "DebugActionIndex": 187
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleCore.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.AppleCore.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleCore.pdb"
+      ],
+      "DebugActionIndex": 188
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.pdb"
+      ],
+      "DebugActionIndex": 189
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTStub.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.WinRTStub.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTStub.pdb"
+      ],
+      "DebugActionIndex": 190
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.pdb"
+      ],
+      "DebugActionIndex": 191
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Analytics.DataPrivacy.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Analytics.DataPrivacy.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Analytics.DataPrivacy.pdb"
+      ],
+      "DebugActionIndex": 192
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Utilities.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Utilities.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Utilities.pdb"
+      ],
+      "DebugActionIndex": 193
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Analytics.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Analytics.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Analytics.pdb"
+      ],
+      "DebugActionIndex": 194
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityCore.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.SecurityCore.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityCore.pdb"
+      ],
+      "DebugActionIndex": 195
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Registration.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Registration.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Registration.pdb"
+      ],
+      "DebugActionIndex": 196
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Codeless.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.Codeless.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Codeless.pdb"
+      ],
+      "DebugActionIndex": 197
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.XR.LegacyInputHelpers.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.XR.LegacyInputHelpers.pdb"
+      ],
+      "DebugActionIndex": 198
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.pdb"
+      ],
+      "DebugActionIndex": 199
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Scheduler.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Scheduler.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Scheduler.pdb"
+      ],
+      "DebugActionIndex": 200
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.Internal.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.Internal.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
+      ],
+      "DebugActionIndex": 201
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Demos.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Demos.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Demos.pdb"
+      ],
+      "DebugActionIndex": 202
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Stores.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.Stores.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Stores.pdb"
+      ],
+      "DebugActionIndex": 203
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Threading.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Threading.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Threading.pdb"
+      ],
+      "DebugActionIndex": 204
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleStub.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.AppleStub.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleStub.pdb"
+      ],
+      "DebugActionIndex": 205
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Device.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Device.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Device.pdb"
+      ],
+      "DebugActionIndex": 206
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Newtonsoft.Json.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.pdb"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/CDA_Simulator_Data/Managed/Newtonsoft.Json.pdb"
+      ],
+      "DebugActionIndex": 207
+    },
+    {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "ActionType": "WriteTextFile",
       "WriteTextFilePayload": "Lever_Software\nCDA_Simulator",
@@ -2074,7 +2531,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 170
+      "DebugActionIndex": 208
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/app.info",
@@ -2086,20 +2543,20 @@
         "D:/_BSE 2 Builds/CDA_Simulator_Data/app.info"
       ],
       "ToBuildDependencies": [
-        170
+        208
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 209
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator_Data/Resources/unity default resources",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources/unity default resources"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources/unity default resources"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/CDA_Simulator_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 210
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/CDA_Simulator.exe",
@@ -2110,249 +2567,260 @@
       "Outputs": [
         "D:/_BSE 2 Builds/CDA_Simulator.exe"
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 211
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/UnityCrashHandler64.exe",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/UnityCrashHandler64.exe"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/UnityCrashHandler64.exe"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 212
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/UnityPlayer.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/UnityPlayer.dll"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/UnityPlayer.dll"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 213
+    },
+    {
+      "Annotation": "CopyFiles D:/_BSE 2 Builds/WinPixEventRuntime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/WinPixEventRuntime.dll"
+      ],
+      "Outputs": [
+        "D:/_BSE 2 Builds/WinPixEventRuntime.dll"
+      ],
+      "DebugActionIndex": 214
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 215
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 216
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/browscap.ini",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/browscap.ini"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 217
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 218
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 219
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/machine.config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 220
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/settings.map"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 221
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/web.config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 222
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 223
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 224
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/machine.config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 225
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/settings.map"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 226
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/web.config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 227
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 189
+      "DebugActionIndex": 228
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 229
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/machine.config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 191
+      "DebugActionIndex": 230
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/settings.map"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 231
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/web.config"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 232
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 233
     },
     {
       "Annotation": "CopyFiles D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/mconfig/config.xml"
+        "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
       "Outputs": [
         "D:/_BSE 2 Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 234
     },
     {
       "Annotation": "Player",
@@ -2529,6 +2997,7 @@
         167,
         168,
         169,
+        170,
         171,
         172,
         173,
@@ -2553,10 +3022,48 @@
         192,
         193,
         194,
-        195
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 196
+      "DebugActionIndex": 235
     }
   ],
   "FileSignatures": [
@@ -2674,13 +3181,460 @@
   ],
   "StatSignatures": [
     {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/AsyncIO.0.1.69/lib/netstandard2.0/AsyncIO.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/Microsoft.Extensions.ObjectPool.5.0.10/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/NaCl.Net.0.1.13/lib/netstandard2.0/NaCl.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Private.ServiceModel.4.9.0/lib/netstandard2.0/System.Private.ServiceModel.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Runtime.CompilerServices.Unsafe.4.5.3/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Security.AccessControl.5.0.0/lib/netstandard2.0/System.Security.AccessControl.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Security.Cryptography.Cng.5.0.0/lib/netstandard2.0/System.Security.Cryptography.Cng.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Security.Cryptography.Pkcs.5.0.0/lib/netstandard2.0/System.Security.Cryptography.Pkcs.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Security.Cryptography.Xml.5.0.0/lib/netstandard2.0/System.Security.Cryptography.Xml.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Security.Permissions.5.0.0/lib/netstandard2.0/System.Security.Permissions.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Security.Principal.Windows.5.0.0/lib/netstandard2.0/System.Security.Principal.Windows.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.ServiceModel.Primitives.4.9.0/lib/netstandard2.0/System.ServiceModel.Primitives.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Photon/PhotonLibs/Photon3Unity3D.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonChat.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonRealtime.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Demos.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Utilities.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Purchasing.Common.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Analytics.DataPrivacy.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Analytics.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Analytics.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Configuration.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Device.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.Internal.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Internal.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Networking.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Registration.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Scheduler.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Telemetry.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Threading.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Advertisements.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.AppleCore.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.AppleStub.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.Codeless.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.SecurityCore.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.SecurityStub.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.Stores.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.WinRTCore.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.Purchasing.WinRTStub.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.SpatialTracking.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/Bee/PlayerScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Buffers.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Memory.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Reflection.DispatchProxy.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Threading.Tasks.Extensions.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/mscorlib.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ComponentModel.Composition.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Configuration.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Core.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Data.DataSetExtensions.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Data.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Drawing.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.EnterpriseServices.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.IO.Compression.FileSystem.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.IO.Compression.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Net.Http.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Numerics.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Numerics.Vectors.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Runtime.Serialization.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Security.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ServiceModel.Internals.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Transactions.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Xml.Linq.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Xml.pdb"
+    },
+    {
       "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"
     },
     {
-      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono"
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.pdb"
     },
     {
-      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources"
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.NVIDIAModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ProfilerModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsNativeModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UNETModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.pdb"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono"
+    },
+    {
+      "File": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources"
     },
     {
       "File": "D:/_BSE 2 Builds/CDA_Simulator.sln"
@@ -2704,11 +3658,11 @@
       "Path": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"
     },
     {
-      "Path": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono",
+      "Path": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono",
       "Recurse": 1
     },
     {
-      "Path": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources",
+      "Path": "D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources",
       "Recurse": 1
     },
     {
@@ -2753,7 +3707,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 196
+          "Player": 235
         }
 ,  "DefaultNodes": [
     0

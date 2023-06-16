@@ -72,4 +72,5 @@ MonoBehaviour:
   balance: 0
   blotter_length: 15
   n_quotes: 0
+  traderRole: 0
   photon_user_id: 0

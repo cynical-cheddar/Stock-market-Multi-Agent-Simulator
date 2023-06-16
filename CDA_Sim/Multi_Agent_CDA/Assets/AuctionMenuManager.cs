@@ -58,7 +58,8 @@ public class AuctionMenuManager : MonoBehaviour
         // send a message to each trader bot that the game is now active
         FindObjectOfType<TraderBotManager>().SetAllTraderBotsActiveCommand(true);
 
-        // set up BSE
+        // set up BSE (master client)
+        FindObjectOfType<BSE>().MarketSession();
 
 
         // rpcs to change view

@@ -7,9 +7,9 @@ public class TraderHuman : Trader
 {
 
     public int photon_user_id = 0;
-    
 
 
+    HumanTraderInterface myTraderInterface;
 
     [PunRPC]
     public void SetTid_RPC(string tid_local, int user_id)
@@ -21,14 +21,14 @@ public class TraderHuman : Trader
         Photon.Realtime.Player targetPlayer = PhotonNetwork.CurrentRoom.GetPlayer(user_id);
 
         // bounce back to the player who just jopined and tell them that their trader had been created
-        GetComponent<PhotonView>().RPC(nameof(SetTargetsTraderInterfaceTid), targetPlayer, tid);
+        GetComponent<PhotonView>().RPC(nameof(SetTargetsTraderInterfaceTid), targetPlayer, tid, user_id);
     }
 
 
 
     // even though this rpc should only be sent to the intended target, check anyway for photonview
     [PunRPC]
-    public void SetTargetsTraderInterfaceTid(string tid)
+    public void SetTargetsTraderInterfaceTid(string tid, int user_id)
     {
         List<HumanTraderInterface> humanTraderInterfaces = new List<HumanTraderInterface>();
         humanTraderInterfaces.AddRange(FindObjectsOfType<HumanTraderInterface>());
@@ -37,6 +37,7 @@ public class TraderHuman : Trader
             if (humanTraderInterface.GetComponent<PhotonView>().IsMine)
             {
                 humanTraderInterface.SetMyTrader(tid);
+                myTraderInterface = humanTraderInterface;
             }
         }
     }

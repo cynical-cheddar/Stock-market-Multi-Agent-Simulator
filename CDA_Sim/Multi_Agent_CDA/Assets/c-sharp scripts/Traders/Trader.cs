@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
 
 
 
@@ -25,6 +25,15 @@ public class Trader : MonoBehaviour
     public int blotter_length = 15;
     public List<LOB_Order> orders = new List<LOB_Order>();
     public int n_quotes = 0;
+
+    public TraderRole traderRole;
+
+    [PunRPC]
+
+    public void SetTraderRole_RPC(int traderRole_int)
+    {
+        traderRole = (TraderRole)traderRole_int;
+    }
 
     
     // Start is called before the first frame update

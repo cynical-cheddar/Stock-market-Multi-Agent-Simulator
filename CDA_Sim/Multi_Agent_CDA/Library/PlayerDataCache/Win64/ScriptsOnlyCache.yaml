@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - BotSettingsWriter
     - GameSettingsWriter
     - HumanTraderInterface
+    - LOB_ReaderTest
     - MainPanel
     - PythonCommunicationHandler
     - PythonCommunicator
@@ -144,10 +145,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: SchemaButton
+    fullTypeName: SettingsButton
     methodName: Click
   - assembly: Assembly-CSharp
-    fullTypeName: SettingsButton
+    fullTypeName: SchemaButton
     methodName: Click
   - assembly: Assembly-CSharp
     fullTypeName: BotSettingMenuItem
@@ -245,6 +246,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: AuctionMenuManager
     methodName: Click_LaunchSessionButton
+  - assembly: Assembly-CSharp
+    fullTypeName: BSE
+    methodName: UpdateLOB_JsonForced_From_Input_Field
   sceneClasses:
     Assets/Scenes/LobbyScene.unity:
     - Class: 1
@@ -290,61 +294,61 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1646}
-    - Class: 114
       Script: {instanceID: 1648}
     - Class: 114
       Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1652}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 1900}
+      Script: {instanceID: 1782}
     - Class: 114
-      Script: {instanceID: 1976}
+      Script: {instanceID: 1902}
     - Class: 114
-      Script: {instanceID: 1994}
+      Script: {instanceID: 1978}
     - Class: 114
-      Script: {instanceID: 2014}
+      Script: {instanceID: 1996}
     - Class: 114
-      Script: {instanceID: 2020}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2098}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2100}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 2192}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 2200}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2952}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 3110}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 3308}
     - Class: 114
-      Script: {instanceID: 3668}
+      Script: {instanceID: 3600}
     - Class: 114
-      Script: {instanceID: 3676}
+      Script: {instanceID: 3670}
     - Class: 114
-      Script: {instanceID: 3734}
+      Script: {instanceID: 3678}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 3736}
     - Class: 114
-      Script: {instanceID: 3924}
+      Script: {instanceID: 3910}
     - Class: 114
       Script: {instanceID: 3926}
     - Class: 114
-      Script: {instanceID: 4064}
+      Script: {instanceID: 3928}
+    - Class: 114
+      Script: {instanceID: 4066}
     - Class: 114
       Script: {instanceID: 4514}
     - Class: 114
@@ -455,37 +459,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1646}
-    - Class: 114
       Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 1990}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 1992}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2200}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 3298}
+      Script: {instanceID: 3110}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 3300}
     - Class: 114
-      Script: {instanceID: 3624}
+      Script: {instanceID: 3600}
     - Class: 114
-      Script: {instanceID: 3654}
+      Script: {instanceID: 3626}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 3656}
     - Class: 114
-      Script: {instanceID: 3918}
+      Script: {instanceID: 3678}
     - Class: 114
-      Script: {instanceID: 3974}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 4064}
+      Script: {instanceID: 3920}
     - Class: 114
-      Script: {instanceID: 4104}
+      Script: {instanceID: 3976}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 4066}
+    - Class: 114
+      Script: {instanceID: 4106}
+    - Class: 114
+      Script: {instanceID: 4136}
     - Class: 114
       Script: {instanceID: 4812}
     - Class: 114
@@ -500,6 +506,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6748}
     - Class: 114
       Script: {instanceID: 6864}
+    - Class: 114
+      Script: {instanceID: 24054}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -741,7 +749,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomIsVisibleProperty
   - hash:
       serializedVersion: 2
-      Hash: dd19e408b20f59eafaa180e46b633598
+      Hash: 76299de39585f95928e0a6e39593298a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TraderHuman
@@ -1221,7 +1229,7 @@ ScriptsOnlyBuild:
     className: IsConnectedAndReadyProperty
   - hash:
       serializedVersion: 2
-      Hash: 5070ef18acee10314c84addb6b1cc407
+      Hash: 8404ba3f12c43c632f8c28cdfb44157e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Trader
@@ -1521,13 +1529,13 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: d3bdbfb7223002095aee6e4901ba1904
+      Hash: 1b21fcdbb8b800471c93a3b3ce8b8dfe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TraderBot
   - hash:
       serializedVersion: 2
-      Hash: 9fd437ca39803143af8bb4f4f2b0395b
+      Hash: ced3f65b887fede2d6e5bf2b483776a1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BSE
@@ -2023,6 +2031,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 6443dbf111773a96cbf8eb06a639430b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LOB_ReaderTest
   platform: 19
   scenePathNames:
   - Assets/Scenes/LobbyScene.unity
