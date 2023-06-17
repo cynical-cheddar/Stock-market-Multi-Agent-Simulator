@@ -1,0 +1,1 @@
+Manually replace contents of cda sim's appdata folder with this stuff here
