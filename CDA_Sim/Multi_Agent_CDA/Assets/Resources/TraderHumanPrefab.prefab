@@ -67,10 +67,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713ad418ddddb2a4681099ba3c277496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ttype: 
-  tid: 
-  balance: 0
-  blotter_length: 15
-  n_quotes: 0
-  traderRole: 0
+  traderDetails:
+    ttype: 
+    tid: 
+    balance: 0
+    profit: 0
+    blotter_length: 15
+    orders: []
+    n_quotes: 0
+    traderRole: 2
   photon_user_id: 0

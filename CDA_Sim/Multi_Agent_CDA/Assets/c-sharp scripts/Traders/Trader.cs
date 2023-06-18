@@ -70,6 +70,8 @@ public class Trader : MonoBehaviour
     */
     public TraderDetails traderDetails;
 
+ 
+
 
     protected virtual void Awake()
     {
@@ -83,6 +85,7 @@ public class Trader : MonoBehaviour
     public void SetTraderRole_RPC(int traderRole_int)
     {
         traderDetails.traderRole = (TraderRole)traderRole_int;
+        Debug.Log("set trader role of trader " + traderDetails.tid + " to " + traderDetails.traderRole.ToString());
     }
 
     
@@ -119,5 +122,31 @@ public class Trader : MonoBehaviour
     public virtual void AddProfit(int transaction_profit)
     {
         traderDetails.profit += transaction_profit;
+    }
+
+    public void SetMyOrdersFromBSE()
+    {
+        BSE bse = FindObjectOfType<BSE>();
+        List<LOB_Order> myOrders = new List<LOB_Order>();
+        foreach(LOB_Order order in bse.exchange.orders)
+        {
+            if(order.tid == traderDetails.tid)
+            {
+                myOrders.Add(order);
+            }
+        }
+        traderDetails.orders.Clear();
+        traderDetails.orders = myOrders;
+        traderDetails.n_quotes = traderDetails.orders.Count;
+        // trader details will be synced to other clients including the target's human trader interface
+    }
+
+    public virtual void Order_Add_Success()
+    {
+        SetMyOrdersFromBSE();
+    }
+    public virtual void Order_Remove_Success()
+    {
+        SetMyOrdersFromBSE();
     }
 }

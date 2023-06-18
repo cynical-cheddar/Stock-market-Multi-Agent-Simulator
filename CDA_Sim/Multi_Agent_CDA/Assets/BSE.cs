@@ -33,7 +33,7 @@ public static class Extensions
 
 
 
-
+[Serializable]
 public class LOB_Order
 {
     public string tid;          // trader id
@@ -49,6 +49,8 @@ public class LOB_Order
     }
 }
 
+
+
 public enum BookType
 {
     Bids,
@@ -62,7 +64,7 @@ public enum BookType
 public class LOB_Orderbook_Half
 {
     public BookType bookType;
-    public List<LOB_Order> orders;
+    public List<LOB_Order> orders = new List<LOB_Order>();
 
 
     public int best_price;
@@ -96,8 +98,8 @@ public class LOB_Orderbook_Half
 public class LOB_Orderbook : LOB_Orderbook_Half
 {
 
-    public List<LOB_Order> bids;
-    public List<LOB_Order> asks;
+    public List<LOB_Order> bids = new List<LOB_Order>();
+    public List<LOB_Order> asks = new List<LOB_Order>();
     public List<string> tape;
     public int tape_length = 100000; // max number of events on tape (so we can do millions of orders without crashing)
     public int quote_id = 0;        // unique ID code for each quote accepted onto the book
@@ -148,12 +150,52 @@ public class LOB_Exchange : LOB_Orderbook
 {
     public void Add_Order(LOB_Order order)
     {
-
+        if (order.otype == OrderType.Bid)
+        {
+            bids.Add(order);
+        }
+        else if ( order.otype == OrderType.Ask)
+        {
+            asks.Add(order);
+        }
+        BuildFullOrderList();
     }
 
-    public void Del_Order(float time, LOB_Order order)
+    public void BuildFullOrderList()
     {
+        orders.Clear();
+        orders.AddRange(bids);
+        orders.AddRange(asks);
+    }
 
+    public void Del_Order(float time, LOB_Order remove_order)
+    {
+        int remove_index = 0;
+        if (remove_order.otype == OrderType.Ask) {
+            foreach (LOB_Order ask in asks)
+            {
+                if (ask.qid == remove_order.qid)
+                {
+                    break;
+                }
+                remove_index++;
+            }
+            asks.RemoveAt(remove_index);
+        }
+        else if(remove_order.otype == OrderType.Bid)
+        {
+            foreach (LOB_Order bid in bids)
+            {
+                if (bid.qid == remove_order.qid)
+                {
+                    break;
+                }
+                remove_index++;
+            }
+            bids.RemoveAt(remove_index);
+        }
+
+        BuildFullOrderList();
     }
 
 
@@ -192,7 +234,7 @@ public class BSE : MonoBehaviour, IPunObservable
     string last_synchronised_LOB_JSON = "";
     public string synchronised_LOB_JSON = "";
     SynchronisedLOB synchronisedLOB = new SynchronisedLOB();
-    LOB_Exchange exchange = new LOB_Exchange();
+    public LOB_Exchange exchange = new LOB_Exchange();
 
     public List<Trader> traders = new List<Trader>();
     public List<Trader> buyers = new List<Trader>();
@@ -200,10 +242,76 @@ public class BSE : MonoBehaviour, IPunObservable
 
     HumanTraderInterface myHumanTraderInterface;
 
+    int cur_q_id = 0;
+
+    // the current time in the market session defined by (Time.time - sessionStartTime_System)k
+    float currentTime = 0.0f;
+    // the start of the market session with regards to Time.Time
+    float sessionStartTime_System = 0.0f;
+
+    public bool market_active = false;
+
+    Trader GetTraderFromTid(string tid)
+    {
+        foreach (Trader t in traders)
+        {
+            if(t.traderDetails.tid == tid)
+            {
+                return t;
+            }
+        }
+        Debug.LogError("Could not find trader with tid: " + tid + ". Does it exist or is it part of BSE.traders?");
+        return null;
+    }
+
+
+    // remove an order from the LOB, then send a new copy of the trader's orders upon success via RPC
+    public void RemoveOrder(LOB_Order remove_order)
+    {
+        // remove the order from the exchange
+        exchange.Del_Order(currentTime, remove_order);
+
+
+        // rebuild synchronisedLOB
+        // the synchronised LBO automatically syncs
+        BuildSynchronisedLOB();
+
+        Trader t = GetTraderFromTid(remove_order.tid);
+        t.Order_Remove_Success();
+    }
+
+    // add an order to the LOB, then send a new copy of the trader's orders upon success via RPC
+    public void AddOrder(LOB_Order add_order)
+    {
+        add_order.qid = cur_q_id;
+        add_order.time = synchronised_current_time;
+        // increment counter
+        cur_q_id++;
+        // add to book
+        exchange.Add_Order(add_order);
+
+        // rebuild synchronisedLOB
+        BuildSynchronisedLOB();
+
+
+        // if this was a success, then send an RPC to the trader with appropriate tid. This will eitehr update the UI (if human) or send an acknowledgement to python (if bot)
+        Trader t = GetTraderFromTid(add_order.tid);
+        t.Order_Add_Success();
+    }
+
+
+
+
     // when a human joins the game, they should request the master client to instantiate a
     // human trader and give them a trader interface
 
+    // build the syncrhonised LOB from the exchange
 
+    // TODO: we need to build the synchronised LOB
+    void BuildSynchronisedLOB()
+    {
+        
+    }
 
     // should include a dump trade stats function
     public void DumpTradeStats()
@@ -245,9 +353,20 @@ public class BSE : MonoBehaviour, IPunObservable
         sellers.Clear();
         // shuffle list of traders
         traders.Shuffle();
-        List<List<Trader>> partitions = traders.partition(traders.Count / 2);
-        buyers = partitions[0];
-        sellers = partitions[1];
+
+        int half = traders.Count/2;
+        for(int i = 0; i < half; i++)
+        {
+            buyers.Add(traders[i]);
+        }
+        for(int i = half; i < traders.Count; i++)
+        {
+            sellers.Add(traders[i]);
+        }
+        
+
+
+
     }
 
     void SetTraderRoles()
@@ -279,7 +398,9 @@ public class BSE : MonoBehaviour, IPunObservable
 
     bool has_hti = false;
 
-    void FindMyHumanTraderInterface()
+    [PunRPC]
+
+    public void FindMyHumanTraderInterface()
     {
         if (!PhotonNetwork.IsMasterClient)
         {
@@ -292,6 +413,9 @@ public class BSE : MonoBehaviour, IPunObservable
                     {
                         myHumanTraderInterface = hti;
                         has_hti = true;
+
+                        FindObjectOfType<ClientUIManager>().SetHumanTraderInterface(myHumanTraderInterface);
+
                     }
                 }
             }
@@ -300,16 +424,33 @@ public class BSE : MonoBehaviour, IPunObservable
     }
 
 
-
-    public void MarketSession()
+    IEnumerator SetupMarket()
     {
+        yield return new WaitForSeconds(0.1f);
         exchange = new LOB_Exchange();
         GatherTradersFromEnvironment();
         RandomiseTradersIntoBuyersAndSellers();
         // inform each trader that they are a buyer/seller
+        yield return new WaitForSeconds(0.5f);
         SetTraderRoles();
+        yield return new WaitForSeconds(0.5f);
         // if we are not the master client, find our trader interface
-        FindMyHumanTraderInterface();
+        GetComponent<PhotonView>().RPC(nameof(FindMyHumanTraderInterface), RpcTarget.All);
+
+        // start the session clock:
+        sessionStartTime_System = Time.time;
+
+        market_active = true;
+
+        yield return null;
+    }
+
+
+    public void MarketSession()
+    {
+        StartCoroutine(nameof(SetupMarket));
+
+
     }
 
 
@@ -318,7 +459,9 @@ public class BSE : MonoBehaviour, IPunObservable
 
 
     // ============== COMMS ================
-
+    float synchronised_current_time = 0f;
+    float last_synchronised_current_time = 0f;
+    float synchronised_market_close_time = 120f;
 
     public InputField json_override_input_field;
     public void UpdateLOB_JsonForced_From_Input_Field()
@@ -345,47 +488,19 @@ public class BSE : MonoBehaviour, IPunObservable
 
         else if (stream.IsReading && !PhotonNetwork.IsMasterClient)
         {
+            
             synchronised_LOB_JSON = (string)stream.ReceiveNext();
+            Debug.Log("Sync lob " + synchronised_LOB_JSON);
             // alert the trader interfaces
             if (has_hti) myHumanTraderInterface.Set_LOB_Json(synchronised_LOB_JSON);
         }
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    AuctionSessionManager auctionSessionManager;
     void Start()
     {
-       
+        auctionSessionManager = FindObjectOfType<AuctionSessionManager>();
     }
 
     // Update is called once per frame
@@ -393,7 +508,12 @@ public class BSE : MonoBehaviour, IPunObservable
     // create a new whenever there is a change in state of the main LOB
     void Update()
     {
-        
+        if (PhotonNetwork.IsMasterClient && market_active)
+        {
+            synchronised_current_time = Time.time - sessionStartTime_System;
+            auctionSessionManager.synchronised_current_time = synchronised_current_time;
+            auctionSessionManager.synchronised_closeTime = synchronised_market_close_time;
+        }
     }
 
 

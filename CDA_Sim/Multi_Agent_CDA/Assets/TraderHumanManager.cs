@@ -34,7 +34,7 @@ public class TraderHumanManager : MonoBehaviour
             string tid = "H" + tid_suffix.ToString();
             newTraderHuman.SetTraderTid(tid);
             tid_suffix++;
-
+            Debug.Log("Adding human trader");
             humanTraderInstanceGO.GetComponent<PhotonView>().RPC(nameof(newTraderHuman.SetTid_RPC), RpcTarget.AllBufferedViaServer, tid, userID);
             humanTraderInstanceGO.GetComponent<PhotonView>().RPC(nameof(newTraderHuman.ParentOrphanedTrader_RPC), RpcTarget.AllBufferedViaServer);
 

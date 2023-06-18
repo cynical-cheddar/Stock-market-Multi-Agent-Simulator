@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 
 
-public class AuctionSessionManager : MonoBehaviour
+public class AuctionSessionManager : MonoBehaviour, IPunObservable
 {
 
     public AuctionMenuManager menuManager;
@@ -21,9 +21,18 @@ public class AuctionSessionManager : MonoBehaviour
 
     GameObject my_HumanTraderInterfaceGameObject;
 
+    ClientUIManager clientUIManager;
+
+    class TimeAndClose
+    {
+        public float currentTime;
+        public float closeTime;
+    }
     // Start is called before the first frame update
     private void OnLevelWasLoaded(int level)
     {
+        Debug.Log("OnLevelWasLoaded");
+        clientUIManager = FindObjectOfType<ClientUIManager>();
         if (PhotonNetwork.IsMasterClient)
         {
             menuManager.ShowAdminStartPanel();
@@ -85,6 +94,47 @@ public class AuctionSessionManager : MonoBehaviour
         proceedBotLoad = true;
     }
 
+
+    // TIME CONTROL
+    // Set by master client's BSE
+    public float synchronised_current_time = 0.0f;
+    float last_synchronised_current_time = 0.0f;
+
+    public float synchronised_closeTime = 120f;
+
+    // manage session timings 
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if(clientUIManager == null)
+        {
+            clientUIManager = FindObjectOfType<ClientUIManager>();
+        }
+        if (stream.IsWriting && PhotonNetwork.IsMasterClient)
+        {
+            if (Mathf.Abs(synchronised_current_time - last_synchronised_current_time) > 1)
+            {
+                last_synchronised_current_time = synchronised_current_time;
+                TimeAndClose timeAndClose = new TimeAndClose();
+                timeAndClose.currentTime = synchronised_current_time;
+                timeAndClose.closeTime = synchronised_closeTime;
+                stream.SendNext(JsonUtility.ToJson(timeAndClose));
+            }
+
+            // synchronise the current time and market close time
+        }
+
+        else if (stream.IsReading && !PhotonNetwork.IsMasterClient)
+        {
+            string rec_json = (string)stream.ReceiveNext();
+            TimeAndClose timeAndClose = JsonUtility.FromJson<TimeAndClose>(rec_json);
+            synchronised_current_time = timeAndClose.currentTime;
+            synchronised_closeTime = timeAndClose.closeTime;
+            // alert the trader interfaces
+            if(clientUIManager!=null) clientUIManager.SetCurrentTime(synchronised_current_time, synchronised_closeTime);
+
+        }
+    }
 
 
     IEnumerator InstantiateBotsCoroutine()

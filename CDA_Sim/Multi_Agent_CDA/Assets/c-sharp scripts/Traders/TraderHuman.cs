@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class TraderHuman : Trader
+public class TraderHuman : Trader, IPunObservable
 {
 
     public int photon_user_id = 0;
@@ -13,6 +13,8 @@ public class TraderHuman : Trader
 
     TraderDetails lastTraderDetails;
 
+    BSE bse;
+
 
 
 
@@ -20,7 +22,26 @@ public class TraderHuman : Trader
     {
         base.Awake();
         lastTraderDetails = traderDetails;
+        bse = FindObjectOfType<BSE>();
     }
+
+    public override void Order_Add_Success()
+    {
+        base.Order_Add_Success();
+        // call RPC on human trader interface to play add success noise
+
+        myTraderInterface.GetComponent<PhotonView>().RPC(nameof(myTraderInterface.AddOrderRequestSuccessCallback), RpcTarget.All);
+    }
+
+    public override void Order_Remove_Success()
+    {
+        base.Order_Remove_Success();
+
+        // call RPC on human trader interface to play add success noise
+        myTraderInterface.GetComponent<PhotonView>().RPC(nameof(myTraderInterface.AddOrderRequestSuccessCallback), RpcTarget.All);
+    }
+
+
 
 
     [PunRPC]
@@ -33,7 +54,7 @@ public class TraderHuman : Trader
         Photon.Realtime.Player targetPlayer = PhotonNetwork.CurrentRoom.GetPlayer(user_id);
 
         // bounce back to the player who just jopined and tell them that their trader had been created
-        GetComponent<PhotonView>().RPC(nameof(SetTargetsTraderInterfaceTid), targetPlayer, traderDetails.tid, user_id);
+        GetComponent<PhotonView>().RPC(nameof(SetTargetsTraderInterfaceTid), RpcTarget.All, traderDetails.tid, user_id);
     }
 
 
@@ -46,7 +67,7 @@ public class TraderHuman : Trader
         humanTraderInterfaces.AddRange(FindObjectsOfType<HumanTraderInterface>());
         foreach(HumanTraderInterface humanTraderInterface in humanTraderInterfaces)
         {
-            if (humanTraderInterface.GetComponent<PhotonView>().IsMine)
+            if (humanTraderInterface.GetComponent<PhotonView>().OwnerActorNr == user_id)
             {
                 humanTraderInterface.SetMyTrader(tid);
                 myTraderInterface = humanTraderInterface;
@@ -61,10 +82,43 @@ public class TraderHuman : Trader
         transform.SetParent(traderHumansParent.transform);
     }
 
+    // ask BSE to cancel order if we are the master client
+    [PunRPC]
+    public void CancelOrderRequest(string LOB_Order_JSON)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            LOB_Order cancelOrder = JsonUtility.FromJson<LOB_Order>(LOB_Order_JSON);
+            bse.RemoveOrder(cancelOrder);
+
+        }
+        else
+        {
+            Debug.LogError("This RPC (CancelOrderRequest) should not have ben called on a client other than the master client");
+        }
+    }
+
+    // ask BSE to add order if we are the master client
+    [PunRPC]
+    public void AddOrderRequest(string LOB_Order_JSON)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            LOB_Order addOrder = JsonUtility.FromJson<LOB_Order>(LOB_Order_JSON);
+            bse.AddOrder(addOrder);
+
+        }
+        else
+        {
+            Debug.LogError("This RPC (AddOrderRequest) should not have ben called on a client other than the master client");
+        }
+    }
+
 
 
 
     // check for details so that we may send back details to clients
+    // this is horribly janky
     bool CheckForTraderDetailsChange(TraderDetails last, TraderDetails current)
     {
         if (current.ttype != last.ttype) return true;
@@ -87,28 +141,31 @@ public class TraderHuman : Trader
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        bool send = false;
+        // TODO: Change to false
+        bool send = true;
         if (PhotonNetwork.IsMasterClient)
         {
             if (CheckForTraderDetailsChange(lastTraderDetails, traderDetails))
             {
                 send = true;
             }
+
+            if (send)
+            {
+                if (stream.IsWriting && PhotonNetwork.IsMasterClient)
+                {
+                    stream.SendNext(JsonUtility.ToJson(traderDetails));
+                }
+            }
             lastTraderDetails = traderDetails;
         }
 
-        if (send)
-        {
-            if (stream.IsWriting && PhotonNetwork.IsMasterClient)
-            {
-                stream.SendNext(JsonUtility.ToJson(traderDetails));
-            }
-        }
 
         else if (stream.IsReading && !PhotonNetwork.IsMasterClient)
         {
             string traderDetails_JSON = (string)stream.ReceiveNext();
             traderDetails = JsonUtility.FromJson<TraderDetails>(traderDetails_JSON);
+            Debug.Log(traderDetails_JSON);
 
             // alert the trader interfaces
             if (myTraderInterface != null) myTraderInterface.SetMyTraderDetails(traderDetails);
