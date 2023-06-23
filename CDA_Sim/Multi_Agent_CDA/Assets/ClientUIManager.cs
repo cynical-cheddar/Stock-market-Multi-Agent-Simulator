@@ -19,6 +19,9 @@ public class ClientUIManager : MonoBehaviour
 
     public Transform LOB_asks_listview;
 
+
+   
+
     List<GameObject> bid_menu_list = new List<GameObject>();
 
     List<GameObject> ask_menu_list = new List<GameObject>();
@@ -38,6 +41,10 @@ public class ClientUIManager : MonoBehaviour
     public Text marketCloseTimeText;
 
     public Text output_my_orders;
+
+    [Header("Blotter")]
+    public Transform blotterListViewTransform;
+    public GameObject blotterListItemPrefab;
 
     public AudioSource audioSource;
     public AudioClip failure_error_order_sound;
@@ -63,16 +70,34 @@ public class ClientUIManager : MonoBehaviour
         // update my orders
         UpdateMyOrders(traderDetails.orders);
 
+        // Update my blotter
+        UpdateMyBlotter(traderDetails.blotter);
+
         // update my profit
         profitText.text = "£" + traderDetails.profit.ToString();
 
         audioSource.PlayOneShot(beep);
     }
 
+    public void UpdateMyBlotter(List<PersonalTransactionRecord> records)
+    {
+        foreach(Transform child in blotterListViewTransform)
+        {
+            Destroy(child.gameObject);
+        }
+        records.Reverse();
+        foreach (PersonalTransactionRecord record in records)
+        {
+            GameObject blotterItemInstance = Instantiate(blotterListItemPrefab, blotterListViewTransform);
+            blotterItemInstance.GetComponent<Text>().text = record.DebugRecord();
+            
+        }
+    }
 
 
-    // nowhere is calling this right now, this needs to be called form the human trader interface via RPC from BSe on the master client
-    //TODO
+
+
+
     public void UpdateMyOrders(List<LOB_Order> myOrders)
     {
         foreach(GameObject go in my_orders_menu_list)
@@ -109,6 +134,7 @@ public class ClientUIManager : MonoBehaviour
     public void AddOrderRequest(LOB_Order add_order)
     {
         myHumanTraderInterface.AddOrderRequest(add_order);
+        output_my_orders.text = "";
     }
 
     public void AddOrderRequest_Success()
@@ -145,6 +171,18 @@ public class ClientUIManager : MonoBehaviour
         try
         {
             add_order_request.price = int.Parse(limitPrice_field.text);
+            if(add_order_request.price < 1)
+            {
+                audioSource.PlayOneShot(failure_error_order_sound);
+                output_my_orders.text = "price may not be zero or negative";
+                return;
+            }
+            else if(add_order_request.price > 999999)
+            {
+                audioSource.PlayOneShot(failure_error_order_sound);
+                output_my_orders.text = "price too high";
+                return;
+            }
         }
         catch
         {
@@ -171,6 +209,12 @@ public class ClientUIManager : MonoBehaviour
         AddOrderRequest(add_order_request);
 
 
+    }
+
+    public void NetworkFailure()
+    {
+        audioSource.PlayOneShot(failure_network_order_sound);
+        output_my_orders.text = "network RPC fail";
     }
 
 

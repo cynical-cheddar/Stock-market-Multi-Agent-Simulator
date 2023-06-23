@@ -416,6 +416,7 @@
 "Assets/HumanTraderInterface.cs"
 "Assets/LOB_ReaderTest.cs"
 "Assets/MainPanel.cs"
+"Assets/MyOrderMenuItem.cs"
 "Assets/OrderIndexer.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"

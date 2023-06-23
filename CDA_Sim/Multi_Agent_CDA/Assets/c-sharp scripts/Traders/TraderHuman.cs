@@ -115,6 +115,9 @@ public class TraderHuman : Trader, IPunObservable
     }
 
 
+    // Bookeep override. Send an
+
+
 
 
     // check for details so that we may send back details to clients

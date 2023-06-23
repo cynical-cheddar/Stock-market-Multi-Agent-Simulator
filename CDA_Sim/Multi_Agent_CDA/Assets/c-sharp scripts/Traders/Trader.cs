@@ -25,7 +25,7 @@ public class TraderDetails
     public string tid = "";
     public int balance = 0;
     public int profit = 0;
-    public List<TransactionRecord> blotter = new List<TransactionRecord>();
+    public List<PersonalTransactionRecord> blotter = new List<PersonalTransactionRecord>();
     public int blotter_length = 15;
     public List<LOB_Order> orders = new List<LOB_Order>();
     public int n_quotes = 0;
@@ -40,7 +40,7 @@ public class TraderDetails
         tid = "";
         balance = 0;
         profit = 0;
-        blotter = new List<TransactionRecord>();
+        blotter = new List<PersonalTransactionRecord>();
         blotter_length = 15;
         orders = new List<LOB_Order>();
         n_quotes = 0;
@@ -55,22 +55,80 @@ public class Trader : MonoBehaviour
 {
     protected TestInputManager inputManager;
 
+    // cache used by BSE to store clearing data
+    protected List<QuantisedTransactionRecord> quantisedTransactionRecordCache = new List<QuantisedTransactionRecord> ();
 
-    /*
-    public string ttype = "";
-    public string tid = "";
-    public int balance = 0;
-    public int profit = 0;
-    public List<TransactionRecord> blotter = new List<TransactionRecord>();
-    public int blotter_length = 15;
-    public List<LOB_Order> orders = new List<LOB_Order>();
-    public int n_quotes = 0;
 
-    public TraderRole traderRole;
-    */
+    protected List<PersonalTransactionRecord> personalTransactionRecords = new List<PersonalTransactionRecord>();
+
+
     public TraderDetails traderDetails;
 
- 
+
+    // generates transaction records and notifies self of each unit bought/sold
+    public List<PersonalTransactionRecord> GetAndClearTransactionCache()
+    {
+        Debug.Log("GetAndClearTransactionCache");
+        List<PersonalTransactionRecord>  transactionRecords = new List<PersonalTransactionRecord>();
+        List<int> uniquePrices = new List<int> ();
+        foreach(QuantisedTransactionRecord record in quantisedTransactionRecordCache)
+        {
+            // count number of unique prices
+            if(!uniquePrices.Contains(record.price)) uniquePrices.Add(record.price);
+            // also make a note of purchase/sell
+            UnitTransacted(record);
+        }
+        foreach(int uniquePrice in uniquePrices)
+        {
+            PersonalTransactionRecord personalTransactionRecord = new PersonalTransactionRecord();
+            foreach (QuantisedTransactionRecord record in quantisedTransactionRecordCache)
+            {
+                if(record.price == uniquePrice)
+                {
+                    personalTransactionRecord.price = record.price;
+                    personalTransactionRecord.quantity += 1;
+                    personalTransactionRecord.total_price = uniquePrice * personalTransactionRecord.quantity;
+                    personalTransactionRecord.transactionParticipants_tid = record.transactionParticipants_tid;
+                    personalTransactionRecord.type = record.type;
+                    personalTransactionRecord.time = record.time;
+                    if (traderDetails.traderRole == TraderRole.buyer) personalTransactionRecord.orderType = OrderType.Bid;
+                    else if (traderDetails.traderRole == TraderRole.seller) personalTransactionRecord.orderType = OrderType.Ask;
+                    else
+                    {
+                        Debug.LogError("Trade trying to happen with unassigned trader! tid:" + traderDetails.tid);
+                    }
+
+                }
+            }
+            transactionRecords.Add(personalTransactionRecord);
+        }
+
+
+        ClearTransactionCache();
+        return transactionRecords;
+    }
+
+    void UnitTransacted(QuantisedTransactionRecord transaction)
+    {
+        if(traderDetails.traderRole == TraderRole.buyer)
+        {
+            Debug.Log("unit bought at: " + transaction.price.ToString());
+        }
+        else if(traderDetails.traderRole == TraderRole.seller)
+        {
+            Debug.Log("unit sold at: " + transaction.price.ToString());
+        }
+    }
+
+    public void ClearTransactionCache()
+    {
+        quantisedTransactionRecordCache.Clear();
+    }
+    public void AddQuantisedRecordToCache(QuantisedTransactionRecord q_record)
+    {
+        quantisedTransactionRecordCache.Add(q_record);
+    }
+
 
 
     protected virtual void Awake()
@@ -114,9 +172,15 @@ public class Trader : MonoBehaviour
 
     }
 
-    public void BookKeep(TransactionRecord trade, LOB_Order order, float time)
+    // remember! transaction records can be order, remove, or trade
+    
+    public virtual void BookKeep(PersonalTransactionRecord record)
     {
-
+        if(traderDetails.blotter.Count > traderDetails.blotter_length)
+        {
+            traderDetails.blotter.RemoveAt(0);
+        }
+         traderDetails.blotter.Add(record);
     }
 
     public virtual void AddProfit(int transaction_profit)

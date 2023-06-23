@@ -14,7 +14,8 @@ public class MyOrderMenuItem : MonoBehaviour
     {
         thisOrder = order;
         volume_text.text = thisOrder.quantity.ToString();
-        price_text.text = thisOrder.price.ToString();
+        price_text.text = "£" + thisOrder.price.ToString();
+        clientUIManager = clientUIManager_local;
     }
 
     public void CancelOrder_Click()
