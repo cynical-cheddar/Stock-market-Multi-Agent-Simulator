@@ -30,6 +30,7 @@ public class TraderDetails
     public List<LOB_Order> orders = new List<LOB_Order>();
     public int n_quotes = 0;
     public TraderRole traderRole;
+    public MyCurrentAssignment myCurrentAssignment;
 
 
 
@@ -63,6 +64,30 @@ public class Trader : MonoBehaviour
 
 
     public TraderDetails traderDetails;
+
+
+    BSE bse;
+
+
+
+    public void SetAssignment(Assignment assignment)
+    {
+        
+        traderDetails.myCurrentAssignment = new MyCurrentAssignment();
+        traderDetails.myCurrentAssignment.assignment_id = assignment.assignment_id;
+        traderDetails.myCurrentAssignment.current_quantity = 0;
+        traderDetails.myCurrentAssignment.oType = assignment.oType;
+        traderDetails.myCurrentAssignment.price_threshold = assignment.price_threshold;
+        traderDetails.myCurrentAssignment.quantity_target = assignment.quantity_target;
+
+        // now cancel all current orders
+        foreach(LOB_Order order in traderDetails.orders)
+        {
+            Debug.Log("Cancelling order " + order.Debug_Order());
+            bse.RemoveOrder(order);
+        }
+        
+    }
 
 
     // generates transaction records and notifies self of each unit bought/sold
@@ -134,6 +159,7 @@ public class Trader : MonoBehaviour
     protected virtual void Awake()
     {
         traderDetails = new TraderDetails();
+        bse = FindObjectOfType<BSE>();
     }
 
 
@@ -158,19 +184,6 @@ public class Trader : MonoBehaviour
         traderDetails.tid = new_tid;
     }
 
-
-    // send RPC to the master LOB with order encoded via JSON
-    public void Add_Order(LOB_Order order)
-    {
-
-    }
-
-    // send RPC to the master LOB with order encoded via JSON
-
-    public void Del_Order(LOB_Order order)
-    {
-
-    }
 
     // remember! transaction records can be order, remove, or trade
     

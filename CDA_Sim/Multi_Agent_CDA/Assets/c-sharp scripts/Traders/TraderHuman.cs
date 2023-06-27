@@ -13,7 +13,7 @@ public class TraderHuman : Trader, IPunObservable
 
     TraderDetails lastTraderDetails;
 
-    BSE bse;
+    
 
 
 
@@ -22,7 +22,7 @@ public class TraderHuman : Trader, IPunObservable
     {
         base.Awake();
         lastTraderDetails = traderDetails;
-        bse = FindObjectOfType<BSE>();
+        
     }
 
     public override void Order_Add_Success()

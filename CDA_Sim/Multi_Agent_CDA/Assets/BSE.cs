@@ -303,6 +303,29 @@ public class LOB_Exchange : LOB_Orderbook
     
 }
 
+[Serializable]
+public class Assignment
+{
+    public int assignment_id;
+    public OrderType oType;
+    public int price_threshold;
+    public int quantity_target;
+}
+
+[Serializable]
+public class MyCurrentAssignment : Assignment
+{
+    public int current_quantity;
+}
+
+[Serializable]
+public class AssignmentScheduleItem
+{
+    public Assignment assignment;
+    public string tid;
+    public float time;
+}
+
 
 
 
@@ -339,6 +362,96 @@ public class BSE : MonoBehaviour, IPunObservable
     float sessionStartTime_System = 0.0f;
 
     public bool market_active = false;
+
+
+    public GameSettings gameSettings;
+
+    public List<AssignmentScheduleItem> assignmentSchedule = new List<AssignmentScheduleItem>();
+
+
+    void GenerateAssignmentSchedule()
+    {
+        assignmentSchedule.Clear();
+        // make sure session settings are not null
+        gameSettings = FindObjectOfType<SessionSettings>().gameSettings;
+
+
+        // for every allocation cycle
+        int a_id = 0;
+        // number of allocation cycles over the simulation
+        int n = gameSettings.running_time / gameSettings.assignment_cycle;
+        // int number of allocation cycles elapsed
+        int i = 0;
+
+        for (int t = 0; t<gameSettings.running_time; t+= gameSettings.assignment_cycle)
+        {
+
+            // ALL AT ONCE ALLOCATION
+            if(gameSettings.allocation == Allocation.All)
+            {
+                foreach(Trader b in buyers)
+                {
+                    AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
+                    assignmentScheduleItem.tid = b.traderDetails.tid;
+                    assignmentScheduleItem.time = (float)t;
+                    assignmentScheduleItem.assignment.assignment_id = a_id;
+                    assignmentScheduleItem.assignment.oType = OrderType.Bid;
+                    assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+
+
+                    // TODO!
+                    // this isn't right. stepmode is not sorted by time
+                    // i need to find out
+
+                    int supplyPrice = 0;
+                    if (gameSettings.supply_stepmode == Stepmode.Fixed)
+                    {
+                        // get number of intervals/cycles over the running_time
+                        // linearly interpolate over runtime
+                        int supplyDiff = gameSettings.supply_max - gameSettings.supply_min;
+                        supplyPrice = gameSettings.supply_min + ((supplyDiff / n) * i);
+                    }
+
+                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    // add item to the list
+                    assignmentSchedule.Add(assignmentScheduleItem);
+                    a_id++;
+                }
+                foreach (Trader s in sellers)
+                {
+                    AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
+                    assignmentScheduleItem.tid = s.traderDetails.tid;
+                    assignmentScheduleItem.time = (float)t;
+                    assignmentScheduleItem.assignment.assignment_id = a_id;
+                    assignmentScheduleItem.assignment.oType = OrderType.Ask;
+                    assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+
+
+                    // get number of intervals/cycles over the running_time
+                    // linearly interpolate over runtime
+                    int supplyDiff = gameSettings.supply_max - gameSettings.supply_min;
+                    int supplyPrice = gameSettings.supply_min + ((supplyDiff / n) * i);
+
+                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    // add item to the list
+                    assignmentSchedule.Add(assignmentScheduleItem);
+                    a_id++;
+                }
+            }
+            i++;
+            //else if()
+        }
+
+        // allocation mode is order time within cycle
+        // allocation cycle is cycle interval
+
+        // stepmode refers to order cost
+
+        // offset function is not yet implemented
+
+       
+
+    }
 
 
 
@@ -569,11 +682,11 @@ public class BSE : MonoBehaviour, IPunObservable
 
         if (n_bids > n_asks) n = n_asks;
         else n = n_bids;
-        Debug.Log("AAAAAAAAAAAAAAAAAAAA1");
+
         // iterate through both lists
         for (int i = 0; i < n; i++)
         {
-            Debug.Log("AAAAAAAAAAAAAAAAAAAA2");
+
             Quantised_LOB_Order q_bid = exchange.quantised_bids[i];
             Quantised_LOB_Order q_ask = exchange.quantised_asks[i];
             if(q_bid.price >= q_ask.price)
@@ -950,6 +1063,10 @@ public class BSE : MonoBehaviour, IPunObservable
     void Start()
     {
         auctionSessionManager = FindObjectOfType<AuctionSessionManager>();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            gameSettings = FindObjectOfType<SessionSettings>().gameSettings;
+        }
     }
 
     // Update is called once per frame

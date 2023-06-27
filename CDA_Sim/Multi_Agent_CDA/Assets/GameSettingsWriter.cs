@@ -39,6 +39,7 @@ using System.IO;
         public int assignment_cycle;
 
         public Allocation allocation;
+
     }
 
 
