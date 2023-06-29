@@ -42,6 +42,16 @@ public class ClientUIManager : MonoBehaviour
 
     public Text output_my_orders;
 
+    public Text assignmentText;
+
+    public Text fulfilmentText;
+
+    public AudioClip updateAssignment;
+
+    public AudioSource profitAudioSource;
+    public AudioClip profitAudioClip;
+    public AudioClip no_profitAudioClip;
+
     [Header("Blotter")]
     public Transform blotterListViewTransform;
     public GameObject blotterListItemPrefab;
@@ -55,6 +65,11 @@ public class ClientUIManager : MonoBehaviour
 
     public AudioClip beep;
 
+
+    MyCurrentAssignment myCurrentAssignment = new MyCurrentAssignment();
+
+
+    int cur_profit = 0;
 
     public void SetCurrentTime(float curTime, float marketCloseTime)
     {
@@ -73,11 +88,66 @@ public class ClientUIManager : MonoBehaviour
         // Update my blotter
         UpdateMyBlotter(traderDetails.blotter);
 
+        // Update my assignment
+        bool newAssignment = UpdateMyAssignment(traderDetails.myCurrentAssignment);
         // update my profit
-        profitText.text = "£" + traderDetails.profit.ToString();
+        bool newProfit = UpdateMyProfit(traderDetails.profit);
 
-        audioSource.PlayOneShot(beep);
+        
+
+        if (!newAssignment)
+        {
+            audioSource.PlayOneShot(beep);
+        }
+        else
+        {
+            audioSource.PlayOneShot(updateAssignment, 0.9f);
+        }
     }
+
+    public bool UpdateMyProfit(int newProfit)
+    {
+        if(newProfit != cur_profit)
+        {
+            
+            profitText.text = "£"+cur_profit.ToString();
+
+            if (profitAudioSource.isPlaying == false && newProfit > cur_profit)
+            {
+                profitAudioSource.PlayOneShot(profitAudioClip);
+            }
+            else if(profitAudioSource.isPlaying == false && newProfit < cur_profit)
+            {
+                profitAudioSource.PlayOneShot(no_profitAudioClip);
+            }
+
+            cur_profit = newProfit;
+            return true;
+        }
+        return false;
+    }
+
+    public bool UpdateMyAssignment(MyCurrentAssignment assignment)
+    {
+
+        fulfilmentText.text = assignment.current_quantity.ToString() + "/" + assignment.quantity_target.ToString();
+
+        if(assignment.assignment_id != myCurrentAssignment.assignment_id)
+        {
+            myCurrentAssignment = assignment;
+            if(myCurrentAssignment.oType == OrderType.Bid){
+                assignmentText.text = "BUY " + myCurrentAssignment.quantity_target.ToString() + ", MAX PRICE £" + assignment.price_threshold.ToString() + ". DEADLINE AT " + ((int)myCurrentAssignment.next_assignment_time) + "s";
+            }
+            else if (myCurrentAssignment.oType == OrderType.Ask)
+            {
+                assignmentText.text = "SELL " + myCurrentAssignment.quantity_target.ToString() + ", MIN PRICE £" + assignment.price_threshold.ToString() + ". DEADLINE AT " + ((int)myCurrentAssignment.next_assignment_time) + "s";
+            }
+            return true;
+            
+        }
+        return false;
+    }
+
 
     public void UpdateMyBlotter(List<PersonalTransactionRecord> records)
     {
@@ -146,6 +216,24 @@ public class ClientUIManager : MonoBehaviour
     {
         Debug.Log("CancelOrderRequest_Success");
         audioSource.PlayOneShot(success_cancel_order_sound);
+    }
+
+    public void DealWithRejection(RequestResponse rejection)
+    {
+        if(rejection == RequestResponse.negativeQuantity)
+        {
+            output_my_orders.text = "Negative quantity";
+        }
+        if (rejection == RequestResponse.negativePrice)
+        {
+            output_my_orders.text = "Negative price";
+        }
+        if (rejection == RequestResponse.overQuantity)
+        {
+            output_my_orders.text = "Quantity greater than assignment";
+        }
+
+        audioSource.PlayOneShot(failure_network_order_sound);
     }
 
     public void AddOrderRequest_Click()
@@ -265,6 +353,7 @@ public class ClientUIManager : MonoBehaviour
 
     void Start()
     {
+        myCurrentAssignment.assignment_id = 99999999;
         
     }
 

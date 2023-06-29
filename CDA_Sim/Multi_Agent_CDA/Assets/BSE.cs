@@ -6,6 +6,8 @@ using System.Linq;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
+using org.mariuszgromada.math.mxparser;
+
 
 public static class Extensions
 {
@@ -184,7 +186,7 @@ public class PersonalTransactionRecord : TransactionRecord
         {
             
 
-            return_string = Mathf.FloorToInt(time).ToString() + "s " + buysell + " " + quantity.ToString() + "@ £" + price.ToString() + "[Assignment " + minMax + " £" + assignment_price.ToString() + "] Profit £" + profit.ToString(); 
+            return_string = Mathf.FloorToInt(time).ToString() + "s " + buysell + " " + quantity.ToString() + "@ £" + price.ToString() + "[Assignment " + minMax + " £" + assignment_price.ToString() + "] Profit £" + (profit-1).ToString(); 
         }
         if(type == TransactionType.Cancel)
         {
@@ -310,6 +312,7 @@ public class Assignment
     public OrderType oType;
     public int price_threshold;
     public int quantity_target;
+    public float next_assignment_time;
 }
 
 [Serializable]
@@ -324,6 +327,7 @@ public class AssignmentScheduleItem
     public Assignment assignment;
     public string tid;
     public float time;
+    
 }
 
 
@@ -368,6 +372,77 @@ public class BSE : MonoBehaviour, IPunObservable
 
     public List<AssignmentScheduleItem> assignmentSchedule = new List<AssignmentScheduleItem>();
 
+    public List<AssignmentScheduleItem> assignmentSchedule_issued = new List<AssignmentScheduleItem>();
+
+
+
+    Function demand_offset = new Function("f(t) = t");
+    Function supply_offset = new Function("f(t) = t");
+
+
+    int CalcPriceSupply(int t_i, int time, TraderRole role)
+    {
+        int t_count = 0;
+        if (role == TraderRole.buyer) t_count = buyers.Count;
+        if (role == TraderRole.seller) t_count = sellers.Count;
+        int supplyPrice = 0;
+        if (gameSettings.supply_stepmode == Stepmode.Fixed)
+        {
+            // get number of intervals/cycles over the running_time
+            // linearly interpolate over number of traders
+            int supplyDiff = gameSettings.supply_max - gameSettings.supply_min;
+            supplyPrice = gameSettings.supply_min + ((supplyDiff / t_count) * t_i) + Convert.ToInt32(Math.Round(supply_offset.calculate(time)));
+        }
+        if (gameSettings.supply_stepmode == Stepmode.Random)
+        {
+            // generate random int between supply min and max
+            supplyPrice = UnityEngine.Random.Range(gameSettings.supply_min, gameSettings.supply_max) + Convert.ToInt32(Math.Round(supply_offset.calculate(time)));
+        }
+        if (gameSettings.supply_stepmode == Stepmode.Jitter)
+        {
+            int supplyDiff = gameSettings.supply_max - gameSettings.supply_min;
+            int space = (supplyDiff / t_count);
+            supplyPrice = gameSettings.supply_min + ((supplyDiff / t_count) * t_i) + Convert.ToInt32(Math.Round(supply_offset.calculate(time)));
+            supplyPrice += Convert.ToInt32(UnityEngine.Random.Range(-0.5f * space, 0.5f * space));
+        }
+
+        supplyPrice = Sysmax_Check(supplyPrice);
+        supplyPrice = Sysmin_Check(supplyPrice);
+        return supplyPrice;
+    }
+
+    int CalcPriceDemand(int t_i, int time, TraderRole role)
+    {
+        int t_count = 0;
+        if (role == TraderRole.buyer) t_count = buyers.Count;
+        if (role == TraderRole.seller) t_count = sellers.Count;
+        int demandPrice = 0;
+        if (gameSettings.supply_stepmode == Stepmode.Fixed)
+        {
+            // get number of intervals/cycles over the running_time
+            // linearly interpolate over number of traders
+            int demandDiff = gameSettings.demand_max - gameSettings.demand_min;
+            demandPrice = gameSettings.supply_min + ((demandDiff / t_count) * t_i) + Convert.ToInt32(Math.Round(demand_offset.calculate(time)));
+        }
+        if (gameSettings.supply_stepmode == Stepmode.Random)
+        {
+            // generate random int between supply min and max
+            demandPrice = UnityEngine.Random.Range(gameSettings.demand_min, gameSettings.demand_max) + Convert.ToInt32(Math.Round(demand_offset.calculate(time)));
+        }
+        if (gameSettings.supply_stepmode == Stepmode.Jitter)
+        {
+            int demandDiff = gameSettings.demand_max - gameSettings.demand_min;
+            int space = (demandDiff / t_count);
+            demandPrice = gameSettings.supply_min + ((demandDiff / t_count) * t_i) + Convert.ToInt32(Math.Round(demand_offset.calculate(time)));
+            demandPrice += Convert.ToInt32(UnityEngine.Random.Range(-0.5f * space, 0.5f * space));
+        }
+
+        demandPrice = Sysmax_Check(demandPrice);
+        demandPrice = Sysmin_Check(demandPrice);
+        return demandPrice;
+    }
+
+
 
     void GenerateAssignmentSchedule()
     {
@@ -375,72 +450,154 @@ public class BSE : MonoBehaviour, IPunObservable
         // make sure session settings are not null
         gameSettings = FindObjectOfType<SessionSettings>().gameSettings;
 
+        supply_offset = new Function(gameSettings.supply_offset_function);
+        demand_offset = new Function(gameSettings.demand_offset_function);
 
-        // for every allocation cycle
-        int a_id = 0;
+        // for every assignment
+        int a_id = 1;
         // number of allocation cycles over the simulation
         int n = gameSettings.running_time / gameSettings.assignment_cycle;
         // int number of allocation cycles elapsed
         int i = 0;
 
+        // t jumps of assignment_cycle - denotes time
         for (int t = 0; t<gameSettings.running_time; t+= gameSettings.assignment_cycle)
         {
-
+            Debug.Log(t);
             // ALL AT ONCE ALLOCATION
             if(gameSettings.allocation == Allocation.All)
             {
-                foreach(Trader b in buyers)
+                Debug.Log(t.ToString() + "allocation.all");
+                int b_i = 0;
+                int s_i = 0;
+                foreach (Trader b in buyers)
                 {
+                    Debug.Log(t.ToString() + "allocation.all" + b.traderDetails.tid);
                     AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
                     assignmentScheduleItem.tid = b.traderDetails.tid;
                     assignmentScheduleItem.time = (float)t;
+                    assignmentScheduleItem.assignment = new Assignment();
                     assignmentScheduleItem.assignment.assignment_id = a_id;
                     assignmentScheduleItem.assignment.oType = OrderType.Bid;
                     assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+                    assignmentScheduleItem.assignment.next_assignment_time = 0;
 
+                    int demandPrice = CalcPriceDemand(b_i, t, TraderRole.buyer);
 
-                    // TODO!
-                    // this isn't right. stepmode is not sorted by time
-                    // i need to find out
-
-                    int supplyPrice = 0;
-                    if (gameSettings.supply_stepmode == Stepmode.Fixed)
-                    {
-                        // get number of intervals/cycles over the running_time
-                        // linearly interpolate over runtime
-                        int supplyDiff = gameSettings.supply_max - gameSettings.supply_min;
-                        supplyPrice = gameSettings.supply_min + ((supplyDiff / n) * i);
-                    }
-
-                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    assignmentScheduleItem.assignment.price_threshold = demandPrice;
                     // add item to the list
                     assignmentSchedule.Add(assignmentScheduleItem);
                     a_id++;
+                    b_i++;
                 }
+
+                // ==============
+
                 foreach (Trader s in sellers)
                 {
+                    Debug.Log(t.ToString() + "allocation.all" + s.traderDetails.tid);
                     AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
                     assignmentScheduleItem.tid = s.traderDetails.tid;
                     assignmentScheduleItem.time = (float)t;
+                    assignmentScheduleItem.assignment = new Assignment();
                     assignmentScheduleItem.assignment.assignment_id = a_id;
                     assignmentScheduleItem.assignment.oType = OrderType.Ask;
                     assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+                    assignmentScheduleItem.assignment.next_assignment_time = 0;
 
-
-                    // get number of intervals/cycles over the running_time
-                    // linearly interpolate over runtime
-                    int supplyDiff = gameSettings.supply_max - gameSettings.supply_min;
-                    int supplyPrice = gameSettings.supply_min + ((supplyDiff / n) * i);
+                    int supplyPrice = CalcPriceSupply(b_i, t, TraderRole.seller);
 
                     assignmentScheduleItem.assignment.price_threshold = supplyPrice;
                     // add item to the list
                     assignmentSchedule.Add(assignmentScheduleItem);
                     a_id++;
+                    s_i++;
                 }
             }
+            else if(gameSettings.allocation == Allocation.Drip)
+            {
+                Debug.Log(t.ToString() + "allocation.Drip");
+                int b_i = 0;
+                int s_i = 0;
+                int buyer_gap_interval = gameSettings.assignment_cycle / buyers.Count;
+                int seller_gap_interval = gameSettings.assignment_cycle / sellers.Count;
+
+                foreach (Trader b in buyers)
+                {
+                    Debug.Log(t.ToString() + "allocation.Drip" + b.traderDetails.tid);
+                    AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
+                    assignmentScheduleItem.tid = b.traderDetails.tid;
+                    assignmentScheduleItem.time = (float)t + (float)(buyer_gap_interval * b_i);
+                    assignmentScheduleItem.assignment = new Assignment();
+                    assignmentScheduleItem.assignment.assignment_id = a_id;
+                    assignmentScheduleItem.assignment.oType = OrderType.Bid;
+                    assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+                    assignmentScheduleItem.assignment.next_assignment_time = 0;
+
+                    int supplyPrice = CalcPriceDemand(b_i, t, TraderRole.buyer);
+
+                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    // add item to the list
+                    assignmentSchedule.Add(assignmentScheduleItem);
+                    a_id++;
+                    b_i++;
+                }
+
+                // ==============
+
+                foreach (Trader s in sellers)
+                {
+                    Debug.Log(t.ToString() + "allocation.Drip" + s.traderDetails.tid);
+                    AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
+                    assignmentScheduleItem.tid = s.traderDetails.tid;
+                    assignmentScheduleItem.time = (float)t + seller_gap_interval * s_i;
+                    assignmentScheduleItem.assignment = new Assignment();
+                    assignmentScheduleItem.assignment.assignment_id = a_id;
+                    assignmentScheduleItem.assignment.oType = OrderType.Ask;
+                    assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+                    assignmentScheduleItem.assignment.next_assignment_time = 0;
+
+                    int supplyPrice = CalcPriceSupply(b_i, t, TraderRole.seller);
+
+                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    // add item to the list
+                    assignmentSchedule.Add(assignmentScheduleItem);
+                    a_id++;
+                    s_i++;
+                }
+            }
+            else if(gameSettings.allocation == Allocation.Poisson)
+            {
+                Debug.LogError("Allocation.Poisson not implemented");
+            }
+            else
+            {
+                Debug.LogError("Mate that aint even an allocation type u willy");
+            }
+
             i++;
-            //else if()
+            
         }
+
+        // now, foreach trader, run through the assignmentSchedule backwards, setting assignmentScheduleItem.next_assignment_time as the previous time
+        foreach(Trader t in traders)
+        {
+            string t_tid = t.traderDetails.tid;
+            float laterAssignmentTime = 0;
+            
+            for(int j = assignmentSchedule.Count -1; j >= 0; j--)
+            {
+                if(assignmentSchedule[j].tid == t_tid)
+                {
+                    assignmentSchedule[j].assignment.next_assignment_time = laterAssignmentTime;
+                    laterAssignmentTime = assignmentSchedule[j].time;
+                }
+            }
+        }
+
+        // now order assignment schedule by time
+        // assignmentSchedule
+        assignmentSchedule = assignmentSchedule.OrderBy(a => a.time).ToList();
 
         // allocation mode is order time within cycle
         // allocation cycle is cycle interval
@@ -449,7 +606,7 @@ public class BSE : MonoBehaviour, IPunObservable
 
         // offset function is not yet implemented
 
-       
+
 
     }
 
@@ -515,23 +672,14 @@ public class BSE : MonoBehaviour, IPunObservable
 
         foreach (ClearingPair pair in clearingPairs)
         {
-            /*TransactionRecord transactionRecord = new TransactionRecord();
-            transactionRecord.type = TransactionType.Trade;
-            transactionRecord.transactionParticipants_tid.buyer_tid = pair.bid.originalOrder.tid;
-            transactionRecord.transactionParticipants_tid.seller_tid = pair.ask.originalOrder.tid;
-            transactionRecord.time = synchronised_current_time;
-            // add one to quantity for each trade
-            transactionRecord.quantity = 1;
-            transactionRecord.price = pair.bid.price;
-            quantisedTransactionRecords.Add(transactionRecord);
-            */
+
 
             Trader buyer = GetTraderFromTid(pair.bid.originalOrder.tid);
             Trader seller = GetTraderFromTid(pair.ask.originalOrder.tid);
 
             QuantisedTransactionRecord q_record = new QuantisedTransactionRecord();
             q_record.time = synchronised_current_time;
-            q_record.price = (pair.bid.price + pair.ask.price)/2;
+            q_record.price = (pair.bid.price);
             q_record.transactionParticipants_tid = new TransactionParticipants(pair.bid.originalOrder.tid, pair.ask.originalOrder.tid);
             q_record.type = TransactionType.Trade;
             
@@ -545,7 +693,7 @@ public class BSE : MonoBehaviour, IPunObservable
         }
 
         // gather stats from all traders to build transaction records
-        // we only need to poll the buyers to get the general list
+        
         foreach(Trader t in traders)
         {
             List<PersonalTransactionRecord> personalTransactionRecords = t.GetAndClearTransactionCache();
@@ -562,7 +710,8 @@ public class BSE : MonoBehaviour, IPunObservable
                     impersonalRecord.transactionParticipants_tid = record.transactionParticipants_tid;
                     impersonalRecord.price = record.price;
                     impersonalRecord.total_price = record.total_price;
-                    if(t.traderDetails.traderRole == TraderRole.buyer) exchange.session_transactions.Add(impersonalRecord);
+                    // we only need to poll the buyers to get the general list
+                    if (t.traderDetails.traderRole == TraderRole.buyer) exchange.session_transactions.Add(impersonalRecord);
 
 
                     // send the personal record to the trader, who will inform the trader via RPC (if human) or via socket server (if bot)
@@ -926,6 +1075,8 @@ public class BSE : MonoBehaviour, IPunObservable
         // start the session clock:
         sessionStartTime_System = Time.time;
 
+        GenerateAssignmentSchedule();
+
         market_active = true;
 
         yield return null;
@@ -1066,6 +1217,7 @@ public class BSE : MonoBehaviour, IPunObservable
         if (PhotonNetwork.IsMasterClient)
         {
             gameSettings = FindObjectOfType<SessionSettings>().gameSettings;
+            synchronised_market_close_time = gameSettings.running_time;
         }
     }
 
@@ -1079,6 +1231,20 @@ public class BSE : MonoBehaviour, IPunObservable
             synchronised_current_time = Time.time - sessionStartTime_System;
             auctionSessionManager.synchronised_current_time = synchronised_current_time;
             auctionSessionManager.synchronised_closeTime = synchronised_market_close_time;
+
+
+            if(synchronised_current_time > assignmentSchedule[0].time)
+            {
+                // issue the assignment to the trader with relevant tid
+                Trader t = GetTraderFromTid(assignmentSchedule[0].tid);
+                t.SetAssignment(assignmentSchedule[0].assignment);
+
+                // add to graveyard list
+                assignmentSchedule_issued.Add(assignmentSchedule[0]);
+                // remove
+                assignmentSchedule.RemoveAt(0);
+                
+            }
         }
     }
 

@@ -77,4 +77,11 @@ MonoBehaviour:
     orders: []
     n_quotes: 0
     traderRole: 2
+    myCurrentAssignment:
+      assignment_id: 0
+      oType: 0
+      price_threshold: 0
+      quantity_target: 0
+      next_assignment_time: 0
+      current_quantity: 0
   photon_user_id: 0

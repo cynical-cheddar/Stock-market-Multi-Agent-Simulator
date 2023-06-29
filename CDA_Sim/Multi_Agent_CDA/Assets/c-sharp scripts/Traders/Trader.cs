@@ -66,11 +66,11 @@ public class Trader : MonoBehaviour
     public TraderDetails traderDetails;
 
 
-    BSE bse;
+    protected BSE bse;
 
 
 
-    public void SetAssignment(Assignment assignment)
+    public virtual void SetAssignment(Assignment assignment)
     {
         
         traderDetails.myCurrentAssignment = new MyCurrentAssignment();
@@ -79,9 +79,10 @@ public class Trader : MonoBehaviour
         traderDetails.myCurrentAssignment.oType = assignment.oType;
         traderDetails.myCurrentAssignment.price_threshold = assignment.price_threshold;
         traderDetails.myCurrentAssignment.quantity_target = assignment.quantity_target;
+        traderDetails.myCurrentAssignment.next_assignment_time = assignment.next_assignment_time;
 
         // now cancel all current orders
-        foreach(LOB_Order order in traderDetails.orders)
+        foreach (LOB_Order order in traderDetails.orders)
         {
             Debug.Log("Cancelling order " + order.Debug_Order());
             bse.RemoveOrder(order);
@@ -116,6 +117,16 @@ public class Trader : MonoBehaviour
                     personalTransactionRecord.transactionParticipants_tid = record.transactionParticipants_tid;
                     personalTransactionRecord.type = record.type;
                     personalTransactionRecord.time = record.time;
+                    if (traderDetails.traderRole == TraderRole.buyer)
+                    {
+                        personalTransactionRecord.profit += traderDetails.myCurrentAssignment.price_threshold - record.price;
+                        traderDetails.profit += traderDetails.myCurrentAssignment.price_threshold - record.price;
+                    }
+                    else if (traderDetails.traderRole == TraderRole.seller) {
+                        personalTransactionRecord.profit += record.price - traderDetails.myCurrentAssignment.price_threshold;
+                        traderDetails.profit += record.price - traderDetails.myCurrentAssignment.price_threshold;
+                    }
+
                     if (traderDetails.traderRole == TraderRole.buyer) personalTransactionRecord.orderType = OrderType.Bid;
                     else if (traderDetails.traderRole == TraderRole.seller) personalTransactionRecord.orderType = OrderType.Ask;
                     else
@@ -159,6 +170,7 @@ public class Trader : MonoBehaviour
     protected virtual void Awake()
     {
         traderDetails = new TraderDetails();
+        traderDetails.profit = 0;
         bse = FindObjectOfType<BSE>();
     }
 
@@ -217,6 +229,33 @@ public class Trader : MonoBehaviour
         traderDetails.n_quotes = traderDetails.orders.Count;
         // trader details will be synced to other clients including the target's human trader interface
     }
+
+
+    protected RequestResponse CheckAssignmentCanAllow(LOB_Order addOrder)
+    {
+        int myOrdersQuantity = 0;
+        foreach (LOB_Order o in traderDetails.orders)
+        {
+            myOrdersQuantity += o.quantity;
+        }
+        if (addOrder.quantity > ((traderDetails.myCurrentAssignment.quantity_target - traderDetails.myCurrentAssignment.current_quantity) - myOrdersQuantity))
+        {
+            return RequestResponse.overQuantity;
+        }
+        else if (addOrder.quantity < 1)
+        {
+            return RequestResponse.negativeQuantity;
+        }
+        else if (addOrder.price < 1)
+        {
+            return RequestResponse.negativePrice;
+        }
+
+
+
+        return RequestResponse.allow;
+    }
+
 
     public virtual void Order_Add_Success()
     {

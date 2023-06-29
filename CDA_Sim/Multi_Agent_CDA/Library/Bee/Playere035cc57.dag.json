@@ -240,7 +240,9 @@
         232,
         233,
         234,
-        235
+        235,
+        236,
+        237
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -1808,6 +1810,28 @@
       "DebugActionIndex": 142
     },
     {
+      "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/NetMQ.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/NetMQ.4.0.1.12/lib/netstandard2.1/NetMQ.dll"
+      ],
+      "Outputs": [
+        "Builds/CDA_Simulator_Data/Managed/NetMQ.dll"
+      ],
+      "DebugActionIndex": 143
+    },
+    {
+      "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/MathParser.org-mXparser.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/MathParser.org-mXparser.5.2.1/lib/netstandard21/MathParser.org-mXparser.dll"
+      ],
+      "Outputs": [
+        "Builds/CDA_Simulator_Data/Managed/MathParser.org-mXparser.dll"
+      ],
+      "DebugActionIndex": 144
+    },
+    {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Buffers.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -1816,7 +1840,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Buffers.dll"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Memory.dll",
@@ -1827,7 +1851,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Memory.dll"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Reflection.DispatchProxy.dll",
@@ -1838,7 +1862,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Reflection.DispatchProxy.dll"
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Runtime.dll",
@@ -1849,7 +1873,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Runtime.dll"
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Threading.Tasks.Extensions.dll",
@@ -1860,7 +1884,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Threading.Tasks.Extensions.dll"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/netstandard.dll",
@@ -1871,7 +1895,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Mono.Security.dll",
@@ -1882,7 +1906,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1893,7 +1917,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Configuration.dll",
@@ -1904,7 +1928,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Core.dll",
@@ -1915,7 +1939,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1926,7 +1950,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Data.dll",
@@ -1937,7 +1961,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Drawing.dll",
@@ -1948,7 +1972,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.EnterpriseServices.dll",
@@ -1959,7 +1983,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1970,7 +1994,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.IO.Compression.dll",
@@ -1981,7 +2005,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Net.Http.dll",
@@ -1992,7 +2016,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Numerics.Vectors.dll",
@@ -2003,7 +2027,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Numerics.Vectors.dll"
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Numerics.dll",
@@ -2014,7 +2038,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Runtime.Serialization.dll",
@@ -2025,7 +2049,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Security.dll",
@@ -2036,7 +2060,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2047,7 +2071,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Transactions.dll",
@@ -2058,7 +2082,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Xml.Linq.dll",
@@ -2069,7 +2093,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.Xml.dll",
@@ -2080,7 +2104,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/System.dll",
@@ -2091,7 +2115,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/mscorlib.dll",
@@ -2102,7 +2126,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Assembly-CSharp.pdb",
@@ -2113,7 +2137,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Assembly-CSharp.pdb"
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/PhotonChat.pdb",
@@ -2124,7 +2148,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/PhotonChat.pdb"
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Purchasing.Common.pdb",
@@ -2135,7 +2159,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Purchasing.Common.pdb"
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.pdb",
@@ -2146,7 +2170,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.pdb"
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTCore.pdb",
@@ -2157,7 +2181,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTCore.pdb"
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Telemetry.pdb",
@@ -2168,7 +2192,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Telemetry.pdb"
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.pdb",
@@ -2179,7 +2203,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.pdb"
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Timeline.pdb",
@@ -2190,7 +2214,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Timeline.pdb"
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.TextMeshPro.pdb",
@@ -2201,7 +2225,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.TextMeshPro.pdb"
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityStub.pdb",
@@ -2212,7 +2236,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityStub.pdb"
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Networking.pdb",
@@ -2223,7 +2247,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Networking.pdb"
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Analytics.pdb",
@@ -2234,7 +2258,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Analytics.pdb"
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Advertisements.pdb",
@@ -2245,7 +2269,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Advertisements.pdb"
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/PhotonRealtime.pdb",
@@ -2256,7 +2280,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/PhotonRealtime.pdb"
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Internal.pdb",
@@ -2267,7 +2291,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Internal.pdb"
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.UI.pdb",
@@ -2278,7 +2302,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.UI.pdb"
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.SpatialTracking.pdb",
@@ -2289,7 +2313,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.SpatialTracking.pdb"
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Configuration.pdb",
@@ -2300,7 +2324,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Configuration.pdb"
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleCore.pdb",
@@ -2311,7 +2335,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleCore.pdb"
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.pdb",
@@ -2322,7 +2346,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.pdb"
       ],
-      "DebugActionIndex": 189
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTStub.pdb",
@@ -2333,7 +2357,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTStub.pdb"
       ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.pdb",
@@ -2344,7 +2368,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.pdb"
       ],
-      "DebugActionIndex": 191
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Analytics.DataPrivacy.pdb",
@@ -2355,7 +2379,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Analytics.DataPrivacy.pdb"
       ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Utilities.pdb",
@@ -2366,7 +2390,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Utilities.pdb"
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Analytics.pdb",
@@ -2377,7 +2401,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Analytics.pdb"
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityCore.pdb",
@@ -2388,7 +2412,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityCore.pdb"
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Registration.pdb",
@@ -2399,7 +2423,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Registration.pdb"
       ],
-      "DebugActionIndex": 196
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Codeless.pdb",
@@ -2410,7 +2434,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Codeless.pdb"
       ],
-      "DebugActionIndex": 197
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.XR.LegacyInputHelpers.pdb",
@@ -2421,7 +2445,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.XR.LegacyInputHelpers.pdb"
       ],
-      "DebugActionIndex": 198
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.pdb",
@@ -2432,7 +2456,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.pdb"
       ],
-      "DebugActionIndex": 199
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Scheduler.pdb",
@@ -2443,7 +2467,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Scheduler.pdb"
       ],
-      "DebugActionIndex": 200
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.Internal.pdb",
@@ -2454,7 +2478,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
       ],
-      "DebugActionIndex": 201
+      "DebugActionIndex": 203
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Demos.pdb",
@@ -2465,7 +2489,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Demos.pdb"
       ],
-      "DebugActionIndex": 202
+      "DebugActionIndex": 204
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Stores.pdb",
@@ -2476,7 +2500,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Stores.pdb"
       ],
-      "DebugActionIndex": 203
+      "DebugActionIndex": 205
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Threading.pdb",
@@ -2487,7 +2511,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Threading.pdb"
       ],
-      "DebugActionIndex": 204
+      "DebugActionIndex": 206
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleStub.pdb",
@@ -2498,7 +2522,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleStub.pdb"
       ],
-      "DebugActionIndex": 205
+      "DebugActionIndex": 207
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Device.pdb",
@@ -2509,7 +2533,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Unity.Services.Core.Device.pdb"
       ],
-      "DebugActionIndex": 206
+      "DebugActionIndex": 208
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Managed/Newtonsoft.Json.pdb",
@@ -2520,7 +2544,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Managed/Newtonsoft.Json.pdb"
       ],
-      "DebugActionIndex": 207
+      "DebugActionIndex": 209
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
@@ -2531,7 +2555,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 208
+      "DebugActionIndex": 210
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/app.info",
@@ -2543,9 +2567,9 @@
         "Builds/CDA_Simulator_Data/app.info"
       ],
       "ToBuildDependencies": [
-        208
+        210
       ],
-      "DebugActionIndex": 209
+      "DebugActionIndex": 211
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator_Data/Resources/unity default resources",
@@ -2556,7 +2580,7 @@
       "Outputs": [
         "Builds/CDA_Simulator_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 210
+      "DebugActionIndex": 212
     },
     {
       "Annotation": "CopyFiles Builds/CDA_Simulator.exe",
@@ -2567,7 +2591,7 @@
       "Outputs": [
         "Builds/CDA_Simulator.exe"
       ],
-      "DebugActionIndex": 211
+      "DebugActionIndex": 213
     },
     {
       "Annotation": "CopyFiles Builds/UnityCrashHandler64.exe",
@@ -2578,7 +2602,7 @@
       "Outputs": [
         "Builds/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 212
+      "DebugActionIndex": 214
     },
     {
       "Annotation": "CopyFiles Builds/UnityPlayer.dll",
@@ -2589,7 +2613,7 @@
       "Outputs": [
         "Builds/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 213
+      "DebugActionIndex": 215
     },
     {
       "Annotation": "CopyFiles Builds/WinPixEventRuntime.dll",
@@ -2600,7 +2624,7 @@
       "Outputs": [
         "Builds/WinPixEventRuntime.dll"
       ],
-      "DebugActionIndex": 214
+      "DebugActionIndex": 216
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -2611,7 +2635,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 215
+      "DebugActionIndex": 217
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -2622,7 +2646,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 216
+      "DebugActionIndex": 218
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -2633,7 +2657,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 217
+      "DebugActionIndex": 219
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/config",
@@ -2644,7 +2668,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 218
+      "DebugActionIndex": 220
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -2655,7 +2679,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 219
+      "DebugActionIndex": 221
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -2666,7 +2690,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 220
+      "DebugActionIndex": 222
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -2677,7 +2701,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 221
+      "DebugActionIndex": 223
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -2688,7 +2712,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 222
+      "DebugActionIndex": 224
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -2699,7 +2723,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 223
+      "DebugActionIndex": 225
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -2710,7 +2734,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 224
+      "DebugActionIndex": 226
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -2721,7 +2745,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 225
+      "DebugActionIndex": 227
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -2732,7 +2756,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 226
+      "DebugActionIndex": 228
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -2743,7 +2767,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 227
+      "DebugActionIndex": 229
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -2754,7 +2778,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 228
+      "DebugActionIndex": 230
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -2765,7 +2789,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 229
+      "DebugActionIndex": 231
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -2776,7 +2800,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 230
+      "DebugActionIndex": 232
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -2787,7 +2811,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 231
+      "DebugActionIndex": 233
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -2798,7 +2822,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 232
+      "DebugActionIndex": 234
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -2809,7 +2833,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 233
+      "DebugActionIndex": 235
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -2820,7 +2844,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 234
+      "DebugActionIndex": 236
     },
     {
       "Annotation": "Player",
@@ -3035,8 +3059,8 @@
         205,
         206,
         207,
+        208,
         209,
-        210,
         211,
         212,
         213,
@@ -3060,10 +3084,12 @@
         231,
         232,
         233,
-        234
+        234,
+        235,
+        236
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 235
+      "DebugActionIndex": 237
     }
   ],
   "FileSignatures": [
@@ -3193,6 +3219,9 @@
       "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/AsyncIO.0.1.69/lib/netstandard2.0/AsyncIO.pdb"
     },
     {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/MathParser.org-mXparser.5.2.1/lib/netstandard21/MathParser.org-mXparser.pdb"
+    },
+    {
       "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.pdb"
     },
     {
@@ -3200,6 +3229,9 @@
     },
     {
       "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/NaCl.Net.0.1.13/lib/netstandard2.0/NaCl.pdb"
+    },
+    {
+      "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/NetMQ.4.0.1.12/lib/netstandard2.1/NetMQ.pdb"
     },
     {
       "File": "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.pdb"
@@ -3707,7 +3739,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 235
+          "Player": 237
         }
 ,  "DefaultNodes": [
     0

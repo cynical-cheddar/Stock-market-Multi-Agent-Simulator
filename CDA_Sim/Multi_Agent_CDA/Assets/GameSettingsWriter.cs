@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using System.IO;
+using org.mariuszgromada.math.mxparser;
 
     [Serializable]
     public enum Stepmode
@@ -33,7 +34,8 @@ using System.IO;
         public int demand_max;
         public Stepmode demand_stepmode;
 
-        public string offset_function;
+        public string supply_offset_function;
+        public string demand_offset_function;
 
         public int assignment_volume;
         public int assignment_cycle;
@@ -63,6 +65,9 @@ using System.IO;
         public InputField demand_min_field;
         public InputField demand_max_field;
         public Dropdown demand_stepmode_dropdown;
+
+        public InputField supply_offsetFunction_Input;
+        public InputField demand_offsetFunction_Input;
 
         public InputField assignment_volume_field;
         public InputField assignment_cycle_field;
@@ -113,6 +118,9 @@ using System.IO;
             assignment_cycle_field.text = settings.assignment_cycle.ToString();
 
             allocation_dropdown.value = (int)settings.allocation;
+
+            demand_offsetFunction_Input.text = settings.demand_offset_function;
+            supply_offsetFunction_Input.text = settings.supply_offset_function;
         }
 
         public void ClearOutput()
@@ -284,12 +292,75 @@ using System.IO;
                     current_settings.demand_stepmode = Stepmode.Random;
                 }
 
+
                 // assignment
                 current_settings.assignment_volume = int.Parse(assignment_volume_field.text);
                 current_settings.assignment_cycle = int.Parse(assignment_cycle_field.text);
 
-                // convert to json
-                string json = JsonUtility.ToJson(current_settings);
+
+                if(allocation_dropdown.value == 0)
+                {
+                current_settings.allocation = Allocation.Drip;
+                }
+                if (allocation_dropdown.value == 1)
+                {
+                    current_settings.allocation = Allocation.Poisson;
+                }
+                if (allocation_dropdown.value == 2)
+                {
+                    current_settings.allocation = Allocation.All;
+                }
+
+            // offset 
+            // firstly, attempt to parse expression
+            if (supply_offsetFunction_Input.text != "")
+            {
+                try
+                {
+                    Function supply_offset = new Function(supply_offsetFunction_Input.text);
+
+                    // test function output
+                    //Expression e = new Expression("f(2)", supply_offset);
+
+                    Debug.Log("supply offset function test at f(2) " + supply_offset.calculate(2));
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogError(ex.ToString() + " failure to parse " + supply_offsetFunction_Input.text + " as a function");
+                    return;
+                }
+                current_settings.supply_offset_function = supply_offsetFunction_Input.text;
+            }
+            else
+            {
+                //Function demand_offset = new Function(demand_offsetFunction_Input.text);
+                current_settings.supply_offset_function = "f(t) = t";
+            }
+
+            if (demand_offsetFunction_Input.text != "")
+            {
+                try
+                {
+                    Function demand_offset = new Function(demand_offsetFunction_Input.text);
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogError(ex.ToString() + " failure to parse " + demand_offsetFunction_Input.text + " as a function");
+                    return;
+                }
+
+                current_settings.demand_offset_function = demand_offsetFunction_Input.text;
+            }
+            else
+            {
+                current_settings.demand_offset_function = "f(t) = t";
+            }
+
+
+
+
+            // convert to json
+            string json = JsonUtility.ToJson(current_settings);
                 Debug.Log("JSON: " + current_settings.config_id + " " + json);
 
                 System.IO.File.WriteAllText(Application.persistentDataPath + GlobalPaths.SESSION_SETTINGS_FOLDER + current_settings.config_id + ".json", json);

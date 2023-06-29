@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
+
+public enum RequestResponse
+{
+    allow,
+    overQuantity,
+    negativePrice,
+    negativeQuantity
+
+}
+
 public class HumanTraderInterface : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -19,6 +29,8 @@ public class HumanTraderInterface : MonoBehaviour
     bool setup = false;
 
 
+
+    
 
 
     // human trader interface provides the link between the humanTrader and the ClientUIManager
@@ -78,6 +90,18 @@ public class HumanTraderInterface : MonoBehaviour
     public void AddOrderRequest(LOB_Order add_order)
     {
         my_traderHuman.GetComponent<PhotonView>().RPC(nameof(my_traderHuman.AddOrderRequest), RpcTarget.MasterClient, JsonUtility.ToJson(add_order));
+    }
+
+    [PunRPC]
+    public void AddOrderRequestFailure(int resposne_int)
+    {
+        if (photonView.IsMine)
+        {
+            RequestResponse response = (RequestResponse)resposne_int;
+
+            
+            clientUIManager.DealWithRejection(response);
+        }
     }
 
     // Request to cancel an order in BSE that's lcoated on the master client instance

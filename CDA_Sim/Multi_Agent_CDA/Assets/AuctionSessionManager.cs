@@ -100,7 +100,7 @@ public class AuctionSessionManager : MonoBehaviour, IPunObservable
     public float synchronised_current_time = 0.0f;
     float last_synchronised_current_time = 0.0f;
 
-    public float synchronised_closeTime = 120f;
+    public float synchronised_closeTime = 999999f;
 
     // manage session timings 
 
@@ -178,5 +178,21 @@ public class AuctionSessionManager : MonoBehaviour, IPunObservable
     }
 
     // Update is called once per frame
+    void Start()
+    {
 
+    }
+    bool found = false;
+    void Update()
+    {
+        if (!found && PhotonNetwork.IsMasterClient)
+        {
+            if (FindObjectOfType<SessionSettings>() != null)
+            {
+                synchronised_closeTime = FindObjectOfType<SessionSettings>().gameSettings.running_time;
+                found = true;
+            }
+
+        }
+    }
 }

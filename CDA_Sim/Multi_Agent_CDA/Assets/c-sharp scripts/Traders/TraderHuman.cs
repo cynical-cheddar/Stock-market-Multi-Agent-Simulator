@@ -59,6 +59,8 @@ public class TraderHuman : Trader, IPunObservable
 
 
 
+
+
     // even though this rpc should only be sent to the intended target, check anyway for photonview
     [PunRPC]
     public void SetTargetsTraderInterfaceTid(string tid, int user_id)
@@ -98,6 +100,9 @@ public class TraderHuman : Trader, IPunObservable
         }
     }
 
+
+     
+
     // ask BSE to add order if we are the master client
     [PunRPC]
     public void AddOrderRequest(string LOB_Order_JSON)
@@ -105,7 +110,16 @@ public class TraderHuman : Trader, IPunObservable
         if (PhotonNetwork.IsMasterClient)
         {
             LOB_Order addOrder = JsonUtility.FromJson<LOB_Order>(LOB_Order_JSON);
-            bse.AddOrder(addOrder);
+            RequestResponse response = CheckAssignmentCanAllow(addOrder);
+            if (response == RequestResponse.allow)
+            {
+                bse.AddOrder(addOrder);
+            }
+            else
+            {
+                myTraderInterface.GetComponent<PhotonView>().RPC(nameof(myTraderInterface.AddOrderRequestFailure), RpcTarget.Others, (int)response);
+            }
+            
 
         }
         else
@@ -114,6 +128,9 @@ public class TraderHuman : Trader, IPunObservable
         }
     }
 
+
+
+    
 
     // Bookeep override. Send an
 
