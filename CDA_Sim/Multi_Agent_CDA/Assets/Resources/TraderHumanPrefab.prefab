@@ -49,9 +49,10 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   observableSearch: 2
-  Synchronization: 3
+  Synchronization: 1
   OwnershipTransfer: 1
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 6201807575225820407}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

@@ -88,6 +88,9 @@ public class ClientUIManager : MonoBehaviour
         // Update my blotter
         UpdateMyBlotter(traderDetails.blotter);
 
+        // Update my fulfilment text
+        UpdateMyFulfilment(traderDetails.myCurrentAssignment.current_quantity, traderDetails.myCurrentAssignment.quantity_target);
+
         // Update my assignment
         bool newAssignment = UpdateMyAssignment(traderDetails.myCurrentAssignment);
         // update my profit
@@ -105,18 +108,23 @@ public class ClientUIManager : MonoBehaviour
         }
     }
 
+    void UpdateMyFulfilment(int amt, int max)
+    {
+        fulfilmentText.text = (amt.ToString() + "/" + max.ToString());
+    }
+
     public bool UpdateMyProfit(int newProfit)
     {
         if(newProfit != cur_profit)
         {
             
-            profitText.text = "£"+cur_profit.ToString();
+            profitText.text = "£"+ newProfit.ToString();
 
-            if (profitAudioSource.isPlaying == false && newProfit > cur_profit)
+            if (newProfit > cur_profit)
             {
                 profitAudioSource.PlayOneShot(profitAudioClip);
             }
-            else if(profitAudioSource.isPlaying == false && newProfit < cur_profit)
+            else if(newProfit < cur_profit)
             {
                 profitAudioSource.PlayOneShot(no_profitAudioClip);
             }
@@ -159,7 +167,7 @@ public class ClientUIManager : MonoBehaviour
         foreach (PersonalTransactionRecord record in records)
         {
             GameObject blotterItemInstance = Instantiate(blotterListItemPrefab, blotterListViewTransform);
-            blotterItemInstance.GetComponent<Text>().text = record.DebugRecord();
+            blotterItemInstance.GetComponent<Text>().text = record.DebugRecord(record.assignment_price);
             
         }
     }

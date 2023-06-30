@@ -41,6 +41,8 @@ public class AuctionMenuManager : MonoBehaviour
 
     public Button launchButton;
 
+    public Toggle ensureHumansBothSidesToggle;
+
     void CloseAllPanels()
     {
         foreach(GameObject panel in panel_gameobjects)
@@ -117,6 +119,10 @@ public class AuctionMenuManager : MonoBehaviour
                 ready = true;
                 // play ready sfx and enable button
                 launchButton.interactable = true;
+                if (FindObjectsOfType<TraderHuman>().Length >= 2)
+                {
+                    ensureHumansBothSidesToggle.interactable=true;
+                }
                 audioSource.PlayOneShot(allReady);
             }
         }

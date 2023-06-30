@@ -186,7 +186,7 @@ public class PersonalTransactionRecord : TransactionRecord
         {
             
 
-            return_string = Mathf.FloorToInt(time).ToString() + "s " + buysell + " " + quantity.ToString() + "@ £" + price.ToString() + "[Assignment " + minMax + " £" + assignment_price.ToString() + "] Profit £" + (profit-1).ToString(); 
+            return_string = Mathf.FloorToInt(time).ToString() + "s " + buysell + " " + quantity.ToString() + "@ £" + price.ToString() + "[Assignment " + minMax + " £" + assignment_price.ToString() + "] Profit £" + (profit).ToString(); 
         }
         if(type == TransactionType.Cancel)
         {
@@ -195,6 +195,27 @@ public class PersonalTransactionRecord : TransactionRecord
 
         return return_string;
     }
+    public string DebugRecord(int p)
+    {
+        string return_string = "";
+        string buysell = "BUY";
+        string minMax = "MAX";
+        if (orderType == OrderType.Ask) { buysell = "SELL"; minMax = "MIN"; }
+
+        if (type == TransactionType.Trade)
+        {
+
+
+            return_string = Mathf.FloorToInt(time).ToString() + "s " + buysell + " " + quantity.ToString() + "@ £" + price.ToString() + "[Assignment " + minMax + " £" + p.ToString() + "] Profit £" + (profit).ToString();
+        }
+        if (type == TransactionType.Cancel)
+        {
+            return_string = Mathf.FloorToInt(time).ToString() + "s CANCEL " + buysell + " " + quantity.ToString() + "@ £" + price.ToString();
+        }
+
+        return return_string;
+    }
+
 }
 
 
@@ -374,7 +395,9 @@ public class BSE : MonoBehaviour, IPunObservable
 
     public List<AssignmentScheduleItem> assignmentSchedule_issued = new List<AssignmentScheduleItem>();
 
+    public Toggle ensureHumansToggle;
 
+    //public bool ensureHumansOnEachSide = false;
 
     Function demand_offset = new Function("f(t) = t");
     Function supply_offset = new Function("f(t) = t");
@@ -442,6 +465,11 @@ public class BSE : MonoBehaviour, IPunObservable
         return demandPrice;
     }
 
+
+    float exp_in_range(float a, float b) {
+        double exp_rate_a = Math.Exp(a);
+        return (float)(-Math.Log(exp_rate_a - UnityEngine.Random.Range(0.0f, 1.0f) * (exp_rate_a - Math.Exp(-1 * b))) / 1);
+    }
 
 
     void GenerateAssignmentSchedule()
@@ -566,9 +594,63 @@ public class BSE : MonoBehaviour, IPunObservable
                     s_i++;
                 }
             }
+
+
             else if(gameSettings.allocation == Allocation.Poisson)
             {
-                Debug.LogError("Allocation.Poisson not implemented");
+
+
+                Debug.Log(t.ToString() + "allocation.poisson");
+                int b_i = 0;
+                int s_i = 0;
+                int buyer_gap_interval = gameSettings.assignment_cycle / buyers.Count;
+                int seller_gap_interval = gameSettings.assignment_cycle / sellers.Count;
+
+                foreach (Trader b in buyers)
+                {
+                    Debug.Log(t.ToString() + "allocation.poisson" + b.traderDetails.tid);
+                    AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
+                    assignmentScheduleItem.tid = b.traderDetails.tid;
+                    assignmentScheduleItem.time = (float)t + exp_in_range((float)buyers.Count, (float)buyer_gap_interval);
+                    assignmentScheduleItem.assignment = new Assignment();
+                    assignmentScheduleItem.assignment.assignment_id = a_id;
+                    assignmentScheduleItem.assignment.oType = OrderType.Bid;
+                    assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+                    assignmentScheduleItem.assignment.next_assignment_time = 0;
+
+                    int supplyPrice = CalcPriceDemand(b_i, t, TraderRole.buyer);
+
+                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    // add item to the list
+                    assignmentSchedule.Add(assignmentScheduleItem);
+                    a_id++;
+                    b_i++;
+                }
+
+                // ==============
+
+                foreach (Trader s in sellers)
+                {
+                    Debug.Log(t.ToString() + "allocation.Drip" + s.traderDetails.tid);
+                    AssignmentScheduleItem assignmentScheduleItem = new AssignmentScheduleItem();
+                    assignmentScheduleItem.tid = s.traderDetails.tid;
+                    assignmentScheduleItem.time = (float)t + seller_gap_interval * s_i;
+                    assignmentScheduleItem.assignment = new Assignment();
+                    assignmentScheduleItem.assignment.assignment_id = a_id;
+                    assignmentScheduleItem.assignment.oType = OrderType.Ask;
+                    assignmentScheduleItem.assignment.quantity_target = gameSettings.assignment_volume;
+                    assignmentScheduleItem.assignment.next_assignment_time = 0;
+
+                    int supplyPrice = CalcPriceSupply(b_i, t, TraderRole.seller);
+
+                    assignmentScheduleItem.assignment.price_threshold = supplyPrice;
+                    // add item to the list
+                    assignmentSchedule.Add(assignmentScheduleItem);
+                    a_id++;
+                    s_i++;
+                }
+
+
             }
             else
             {
@@ -980,8 +1062,7 @@ public class BSE : MonoBehaviour, IPunObservable
         }
     }
 
-    // randomise and sort traders into buyers and sellers 
-    void RandomiseTradersIntoBuyersAndSellers()
+    void BuildSides()
     {
         // clear buyer and seller lists
         buyers.Clear();
@@ -989,15 +1070,81 @@ public class BSE : MonoBehaviour, IPunObservable
         // shuffle list of traders
         traders.Shuffle();
 
-        int half = traders.Count/2;
-        for(int i = 0; i < half; i++)
+        int half = traders.Count / 2;
+        for (int i = 0; i < half; i++)
         {
             buyers.Add(traders[i]);
         }
-        for(int i = half; i < traders.Count; i++)
+        for (int i = half; i < traders.Count; i++)
         {
             sellers.Add(traders[i]);
         }
+    }
+
+
+    bool TryEqualBuildRecursive(int i)
+    {
+        bool success = false;
+        if (i > 100) return success;
+        BuildSides();
+        bool foundHumanBuyer = false;
+        bool foundHumanSeller = false;
+        foreach (Trader b in buyers)
+        {
+            if (b.GetType() == typeof(TraderHuman)) foundHumanBuyer = true;
+        }
+        foreach (Trader s in sellers)
+        {
+            if (s.GetType() == typeof(TraderHuman)) foundHumanSeller = true;
+        }
+
+        if (!foundHumanBuyer || !foundHumanSeller) success = TryEqualBuildRecursive(i + 1);
+        else if(foundHumanBuyer && foundHumanSeller) success = true;
+
+        return success;
+    }
+    // randomise and sort traders into buyers and sellers 
+    void RandomiseTradersIntoBuyersAndSellers(bool ensureHumansOnBothSide)
+    {
+        if (!ensureHumansOnBothSide)
+        {
+            BuildSides();
+        }
+        else
+        {
+            // clear buyer and seller lists
+            bool success = TryEqualBuildRecursive(0);
+            if(success) Debug.Log("Jank recursion success ");
+            if (!success) Debug.Log("Jank recursion failure ");
+            /*
+            buyers.Clear();
+            sellers.Clear();
+
+            TraderHuman[] traderHumans = FindObjectsOfType<TraderHuman>();
+            int half = traderHumans.Length / 2;
+            for (int i = 0; i < half; i++)
+            {
+                buyers.Add(traderHumans[i]);
+            }
+            for (int i = half; i < traders.Count; i++)
+            {
+                sellers.Add(traderHumans[i]);
+            }
+            
+            TraderBot[] traderBots = FindObjectsOfType<TraderBot>();
+            half = traderBots.Length / 2;
+            for (int i = 0; i < half; i++)
+            {
+                buyers.Add(traderBots[i]);
+            }
+            for (int i = half; i < traders.Count; i++)
+            {
+                sellers.Add(traderBots[i]);
+            }
+            */
+
+        }
+
         
 
 
@@ -1064,7 +1211,8 @@ public class BSE : MonoBehaviour, IPunObservable
         yield return new WaitForSeconds(0.1f);
         exchange = new LOB_Exchange();
         GatherTradersFromEnvironment();
-        RandomiseTradersIntoBuyersAndSellers();
+        
+        RandomiseTradersIntoBuyersAndSellers(ensureHumansToggle.isOn);
         // inform each trader that they are a buyer/seller
         yield return new WaitForSeconds(0.5f);
         SetTraderRoles();
@@ -1132,14 +1280,33 @@ public class BSE : MonoBehaviour, IPunObservable
             synchronisedLOB.bids.Add(anonymousBid);
         }
 
-        // TODO::
+        // if there exist multiple anonymous orders of the same price, then collate them into a single bid
+        // =========== COLLATE BIDS ===============
         List<int> uniquePrices = new List<int>();
         foreach(AnonymousOrder ao in synchronisedLOB.bids)
         {
-            
+            if(!uniquePrices.Contains(ao.price)) uniquePrices.Add(ao.price);
         }
 
-        // if there exist multiple anonymous orders of the same price, then collate them into a single bid
+        List< AnonymousOrder > collatedBids = new List<AnonymousOrder >();
+        foreach(int price in uniquePrices)
+        {
+            AnonymousOrder collatedOrder = new AnonymousOrder();
+            collatedOrder.quantity = 0;
+            foreach (AnonymousOrder ao in synchronisedLOB.bids)
+            {
+                if(ao.price == price)
+                {
+                    collatedOrder.price = ao.price;
+                    collatedOrder.orderType = ao.orderType;
+                    collatedOrder.quantity += ao.quantity;
+                }
+            }
+            collatedBids.Add(collatedOrder);
+        }
+        synchronisedLOB.bids = collatedBids;
+
+        
 
         if (synchronisedLOB.bids.Count > 0)
         {
@@ -1164,6 +1331,38 @@ public class BSE : MonoBehaviour, IPunObservable
             anonymousAsk.orderType = a.otype;
             synchronisedLOB.asks.Add(anonymousAsk);
         }
+
+
+
+        // if there exist multiple anonymous orders of the same price, then collate them into a single bid
+        // =========== COLLATE BIDS ===============
+        uniquePrices = new List<int>();
+        foreach (AnonymousOrder ao in synchronisedLOB.asks)
+        {
+            if (!uniquePrices.Contains(ao.price)) uniquePrices.Add(ao.price);
+        }
+
+        List<AnonymousOrder> collatedAsks = new List<AnonymousOrder>();
+        foreach (int price in uniquePrices)
+        {
+            AnonymousOrder collatedOrder = new AnonymousOrder();
+            collatedOrder.quantity = 0;
+            foreach (AnonymousOrder ao in synchronisedLOB.asks)
+            {
+                if (ao.price == price)
+                {
+                    collatedOrder.price = ao.price;
+                    collatedOrder.orderType = ao.orderType;
+                    collatedOrder.quantity += ao.quantity;
+                }
+            }
+
+            collatedAsks.Add(collatedOrder);
+        }
+        synchronisedLOB.asks = collatedAsks;
+
+
+
         if (synchronisedLOB.asks.Count > 0)
         {
             synchronisedLOB.bestAsk = synchronisedLOB.asks[0];

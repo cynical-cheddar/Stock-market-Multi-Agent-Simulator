@@ -135,9 +135,13 @@ public class HumanTraderInterface : MonoBehaviour
 
     public void SetMyTraderDetails(TraderDetails trader_Details)
     {
-        myTraderDetails = trader_Details;
-        // tell the UI to update with the new set of details
-        if (photonView.IsMine) clientUIManager.UpdateTraderUI(trader_Details);
+        if (photonView.IsMine)
+        {
+            myTraderDetails = trader_Details;
+            // tell the UI to update with the new set of details
+            if (photonView.IsMine) clientUIManager.UpdateTraderUI(myTraderDetails);
+        }
+
         
 
     }

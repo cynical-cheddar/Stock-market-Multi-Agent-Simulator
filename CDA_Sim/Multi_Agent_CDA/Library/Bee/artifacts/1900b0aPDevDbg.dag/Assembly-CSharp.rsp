@@ -365,6 +365,7 @@
 "Assets/ClientUIManager.cs"
 "Assets/GameSettingsWriter.cs"
 "Assets/Globalpaths.cs"
+"Assets/HumansOnBothSidesIdentifier.cs"
 "Assets/HumanTraderInterface.cs"
 "Assets/LOB_ReaderTest.cs"
 "Assets/MainPanel.cs"

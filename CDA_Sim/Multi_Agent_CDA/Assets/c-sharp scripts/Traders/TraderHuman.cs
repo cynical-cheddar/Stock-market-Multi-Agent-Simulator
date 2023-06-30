@@ -141,10 +141,11 @@ public class TraderHuman : Trader, IPunObservable
     // this is horribly janky
     bool CheckForTraderDetailsChange(TraderDetails last, TraderDetails current)
     {
+        if (current.profit != last.profit) { Debug.Log("new profit on trader " + traderDetails.tid); return true; }
         if (current.ttype != last.ttype) return true;
         if (current.traderRole != last.traderRole) return true;
         if(current.tid != last.tid) return true;
-        if(current.profit != last.profit) return true;
+        
         if(current.orders != last.orders) return true;
         if(current.n_quotes != last.n_quotes) return true;
         if(current.blotter_length != last.blotter_length) return true;
@@ -165,19 +166,24 @@ public class TraderHuman : Trader, IPunObservable
         bool send = true;
         if (PhotonNetwork.IsMasterClient)
         {
+            Debug.Log("A");
+            
             if (CheckForTraderDetailsChange(lastTraderDetails, traderDetails))
             {
                 send = true;
+                Debug.Log("SEND");
             }
 
             if (send)
             {
-                if (stream.IsWriting && PhotonNetwork.IsMasterClient)
+                if (stream.IsWriting)
                 {
+                    Debug.Log("SENDING");
                     stream.SendNext(JsonUtility.ToJson(traderDetails));
                 }
             }
             lastTraderDetails = traderDetails;
+
         }
 
 

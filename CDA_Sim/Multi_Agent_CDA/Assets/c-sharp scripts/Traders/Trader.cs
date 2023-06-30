@@ -81,7 +81,8 @@ public class Trader : MonoBehaviour
         traderDetails.myCurrentAssignment.quantity_target = assignment.quantity_target;
         traderDetails.myCurrentAssignment.next_assignment_time = assignment.next_assignment_time;
 
-        // now cancel all current orders
+
+
         foreach (LOB_Order order in traderDetails.orders)
         {
             Debug.Log("Cancelling order " + order.Debug_Order());
@@ -117,6 +118,9 @@ public class Trader : MonoBehaviour
                     personalTransactionRecord.transactionParticipants_tid = record.transactionParticipants_tid;
                     personalTransactionRecord.type = record.type;
                     personalTransactionRecord.time = record.time;
+
+                    traderDetails.myCurrentAssignment.current_quantity += 1;
+
                     if (traderDetails.traderRole == TraderRole.buyer)
                     {
                         personalTransactionRecord.profit += traderDetails.myCurrentAssignment.price_threshold - record.price;
