@@ -9,8 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/CDA_SIM/[Ll]ibrary/
-/CDA_SIM/Multi_Agent_CDA/[Ll]ibrary/
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
