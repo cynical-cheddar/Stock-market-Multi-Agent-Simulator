@@ -73,6 +73,12 @@ public class LOB_Order
     }
 }
 
+[Serializable]
+public class LOB_Order_Extended_Traders : LOB_Order
+{
+    public List<string> common_tids;
+}
+
 
 [Serializable]
 public enum BookType
@@ -1261,7 +1267,10 @@ public class BSE : MonoBehaviour, IPunObservable
     {
         synchronisedLOB = new SynchronisedLOB();
 
-
+        if (PhotonNetwork.IsMasterClient)
+        {
+            FindObjectOfType<Full_LOB_UI>().UpdateLOB_View(exchange);
+        }
 
         // =========== BIDS
         List<LOB_Order> bids = exchange.bids;
@@ -1335,7 +1344,7 @@ public class BSE : MonoBehaviour, IPunObservable
 
 
         // if there exist multiple anonymous orders of the same price, then collate them into a single bid
-        // =========== COLLATE BIDS ===============
+        // =========== COLLATE ORDERS ===============
         uniquePrices = new List<int>();
         foreach (AnonymousOrder ao in synchronisedLOB.asks)
         {

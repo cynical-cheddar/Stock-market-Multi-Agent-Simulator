@@ -52,6 +52,8 @@ public class ClientUIManager : MonoBehaviour
     public AudioClip profitAudioClip;
     public AudioClip no_profitAudioClip;
 
+    public Text my_tid_text;
+
     [Header("Blotter")]
     public Transform blotterListViewTransform;
     public GameObject blotterListItemPrefab;
@@ -81,6 +83,8 @@ public class ClientUIManager : MonoBehaviour
     public void UpdateTraderUI(TraderDetails traderDetails)
     {
         Debug.Log("UpdateTraderUI with: " + JsonUtility.ToJson(traderDetails));
+
+        my_tid_text.text = traderDetails.tid;
 
         // update my orders
         UpdateMyOrders(traderDetails.orders);
@@ -143,7 +147,13 @@ public class ClientUIManager : MonoBehaviour
         if(assignment.assignment_id != myCurrentAssignment.assignment_id)
         {
             myCurrentAssignment = assignment;
-            if(myCurrentAssignment.oType == OrderType.Bid){
+
+            if(myCurrentAssignment.quantity_target == 0)
+            {
+                assignmentText.text = "AWAITING ASSIGNMENT";
+            }
+
+            else if(myCurrentAssignment.oType == OrderType.Bid){
                 assignmentText.text = "BUY " + myCurrentAssignment.quantity_target.ToString() + ", MAX PRICE £" + assignment.price_threshold.ToString() + ". DEADLINE AT " + ((int)myCurrentAssignment.next_assignment_time) + "s";
             }
             else if (myCurrentAssignment.oType == OrderType.Ask)

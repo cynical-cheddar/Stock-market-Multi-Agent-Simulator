@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1920
-    y: -101
-    width: 1920
-    height: 997
+    x: 0
+    y: 43.2
+    width: 3072
+    height: 1644.8
   m_ShowMode: 4
   m_Title: Scene
   m_RootView: {fileID: 2}
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 3072
+    height: 1644.8
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 3072
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 1624.8
+    width: 3072
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 947
+    width: 3072
+    height: 1594.8
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 40
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,8 +139,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1499
-    height: 947
+    width: 2398.4
+    height: 1594.8
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
@@ -164,8 +164,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1499
-    height: 640
+    width: 2398.4
+    height: 1076.8
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -187,13 +187,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 365
-    height: 640
+    width: 584
+    height: 1076.8
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -211,17 +211,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 365
+    x: 584
     y: 0
-    width: 1134
-    height: 640
+    width: 1814.3999
+    height: 1076.8
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 15}
   m_Panes:
+  - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 17}
-  - {fileID: 13}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
@@ -240,15 +240,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 640
-    width: 1499
-    height: 307
+    y: 1076.8
+    width: 2398.4
+    height: 518
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 14}
+  - {fileID: 17}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &11
@@ -266,417 +266,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1499
+    x: 2398.4
     y: 0
-    width: 421
-    height: 947
+    width: 673.6001
+    height: 1594.8
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 12}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcf6ea9ed8fc4074da149ff7d600ca45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: NuGet
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 3334
-    y: -71
-    width: 505
-    height: 926
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  availablePackages:
-  - Id: MathParser.org-mXparser
-    Version: 5.2.1
-    Authors: Mariusz Gromada
-    Description: 'mXparser is a super easy, rich, fast and highly flexible math expression
-      parser library (parser and evaluator of mathematical expressions / formulas
-      provided as plain text / string). Software delivers easy to use API for JAVA,
-      Android and C# .NET/MONO (Common Language Specification compliant: F#, Visual
-      Basic, C++/CLI). *** If you find the software useful donation or purchase is
-      something you might consider: https://mathparser.org/donate/ *** Online store:
-      https://payhip.com/INFIMA *** Scalar Scientific Calculator, Charts and Scripts,
-      Scalar Lite: https://play.google.com/store/apps/details?id=org.mathparser.scalar.lite
-      *** Scalar Pro: https://play.google.com/store/apps/details?id=org.mathparser.scalar.pro
-      *** ScalarMath.org: https://scalarmath.org/ *** MathSpace.pl: https://mathspace.pl/
-      ***'
-    DownloadCount: 1652559
-    DownloadUrl: https://www.nuget.org/api/v2/package/MathParser.org-mXparser/5.2.1
-    icon: {fileID: 0}
-    IconUrl: https://api.nuget.org/v3-flatcontainer/mathparser.org-mxparser/5.2.1/icon
-    LicenseUrl: https://www.nuget.org/packages/MathParser.org-mXparser/5.2.1/license
-    ProjectUrl: https://mathparser.org/
-    ReleaseNotes: 'v.5.2 Orion: Orion - Improvement and standardization of descriptions
-      and messages. Definition of your own translations. Exporting help in multiple
-      formats. Clones for thread safe. Performance improvement.'
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 'mXparser is a super easy, rich, fast and highly flexible math expression
-      parser library (parser and evaluator of mathematical expressions / formulas
-      provided as plain text / string). Software delivers easy to use API for JAVA,
-      Android and C# .NET/MONO (Common Language Specification compliant: F#, Visual
-      Basic, C++/CLI). Expression parser comes with extensive documentation, easy
-      to follow tutorial, "Hello World!" projects for different languages explained
-      with many screenshots, and finally - last, but not least - performance test
-      summary. Formula evaluator is distributed under the DUAL LICENSE model, that
-      is designed to meet the needs of both Non-Commercial Use as well as Commercial
-      Use.'
-    Title: "mXparser \u2013 Math Expressions Parser / Formula Evaluator library for
-      JAVA Android C# .NET/MONO (.NET Framework, .NET Core, .NET Standard, .NET PCL,
-      Xamarin.Android, Xamarin.iOS) CLS compliant"
-  defaultIcon: {fileID: 2800000, guid: 0efa0a38ec1ce484896502259d7ee8f7, type: 3}
-  hasRefreshed: 1
-  numberToSkip: 0
-  updatePackages:
-  - Id: Microsoft.Bcl.AsyncInterfaces
-    Version: 7.0.0
-    Authors: Microsoft
-    Description: 'Provides the IAsyncEnumerable<T> and IAsyncDisposable interfaces
-      and helper types for .NET Standard 2.0. This package is not required starting
-      with .NET Standard 2.1 and .NET Core 3.0.
-
-
-      Commonly Used Types:
-
-      System.IAsyncDisposable
-
-      System.Collections.Generic.IAsyncEnumerable
-
-      System.Collections.Generic.IAsyncEnumerator'
-    DownloadCount: 985050955
-    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/7.0.0
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: Microsoft.Bcl.AsyncInterfaces
-  - Id: Microsoft.Extensions.ObjectPool
-    Version: 7.0.8
-    Authors: Microsoft
-    Description: 'A simple object pool implementation.
-
-
-      This package was built
-      from the source code at https://github.com/dotnet/aspnetcore/tree/3c37ef8f5358abb303c05d299f029fca7d867d56'
-    DownloadCount: 942057457
-    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Extensions.ObjectPool/7.0.8
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://asp.net/
-    ReleaseNotes: 
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: Microsoft.Extensions.ObjectPool
-  - Id: System.Formats.Asn1
-    Version: 7.0.0
-    Authors: Microsoft
-    Description: 'Provides classes that can read and write the ASN.1 BER, CER, and
-      DER data formats.
-
-
-      Commonly Used Types:
-
-      System.Formats.Asn1.AsnReader
-
-      System.Formats.Asn1.AsnWriter'
-    DownloadCount: 185885941
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Formats.Asn1/7.0.0
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Formats.Asn1
-  - Id: System.Memory
-    Version: 4.5.5
-    Authors: Microsoft
-    Description: "Provides types for efficient representation and pooling of managed,
-      stack, and native memory segments and sequences of such segments, along with
-      primitives to parse and format UTF-8 encoded text stored in those memory segments.\n\nCommonly
-      Used Types:\nSystem.Span\nSystem.ReadOnlySpan\nSystem.Memory\nSystem.ReadOnlyMemory\nSystem.Buffers.MemoryPool\nSystem.Buffers.ReadOnlySequence\nSystem.Buffers.Text.Utf8Parser\nSystem.Buffers.Text.Utf8Formatter\n\n32b491939fbd125f304031c35038b1e14b4e3958
-      \nWhen using NuGet 3.x this package requires at least version 3.4."
-    DownloadCount: 2115680749
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Memory/4.5.5
-    icon: {fileID: 0}
-    IconUrl: http://go.microsoft.com/fwlink/?LinkID=288859
-    LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Memory
-  - Id: System.Private.ServiceModel
-    Version: 4.10.2
-    Authors: Microsoft
-    Description: Package Description
-    DownloadCount: 226718574
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.10.2
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://github.com/dotnet/wcf
-    ReleaseNotes: 
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Private.ServiceModel
-  - Id: System.Runtime.CompilerServices.Unsafe
-    Version: 6.0.0
-    Authors: Microsoft
-    Description: 'Provides the System.Runtime.CompilerServices.Unsafe class, which
-      provides generic, low-level functionality for manipulating pointers.
-
-
-      Commonly
-      Used Types:
-
-      System.Runtime.CompilerServices.Unsafe'
-    DownloadCount: 2147483647
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Runtime.CompilerServices.Unsafe
-  - Id: System.Security.AccessControl
-    Version: 6.0.0
-    Authors: Microsoft
-    Description: 'Provides base classes that enable managing access and audit control
-      lists on securable objects.
-
-
-      Commonly Used Types:
-
-      System.Security.AccessControl.AccessRule
-
-      System.Security.AccessControl.AuditRule
-
-      System.Security.AccessControl.ObjectAccessRule
-
-      System.Security.AccessControl.ObjectAuditRule
-
-      System.Security.AccessControl.ObjectSecurity'
-    DownloadCount: 1448735974
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.AccessControl/6.0.0
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Security.AccessControl
-  - Id: System.Security.Cryptography.Pkcs
-    Version: 7.0.3
-    Authors: Microsoft
-    Description: 'Provides support for PKCS and CMS algorithms.
-
-
-      Commonly
-      Used Types:
-
-      System.Security.Cryptography.Pkcs.EnvelopedCms'
-    DownloadCount: 481515327
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/7.0.3
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Security.Cryptography.Pkcs
-  - Id: System.Security.Cryptography.Xml
-    Version: 7.0.1
-    Authors: Microsoft
-    Description: 'Provides classes to support the creation and validation of XML
-      digital signatures. The classes in this namespace implement the World Wide
-      Web Consortium Recommendation, "XML-Signature Syntax and Processing", described
-      at http://www.w3.org/TR/xmldsig-core/.
-
-
-      Commonly Used Types:
-
-      System.Security.Cryptography.Xml.CipherData
-
-      System.Security.Cryptography.Xml.CipherReference
-
-      System.Security.Cryptography.Xml.DataObject
-
-      System.Security.Cryptography.Xml.DataReference
-
-      System.Security.Cryptography.Xml.DSAKeyValue
-
-      System.Security.Cryptography.Xml.EncryptedData
-
-      System.Security.Cryptography.Xml.EncryptedKey
-
-      System.Security.Cryptography.Xml.EncryptedReference
-
-      System.Security.Cryptography.Xml.EncryptedType
-
-      System.Security.Cryptography.Xml.EncryptedXml
-
-      System.Security.Cryptography.Xml.EncryptionMethod
-
-      System.Security.Cryptography.Xml.EncryptionProperty
-
-      System.Security.Cryptography.Xml.EncryptionPropertyCollection
-
-      System.Security.Cryptography.Xml.KeyInfo
-
-      System.Security.Cryptography.Xml.KeyInfoClause
-
-      System.Security.Cryptography.Xml.KeyInfoEncryptedKey
-
-      System.Security.Cryptography.Xml.KeyInfoName
-
-      System.Security.Cryptography.Xml.KeyInfoNode
-
-      System.Security.Cryptography.Xml.KeyInfoRetrievalMethod
-
-      System.Security.Cryptography.Xml.KeyInfoX509Data
-
-      System.Security.Cryptography.Xml.KeyReference
-
-      System.Security.Cryptography.Xml.Reference
-
-      System.Security.Cryptography.Xml.ReferenceList
-
-      System.Security.Cryptography.Xml.RSAKeyValue
-
-      System.Security.Cryptography.Xml.Signature
-
-      System.Security.Cryptography.Xml.SignedInfo
-
-      System.Security.Cryptography.Xml.SignedXml
-
-      System.Security.Cryptography.Xml.Transform
-
-      System.Security.Cryptography.Xml.TransformChain
-
-      System.Security.Cryptography.Xml.XmlDecryptionTransform
-
-      System.Security.Cryptography.Xml.XmlDsigBase64Transform
-
-      System.Security.Cryptography.Xml.XmlDsigC14NTransform
-
-      System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform
-
-      System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform
-
-      System.Security.Cryptography.Xml.XmlDsigExcC14NTransform
-
-      System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform
-
-      System.Security.Cryptography.Xml.XmlDsigXPathTransform
-
-      System.Security.Cryptography.Xml.XmlDsigXsltTransform
-
-      System.Security.Cryptography.Xml.XmlLicenseTransform'
-    DownloadCount: 451825438
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/7.0.1
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Security.Cryptography.Xml
-  - Id: System.Security.Permissions
-    Version: 7.0.0
-    Authors: Microsoft
-    Description: Provides types supporting Code Access Security (CAS).
-    DownloadCount: 1043754788
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.Security.Permissions/7.0.0
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://dot.net/
-    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.Security.Permissions
-  - Id: System.ServiceModel.Primitives
-    Version: 6.0.0
-    Authors: Microsoft
-    Description: Provides the common types used by all of the WCF libraries.
-    DownloadCount: 233214024
-    DownloadUrl: https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/6.0.0
-    icon: {fileID: 0}
-    IconUrl: 
-    LicenseUrl: https://licenses.nuget.org/MIT
-    ProjectUrl: https://github.com/dotnet/wcf
-    ReleaseNotes: 
-    RepositoryBranch: 
-    RepositoryCommit: 
-    RepositoryType: 0
-    RepositoryUrl: 
-    Summary: 
-    Title: System.ServiceModel.Primitives
---- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -692,7 +293,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Package Manager
-    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -704,7 +305,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &14
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -720,19 +321,19 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 569
-    width: 1498
-    height: 286
+    x: 0
+    y: 1150.4
+    width: 2397.4
+    height: 497
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,14 +349,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: -71
-    width: 364
-    height: 619
+    x: 0
+    y: 73.6
+    width: 583
+    height: 1055.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -765,7 +366,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d0e9feffdee9feffe0e9feffe2e9feff2001ffff0e09fffff04fffff0c74ffff6a7affffba7affff007dffff3a7dffff2a7fffff968dffff2297ffff00a1ffffc4aaffff52aeffffbab4ffff56bbffffa8bbfffff0bdffff2abeffff56c4ffffaccaffffe2d1ffff2cd9ffffa6e9fffff6e9ffff3eecffff78ecffff70f0ffff28fbfffff4ffffff24600000fa620000fccd00003ae8000074020100aa1c0100fc630100326f010048b501009ab5010054b60100bafa010090fd0100fefd01000afe010042170200ec1702004e18020082180200c8180200b4190200
+      m_ExpandedIDs: a694fffff494ffff4897ffff8297fffffa97ffff369fffffe4a7ffff32a8ffff80aaffffbaaaffff34abffffbcbbffffe8bdffff3ec2ffff5cc5ffff36d7ffffa0dcfffff4dcffff42dfffff7cdffffff0eaffff78f2ffffc2f9ffff28fbfffff4ffffff3c5f0000ae5f00006c610000cc610000e4610000b4620000f8630000b2640000366500000c660000206600007a6600009c66000080cb0000accc0000b0cd000010ce0000f8ce00003cd0000052d2000066d20000c0d20000e2d20000b2d3000024d40000e2d5000042d600005ad600002ad700006ed800002ad90000aed9000084da000098da0000e6da0000f2da000014db00004c220100962301007c240100242501007225010088290100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -789,7 +390,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -805,14 +406,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2285
-    y: -71
-    width: 1132
-    height: 619
+    x: 584
+    y: 73.6
+    width: 1812.3999
+    height: 1055.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -823,7 +424,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -176, y: -25.599976}
-      snapOffsetDelta: {x: 0, y: -0.4000244}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1069,9 +670,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5670.387, y: 165.00793, z: 6897.944}
+    m_Target: {x: 1901.1873, y: 1019.01666, z: 8603.319}
     speed: 2
-    m_Value: {x: 5670.387, y: 165.00793, z: 6897.944}
+    m_Value: {x: 1901.1873, y: 1019.01666, z: 8603.319}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1117,13 +718,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.044302907, y: -0.20766592, z: 0.00942796, w: -0.9771677}
+    m_Target: {x: 0.008688575, y: 0.018595004, z: 0.00017449583, w: -0.9998062}
     speed: 2
-    m_Value: {x: -0.043006003, y: -0.18858235, z: 0.00827929, w: -0.9810803}
+    m_Value: {x: 0.0086884275, y: 0.01859469, z: 0.00017449287, w: -0.9997893}
   m_Size:
-    m_Target: 6133.97
+    m_Target: 5953.7476
     speed: 2
-    m_Value: 5869.828
+    m_Value: 5953.7476
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1148,7 +749,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1164,14 +765,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2285
-    y: -71
-    width: 1132
-    height: 618
+    x: 584
+    y: 73.6
+    width: 1812.3999
+    height: 1055.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1202,10 +803,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1920
-    m_HBaseRangeMax: 1920
-    m_VBaseRangeMin: -1080
-    m_VBaseRangeMax: 1080
+    m_HBaseRangeMin: -1536
+    m_HBaseRangeMax: 1536
+    m_VBaseRangeMin: -864
+    m_VBaseRangeMax: 864
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1223,23 +824,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1132
-      height: 597
-    m_Scale: {x: 0.27638888, y: 0.27638888}
-    m_Translation: {x: 566, y: 298.5}
+      width: 1812.3999
+      height: 1034.8
+    m_Scale: {x: 0.5899739, y: 0.5899739}
+    m_Translation: {x: 906.19995, y: 517.4}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -2047.8392
-      y: -1080
-      width: 4095.6785
-      height: 2160
+      x: -1536
+      y: -876.988
+      width: 3072
+      height: 1753.976
     m_MinimalGUI: 1
-  m_defaultScale: 0.27638888
-  m_LastWindowPixelSize: {x: 1132, y: 618}
+  m_defaultScale: 0.5899739
+  m_LastWindowPixelSize: {x: 2265.5, y: 1319.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1247,7 +848,7 @@ MonoBehaviour:
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
   m_showToolbarOnFullscreen: 0
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1263,20 +864,20 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 569
-    width: 1498
-    height: 286
+    x: 0
+    y: 1150.4
+    width: 2397.4
+    height: 497
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: lobb
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -1288,22 +889,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures
+    - Assets
     m_Globs: []
-    m_OriginalText: 
+    m_OriginalText: lobb
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Textures
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Repos\StocksSimulator\Stock-marget-Multi-Agent-Simulator\CDA_Sim\Multi_Agent_CDA
+  m_LastProjectPath: E:\_Stock_Simulator\Stock-market-Multi-Agent-Simulator\CDA_Sim\Multi_Agent_CDA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: c25c0000
-    m_LastClickedID: 23746
-    m_ExpandedIDs: 00000000685c0000aa5c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 625c0000
+    m_LastClickedID: 23650
+    m_ExpandedIDs: 00000000625c0000ae5c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1331,7 +932,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000685c0000
+    m_ExpandedIDs: 00000000625c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1375,7 +976,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1387,7 +988,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 401
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1403,14 +1004,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3419
-    y: -71
-    width: 420
-    height: 926
+    x: 2398.4001
+    y: 73.6
+    width: 672.6001
+    height: 1573.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
