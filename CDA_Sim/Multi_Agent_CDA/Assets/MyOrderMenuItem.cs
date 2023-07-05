@@ -18,6 +18,14 @@ public class MyOrderMenuItem : MonoBehaviour
         clientUIManager = clientUIManager_local;
     }
 
+    public void SetupMenuItemInactive(LOB_Order order)
+    {
+        thisOrder = order;
+        volume_text.text = thisOrder.quantity.ToString();
+        price_text.text = "£" + thisOrder.price.ToString();
+        GetComponentInChildren<Button>().interactable = false;
+    }
+
     public void CancelOrder_Click()
     {
         clientUIManager.CancelOrderRequest(thisOrder);

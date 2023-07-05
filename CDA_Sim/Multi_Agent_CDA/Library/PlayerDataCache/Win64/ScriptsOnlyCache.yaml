@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdminTraderMenuItem
     - AdminUIManager
     - AuctionMenuManager
     - AuctionSessionManager
@@ -8,6 +9,7 @@ ScriptsOnlyBuild:
     - BotSettingMenuItem
     - BotSettingsWriter
     - ClientUIManager
+    - CodeMonkey.Assets
     - Full_LOB_UI
     - GameSettingsWriter
     - GeneralMenuOrderItem
@@ -29,7 +31,9 @@ ScriptsOnlyBuild:
     - TraderHuman
     - TraderHumanManager
     - TraderHumansGoIdentifier
+    - TraderViewUI
     - WhiteLevel
+    - Window_Graph
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -99,6 +103,7 @@ ScriptsOnlyBuild:
   serializedClasses:
     Assembly-CSharp:
     - Allocation
+    - AnonymousOrder
     - BookType
     - BotSettings
     - GameSettings
@@ -106,6 +111,7 @@ ScriptsOnlyBuild:
     - LOB_Order
     - MyCurrentAssignment
     - Stepmode
+    - SynchronisedLOB
     - TraderDetails
     PhotonRealtime:
     - Photon.Realtime.AppSettings
@@ -255,14 +261,29 @@ ScriptsOnlyBuild:
     fullTypeName: MyOrderMenuItem
     methodName: CancelOrder_Click
   - assembly: Assembly-CSharp
+    fullTypeName: AdminTraderMenuItem
+    methodName: ClickMenuItem
+  - assembly: Assembly-CSharp
     fullTypeName: AuctionMenuManager
     methodName: Click_InstantiateBotsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: AdminUIManager
+    methodName: Trader_Page_Click
+  - assembly: Assembly-CSharp
+    fullTypeName: AdminUIManager
+    methodName: Lob_Page_Click
   - assembly: Assembly-CSharp
     fullTypeName: AuctionMenuManager
     methodName: Click_LaunchSessionButton
   - assembly: Assembly-CSharp
     fullTypeName: ClientUIManager
     methodName: AddOrderRequest_Click
+  - assembly: Assembly-CSharp
+    fullTypeName: AdminUIManager
+    methodName: Menu_Page_Click
+  - assembly: Assembly-CSharp
+    fullTypeName: AdminUIManager
+    methodName: Graph_Page_Click
   sceneClasses:
     Assets/Scenes/LobbyScene.unity:
     - Class: 1
@@ -314,103 +335,105 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1658}
     - Class: 114
-      Script: {instanceID: 1662}
-    - Class: 114
-      Script: {instanceID: 1792}
-    - Class: 114
-      Script: {instanceID: 1912}
-    - Class: 114
-      Script: {instanceID: 1988}
-    - Class: 114
-      Script: {instanceID: 2006}
+      Script: {instanceID: 1898}
     - Class: 114
       Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2034}
+      Script: {instanceID: 2144}
     - Class: 114
-      Script: {instanceID: 2112}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2214}
+      Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2266}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2436}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2444}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 3202}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3068}
     - Class: 114
-      Script: {instanceID: 3630}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3702}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 3710}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 3768}
+      Script: {instanceID: 3564}
     - Class: 114
-      Script: {instanceID: 3944}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 3960}
+      Script: {instanceID: 3928}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 3936}
     - Class: 114
-      Script: {instanceID: 4100}
+      Script: {instanceID: 3992}
     - Class: 114
-      Script: {instanceID: 4552}
+      Script: {instanceID: 4170}
     - Class: 114
-      Script: {instanceID: 4568}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 4796}
+      Script: {instanceID: 4188}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 4326}
     - Class: 114
-      Script: {instanceID: 5076}
+      Script: {instanceID: 4772}
     - Class: 114
-      Script: {instanceID: 5208}
+      Script: {instanceID: 4788}
     - Class: 114
-      Script: {instanceID: 5284}
+      Script: {instanceID: 5016}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 5286}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5290}
     - Class: 114
-      Script: {instanceID: 5452}
+      Script: {instanceID: 5424}
     - Class: 114
-      Script: {instanceID: 5458}
+      Script: {instanceID: 5500}
     - Class: 114
-      Script: {instanceID: 5540}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 5604}
+      Script: {instanceID: 5568}
     - Class: 114
-      Script: {instanceID: 5608}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5672}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 6078}
+      Script: {instanceID: 5814}
     - Class: 114
-      Script: {instanceID: 6188}
+      Script: {instanceID: 5818}
     - Class: 114
-      Script: {instanceID: 6190}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6294}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 6424}
+      Script: {instanceID: 6284}
     - Class: 114
-      Script: {instanceID: 6806}
+      Script: {instanceID: 6392}
     - Class: 114
-      Script: {instanceID: 6826}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 6918}
+      Script: {instanceID: 6496}
+    - Class: 114
+      Script: {instanceID: 6626}
+    - Class: 114
+      Script: {instanceID: 7006}
+    - Class: 114
+      Script: {instanceID: 7026}
+    - Class: 114
+      Script: {instanceID: 7114}
+    - Class: 114
+      Script: {instanceID: 158926}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -479,69 +502,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1658}
     - Class: 114
-      Script: {instanceID: 1708}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2214}
+      Script: {instanceID: 2444}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2928}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 3328}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3630}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 3656}
+      Script: {instanceID: 3884}
     - Class: 114
-      Script: {instanceID: 3686}
+      Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 3690}
+      Script: {instanceID: 3936}
     - Class: 114
-      Script: {instanceID: 3710}
-    - Class: 114
-      Script: {instanceID: 3944}
-    - Class: 114
-      Script: {instanceID: 3954}
-    - Class: 114
-      Script: {instanceID: 3960}
-    - Class: 114
-      Script: {instanceID: 4010}
-    - Class: 114
-      Script: {instanceID: 4100}
-    - Class: 114
-      Script: {instanceID: 4140}
+      Script: {instanceID: 4008}
     - Class: 114
       Script: {instanceID: 4170}
     - Class: 114
-      Script: {instanceID: 4852}
+      Script: {instanceID: 4180}
     - Class: 114
-      Script: {instanceID: 5164}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 5278}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 4326}
     - Class: 114
-      Script: {instanceID: 5608}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 5984}
+      Script: {instanceID: 4394}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 6078}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 6294}
+      Script: {instanceID: 5378}
     - Class: 114
-      Script: {instanceID: 6806}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 6884}
+      Script: {instanceID: 5494}
     - Class: 114
-      Script: {instanceID: 6926}
+      Script: {instanceID: 5568}
     - Class: 114
-      Script: {instanceID: 26560}
+      Script: {instanceID: 5818}
     - Class: 114
-      Script: {instanceID: 26582}
+      Script: {instanceID: 6192}
+    - Class: 114
+      Script: {instanceID: 6204}
+    - Class: 114
+      Script: {instanceID: 6284}
+    - Class: 114
+      Script: {instanceID: 6496}
+    - Class: 114
+      Script: {instanceID: 7006}
+    - Class: 114
+      Script: {instanceID: 7080}
+    - Class: 114
+      Script: {instanceID: 7122}
+    - Class: 114
+      Script: {instanceID: 27306}
+    - Class: 114
+      Script: {instanceID: 27320}
+    - Class: 114
+      Script: {instanceID: 156842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1119,12 +1148,6 @@ ScriptsOnlyBuild:
     className: AuctionSessionManager
   - hash:
       serializedVersion: 2
-      Hash: 0de7873c2d958276fbc358ad349e586e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MyOrderMenuItem
-  - hash:
-      serializedVersion: 2
       Hash: 34fa63a30926bcf55d7323dae76be890
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1165,6 +1188,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsButton
+  - hash:
+      serializedVersion: 2
+      Hash: 8ccfee9b3d9ce81e37e089df17cda381
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Full_LOB_UI
   - hash:
       serializedVersion: 2
       Hash: c7b9385de9fd55499d563ac8783bbda2
@@ -1291,6 +1320,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TraderBotsGoIdentifier
+  - hash:
+      serializedVersion: 2
+      Hash: 0de7873c2d958276fbc358ad349e586e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MyOrderMenuItem
   - hash:
       serializedVersion: 2
       Hash: f4f39b64f410b0cd98b49df4bad0eb7e
@@ -1581,10 +1616,16 @@ ScriptsOnlyBuild:
     className: TraderBot
   - hash:
       serializedVersion: 2
-      Hash: f18968aa26131666668d0b6281503fc8
+      Hash: 758b800e09cfe48ebc9258e1024ff3c8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BSE
+  - hash:
+      serializedVersion: 2
+      Hash: d97282cac5d8fd27b382501a27a0ce86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GeneralMenuOrderItem
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1851,7 +1892,7 @@ ScriptsOnlyBuild:
     className: IAPListener
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: a1c149b888e959b52180393cc48f17f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AdminUIManager
@@ -2103,18 +2144,66 @@ ScriptsOnlyBuild:
     className: LOB_ReaderTest
   - hash:
       serializedVersion: 2
-      Hash: 8ccfee9b3d9ce81e37e089df17cda381
+      Hash: a507ff5c6a4f90260bb2e9907277e6c0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Full_LOB_UI
+    className: TraderViewUI
   - hash:
       serializedVersion: 2
-      Hash: d97282cac5d8fd27b382501a27a0ce86
+      Hash: 9255f935928daeab600f4c2b398473cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GeneralMenuOrderItem
+    className: AdminTraderMenuItem
+  - hash:
+      serializedVersion: 2
+      Hash: 22bb59a8ef2b692f3c2df5bbdcfee2f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Window_Graph
+  - hash:
+      serializedVersion: 2
+      Hash: 77e50970803f747cd0953de2dd9d9fc5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.Utils
+    className: Button_Sprite
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: CameraFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 4941c10e505d3b7d82e225671be49795
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey
+    className: Assets
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: ComponentActions
+  - hash:
+      serializedVersion: 2
+      Hash: 5b0cf668b35210d0f11a0d91dfefa495
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: PositionRendererSorter
+  - hash:
+      serializedVersion: 2
+      Hash: f1fec394f74854107fc91a0c16a21d62
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.Utils
+    className: Button_UI
+  - hash:
+      serializedVersion: 2
+      Hash: 71f56fa4882381900ee0cea217824e9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: CameraFollowSetup
   platform: 19
   scenePathNames:
   - Assets/Scenes/LobbyScene.unity
   - Assets/Scenes/PythonCommsTest.unity
-  playerPath: E:/_Stock_Simulator/Stock-market-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Builds/CDA_Simulator.exe
+  playerPath: D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Builds/CDA_Simulator.exe

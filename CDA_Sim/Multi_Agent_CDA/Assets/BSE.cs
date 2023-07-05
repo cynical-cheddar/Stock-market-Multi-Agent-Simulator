@@ -370,6 +370,10 @@ public class AssignmentScheduleItem
 public class BSE : MonoBehaviour, IPunObservable
 {
 
+    [Header("Admin ui to set")]
+    public Full_LOB_UI full_LOB_UI;
+    public TraderViewUI traderViewUI;
+    public Window_Graph window_Graph;
 
     int bse_sys_minprice = 1;              // minimum price in the system, in cents/pennies
     int bse_sys_maxprice = 500;                  // maximum price in the system, in cents/pennies
@@ -377,7 +381,7 @@ public class BSE : MonoBehaviour, IPunObservable
 
     string last_synchronised_LOB_JSON = "";
     public string synchronised_LOB_JSON = "";
-    SynchronisedLOB synchronisedLOB = new SynchronisedLOB();
+    public SynchronisedLOB synchronisedLOB = new SynchronisedLOB();
     public LOB_Exchange exchange = new LOB_Exchange();
 
     public List<Trader> traders = new List<Trader>();
@@ -826,8 +830,33 @@ public class BSE : MonoBehaviour, IPunObservable
             t.SetMyOrdersFromBSE();
         }
 
+        
+
+
+        // update master client trader view
+
+        
+        traderViewUI.UpdateTraderListView(traders);
         BuildSynchronisedLOB();
 
+        if (PhotonNetwork.IsMasterClient)
+        {
+            traderViewUI.UpdateInfo();
+        }
+        /*
+        List<int> prices = new List<int>();
+        foreach(TransactionRecord r in exchange.session_transactions)
+        {
+            prices.Add(r.price);
+        }
+        */
+        ForceShowWindowGraph();
+    }
+
+    public void ForceShowWindowGraph()
+    {
+
+        window_Graph.ShowGraph(exchange.session_transactions);
     }
 
     List<LOB_Order> GenerateOrdersFromQuantised(OrderType oType)
@@ -984,6 +1013,11 @@ public class BSE : MonoBehaviour, IPunObservable
 
         Trader t = GetTraderFromTid(remove_order.tid);
         t.Order_Remove_Success();
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            traderViewUI.UpdateInfo();
+        }
     }
 
     // add an order to the LOB, then send a new copy of the trader's orders upon success via RPC
@@ -1010,6 +1044,11 @@ public class BSE : MonoBehaviour, IPunObservable
         // if this was a success, then send an RPC to the trader with appropriate tid. This will eitehr update the UI (if human) or send an acknowledgement to python (if bot)
         Trader t = GetTraderFromTid(add_order.tid);
         t.Order_Add_Success();
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            traderViewUI.UpdateInfo();
+        }
     }
 
 
@@ -1021,7 +1060,7 @@ public class BSE : MonoBehaviour, IPunObservable
 
 
 
-    Trader GetTraderFromTid(string tid)
+    public Trader GetTraderFromTid(string tid)
     {
         foreach (Trader t in traders)
         {
@@ -1231,6 +1270,11 @@ public class BSE : MonoBehaviour, IPunObservable
 
         GenerateAssignmentSchedule();
 
+        traderViewUI.UpdateTraderListView(traders);
+
+
+        
+
         market_active = true;
 
         yield return null;
@@ -1269,7 +1313,8 @@ public class BSE : MonoBehaviour, IPunObservable
 
         if (PhotonNetwork.IsMasterClient)
         {
-            FindObjectOfType<Full_LOB_UI>().UpdateLOB_View(exchange);
+            full_LOB_UI.UpdateLOB_View(exchange);
+
         }
 
         // =========== BIDS
@@ -1381,6 +1426,11 @@ public class BSE : MonoBehaviour, IPunObservable
 
         // set the new synchronised lob json string
         synchronised_LOB_JSON = JsonUtility.ToJson(synchronisedLOB);
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            traderViewUI.UpdateInfo();
+        }
     }
 
 
