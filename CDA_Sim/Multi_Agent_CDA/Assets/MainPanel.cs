@@ -7,6 +7,7 @@ using ExitGames.Client.Photon;
 using Photon.Realtime;
 using Photon.Pun;
 using System.IO;
+using UnityEngine.SceneManagement;
 public class MainPanel : MonoBehaviourPunCallbacks
 {
         [Header("Login Panel")]
@@ -47,28 +48,57 @@ public class MainPanel : MonoBehaviourPunCallbacks
     public AudioSource audioSource;
     public AudioClip error_sound;
     public Text output;
-        #region UNITY
-
-        public void Awake()
-        {
-            PhotonNetwork.AutomaticallySyncScene = true;
-
-            cachedRoomList = new Dictionary<string, RoomInfo>();
-            roomListEntries = new Dictionary<string, GameObject>();
-
-            PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
-
-            RoomNameInputField.text = "Session " + Random.Range(1000, 10000);
-            MaxPlayersInputField.text = "10";
 
 
-        }
+    // called first
 
-        #endregion
+    /*
+    void OnEnable()
+    {
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-        #region PUN CALLBACKS
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        PhotonNetwork.AutomaticallySyncScene = true;
 
-        public override void OnConnectedToMaster()
+        cachedRoomList = new Dictionary<string, RoomInfo>();
+        roomListEntries = new Dictionary<string, GameObject>();
+
+        PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
+
+        RoomNameInputField.text = "Session " + Random.Range(1000, 10000);
+        MaxPlayersInputField.text = "10";
+    }*/
+
+    private void Awake()
+    {
+        Debug.Log("AWAKE");
+        PhotonNetwork.AutomaticallySyncScene = true;
+
+        cachedRoomList = new Dictionary<string, RoomInfo>();
+        roomListEntries = new Dictionary<string, GameObject>();
+
+        PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
+
+        RoomNameInputField.text = "Session " + Random.Range(1000, 10000);
+        MaxPlayersInputField.text = "10";
+    }
+
+
+    #region UNITY
+
+
+
+
+
+    #endregion
+
+    #region PUN CALLBACKS
+
+    public override void OnConnectedToMaster()
         {
             this.SetActivePanel(SelectionPanel.name);
         }

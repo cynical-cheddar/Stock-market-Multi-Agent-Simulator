@@ -364,6 +364,7 @@
 "Assets/c-sharp scripts/Traders/TraderBot.cs"
 "Assets/c-sharp scripts/Traders/TraderBotManager.cs"
 "Assets/c-sharp scripts/Traders/TraderHuman.cs"
+"Assets/ClientQuitMenu.cs"
 "Assets/ClientUIManager.cs"
 "Assets/CodeMonkey/Assets.cs"
 "Assets/CodeMonkey/CMDebug.cs"
@@ -412,6 +413,7 @@
 "Assets/TraderHumanManager.cs"
 "Assets/TraderHumansGoIdentifier.cs"
 "Assets/TraderViewUI.cs"
+"Assets/TransactionSynchroniser.cs"
 "Assets/WhiteLevel.cs"
 -langversion:9.0
 

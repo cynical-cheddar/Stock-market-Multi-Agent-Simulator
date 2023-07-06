@@ -1,14 +1,4 @@
-﻿/* 
-    ------------------- Code Monkey -------------------
-
-    Thank you for downloading this package
-    I hope you find it useful in your projects
-    If you have any questions let me know
-    Cheers!
-
-               unitycodemonkey.com
-    --------------------------------------------------
- */
+﻿
 
 using System;
 using System.Collections;
@@ -45,6 +35,8 @@ public class Window_Graph : MonoBehaviour {
     private float xSize;
     private bool startYScaleAtZero;
 
+
+
     private void Awake() {
         // Grab base objects references
         graphContainer = transform.Find("graphContainer").GetComponent<RectTransform>();
@@ -73,6 +65,9 @@ public class Window_Graph : MonoBehaviour {
         HideTooltip();
     }
 
+
+    public int tooltipFontSize = 20;
+
     private void ShowTooltip(string tooltipText, Vector2 anchoredPosition) {
         // Show Tooltip GameObject
         tooltipGameObject.SetActive(true);
@@ -81,6 +76,7 @@ public class Window_Graph : MonoBehaviour {
 
         Text tooltipUIText = tooltipGameObject.transform.Find("text").GetComponent<Text>();
         tooltipUIText.text = tooltipText;
+        tooltipUIText.fontSize = tooltipFontSize;
 
         float textPaddingSize = 4f;
         Vector2 backgroundSize = new Vector2(
@@ -128,6 +124,8 @@ public class Window_Graph : MonoBehaviour {
         if (graphVisual == null) {
             graphVisual = lineGraphVisual;
         }
+        IGraphVisual bars = barChartVisual;
+
         this.graphVisual = graphVisual;
 
 
@@ -180,8 +178,16 @@ public class Window_Graph : MonoBehaviour {
         float graphWidth = graphContainer.sizeDelta.x;
         float graphHeight = graphContainer.sizeDelta.y;
 
-        float yMinimum, yMaximum;
-        CalculateYScale(out yMinimum, out yMaximum);
+        float yMinimum, yMaximum, yMaximum_volume;
+
+        
+        CalculateYScale(out yMinimum, out yMaximum, out yMaximum_volume);
+
+        if (yMaximum_volume < 10)
+        {
+            yMaximum_volume = 10;
+        }
+
 
         // Set the distance between each point on the graph 
         xSize = graphWidth / (maxVisibleValueAmount + 1);
@@ -192,21 +198,50 @@ public class Window_Graph : MonoBehaviour {
             //float xPosition = xSize + xIndex * xSize;
             float xPosition = (valueList[i].time) * xSize;
             float yPosition = ((valueList[i].price - yMinimum) / (yMaximum - yMinimum)) * graphHeight;
-
+            float yPosition_volume = ((valueList[i].quantity) / (yMaximum_volume)) * graphHeight * 1f;
             // Add data point visual
-            string tooltipText = getAxisLabelY(valueList[i].price);
+            string tooltipText = "Price: £" + getAxisLabelY(valueList[i].price) + " , Volume: " + valueList[i].quantity;
             IGraphVisualObject graphVisualObject = graphVisual.CreateGraphVisualObject(new Vector2(xPosition, yPosition), xSize, tooltipText);
             graphVisualObjectList.Add(graphVisualObject);
 
+            IGraphVisualObject barVisualObject = barChartVisual.CreateGraphVisualObject(new Vector2(xPosition, yPosition_volume), xSize, tooltipText);
+            graphVisualObjectList.Add(barVisualObject);
+
+
+            xIndex++;
+        }
+
+        int second_increase_amt = 10;
+        if(maxVisibleValueAmount > 100)
+        {
+            second_increase_amt = 20;
+        }
+        else if(maxVisibleValueAmount > 200)
+        {
+            second_increase_amt = 40;
+        }
+        else if (maxVisibleValueAmount > 300)
+        {
+            second_increase_amt = 60;
+        }
+        else if (maxVisibleValueAmount > 400)
+        {
+            second_increase_amt = 80;
+        }
+
+        for (int i = 0; i <= maxVisibleValueAmount; i+= second_increase_amt)
+        {
+
+            float xPosition = (i) * xSize;
             // Duplicate the x label template
             RectTransform labelX = Instantiate(labelTemplateX);
             labelX.SetParent(graphContainer, false);
             labelX.gameObject.SetActive(true);
             labelX.anchoredPosition = new Vector2(xPosition, -7f);
-            labelX.GetComponent<Text>().text = MathF.Round(valueList[i].time, 3).ToString() + "s";
+            labelX.GetComponent<Text>().text = i.ToString();
             labelX.GetComponent<Text>().fontSize = fontsize;
             gameObjectList.Add(labelX.gameObject);
-            
+
             // Duplicate the x dash template
             RectTransform dashX = Instantiate(dashTemplateX);
             dashX.SetParent(dashContainer, false);
@@ -214,9 +249,11 @@ public class Window_Graph : MonoBehaviour {
             dashX.anchoredPosition = new Vector2(xPosition, -3f);
             dashX.sizeDelta = new Vector2(graphHeight, dashX.sizeDelta.y);
             gameObjectList.Add(dashX.gameObject);
-
-            xIndex++;
         }
+
+
+
+
 
         // Set up separators on the y axis
         int separatorCount = 10;
@@ -232,6 +269,21 @@ public class Window_Graph : MonoBehaviour {
             yLabelList.Add(labelY);
             gameObjectList.Add(labelY.gameObject);
 
+
+            // Duplicate the label template for QUANTITY
+            RectTransform labelY_q = Instantiate(labelTemplateY);
+            labelY_q.SetParent(graphContainer, false);
+            labelY_q.gameObject.SetActive(true);
+            normalizedValue = i * 1f / separatorCount;
+            labelY_q.anchoredPosition = new Vector2(graphContainer.rect.width + 10, normalizedValue * graphHeight);
+            labelY_q.GetComponent<Text>().text = getAxisLabelY(yMinimum + (normalizedValue * (yMaximum_volume)));
+            labelY_q.GetComponent<Text>().fontSize = fontsize;
+            yLabelList.Add(labelY_q);
+            gameObjectList.Add(labelY_q.gameObject);
+
+
+
+
             // Duplicate the dash template
             RectTransform dashY = Instantiate(dashTemplateY);
             dashY.SetParent(dashContainer, false);
@@ -240,6 +292,9 @@ public class Window_Graph : MonoBehaviour {
             dashY.sizeDelta = new Vector2(graphWidth, dashY.sizeDelta.y);
             gameObjectList.Add(dashY.gameObject);
         }
+
+
+
     }
 
     public void UpdateLastIndexValue(TransactionRecord value) {
@@ -247,8 +302,8 @@ public class Window_Graph : MonoBehaviour {
     }
 
     public void UpdateValue(int index, TransactionRecord value) {
-        float yMinimumBefore, yMaximumBefore;
-        CalculateYScale(out yMinimumBefore, out yMaximumBefore);
+        float yMinimumBefore, yMaximumBefore, yMaximumVol;
+        CalculateYScale(out yMinimumBefore, out yMaximumBefore, out yMaximumVol);
 
         valueList[index] = value;
 
@@ -256,7 +311,7 @@ public class Window_Graph : MonoBehaviour {
         float graphHeight = graphContainer.sizeDelta.y;
         
         float yMinimum, yMaximum;
-        CalculateYScale(out yMinimum, out yMaximum);
+        CalculateYScale(out yMinimum, out yMaximum, out yMaximumVol);
 
         bool yScaleChanged = yMinimumBefore != yMinimum || yMaximumBefore != yMaximum;
 
@@ -291,19 +346,27 @@ public class Window_Graph : MonoBehaviour {
         }
     }
 
-    private void CalculateYScale(out float yMinimum, out float yMaximum) {
+    private void CalculateYScale(out float yMinimum, out float yMaximum, out float yMaximumVolume) {
         // Identify y Min and Max values
         yMaximum = valueList[0].price;
         yMinimum = valueList[0].price;
-        
+        yMaximumVolume = valueList[0].quantity;
+
+
         for (int i = Mathf.Max(valueList.Count - maxVisibleValueAmount, 0); i < valueList.Count; i++) {
             int value = valueList[i].price;
+            int volume = valueList[i].quantity;
             if (value > yMaximum) {
                 yMaximum = value;
             }
             if (value < yMinimum) {
                 yMinimum = value;
             }
+            if (volume > yMaximumVolume)
+            {
+                yMaximumVolume = volume;
+            }
+
         }
 
         float yDifference = yMaximum - yMinimum;
@@ -312,6 +375,43 @@ public class Window_Graph : MonoBehaviour {
         }
         yMaximum = yMaximum + (yDifference * 0.2f);
         yMinimum = yMinimum - (yDifference * 0.2f);
+
+        if(yMaximum < 10)
+        {
+            yMaximum = 10;
+        }
+        else if(yMaximum < 20)
+        {
+            yMaximum = 20;
+        }
+        else if (yMaximum < 40)
+        {
+            yMaximum = 40;
+        }
+        else if (yMaximum < 50)
+        {
+            yMaximum = 50;
+        }
+        else if (yMaximum < 100)
+        {
+            yMaximum = 100;
+        }
+        else if (yMaximum < 150)
+        {
+            yMaximum = 150;
+        }
+        else if (yMaximum < 200)
+        {
+            yMaximum = 200;
+        }
+        else if (yMaximum < 300)
+        {
+            yMaximum = 300;
+        }
+        else if (yMaximum < 500)
+        {
+            yMaximum = 500;
+        }
 
         if (startYScaleAtZero) {
             yMinimum = 0f; // Start the graph at zero
@@ -373,7 +473,7 @@ public class Window_Graph : MonoBehaviour {
         private GameObject CreateBar(Vector2 graphPosition, float barWidth) {
             GameObject gameObject = new GameObject("bar", typeof(Image));
             gameObject.transform.SetParent(graphContainer, false);
-            gameObject.GetComponent<Image>().color = barColor;
+            gameObject.GetComponent<Image>().color = new Color(255,255,255,150);
             RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = new Vector2(graphPosition.x, 0f);
             rectTransform.sizeDelta = new Vector2(barWidth * barWidthMultiplier, graphPosition.y);
@@ -404,6 +504,7 @@ public class Window_Graph : MonoBehaviour {
                 RectTransform rectTransform = barGameObject.GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = new Vector2(graphPosition.x, 0f);
                 rectTransform.sizeDelta = new Vector2(graphPositionWidth * barWidthMultiplier, graphPosition.y);
+                rectTransform.GetComponent<Image>().color = new Color(255, 255, 255, 100);
 
                 Button_UI barButtonUI = barGameObject.GetComponent<Button_UI>();
 

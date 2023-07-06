@@ -88,6 +88,12 @@ public enum BookType
 }
 
 
+[Serializable]
+public class TranactionRecordContainer
+{
+    public List<TransactionRecord> session_transactions = new List<TransactionRecord>();
+}
+
 
 
 [Serializable]
@@ -412,7 +418,7 @@ public class BSE : MonoBehaviour, IPunObservable
     Function demand_offset = new Function("f(t) = t");
     Function supply_offset = new Function("f(t) = t");
 
-
+    TranactionRecordContainer tranactionRecordContainer = new TranactionRecordContainer();
     int CalcPriceSupply(int t_i, int time, TraderRole role)
     {
         int t_count = 0;
@@ -843,6 +849,12 @@ public class BSE : MonoBehaviour, IPunObservable
         {
             traderViewUI.UpdateInfo();
         }
+
+
+        tranactionRecordContainer.session_transactions = exchange.session_transactions;
+        // set in synchroniser
+        FindObjectOfType<TransactionSynchroniser>().SetTranactionRecordContainer(tranactionRecordContainer);
+
         /*
         List<int> prices = new List<int>();
         foreach(TransactionRecord r in exchange.session_transactions)
@@ -1482,6 +1494,9 @@ public class BSE : MonoBehaviour, IPunObservable
     // Update is called once per frame
 
     // create a new whenever there is a change in state of the main LOB
+
+    public Text adminTimerText;
+    public Text adminmaxTimerText;
     void Update()
     {
         if (PhotonNetwork.IsMasterClient && market_active)
@@ -1491,7 +1506,9 @@ public class BSE : MonoBehaviour, IPunObservable
             auctionSessionManager.synchronised_closeTime = synchronised_market_close_time;
 
 
-            if(synchronised_current_time > assignmentSchedule[0].time)
+
+
+            if (synchronised_current_time > assignmentSchedule[0].time)
             {
                 // issue the assignment to the trader with relevant tid
                 Trader t = GetTraderFromTid(assignmentSchedule[0].tid);
@@ -1503,6 +1520,9 @@ public class BSE : MonoBehaviour, IPunObservable
                 assignmentSchedule.RemoveAt(0);
                 
             }
+
+            adminTimerText.text = Mathf.FloorToInt(synchronised_current_time).ToString() + "s";
+            adminmaxTimerText.text = Mathf.FloorToInt(synchronised_market_close_time).ToString() + "s";
         }
     }
 

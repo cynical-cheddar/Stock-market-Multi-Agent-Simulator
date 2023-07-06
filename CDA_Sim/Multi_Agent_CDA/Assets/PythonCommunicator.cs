@@ -149,9 +149,12 @@ public class PythonCommunicator : MonoBehaviour
     //Prevent crashes - close clients and threads properly!
     void OnDisable()
     {
-        if (receiveThread != null)
-            receiveThread.Abort();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            if (receiveThread != null)
+                receiveThread.Abort();
 
-        client.Close();
+            client.Close();
+        }
     }
 }

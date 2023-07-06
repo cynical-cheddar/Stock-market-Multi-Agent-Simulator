@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Photon.Pun;
 
 
 
@@ -11,6 +11,12 @@ using UnityEngine.UI;
 public class ClientUIManager : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public GameObject synchronised_LOB_master;
+    public GameObject graph_Client_Master;
+    public RectTransform selectedIcon;
+    public RectTransform lob_icon;
+    public RectTransform graph_icon;
 
 
     public GameObject order_menu_prefab;
@@ -71,7 +77,70 @@ public class ClientUIManager : MonoBehaviour
     MyCurrentAssignment myCurrentAssignment = new MyCurrentAssignment();
 
 
+    public Window_Graph window_Graph;
+
     int cur_profit = 0;
+
+    /*
+    public GameObject synchronised_LOB_master;
+    public GameObject graph_Client_Master;
+    public RectTransform selectedIcon;
+    public RectTransform lob_icon;
+    public RectTransform graph_icon;
+     */
+
+
+    public HumanTraderInterface GetMyHumanTraderInterface()
+    {
+        return myHumanTraderInterface;
+    }
+
+    enum ViewSelected
+    {
+        lob,
+        graph
+    }
+
+    ViewSelected viewSelected = ViewSelected.lob;
+
+
+    public void SelectViewLOB()
+    {
+        synchronised_LOB_master.SetActive(true);
+        graph_Client_Master.SetActive(false);
+        selectedIcon.position = new Vector3(lob_icon.position.x, lob_icon.position.y, 0);
+        viewSelected = ViewSelected.lob;
+    }
+
+
+    public void SelectViewGraph()
+    {
+        synchronised_LOB_master.SetActive(false);
+        graph_Client_Master.SetActive(true);
+        selectedIcon.position = new Vector3(graph_icon.position.x, graph_icon.position.y, 0);
+        UpdateGraph();
+        viewSelected = ViewSelected.graph;
+    }
+
+
+    List<TransactionRecord> current_transactionRecords = new List<TransactionRecord>();
+
+
+    public void UpdateGraph(List<TransactionRecord> transactionRecords)
+    {
+        current_transactionRecords = transactionRecords;
+        window_Graph.ShowGraph(current_transactionRecords);
+    }
+
+    public void UpdateGraph()
+    {
+        if (current_transactionRecords.Count > 0)
+        {
+            window_Graph.ShowGraph(current_transactionRecords);
+        }
+    }
+
+
 
     public void SetCurrentTime(float curTime, float marketCloseTime)
     {
@@ -378,6 +447,19 @@ public class ClientUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if(viewSelected != ViewSelected.lob && !PhotonNetwork.IsMasterClient)
+            {
+                SelectViewLOB();
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (viewSelected != ViewSelected.graph && !PhotonNetwork.IsMasterClient)
+            {
+                SelectViewGraph();
+            }
+        }
     }
 }
