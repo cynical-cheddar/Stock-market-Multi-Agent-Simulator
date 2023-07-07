@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
-public class ClientQuitMenu : MonoBehaviour
+public class ClientQuitMenu : MonoBehaviourPunCallbacks
 {
     // if a player decides to quit, then we must transfer ownership of our humanTraderInterface to the master client, then leave the game safely
 
@@ -43,8 +43,18 @@ public class ClientQuitMenu : MonoBehaviour
         PhotonNetwork.LeaveLobby();
         PhotonNetwork.Disconnect();
         StartCoroutine(nameof(EnsureLeave));
+    }
 
 
+
+
+    public void HostQuit()
+    {
+        Debug.Log("Host quit game");
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LeaveLobby();
+        PhotonNetwork.Disconnect();
+        StartCoroutine(nameof(EnsureLeave));
     }
 
     public void QuitProgram()
