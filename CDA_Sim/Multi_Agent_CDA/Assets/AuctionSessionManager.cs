@@ -4,9 +4,9 @@ using UnityEngine;
 using Photon.Pun;
 
 
-public class AuctionSessionManager : MonoBehaviour, IPunObservable
+public class AuctionSessionManager : MonoBehaviourPunCallbacks, IPunObservable
 {
-
+    public AdminUIManager adminUIManager;
     public AuctionMenuManager menuManager;
     int loadedPlayers = 0;
 
@@ -104,6 +104,12 @@ public class AuctionSessionManager : MonoBehaviour, IPunObservable
 
     // manage session timings 
 
+    bool market_closed = false;
+
+
+
+
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if(clientUIManager == null)
@@ -119,6 +125,15 @@ public class AuctionSessionManager : MonoBehaviour, IPunObservable
                 timeAndClose.currentTime = synchronised_current_time;
                 timeAndClose.closeTime = synchronised_closeTime;
                 stream.SendNext(JsonUtility.ToJson(timeAndClose));
+
+                if (!market_closed)
+                {
+                    if(timeAndClose.currentTime >= timeAndClose.closeTime)
+                    {
+                        market_closed = true;
+                        adminUIManager.CloseMarket();
+                    }
+                }
             }
 
             // synchronise the current time and market close time
@@ -132,6 +147,18 @@ public class AuctionSessionManager : MonoBehaviour, IPunObservable
             synchronised_closeTime = timeAndClose.closeTime;
             // alert the trader interfaces
             if(clientUIManager!=null) clientUIManager.SetCurrentTime(synchronised_current_time, synchronised_closeTime);
+
+
+            if (!market_closed)
+            {
+                if (timeAndClose.currentTime >= timeAndClose.closeTime)
+                {
+                    market_closed = true;
+                    clientUIManager.CloseMarket();
+                }
+            }
+
+
 
         }
     }

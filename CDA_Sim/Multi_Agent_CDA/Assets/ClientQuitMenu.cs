@@ -19,6 +19,16 @@ public class ClientQuitMenu : MonoBehaviourPunCallbacks
     }
 
 
+    protected void OnMasterClientSwitched()
+    {
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LeaveLobby();
+        PhotonNetwork.Disconnect();
+        StartCoroutine(nameof(EnsureLeave));
+    }
+
+
+
     void TransferInterfacePhotonView()
     {
        // myHumanTraderInterface = clientUIManager.GetMyHumanTraderInterface();
@@ -44,6 +54,8 @@ public class ClientQuitMenu : MonoBehaviourPunCallbacks
         PhotonNetwork.Disconnect();
         StartCoroutine(nameof(EnsureLeave));
     }
+
+
 
 
 

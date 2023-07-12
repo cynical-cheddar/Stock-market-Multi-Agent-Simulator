@@ -120,9 +120,11 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Packages/AsyncIO.0.1.69/lib/netstandard2.0/AsyncIO.dll"
+-r:"Assets/Packages/MathParser.org-mXparser.5.2.1/lib/netstandard21/MathParser.org-mXparser.dll"
 -r:"Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll"
 -r:"Assets/Packages/Microsoft.Extensions.ObjectPool.5.0.10/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll"
 -r:"Assets/Packages/NaCl.Net.0.1.13/lib/netstandard2.0/NaCl.dll"
+-r:"Assets/Packages/NetMQ.4.0.1.12/lib/netstandard2.1/NetMQ.dll"
 -r:"Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.dll"
 -r:"Assets/Packages/System.Private.ServiceModel.4.9.0/lib/netstandard2.0/System.Private.ServiceModel.dll"
 -r:"Assets/Packages/System.Runtime.CompilerServices.Unsafe.4.5.3/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll"

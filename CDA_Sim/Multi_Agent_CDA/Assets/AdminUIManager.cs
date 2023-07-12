@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Photon.Pun;
 
 public class AdminUIManager : MonoBehaviour
 {
@@ -11,7 +13,34 @@ public class AdminUIManager : MonoBehaviour
     public GameObject graph_page;
     public GameObject menu_page;
 
-    
+    public Text market_closed_text;
+
+    public void CloseMarket()
+    {
+        market_closed_text.enabled = true;
+    }
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1) && PhotonNetwork.IsMasterClient)
+        {
+            Lob_Page_Click();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && PhotonNetwork.IsMasterClient)
+        {
+            Trader_Page_Click();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && PhotonNetwork.IsMasterClient)
+        {
+            Graph_Page_Click();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && PhotonNetwork.IsMasterClient)
+        {
+            Menu_Page_Click();
+        }
+    }
+
     public void Lob_Page_Click()
     {
         lob_page.SetActive(true);

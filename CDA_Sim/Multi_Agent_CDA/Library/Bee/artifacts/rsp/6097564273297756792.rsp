@@ -86,6 +86,7 @@
 -s="D:/Unitys/2022.1.23f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard"
 -s="D:/Unitys/2022.1.23f1/Editor/Data/NetStandard/Extensions/2.0.0"
 -s="D:/Unitys/2022.1.23f1/Editor/Data/NetStandard/ref/2.1.0"
+-s="D:/Unitys/2022.1.23f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed"
 -s="D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Multi_Agent_CDA/Library/ScriptAssemblies"
 -o="Library/BuildPlayerData/Editor"
 -rn=""

@@ -52,6 +52,8 @@ public class ClientUIManager : MonoBehaviour
 
     public Text fulfilmentText;
 
+    public Text market_closed_text;
+
     public AudioClip updateAssignment;
 
     public AudioSource profitAudioSource;
@@ -104,6 +106,12 @@ public class ClientUIManager : MonoBehaviour
     ViewSelected viewSelected = ViewSelected.lob;
 
 
+
+    public void CloseMarket()
+    {
+        market_closed_text.enabled = true;
+    }
+
     public void SelectViewLOB()
     {
         synchronised_LOB_master.SetActive(true);
@@ -129,14 +137,31 @@ public class ClientUIManager : MonoBehaviour
     public void UpdateGraph(List<TransactionRecord> transactionRecords)
     {
         current_transactionRecords = transactionRecords;
-        window_Graph.ShowGraph(current_transactionRecords);
+        if (current_transactionRecords.Count > 0)
+        {
+            try
+            {
+                window_Graph.ShowGraph(current_transactionRecords);
+            }
+            catch
+            {
+                Debug.LogError("window_Graph issue 1");
+            }
+        }
     }
 
     public void UpdateGraph()
     {
         if (current_transactionRecords.Count > 0)
         {
-            window_Graph.ShowGraph(current_transactionRecords);
+            try
+            {
+                window_Graph.ShowGraph(current_transactionRecords);
+            }
+            catch
+            {
+                Debug.LogError("window_Graph issue 1");
+            }
         }
     }
 
