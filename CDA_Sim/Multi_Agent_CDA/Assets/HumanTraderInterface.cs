@@ -29,8 +29,9 @@ public class HumanTraderInterface : MonoBehaviour
     bool setup = false;
 
 
+    public ClientUIManager clientUIManager_mobile;
+    public ClientUIManager clientUIManager_desktop;
 
-    
 
 
     // human trader interface provides the link between the humanTrader and the ClientUIManager
@@ -51,7 +52,14 @@ public class HumanTraderInterface : MonoBehaviour
     {
         photonView = GetComponent<PhotonView>();
         traderHumanManager = FindObjectOfType<TraderHumanManager>();
-        clientUIManager = FindObjectOfType<ClientUIManager>();
+        if (FindObjectOfType<PersistentSettings>().mobileClient)
+        {
+            clientUIManager = FindObjectOfType<UIManagerDirectory>().mobile_ui_manager;
+        }
+        else
+        {
+            clientUIManager = FindObjectOfType<UIManagerDirectory>().desktop_ui_manager;
+        }
 
         // request human trader instantiation through the TraderHumanManager
         if (photonView.IsMine)
@@ -63,6 +71,11 @@ public class HumanTraderInterface : MonoBehaviour
             }
         }
     }
+
+
+
+
+
 
     [PunRPC]
     void SetMyTrader_RPC(string tid)
@@ -81,7 +94,15 @@ public class HumanTraderInterface : MonoBehaviour
         // also set up UI
         if (GetComponent<PhotonView>().IsMine)
         {
-            clientUIManager = FindObjectOfType<ClientUIManager>();
+
+            if (FindObjectOfType<PersistentSettings>().mobileClient)
+            {
+                clientUIManager = FindObjectOfType<UIManagerDirectory>().mobile_ui_manager;
+            }
+            else
+            {
+                clientUIManager = FindObjectOfType<UIManagerDirectory>().desktop_ui_manager;
+            }
             setup = true;
         }
     }
@@ -153,7 +174,15 @@ public class HumanTraderInterface : MonoBehaviour
     {
         if(clientUIManager == null)
         {
-            clientUIManager = FindObjectOfType<ClientUIManager>();
+            if (FindObjectOfType<PersistentSettings>().mobileClient)
+            {
+                clientUIManager = clientUIManager_mobile;
+            }
+            else
+            {
+                clientUIManager = clientUIManager_desktop;
+            }
+
         }
     }
 }

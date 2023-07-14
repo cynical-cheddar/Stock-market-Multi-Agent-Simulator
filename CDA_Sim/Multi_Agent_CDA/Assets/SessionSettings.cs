@@ -5,6 +5,7 @@ using UnityEngine;
 
     public class SessionSettings : MonoBehaviour
     {
+
         public GameSettings gameSettings;
         public BotSettings botSettings;
 

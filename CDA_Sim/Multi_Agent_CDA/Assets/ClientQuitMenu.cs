@@ -13,9 +13,22 @@ public class ClientQuitMenu : MonoBehaviourPunCallbacks
 
     public string returnScene = "";
 
-    private void Start()
+
+    public ClientUIManager clientUIManager_mobile;
+    public ClientUIManager clientUIManager_desktop;
+
+
+
+private void Start()
     {
-        clientUIManager = FindObjectOfType<ClientUIManager>();
+        if (FindObjectOfType<PersistentSettings>().mobileClient)
+        {
+            clientUIManager = clientUIManager_mobile;
+        }
+        else
+        {
+            clientUIManager = clientUIManager_desktop;
+        }
     }
 
 

@@ -21,9 +21,14 @@ public class AuctionSessionManager : MonoBehaviourPunCallbacks, IPunObservable
 
     GameObject my_HumanTraderInterfaceGameObject;
 
+
+    public ClientUIManager clientUIManager_mobile;
+    public ClientUIManager clientUIManager_desktop;
+
     ClientUIManager clientUIManager;
 
-    class TimeAndClose
+
+class TimeAndClose
     {
         public float currentTime;
         public float closeTime;
@@ -32,7 +37,14 @@ public class AuctionSessionManager : MonoBehaviourPunCallbacks, IPunObservable
     private void OnLevelWasLoaded(int level)
     {
         Debug.Log("OnLevelWasLoaded");
-        clientUIManager = FindObjectOfType<ClientUIManager>();
+        if (FindObjectOfType<PersistentSettings>().mobileClient)
+        {
+            clientUIManager = clientUIManager_mobile;
+        }
+        else
+        {
+            clientUIManager = clientUIManager_desktop;
+        }
         if (PhotonNetwork.IsMasterClient)
         {
             menuManager.ShowAdminStartPanel();
@@ -114,7 +126,14 @@ public class AuctionSessionManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         if(clientUIManager == null)
         {
-            clientUIManager = FindObjectOfType<ClientUIManager>();
+            if (FindObjectOfType<PersistentSettings>().mobileClient)
+            {
+                clientUIManager = clientUIManager_mobile;
+            }
+            else
+            {
+                clientUIManager = clientUIManager_desktop;
+            }
         }
         if (stream.IsWriting && PhotonNetwork.IsMasterClient)
         {

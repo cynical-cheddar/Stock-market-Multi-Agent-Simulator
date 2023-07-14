@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-
+using Photon.Pun;
 
 public enum MessageType{
     Command,
@@ -127,9 +127,12 @@ public class PythonCommunicatorInterface : MonoBehaviour
 
     private void Start()
     {
-        pythonCommunicator = FindObjectOfType<PythonCommunicator>();
-        traderBotManager = FindObjectOfType<TraderBotManager>();
-        pythonCommunicationHandler = FindObjectOfType<PythonCommunicationHandler>();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            pythonCommunicator = FindObjectOfType<PythonCommunicator>();
+            traderBotManager = FindObjectOfType<TraderBotManager>();
+            pythonCommunicationHandler = FindObjectOfType<PythonCommunicationHandler>();
+        }
     }
 
     public void LaunchTraderBotCommand(TraderBot traderBot)

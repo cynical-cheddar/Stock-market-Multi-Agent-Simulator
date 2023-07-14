@@ -676,10 +676,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXEventAttribute_tA764A595356174BA39C782A8A6
 		L_0 = VFXEventAttribute_Internal_Create_m2ABF5098E27A4F13603C974ECE4819F6257FA157(NULL);
 		VisualEffectAsset_t0CD57FD9980CD68033BD96DA356697F92A69E688* L_1 = ___vfxAsset0;
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_2 = (VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518*)il2cpp_codegen_object_new(VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		VFXEventAttribute__ctor_m08E26E4F79DA1062FC43501FDFE00B9EF3ED3AE1(L_2, L_0, (bool)1, L_1, NULL);
 		V_0 = L_2;
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_3 = V_0;
 		VisualEffectAsset_t0CD57FD9980CD68033BD96DA356697F92A69E688* L_4 = ___vfxAsset0;
+		NullCheck(L_3);
 		VFXEventAttribute_Internal_InitFromAsset_mFA13F75CCECE6D2DAD270E37126F211724D5EFD2(L_3, L_4, NULL);
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_5 = V_0;
 		V_1 = L_5;
@@ -873,10 +875,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXExpressionValues_t361C45D33F7B5E9D85F8185E
 	VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5* V_1 = NULL;
 	{
 		VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5* L_0 = (VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5*)il2cpp_codegen_object_new(VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		VFXExpressionValues__ctor_mB5923888F1BBEEE55955E24514A69629D932DDD0(L_0, NULL);
 		V_0 = L_0;
 		VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5* L_1 = V_0;
 		intptr_t L_2 = ___ptr0;
+		NullCheck(L_1);
 		L_1->___m_Ptr_0 = L_2;
 		VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5* L_3 = V_0;
 		V_1 = L_3;
@@ -1017,6 +1021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F26
 	{
 		intptr_t L_0 = ((IntPtr_t_StaticFields*)il2cpp_codegen_static_fields_for(IntPtr_t_il2cpp_TypeInfo_var))->___Zero_1;
 		VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281* L_1 = (VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281*)il2cpp_codegen_object_new(VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
 		VFXSpawnerState__ctor_mDF51A64C76B610ED8B1BF46C3CB6F8224B246392(L_1, L_0, (bool)0, NULL);
 		V_0 = L_1;
 		VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281* L_2 = V_0;
@@ -1045,6 +1050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXSpawnerState_SetWrapValue_m07CE08E6A5
 	}
 	{
 		Exception_t* L_2 = (Exception_t*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
 		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralC2149138D4858815F0CE2A684D1424F63B8B965D)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&VFXSpawnerState_SetWrapValue_m07CE08E6A5546B21559C8D73669EA0308A2470D6_RuntimeMethod_var)));
 	}
@@ -1360,6 +1366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXEventAttribute_tA764A595356174BA39C782A8A6
 	bool V_2 = false;
 	{
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_0 = ___source0;
+		NullCheck(L_0);
 		Action_1_tBAC06A706FB1F9A81AEF7EDF6202FC51D1E52C3A* L_1 = L_0->___outputEventReceived_5;
 		V_0 = (bool)((((RuntimeObject*)(Action_1_tBAC06A706FB1F9A81AEF7EDF6202FC51D1E52C3A*)L_1) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_2 = V_0;
@@ -1376,6 +1383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXEventAttribute_tA764A595356174BA39C782A8A6
 IL_0012:
 	{
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_3 = ___source0;
+		NullCheck(L_3);
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_4 = L_3->___m_cachedEventAttribute_4;
 		V_2 = (bool)((((RuntimeObject*)(VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518*)L_4) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_5 = V_2;
@@ -1387,8 +1395,10 @@ IL_0012:
 	{
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_6 = ___source0;
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_7 = ___source0;
+		NullCheck(L_7);
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_8;
 		L_8 = VisualEffect_CreateVFXEventAttribute_mC4611FC064DF24028BA3E60D3D450B95541BEB6E(L_7, NULL);
+		NullCheck(L_6);
 		L_6->___m_cachedEventAttribute_4 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___m_cachedEventAttribute_4), (void*)L_8);
 	}
@@ -1396,6 +1406,7 @@ IL_0012:
 IL_002b:
 	{
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_9 = ___source0;
+		NullCheck(L_9);
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_10 = L_9->___m_cachedEventAttribute_4;
 		V_1 = L_10;
 		goto IL_0034;
@@ -1415,11 +1426,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_InvokeOutputEventReceived_I
 	{
 		int32_t L_0 = ___eventNameId1;
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_1 = ___source0;
+		NullCheck(L_1);
 		VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518* L_2 = L_1->___m_cachedEventAttribute_4;
 		VFXOutputEventArgs__ctor_m4A6030F4BF7E27F5F682E0FC4211F53DF866ED56((&V_0), L_0, L_2, NULL);
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_3 = ___source0;
+		NullCheck(L_3);
 		Action_1_tBAC06A706FB1F9A81AEF7EDF6202FC51D1E52C3A* L_4 = L_3->___outputEventReceived_5;
 		VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40 L_5 = V_0;
+		NullCheck(L_4);
 		Action_1_Invoke_mD56188C7D70AD8DDC18C6875E7D3A9C8DCDE5935_inline(L_4, L_5, NULL);
 		return;
 	}

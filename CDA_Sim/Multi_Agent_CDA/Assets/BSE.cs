@@ -1237,6 +1237,13 @@ public class BSE : MonoBehaviour, IPunObservable
 
     bool has_hti = false;
 
+
+    public ClientUIManager clientUIManager_mobile;
+    public ClientUIManager clientUIManager_desktop;
+
+
+
+
     [PunRPC]
 
     public void FindMyHumanTraderInterface()
@@ -1253,7 +1260,16 @@ public class BSE : MonoBehaviour, IPunObservable
                         myHumanTraderInterface = hti;
                         has_hti = true;
 
-                        FindObjectOfType<ClientUIManager>().SetHumanTraderInterface(myHumanTraderInterface);
+
+                        if (FindObjectOfType<PersistentSettings>().mobileClient)
+                        {
+                            clientUIManager_mobile.SetHumanTraderInterface(myHumanTraderInterface);
+                        }
+                        else
+                        {
+                            clientUIManager_desktop.SetHumanTraderInterface(myHumanTraderInterface);
+                        }
+
 
                     }
                 }

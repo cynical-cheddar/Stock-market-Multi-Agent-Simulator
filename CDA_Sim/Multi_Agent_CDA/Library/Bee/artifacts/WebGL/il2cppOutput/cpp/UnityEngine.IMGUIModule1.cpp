@@ -1020,6 +1020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_get_hasSelection_mB
 {
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = TextSelectingUtilities_get_hasSelection_m86EA37D0A10EC2C4C1886C7E770DAB34DB8A66CD(L_0, NULL);
 		return L_1;
@@ -1031,6 +1032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_set_revealCursor_m7
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
 		bool L_1 = ___value0;
+		NullCheck(L_0);
 		TextSelectingUtilities_set_revealCursor_m2A3BFE850A09B0716824E763373A521A24CC5F52(L_0, L_1, NULL);
 		return;
 	}
@@ -1041,6 +1043,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextEditingUtilities_get_cursorIndex_
 	int32_t V_0 = 0;
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(L_0, NULL);
 		V_0 = L_1;
@@ -1059,6 +1062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_set_cursorIndex_mED
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
 		int32_t L_1 = ___value0;
+		NullCheck(L_0);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(L_0, L_1, NULL);
 		return;
 	}
@@ -1069,6 +1073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextEditingUtilities_get_selectIndex_
 	int32_t V_0 = 0;
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = TextSelectingUtilities_get_selectIndex_m1535CA4D982CC3A4C46E4491FA36E9514243CCB9(L_0, NULL);
 		V_0 = L_1;
@@ -1087,6 +1092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_set_selectIndex_mFB
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
 		int32_t L_1 = ___value0;
+		NullCheck(L_0);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(L_0, L_1, NULL);
 		return;
 	}
@@ -1097,6 +1103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TextEditingUtilities_get_text_mC885
 	String_t* V_0 = NULL;
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_0);
 		String_t* L_1;
 		L_1 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(L_0, NULL);
 		V_0 = L_1;
@@ -1115,6 +1122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_set_text_mC1FD19476
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
 		String_t* L_1 = ___value0;
+		NullCheck(L_0);
 		TextSelectingUtilities_set_text_mFAFB2AAF82A512AA738AFAACCFA7CE5AA4BECA73(L_0, L_1, NULL);
 		return;
 	}
@@ -1149,6 +1157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_UpdateImeState_mC13
 	{
 		String_t* L_0;
 		L_0 = GUIUtility_get_compositionString_mE06412C5CE41311C00BFC4028716D5F03EDD85E9(NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_0 = (bool)((((int32_t)L_1) > ((int32_t)0))? 1 : 0);
@@ -1222,6 +1231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_SetImeWindowPositio
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_0 = __this->___m_TextHandle_1;
 		int32_t L_1;
 		L_1 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = TextHandle_GetCursorPositionFromStringIndexUsingCharacterHeight_m082A44C87BA6376E99A5BD37090429F4A3CF0E0E(L_0, L_1, (bool)1, NULL);
 		V_0 = L_2;
@@ -1273,6 +1283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TextEditingUtilities_GeneratePrevie
 		int32_t L_5;
 		L_5 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		String_t* L_6 = V_0;
+		NullCheck(L_4);
 		String_t* L_7;
 		L_7 = String_Insert_mA279E748F06514A6D0B9B680D651D6A6C6BB561A(L_4, L_5, L_6, NULL);
 		G_B4_0 = L_7;
@@ -1288,6 +1299,7 @@ IL_0030:
 		String_t* L_10 = V_0;
 		String_t* L_11;
 		L_11 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral4EA6E1F0CD13652D9FAF12B294A842319F6F67E5, L_10, _stringLiteral8AD0A41F2A9B43719CFF3CBA1FFE2771F454578E, NULL);
+		NullCheck(L_8);
 		String_t* L_12;
 		L_12 = String_Insert_mA279E748F06514A6D0B9B680D651D6A6C6BB561A(L_8, L_9, L_11, NULL);
 		G_B4_0 = L_12;
@@ -1333,6 +1345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_EnableCursorPreview
 IL_0013:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_2 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(L_2, NULL);
 		__this->___m_CursorIndexSavedState_2 = L_3;
@@ -1340,8 +1353,10 @@ IL_0013:
 		int32_t L_5 = __this->___m_CursorIndexSavedState_2;
 		String_t* L_6;
 		L_6 = GUIUtility_get_compositionString_mE06412C5CE41311C00BFC4028716D5F03EDD85E9(NULL);
+		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_6, NULL);
+		NullCheck(L_4);
 		TextSelectingUtilities_SetCursorNoCheck_m8A32A9E914EBEB9377894A7B99FC011CC52A1508(L_4, ((int32_t)il2cpp_codegen_add(L_5, L_7)), NULL);
 	}
 
@@ -1371,6 +1386,7 @@ IL_0010:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_2 = __this->___m_TextSelectingUtility_0;
 		int32_t L_3 = __this->___m_CursorIndexSavedState_2;
+		NullCheck(L_2);
 		TextSelectingUtilities_SetCursorNoCheck_m8A32A9E914EBEB9377894A7B99FC011CC52A1508(L_2, L_3, NULL);
 		__this->___m_CursorIndexSavedState_2 = (-1);
 	}
@@ -1399,16 +1415,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_HandleKeyEvent_m3E3
 		TextEditingUtilities_RestoreCursorState_m36D71121DFD69D0EB43FCF48E49E1F616F9346C4(__this, NULL);
 		TextEditingUtilities_InitKeyActions_m08B59B3C8199E8DA37622E85D269F9E848B06381(__this, NULL);
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_0 = ___e0;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Event_get_modifiers_mD55E7CF06EB720434F0F174EA569B2A29792D39B(L_0, NULL);
 		V_0 = L_1;
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_2 = ___e0;
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_3 = L_2;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = Event_get_modifiers_mD55E7CF06EB720434F0F174EA569B2A29792D39B(L_3, NULL);
+		NullCheck(L_3);
 		Event_set_modifiers_m879319643B5CD23F3223AB8E835C8ABCD3DA72FB(L_3, ((int32_t)((int32_t)L_4&((int32_t)-33))), NULL);
 		Dictionary_2_t172B73FE2F03582ACCE7C2CAA76DACD0B57176A1* L_5 = ((TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_StaticFields*)il2cpp_codegen_static_fields_for(TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_il2cpp_TypeInfo_var))->___s_Keyactions_5;
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_6 = ___e0;
+		NullCheck(L_5);
 		bool L_7;
 		L_7 = Dictionary_2_ContainsKey_m29224C8A4BD8C981147E7519AE06AF0FA75CA98D(L_5, L_6, Dictionary_2_ContainsKey_m29224C8A4BD8C981147E7519AE06AF0FA75CA98D_RuntimeMethod_var);
 		V_1 = L_7;
@@ -1421,6 +1441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_HandleKeyEvent_m3E3
 	{
 		Dictionary_2_t172B73FE2F03582ACCE7C2CAA76DACD0B57176A1* L_9 = ((TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_StaticFields*)il2cpp_codegen_static_fields_for(TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_il2cpp_TypeInfo_var))->___s_Keyactions_5;
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_10 = ___e0;
+		NullCheck(L_9);
 		int32_t L_11;
 		L_11 = Dictionary_2_get_Item_m062D3C7E6238AF40AD588770178C690AF9EFAF58(L_9, L_10, Dictionary_2_get_Item_m062D3C7E6238AF40AD588770178C690AF9EFAF58_RuntimeMethod_var);
 		V_2 = L_11;
@@ -1430,6 +1451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_HandleKeyEvent_m3E3
 		L_14 = TextEditingUtilities_PerformOperation_m9F96833D206706ED4614134E12673CC240989C7E(__this, L_12, L_13, NULL);
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_15 = ___e0;
 		int32_t L_16 = V_0;
+		NullCheck(L_15);
 		Event_set_modifiers_m879319643B5CD23F3223AB8E835C8ABCD3DA72FB(L_15, L_16, NULL);
 		V_3 = (bool)1;
 		goto IL_0063;
@@ -1439,6 +1461,7 @@ IL_0057:
 	{
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_17 = ___e0;
 		int32_t L_18 = V_0;
+		NullCheck(L_17);
 		Event_set_modifiers_m879319643B5CD23F3223AB8E835C8ABCD3DA72FB(L_17, L_18, NULL);
 		V_3 = (bool)0;
 		goto IL_0063;
@@ -1673,6 +1696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_PerformOperation_m9
 IL_00d0:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_3 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_3);
 		TextSelectingUtilities_MoveLeft_m094C534A56FC3CDA9C2423E46D179F359693370E(L_3, NULL);
 		goto IL_03db;
 	}
@@ -1680,6 +1704,7 @@ IL_00d0:
 IL_00e1:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_4 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_4);
 		TextSelectingUtilities_MoveRight_m8F1910A2773A39EF5CE248349F5A6CD7166AB795(L_4, NULL);
 		goto IL_03db;
 	}
@@ -1687,6 +1712,7 @@ IL_00e1:
 IL_00f2:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_5 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_5);
 		TextSelectingUtilities_MoveUp_mF0F3EE17A2CB3C4C1AEB950E80A5237A55D2711D(L_5, NULL);
 		goto IL_03db;
 	}
@@ -1694,6 +1720,7 @@ IL_00f2:
 IL_0103:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_6 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_6);
 		TextSelectingUtilities_MoveDown_m7EF798D6A19267DE30ED50C66697F5BC8AB814B8(L_6, NULL);
 		goto IL_03db;
 	}
@@ -1701,6 +1728,7 @@ IL_0103:
 IL_0114:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_7 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_7);
 		TextSelectingUtilities_MoveLineStart_m561A829C19F6C50028473CD5F81C508F3EEFE276(L_7, NULL);
 		goto IL_03db;
 	}
@@ -1708,6 +1736,7 @@ IL_0114:
 IL_0125:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_8 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_8);
 		TextSelectingUtilities_MoveLineEnd_mB4BABB86B094C9B88DEF94E0392BAE4396283B61(L_8, NULL);
 		goto IL_03db;
 	}
@@ -1715,6 +1744,7 @@ IL_0125:
 IL_0136:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_9 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_9);
 		TextSelectingUtilities_MoveWordRight_mDCDC1B673D599BB94C95D6DC364D8877E87E3383(L_9, NULL);
 		goto IL_03db;
 	}
@@ -1722,6 +1752,7 @@ IL_0136:
 IL_0147:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_10 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_10);
 		TextSelectingUtilities_MoveToStartOfNextWord_mD1CEFD9620822349FDE09237943F943EB512A8C2(L_10, NULL);
 		goto IL_03db;
 	}
@@ -1729,6 +1760,7 @@ IL_0147:
 IL_0158:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_11 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_11);
 		TextSelectingUtilities_MoveToEndOfPreviousWord_m5BE2565747FFC49AA41526504653159852FC50A7(L_11, NULL);
 		goto IL_03db;
 	}
@@ -1736,6 +1768,7 @@ IL_0158:
 IL_0169:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_12 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_12);
 		TextSelectingUtilities_MoveWordLeft_m7D8131CD2DF2DF180D3FC249E2F0E17E250E5D3D(L_12, NULL);
 		goto IL_03db;
 	}
@@ -1743,6 +1776,7 @@ IL_0169:
 IL_017a:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_13 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_13);
 		TextSelectingUtilities_MoveTextStart_m7A276F1B11A1DAF468AC84324E592005B5D47350(L_13, NULL);
 		goto IL_03db;
 	}
@@ -1750,6 +1784,7 @@ IL_017a:
 IL_018b:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_14 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_14);
 		TextSelectingUtilities_MoveTextEnd_mDA69E553CA7D50781E845169852F1A0059FF0EB9(L_14, NULL);
 		goto IL_03db;
 	}
@@ -1757,6 +1792,7 @@ IL_018b:
 IL_019c:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_15 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_15);
 		TextSelectingUtilities_MoveParagraphForward_m88210A22BC823945D6AA137D50603388233502EA(L_15, NULL);
 		goto IL_03db;
 	}
@@ -1764,6 +1800,7 @@ IL_019c:
 IL_01ad:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_16 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_16);
 		TextSelectingUtilities_MoveParagraphBackward_m087604CE592162192829ADB142B786B0C436A58C(L_16, NULL);
 		goto IL_03db;
 	}
@@ -1771,6 +1808,7 @@ IL_01ad:
 IL_01be:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_17 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_17);
 		TextSelectingUtilities_MoveGraphicalLineStart_m1ECAAAF8A29D63C5D7E76170D3745E3EB9E2266F(L_17, NULL);
 		goto IL_03db;
 	}
@@ -1778,6 +1816,7 @@ IL_01be:
 IL_01cf:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_18 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_18);
 		TextSelectingUtilities_MoveGraphicalLineEnd_m8BB408E28EA20EB56531B1FFD417FE54296008BE(L_18, NULL);
 		goto IL_03db;
 	}
@@ -1785,6 +1824,7 @@ IL_01cf:
 IL_01e0:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_19 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_19);
 		TextSelectingUtilities_SelectLeft_mB51FE46E45D1C077ACB44AC5E2BF63C52AC3727D(L_19, NULL);
 		goto IL_03db;
 	}
@@ -1792,6 +1832,7 @@ IL_01e0:
 IL_01f1:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_20 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_20);
 		TextSelectingUtilities_SelectRight_mFC95A2800C1CBEC7606EA8901F75CC946ED3BCA8(L_20, NULL);
 		goto IL_03db;
 	}
@@ -1799,6 +1840,7 @@ IL_01f1:
 IL_0202:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_21 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_21);
 		TextSelectingUtilities_SelectUp_m1D90105D04CF6CBAE84D059CEF0495FD2FF0C22A(L_21, NULL);
 		goto IL_03db;
 	}
@@ -1806,6 +1848,7 @@ IL_0202:
 IL_0213:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_22 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_22);
 		TextSelectingUtilities_SelectDown_m8E2EE5EC95CE507A7814D0FAAD865557C2A191C1(L_22, NULL);
 		goto IL_03db;
 	}
@@ -1813,6 +1856,7 @@ IL_0213:
 IL_0224:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_23 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_23);
 		TextSelectingUtilities_SelectWordRight_m75669B452A334F48FB1CE5E0AC6792862E706B5E(L_23, NULL);
 		goto IL_03db;
 	}
@@ -1820,6 +1864,7 @@ IL_0224:
 IL_0235:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_24 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_24);
 		TextSelectingUtilities_SelectWordLeft_mC488E7BBD9E8187F426A2F1CA82C528D76F4FCCC(L_24, NULL);
 		goto IL_03db;
 	}
@@ -1827,6 +1872,7 @@ IL_0235:
 IL_0246:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_25 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_25);
 		TextSelectingUtilities_SelectToEndOfPreviousWord_mAC43A04CA459FE506650A86B695900300E4B24D8(L_25, NULL);
 		goto IL_03db;
 	}
@@ -1834,6 +1880,7 @@ IL_0246:
 IL_0257:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_26 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_26);
 		TextSelectingUtilities_SelectToStartOfNextWord_mC53BBECD698C32BAD6B4856F52ACA9E9D59F3E52(L_26, NULL);
 		goto IL_03db;
 	}
@@ -1841,6 +1888,7 @@ IL_0257:
 IL_0268:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_27 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_27);
 		TextSelectingUtilities_SelectTextStart_mD4F085F9AF7C2441D60E54CDE64B96A6934D13A6(L_27, NULL);
 		goto IL_03db;
 	}
@@ -1848,6 +1896,7 @@ IL_0268:
 IL_0279:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_28 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_28);
 		TextSelectingUtilities_SelectTextEnd_mFF22956A56670B41BEE1A4527A9057B63BE89927(L_28, NULL);
 		goto IL_03db;
 	}
@@ -1855,6 +1904,7 @@ IL_0279:
 IL_028a:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_29 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_29);
 		TextSelectingUtilities_ExpandSelectGraphicalLineStart_m5E109D0A6A12D3D2FDF09F3E1407EB0347F7C4EF(L_29, NULL);
 		goto IL_03db;
 	}
@@ -1862,6 +1912,7 @@ IL_028a:
 IL_029b:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_30 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_30);
 		TextSelectingUtilities_ExpandSelectGraphicalLineEnd_mFCA738E71AADB3C1206F279BC2681CA906A36D74(L_30, NULL);
 		goto IL_03db;
 	}
@@ -1869,6 +1920,7 @@ IL_029b:
 IL_02ac:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_31 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_31);
 		TextSelectingUtilities_SelectParagraphForward_m64D82C33CE1B82DC1B994B6CA027D717AB4280EB(L_31, NULL);
 		goto IL_03db;
 	}
@@ -1876,6 +1928,7 @@ IL_02ac:
 IL_02bd:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_32 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_32);
 		TextSelectingUtilities_SelectParagraphBackward_m77EE0A0A167E91E1850937F543DBA615DC6DE0A0(L_32, NULL);
 		goto IL_03db;
 	}
@@ -1883,6 +1936,7 @@ IL_02bd:
 IL_02ce:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_33 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_33);
 		TextSelectingUtilities_SelectGraphicalLineStart_m87E74A85CBD46469B2D1263436D2BE2FE5ABDB38(L_33, NULL);
 		goto IL_03db;
 	}
@@ -1890,6 +1944,7 @@ IL_02ce:
 IL_02df:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_34 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_34);
 		TextSelectingUtilities_SelectGraphicalLineEnd_m60A6059D86AEB922ED7829EAF9C4E53B800911B4(L_34, NULL);
 		goto IL_03db;
 	}
@@ -1966,6 +2021,7 @@ IL_0330:
 IL_033c:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_44 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_44);
 		TextSelectingUtilities_Copy_m69701E12FFE465B70E677DCCCCF3148873A5FE0A(L_44, NULL);
 		goto IL_03db;
 	}
@@ -1996,6 +2052,7 @@ IL_035b:
 IL_0364:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_48 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_48);
 		TextSelectingUtilities_SelectAll_m89B71F5AF97AC5848616468DEFCF062C26DF23FD(L_48, NULL);
 		goto IL_03db;
 	}
@@ -2003,6 +2060,7 @@ IL_0364:
 IL_0372:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_49 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_49);
 		TextSelectingUtilities_SelectNone_m47791B4FBE066CCC974155E1BD9FE8ACCB48D21A(L_49, NULL);
 		goto IL_03db;
 	}
@@ -2116,6 +2174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_MapKey_mCC38540E032
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_2;
 		L_2 = Event_KeyboardEvent_m957733139998C86C7ECA28BA50863EB88B71418E(L_1, NULL);
 		int32_t L_3 = ___action1;
+		NullCheck(L_0);
 		Dictionary_2_set_Item_m7C80206E9B68A60320FC66A7FACCE02AE53DCBFE(L_0, L_2, L_3, Dictionary_2_set_Item_m7C80206E9B68A60320FC66A7FACCE02AE53DCBFE_RuntimeMethod_var);
 		return;
 	}
@@ -2209,6 +2268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_InitKeyActions_m08B
 IL_0012:
 	{
 		Dictionary_2_t172B73FE2F03582ACCE7C2CAA76DACD0B57176A1* L_2 = (Dictionary_2_t172B73FE2F03582ACCE7C2CAA76DACD0B57176A1*)il2cpp_codegen_object_new(Dictionary_2_t172B73FE2F03582ACCE7C2CAA76DACD0B57176A1_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		Dictionary_2__ctor_mB61B3EBE795F6BB008E39165A70172873368FF44(L_2, Dictionary_2__ctor_mB61B3EBE795F6BB008E39165A70172873368FF44_RuntimeMethod_var);
 		((TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_StaticFields*)il2cpp_codegen_static_fields_for(TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_il2cpp_TypeInfo_var))->___s_Keyactions_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&((TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_StaticFields*)il2cpp_codegen_static_fields_for(TextEditingUtilities_t820601DF226F1304342A16EB09852FEA56AA8770_il2cpp_TypeInfo_var))->___s_Keyactions_5), (void*)L_2);
@@ -2353,6 +2413,7 @@ IL_002c:
 		String_t* L_5;
 		L_5 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
 		int32_t L_6 = V_1;
+		NullCheck(L_5);
 		Il2CppChar L_7;
 		L_7 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_5, L_6, NULL);
 		V_4 = (bool)((((int32_t)L_7) == ((int32_t)((int32_t)10)))? 1 : 0);
@@ -2414,6 +2475,7 @@ IL_0063:
 		int32_t L_20;
 		L_20 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		int32_t L_21 = V_0;
+		NullCheck(L_18);
 		String_t* L_22;
 		L_22 = String_Remove_m4D7A58E2124F8D0D8AE3EEDE74B6AD6A863ABA68(L_18, L_19, ((int32_t)il2cpp_codegen_subtract(L_20, L_21)), NULL);
 		TextEditingUtilities_set_text_mC1FD19476AF4FA014E9DBA5A33C54A57E2FA70EC(__this, L_22, NULL);
@@ -2423,6 +2485,7 @@ IL_0063:
 		V_8 = L_25;
 		TextEditingUtilities_set_cursorIndex_mED289FA84CA33C4A695463C856524B501A78FEF4(__this, L_25, NULL);
 		int32_t L_26 = V_8;
+		NullCheck(L_23);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(L_23, L_26, NULL);
 		V_3 = (bool)1;
 		goto IL_00b2;
@@ -2471,6 +2534,7 @@ IL_001e:
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_3 = __this->___m_TextSelectingUtility_0;
 		int32_t L_4;
 		L_4 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_3);
 		int32_t L_5;
 		L_5 = TextSelectingUtilities_FindEndOfPreviousWord_mA7AF965D2F01728EE872F2CB3F03083ABA63D174(L_3, L_4, NULL);
 		V_0 = L_5;
@@ -2491,6 +2555,7 @@ IL_001e:
 		int32_t L_11;
 		L_11 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		int32_t L_12 = V_0;
+		NullCheck(L_9);
 		String_t* L_13;
 		L_13 = String_Remove_m4D7A58E2124F8D0D8AE3EEDE74B6AD6A863ABA68(L_9, L_10, ((int32_t)il2cpp_codegen_subtract(L_11, L_12)), NULL);
 		TextEditingUtilities_set_text_mC1FD19476AF4FA014E9DBA5A33C54A57E2FA70EC(__this, L_13, NULL);
@@ -2546,6 +2611,7 @@ IL_001e:
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_3 = __this->___m_TextSelectingUtility_0;
 		int32_t L_4;
 		L_4 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_3);
 		int32_t L_5;
 		L_5 = TextSelectingUtilities_FindStartOfNextWord_m3D436C6FB45B3574F6F436B7CBAD30F5372C6870(L_3, L_4, NULL);
 		V_0 = L_5;
@@ -2553,6 +2619,7 @@ IL_001e:
 		L_6 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		String_t* L_7;
 		L_7 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
+		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		V_3 = (bool)((((int32_t)L_6) < ((int32_t)L_8))? 1 : 0);
@@ -2570,6 +2637,7 @@ IL_001e:
 		int32_t L_12 = V_0;
 		int32_t L_13;
 		L_13 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_10);
 		String_t* L_14;
 		L_14 = String_Remove_m4D7A58E2124F8D0D8AE3EEDE74B6AD6A863ABA68(L_10, L_11, ((int32_t)il2cpp_codegen_subtract(L_12, L_13)), NULL);
 		TextEditingUtilities_set_text_mC1FD19476AF4FA014E9DBA5A33C54A57E2FA70EC(__this, L_14, NULL);
@@ -2619,6 +2687,7 @@ IL_001e:
 		L_3 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		String_t* L_4;
 		L_4 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
+		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
 		V_2 = (bool)((((int32_t)L_3) < ((int32_t)L_5))? 1 : 0);
@@ -2636,10 +2705,12 @@ IL_001e:
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_9 = __this->___m_TextSelectingUtility_0;
 		int32_t L_10;
 		L_10 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_9);
 		int32_t L_11;
 		L_11 = TextSelectingUtilities_NextCodePointIndex_mA936059BE65DAABE0446AFB5425BB4EA83392607(L_9, L_10, NULL);
 		int32_t L_12;
 		L_12 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_7);
 		String_t* L_13;
 		L_13 = String_Remove_m4D7A58E2124F8D0D8AE3EEDE74B6AD6A863ABA68(L_7, L_8, ((int32_t)il2cpp_codegen_subtract(L_11, L_12)), NULL);
 		TextEditingUtilities_set_text_mC1FD19476AF4FA014E9DBA5A33C54A57E2FA70EC(__this, L_13, NULL);
@@ -2700,6 +2771,7 @@ IL_001e:
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_5 = __this->___m_TextSelectingUtility_0;
 		int32_t L_6;
 		L_6 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_5);
 		int32_t L_7;
 		L_7 = TextSelectingUtilities_PreviousCodePointIndex_mCE1A8A7E9180B182AEA4DB6562EBDE854A860C6D(L_5, L_6, NULL);
 		V_3 = L_7;
@@ -2709,6 +2781,7 @@ IL_001e:
 		int32_t L_10;
 		L_10 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		int32_t L_11 = V_3;
+		NullCheck(L_8);
 		String_t* L_12;
 		L_12 = String_Remove_m4D7A58E2124F8D0D8AE3EEDE74B6AD6A863ABA68(L_8, L_9, ((int32_t)il2cpp_codegen_subtract(L_10, L_11)), NULL);
 		TextEditingUtilities_set_text_mC1FD19476AF4FA014E9DBA5A33C54A57E2FA70EC(__this, L_12, NULL);
@@ -2719,6 +2792,7 @@ IL_001e:
 		int32_t L_15 = V_4;
 		TextEditingUtilities_set_selectIndex_mFB98D1E5E2C236DEEE7A45619965502B73E0ADBA(__this, L_15, NULL);
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_16 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_16);
 		TextSelectingUtilities_ClearCursorPos_m743C82F3CC7576E5050B6FA23133EC3FA8E9ED9C(L_16, NULL);
 		V_1 = (bool)1;
 		goto IL_0081;
@@ -2777,6 +2851,7 @@ IL_001a:
 		L_6 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
 		int32_t L_7;
 		L_7 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_6);
 		String_t* L_8;
 		L_8 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_6, 0, L_7, NULL);
 		String_t* L_9;
@@ -2785,10 +2860,12 @@ IL_001a:
 		L_10 = TextEditingUtilities_get_selectIndex_m1331CF40E64C203B1713CFC2FEC5E0F30FFC737A(__this, NULL);
 		String_t* L_11;
 		L_11 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
+		NullCheck(L_11);
 		int32_t L_12;
 		L_12 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_11, NULL);
 		int32_t L_13;
 		L_13 = TextEditingUtilities_get_selectIndex_m1331CF40E64C203B1713CFC2FEC5E0F30FFC737A(__this, NULL);
+		NullCheck(L_9);
 		String_t* L_14;
 		L_14 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_9, L_10, ((int32_t)il2cpp_codegen_subtract(L_12, L_13)), NULL);
 		String_t* L_15;
@@ -2797,6 +2874,7 @@ IL_001a:
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_16 = __this->___m_TextSelectingUtility_0;
 		int32_t L_17;
 		L_17 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_16);
 		TextSelectingUtilities_SetSelectIndexWithoutNotify_m33DB6522D2FA6877E3B991CDFD4944836A5D77FF(L_16, L_17, NULL);
 		goto IL_00d8;
 	}
@@ -2807,6 +2885,7 @@ IL_0083:
 		L_18 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
 		int32_t L_19;
 		L_19 = TextEditingUtilities_get_selectIndex_m1331CF40E64C203B1713CFC2FEC5E0F30FFC737A(__this, NULL);
+		NullCheck(L_18);
 		String_t* L_20;
 		L_20 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_18, 0, L_19, NULL);
 		String_t* L_21;
@@ -2815,10 +2894,12 @@ IL_0083:
 		L_22 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		String_t* L_23;
 		L_23 = TextEditingUtilities_get_text_mC8854D29B1F95E04E0FFB49F1F2327E77598EF8E(__this, NULL);
+		NullCheck(L_23);
 		int32_t L_24;
 		L_24 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_23, NULL);
 		int32_t L_25;
 		L_25 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
+		NullCheck(L_21);
 		String_t* L_26;
 		L_26 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_21, L_22, ((int32_t)il2cpp_codegen_subtract(L_24, L_25)), NULL);
 		String_t* L_27;
@@ -2827,12 +2908,14 @@ IL_0083:
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_28 = __this->___m_TextSelectingUtility_0;
 		int32_t L_29;
 		L_29 = TextEditingUtilities_get_selectIndex_m1331CF40E64C203B1713CFC2FEC5E0F30FFC737A(__this, NULL);
+		NullCheck(L_28);
 		TextSelectingUtilities_SetCursorIndexWithoutNotify_mF240906A6FA8A38F5CB6AD1C5601265D05CCCAEE(L_28, L_29, NULL);
 	}
 
 IL_00d8:
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_30 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_30);
 		TextSelectingUtilities_ClearCursorPos_m743C82F3CC7576E5050B6FA23133EC3FA8E9ED9C(L_30, NULL);
 		V_1 = (bool)1;
 		goto IL_00e8;
@@ -2856,6 +2939,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_ReplaceSelection_m4
 		int32_t L_2;
 		L_2 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		String_t* L_3 = ___replace0;
+		NullCheck(L_1);
 		String_t* L_4;
 		L_4 = String_Insert_mA279E748F06514A6D0B9B680D651D6A6C6BB561A(L_1, L_2, L_3, NULL);
 		TextEditingUtilities_set_text_mC1FD19476AF4FA014E9DBA5A33C54A57E2FA70EC(__this, L_4, NULL);
@@ -2863,17 +2947,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_ReplaceSelection_m4
 		int32_t L_6;
 		L_6 = TextEditingUtilities_get_cursorIndex_m0D23C8510F3F2A20BBF5796F00CC36DA8BB32BD9(__this, NULL);
 		String_t* L_7 = ___replace0;
+		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
+		NullCheck(L_5);
 		TextSelectingUtilities_SetCursorIndexWithoutNotify_mF240906A6FA8A38F5CB6AD1C5601265D05CCCAEE(L_5, ((int32_t)il2cpp_codegen_add(L_6, L_8)), NULL);
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_9 = __this->___m_TextSelectingUtility_0;
 		int32_t L_10;
 		L_10 = TextEditingUtilities_get_selectIndex_m1331CF40E64C203B1713CFC2FEC5E0F30FFC737A(__this, NULL);
 		String_t* L_11 = ___replace0;
+		NullCheck(L_11);
 		int32_t L_12;
 		L_12 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_11, NULL);
+		NullCheck(L_9);
 		TextSelectingUtilities_SetSelectIndexWithoutNotify_m33DB6522D2FA6877E3B991CDFD4944836A5D77FF(L_9, ((int32_t)il2cpp_codegen_add(L_10, L_12)), NULL);
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_13 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_13);
 		TextSelectingUtilities_ClearCursorPos_m743C82F3CC7576E5050B6FA23133EC3FA8E9ED9C(L_13, NULL);
 		return;
 	}
@@ -2895,6 +2984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_CanPaste_m81E3C512E
 	{
 		String_t* L_0;
 		L_0 = GUIUtility_get_systemCopyBuffer_m01E2DF71533C31A4C552B9177D7CBA0C6CA3FC2A(NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_0 = (bool)((!(((uint32_t)L_1) <= ((uint32_t)0)))? 1 : 0);
@@ -2913,6 +3003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_Cut_m5E08F36BC2F88E
 	bool V_0 = false;
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_0);
 		TextSelectingUtilities_Copy_m69701E12FFE465B70E677DCCCCF3148873A5FE0A(L_0, NULL);
 		bool L_1;
 		L_1 = TextEditingUtilities_DeleteSelection_mF7E0C7A8B7A8984A5DA2C55839BFE60E0A70B847(__this, NULL);
@@ -2956,6 +3047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextEditingUtilities_Paste_m876D2AD7A881
 	}
 	{
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_4 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_4);
 		bool L_5 = L_4->___multiline_3;
 		V_2 = (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
 		bool L_6 = V_2;
@@ -3004,14 +3096,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TextEditingUtilities_ReplaceNewline
 	String_t* V_0 = NULL;
 	{
 		String_t* L_0 = ___value0;
+		NullCheck(L_0);
 		String_t* L_1;
 		L_1 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_0, _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, NULL);
 		___value0 = L_1;
 		String_t* L_2 = ___value0;
+		NullCheck(L_2);
 		String_t* L_3;
 		L_3 = String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF(L_2, ((int32_t)10), ((int32_t)32), NULL);
 		___value0 = L_3;
 		String_t* L_4 = ___value0;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF(L_4, ((int32_t)13), ((int32_t)32), NULL);
 		___value0 = L_5;
@@ -3032,6 +3127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditingUtilities_OnBlur_mCD1823DED60
 	{
 		TextEditingUtilities_set_revealCursor_m76B8081758CCD459072EAEF3B8FE3017A57735C2(__this, (bool)0, NULL);
 		TextSelectingUtilities_tD0369D75359211EA5F31B1B5FC9410359A2A4DB7* L_0 = __this->___m_TextSelectingUtility_0;
+		NullCheck(L_0);
 		TextSelectingUtilities_SelectNone_m47791B4FBE066CCC974155E1BD9FE8ACCB48D21A(L_0, NULL);
 		return;
 	}
@@ -3070,6 +3166,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextEditor__ctor_m4AEAC85E4950B709A35F26
 		L_1 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		__this->___scrollOffset_6 = L_1;
 		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_2 = (GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2*)il2cpp_codegen_object_new(GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		GUIContent__ctor_m89AC53A7E9BF9EB9E70297353DEAA6FEC2C800AC(L_2, NULL);
 		__this->___m_Content_7 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Content_7), (void*)L_2);
@@ -3154,6 +3251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_set_revealCursor_
 
 IL_0025:
 	{
+		NullCheck(G_B3_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B3_0, NULL);
 	}
 
@@ -3235,6 +3333,7 @@ IL_0013:
 
 IL_001e:
 	{
+		NullCheck(G_B4_1);
 		G_B4_1->___m_Text_7 = G_B4_0;
 		Il2CppCodeGenWriteBarrier((void**)(&G_B4_1->___m_Text_7), (void*)G_B4_0);
 		int32_t* L_7 = (&__this->___m_CursorIndex_5);
@@ -3256,6 +3355,7 @@ IL_001e:
 
 IL_0049:
 	{
+		NullCheck(G_B6_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B6_0, NULL);
 	}
 
@@ -3314,6 +3414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_set_cursorIndex_m
 
 IL_0026:
 	{
+		NullCheck(G_B3_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B3_0, NULL);
 	}
 
@@ -3387,6 +3488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_set_selectIndex_m
 
 IL_0026:
 	{
+		NullCheck(G_B3_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B3_0, NULL);
 	}
 
@@ -3461,6 +3563,7 @@ IL_001b:
 		L_8 = TextSelectingUtilities_get_selectIndex_m1535CA4D982CC3A4C46E4491FA36E9514243CCB9(__this, NULL);
 		int32_t L_9;
 		L_9 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_6);
 		String_t* L_10;
 		L_10 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_6, L_7, ((int32_t)il2cpp_codegen_subtract(L_8, L_9)), NULL);
 		V_1 = L_10;
@@ -3477,6 +3580,7 @@ IL_004e:
 		L_13 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
 		int32_t L_14;
 		L_14 = TextSelectingUtilities_get_selectIndex_m1535CA4D982CC3A4C46E4491FA36E9514243CCB9(__this, NULL);
+		NullCheck(L_11);
 		String_t* L_15;
 		L_15 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_11, L_12, ((int32_t)il2cpp_codegen_subtract(L_13, L_14)), NULL);
 		V_1 = L_15;
@@ -3568,6 +3672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectAll_m89B71F
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, 0, NULL);
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(__this, L_1, NULL);
@@ -3691,6 +3796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectUp_m1D90105
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_0 = __this->___m_TextHandle_11;
 		int32_t L_1;
 		L_1 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_2;
 		L_2 = TextHandle_LineUpCharacterPosition_m69F1091BCD4A92E343B60966F4C49A9E36106C5B(L_0, L_1, NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, L_2, NULL);
@@ -3704,6 +3810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectDown_m8E2EE
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_0 = __this->___m_TextHandle_11;
 		int32_t L_1;
 		L_1 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_2;
 		L_2 = TextHandle_LineDownCharacterPosition_mDD7F4379B59B9CAF7431CCC3E4056CF3511ECF9F(L_0, L_1, NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, L_2, NULL);
@@ -3716,6 +3823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectTextEnd_mFF
 	{
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, L_1, NULL);
@@ -3817,6 +3925,7 @@ IL_0055:
 
 IL_005b:
 	{
+		NullCheck(G_B4_1);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B4_1, G_B4_0, NULL);
 		goto IL_007f;
 	}
@@ -3897,6 +4006,7 @@ IL_0055:
 
 IL_005b:
 	{
+		NullCheck(G_B4_1);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B4_1, G_B4_0, NULL);
 		goto IL_007f;
 	}
@@ -3960,6 +4070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectParagraphFo
 		L_2 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
 		String_t* L_3;
 		L_3 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_3, NULL);
 		V_1 = (bool)((((int32_t)L_2) < ((int32_t)L_4))? 1 : 0);
@@ -4048,6 +4159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectParagraphBa
 		L_4 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_5;
 		L_5 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_4);
 		int32_t L_6;
 		L_6 = String_LastIndexOf_m3EB3F4ECDF6D990ADBACB6B168A8CBD4772B91A7(L_4, ((int32_t)10), ((int32_t)il2cpp_codegen_subtract(L_5, 2)), NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, ((int32_t)il2cpp_codegen_add(L_6, 1)), NULL);
@@ -4166,6 +4278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectCurrentPara
 		TextSelectingUtilities_ClearCursorPos_m743C82F3CC7576E5050B6FA23133EC3FA8E9ED9C(__this, NULL);
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_0 = L_1;
@@ -4203,6 +4316,7 @@ IL_0034:
 		L_9 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_10;
 		L_10 = TextSelectingUtilities_get_selectIndex_m1535CA4D982CC3A4C46E4491FA36E9514243CCB9(__this, NULL);
+		NullCheck(L_9);
 		int32_t L_11;
 		L_11 = String_LastIndexOf_m3EB3F4ECDF6D990ADBACB6B168A8CBD4772B91A7(L_9, ((int32_t)10), ((int32_t)il2cpp_codegen_subtract(L_10, 1)), NULL);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(__this, ((int32_t)il2cpp_codegen_add(L_11, 1)), NULL);
@@ -4382,6 +4496,7 @@ IL_002f:
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_5 = __this->___m_TextHandle_11;
 		int32_t L_6;
 		L_6 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_5);
 		int32_t L_7;
 		L_7 = TextHandle_LineUpCharacterPosition_m69F1091BCD4A92E343B60966F4C49A9E36106C5B(L_5, L_6, NULL);
 		int32_t L_8 = L_7;
@@ -4444,6 +4559,7 @@ IL_002f:
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_5 = __this->___m_TextHandle_11;
 		int32_t L_6;
 		L_6 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_5);
 		int32_t L_7;
 		L_7 = TextHandle_LineDownCharacterPosition_mDD7F4379B59B9CAF7431CCC3E4056CF3511ECF9F(L_5, L_6, NULL);
 		int32_t L_8 = L_7;
@@ -4455,6 +4571,7 @@ IL_002f:
 		L_10 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
 		String_t* L_11;
 		L_11 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_11);
 		int32_t L_12;
 		L_12 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_11, NULL);
 		V_2 = (bool)((((int32_t)L_10) == ((int32_t)L_12))? 1 : 0);
@@ -4519,6 +4636,7 @@ IL_0022:
 		String_t* L_5;
 		L_5 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_6 = V_1;
+		NullCheck(L_5);
 		Il2CppChar L_7;
 		L_7 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_5, L_6, NULL);
 		V_2 = (bool)((((int32_t)L_7) == ((int32_t)((int32_t)10)))? 1 : 0);
@@ -4604,6 +4722,7 @@ IL_001d:
 		V_1 = L_4;
 		String_t* L_5;
 		L_5 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_5, NULL);
 		V_2 = L_6;
@@ -4615,6 +4734,7 @@ IL_002e:
 		String_t* L_7;
 		L_7 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_8 = V_1;
+		NullCheck(L_7);
 		Il2CppChar L_9;
 		L_9 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_7, L_8, NULL);
 		V_3 = (bool)((((int32_t)L_9) == ((int32_t)((int32_t)10)))? 1 : 0);
@@ -4717,12 +4837,15 @@ IL_001a:
 
 IL_0020:
 	{
+		NullCheck(G_B3_1);
 		int32_t L_4;
 		L_4 = TextSelectingUtilities_GetGraphicalLineStart_mEDB6AF99C1BBE0A1180AEE4FE67DDC0A223BD218(G_B3_1, G_B3_0, NULL);
 		int32_t L_5 = L_4;
 		V_0 = L_5;
+		NullCheck(G_B3_2);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(G_B3_2, L_5, NULL);
 		int32_t L_6 = V_0;
+		NullCheck(G_B3_3);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B3_3, L_6, NULL);
 		return;
 	}
@@ -4779,12 +4902,15 @@ IL_001a:
 
 IL_0020:
 	{
+		NullCheck(G_B3_1);
 		int32_t L_4;
 		L_4 = TextSelectingUtilities_GetGraphicalLineEnd_mD956DB2F4EC24F3DE89069232733376B615D3204(G_B3_1, G_B3_0, NULL);
 		int32_t L_5 = L_4;
 		V_0 = L_5;
+		NullCheck(G_B3_2);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(G_B3_2, L_5, NULL);
 		int32_t L_6 = V_0;
+		NullCheck(G_B3_3);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B3_3, L_6, NULL);
 		return;
 	}
@@ -4809,6 +4935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_MoveTextEnd_mDA69
 	{
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		int32_t L_2 = L_1;
@@ -4858,11 +4985,13 @@ IL_0018:
 
 IL_001e:
 	{
+		NullCheck(G_B3_1);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B3_1, G_B3_0, NULL);
 		int32_t L_4;
 		L_4 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
 		String_t* L_5;
 		L_5 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_5, NULL);
 		V_0 = (bool)((((int32_t)L_4) < ((int32_t)L_6))? 1 : 0);
@@ -4928,6 +5057,7 @@ IL_0018:
 
 IL_001e:
 	{
+		NullCheck(G_B3_1);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B3_1, G_B3_0, NULL);
 		int32_t L_4;
 		L_4 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
@@ -4943,6 +5073,7 @@ IL_001e:
 		L_6 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_7;
 		L_7 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
+		NullCheck(L_6);
 		int32_t L_8;
 		L_8 = String_LastIndexOf_m3EB3F4ECDF6D990ADBACB6B168A8CBD4772B91A7(L_6, ((int32_t)10), ((int32_t)il2cpp_codegen_subtract(L_7, 2)), NULL);
 		int32_t L_9 = ((int32_t)il2cpp_codegen_add(L_8, 1));
@@ -5005,6 +5136,7 @@ IL_0018:
 
 IL_001e:
 	{
+		NullCheck(G_B3_1);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B3_1, G_B3_0, NULL);
 		int32_t L_4;
 		L_4 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
@@ -5138,6 +5270,7 @@ IL_0018:
 
 IL_001e:
 	{
+		NullCheck(G_B3_1);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(G_B3_1, G_B3_0, NULL);
 		int32_t L_4;
 		L_4 = TextSelectingUtilities_get_cursorIndex_m89386F5B913CD481337E49A0635834F433B4AC5F(__this, NULL);
@@ -5249,6 +5382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_MoveCursorToPosit
 	{
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_0 = __this->___m_TextHandle_11;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = ___cursorPosition0;
+		NullCheck(L_0);
 		int32_t L_2;
 		L_2 = TextHandle_GetCursorIndexFromPosition_m68B7D720ED1589CC46538FACB50E7F7E56AA701E(L_0, L_1, (bool)1, NULL);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(__this, L_2, NULL);
@@ -5293,6 +5427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_SelectToPosition_
 	{
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_2 = __this->___m_TextHandle_11;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = ___cursorPosition0;
+		NullCheck(L_2);
 		int32_t L_4;
 		L_4 = TextHandle_GetCursorIndexFromPosition_m68B7D720ED1589CC46538FACB50E7F7E56AA701E(L_2, L_3, (bool)1, NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, L_4, NULL);
@@ -5303,6 +5438,7 @@ IL_0027:
 	{
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_5 = __this->___m_TextHandle_11;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___cursorPosition0;
+		NullCheck(L_5);
 		int32_t L_7;
 		L_7 = TextHandle_GetCursorIndexFromPosition_m68B7D720ED1589CC46538FACB50E7F7E56AA701E(L_5, L_6, (bool)1, NULL);
 		V_1 = L_7;
@@ -5382,6 +5518,7 @@ IL_00b9:
 		int32_t L_28 = V_1;
 		int32_t L_29;
 		L_29 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(0, ((int32_t)il2cpp_codegen_subtract(L_28, 2)), NULL);
+		NullCheck(L_27);
 		int32_t L_30;
 		L_30 = String_LastIndexOf_m3EB3F4ECDF6D990ADBACB6B168A8CBD4772B91A7(L_27, ((int32_t)10), L_29, NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, ((int32_t)il2cpp_codegen_add(L_30, 1)), NULL);
@@ -5399,11 +5536,13 @@ IL_00fd:
 		L_31 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		String_t* L_32;
 		L_32 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_32);
 		int32_t L_33;
 		L_33 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_32, NULL);
 		int32_t L_34 = __this->___m_DblClickInitPos_10;
 		int32_t L_35;
 		L_35 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(((int32_t)il2cpp_codegen_subtract(L_33, 1)), L_34, NULL);
+		NullCheck(L_31);
 		int32_t L_36;
 		L_36 = String_LastIndexOf_m3EB3F4ECDF6D990ADBACB6B168A8CBD4772B91A7(L_31, ((int32_t)10), L_35, NULL);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(__this, L_36, NULL);
@@ -5415,6 +5554,7 @@ IL_012c:
 		int32_t L_37 = V_1;
 		String_t* L_38;
 		L_38 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_38, NULL);
 		V_6 = (bool)((((int32_t)L_37) < ((int32_t)L_39))? 1 : 0);
@@ -5436,6 +5576,7 @@ IL_0153:
 	{
 		String_t* L_43;
 		L_43 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_43);
 		int32_t L_44;
 		L_44 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_43, NULL);
 		TextSelectingUtilities_set_cursorIndex_m0D3D5D519DA459906E983EABAA4AF692C4763269(__this, L_44, NULL);
@@ -5448,6 +5589,7 @@ IL_0165:
 		int32_t L_46 = __this->___m_DblClickInitPos_10;
 		int32_t L_47;
 		L_47 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(0, ((int32_t)il2cpp_codegen_subtract(L_46, 2)), NULL);
+		NullCheck(L_45);
 		int32_t L_48;
 		L_48 = String_LastIndexOf_m3EB3F4ECDF6D990ADBACB6B168A8CBD4772B91A7(L_45, ((int32_t)10), L_47, NULL);
 		TextSelectingUtilities_set_selectIndex_m1697EFBA1D0B91E0B20FD23B69A43D32D2110F10(__this, ((int32_t)il2cpp_codegen_add(L_48, 1)), NULL);
@@ -5478,6 +5620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_FindNextSepera
 	{
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_0 = L_1;
@@ -5744,6 +5887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_FindStartOfNex
 	{
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_0 = L_1;
@@ -5833,6 +5977,7 @@ IL_0060:
 		String_t* L_20;
 		L_20 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_21 = ___p0;
+		NullCheck(L_20);
 		Il2CppChar L_22;
 		L_22 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_20, L_21, NULL);
 		if ((((int32_t)L_22) == ((int32_t)((int32_t)9))))
@@ -5844,6 +5989,7 @@ IL_0060:
 		String_t* L_23;
 		L_23 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_24 = ___p0;
+		NullCheck(L_23);
 		Il2CppChar L_25;
 		L_25 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_23, L_24, NULL);
 		G_B13_0 = ((((int32_t)L_25) == ((int32_t)((int32_t)10)))? 1 : 0);
@@ -5898,6 +6044,7 @@ IL_00a3:
 		String_t* L_33;
 		L_33 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_34 = ___p0;
+		NullCheck(L_33);
 		Il2CppChar L_35;
 		L_35 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_33, L_34, NULL);
 		V_8 = (bool)((((int32_t)L_35) == ((int32_t)((int32_t)32)))? 1 : 0);
@@ -5959,6 +6106,7 @@ IL_00df:
 		String_t* L_44;
 		L_44 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_45 = ___p0;
+		NullCheck(L_44);
 		Il2CppChar L_46;
 		L_46 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_44, L_45, NULL);
 		if ((((int32_t)L_46) == ((int32_t)((int32_t)9))))
@@ -5970,6 +6118,7 @@ IL_00df:
 		String_t* L_47;
 		L_47 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_48 = ___p0;
+		NullCheck(L_47);
 		Il2CppChar L_49;
 		L_49 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_47, L_48, NULL);
 		G_B29_0 = ((((int32_t)L_49) == ((int32_t)((int32_t)10)))? 1 : 0);
@@ -6064,6 +6213,7 @@ IL_0021:
 		String_t* L_8;
 		L_8 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_9 = ___p0;
+		NullCheck(L_8);
 		Il2CppChar L_10;
 		L_10 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_8, L_9, NULL);
 		G_B7_0 = ((((int32_t)L_10) == ((int32_t)((int32_t)32)))? 1 : 0);
@@ -6176,6 +6326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_FindEndOfClass
 	{
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_1 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
@@ -6195,6 +6346,7 @@ IL_001a:
 		int32_t L_3 = ___p0;
 		String_t* L_4;
 		L_4 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
 		V_3 = (bool)((((int32_t)L_3) == ((int32_t)L_5))? 1 : 0);
@@ -6314,6 +6466,7 @@ IL_008f:
 		int32_t L_27 = ___p0;
 		String_t* L_28;
 		L_28 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_28);
 		int32_t L_29;
 		L_29 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_28, NULL);
 		V_8 = (bool)((((int32_t)L_27) == ((int32_t)L_29))? 1 : 0);
@@ -6326,6 +6479,7 @@ IL_008f:
 	{
 		String_t* L_31;
 		L_31 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_31);
 		int32_t L_32;
 		L_32 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_31, NULL);
 		V_2 = L_32;
@@ -6389,6 +6543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextSelectingUtilities_ClampTextIndex_m5
 		int32_t L_2 = *((int32_t*)L_1);
 		String_t* L_3;
 		L_3 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_3, NULL);
 		int32_t L_5;
@@ -6454,6 +6609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextSelectingUtilities_IsValidCodePointI
 		int32_t L_1 = ___index0;
 		String_t* L_2;
 		L_2 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_2, NULL);
 		G_B3_0 = ((((int32_t)L_1) > ((int32_t)L_3))? 1 : 0);
@@ -6491,6 +6647,7 @@ IL_001e:
 		int32_t L_6 = ___index0;
 		String_t* L_7;
 		L_7 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		G_B8_0 = ((((int32_t)L_6) == ((int32_t)L_8))? 1 : 0);
@@ -6521,6 +6678,7 @@ IL_003a:
 		String_t* L_10;
 		L_10 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_11 = ___index0;
+		NullCheck(L_10);
 		Il2CppChar L_12;
 		L_12 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_10, L_11, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
@@ -6546,6 +6704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_IndexOfEndOfLi
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_1 = ___startIndex0;
+		NullCheck(L_0);
 		int32_t L_2;
 		L_2 = String_IndexOf_m15B90A59047584420D227EE3A7EAC0C5EAF676F4(L_0, ((int32_t)10), L_1, NULL);
 		V_0 = L_2;
@@ -6558,6 +6717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_IndexOfEndOfLi
 	{
 		String_t* L_4;
 		L_4 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
 		G_B3_0 = L_5;
@@ -6632,6 +6792,7 @@ IL_0015:
 		String_t* L_5;
 		L_5 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_6 = ___index0;
+		NullCheck(L_5);
 		Il2CppChar L_7;
 		L_7 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_5, L_6, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
@@ -6684,6 +6845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_NextCodePointI
 		int32_t L_0 = ___index0;
 		String_t* L_1;
 		L_1 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
 		V_0 = (bool)((((int32_t)L_0) < ((int32_t)L_2))? 1 : 0);
@@ -6714,6 +6876,7 @@ IL_001f:
 		int32_t L_6 = ___index0;
 		String_t* L_7;
 		L_7 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
+		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		if ((((int32_t)L_6) >= ((int32_t)L_8)))
@@ -6725,6 +6888,7 @@ IL_001f:
 		String_t* L_9;
 		L_9 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_10 = ___index0;
+		NullCheck(L_9);
 		Il2CppChar L_11;
 		L_11 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_9, L_10, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
@@ -6769,6 +6933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_GetGraphicalLi
 	{
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_0 = __this->___m_TextHandle_11;
 		int32_t L_1 = ___p0;
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = TextHandle_GetCursorPositionFromStringIndexUsingLineHeight_m44EE4238CC96507DCEB45A28D61E969C877011FE(L_0, L_1, (bool)0, (bool)1, NULL);
 		V_0 = L_2;
@@ -6781,6 +6946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_GetGraphicalLi
 		(&V_0)->___x_0 = (0.0f);
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_7 = __this->___m_TextHandle_11;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = V_0;
+		NullCheck(L_7);
 		int32_t L_9;
 		L_9 = TextHandle_GetCursorIndexFromPosition_m68B7D720ED1589CC46538FACB50E7F7E56AA701E(L_7, L_8, (bool)1, NULL);
 		V_1 = L_9;
@@ -6802,6 +6968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_GetGraphicalLi
 	{
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_0 = __this->___m_TextHandle_11;
 		int32_t L_1 = ___p0;
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = TextHandle_GetCursorPositionFromStringIndexUsingLineHeight_m44EE4238CC96507DCEB45A28D61E969C877011FE(L_0, L_1, (bool)0, (bool)1, NULL);
 		V_0 = L_2;
@@ -6817,6 +6984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_GetGraphicalLi
 		*((float*)L_8) = (float)((float)il2cpp_codegen_add(L_9, (5000.0f)));
 		TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8* L_10 = __this->___m_TextHandle_11;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = V_0;
+		NullCheck(L_10);
 		int32_t L_12;
 		L_12 = TextHandle_GetCursorIndexFromPosition_m68B7D720ED1589CC46538FACB50E7F7E56AA701E(L_10, L_11, (bool)1, NULL);
 		V_1 = L_12;
@@ -6879,6 +7047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextSelectingUtilities_ClassifyChar_m
 		String_t* L_0;
 		L_0 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_1 = ___index0;
+		NullCheck(L_0);
 		Il2CppChar L_2;
 		L_2 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_0, L_1, NULL);
 		V_0 = (bool)((((int32_t)L_2) == ((int32_t)((int32_t)10)))? 1 : 0);
@@ -6930,6 +7099,7 @@ IL_002d:
 		String_t* L_11;
 		L_11 = TextSelectingUtilities_get_text_m112EC910CA1D5ED5CBC6359251334A4D66B19FF3(__this, NULL);
 		int32_t L_12 = ___index0;
+		NullCheck(L_11);
 		Il2CppChar L_13;
 		L_13 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_11, L_12, NULL);
 		G_B7_0 = ((((int32_t)L_13) == ((int32_t)((int32_t)39)))? 1 : 0);
@@ -6997,6 +7167,7 @@ IL_000d:
 	{
 		String_t* L_1 = ___s0;
 		int32_t L_2 = V_1;
+		NullCheck(L_1);
 		Il2CppChar L_3;
 		L_3 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_1, L_2, NULL);
 		uint32_t L_4 = V_0;
@@ -7009,6 +7180,7 @@ IL_0021:
 	{
 		int32_t L_6 = V_1;
 		String_t* L_7 = ___s0;
+		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		if ((((int32_t)L_6) >= ((int32_t)L_8)))

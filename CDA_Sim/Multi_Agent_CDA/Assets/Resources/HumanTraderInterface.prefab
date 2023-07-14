@@ -68,3 +68,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_traderHuman: {fileID: 0}
+  clientUIManager_mobile: {fileID: 0}
+  clientUIManager_desktop: {fileID: 0}

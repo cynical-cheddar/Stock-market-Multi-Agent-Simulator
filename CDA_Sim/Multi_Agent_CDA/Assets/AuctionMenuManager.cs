@@ -14,6 +14,7 @@ public class AuctionMenuManager : MonoBehaviour
 
     public GameObject adminGamePanel;
     public GameObject clientGamePanel;
+    public GameObject clientGamePanel_mobile;
 
     public Text current_connected_players_text;
     public Text players_in_room_text;
@@ -182,7 +183,15 @@ public class AuctionMenuManager : MonoBehaviour
     public void ShowClientGamePanel()
     {
         CloseAllPanels();
-        clientGamePanel.SetActive(true);
+        if (FindObjectOfType<PersistentSettings>().mobileClient)
+        {
+            clientGamePanel_mobile.SetActive(true);
+        }
+        else
+        {
+            clientGamePanel.SetActive(true);
+        }
+        
     }
 
     public void ShowAdminStartPanel()

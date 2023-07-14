@@ -203,7 +203,12 @@
         195,
         196,
         197,
-        198
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -297,6 +302,28 @@
       "DebugActionIndex": 8
     },
     {
+      "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/level2",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/level2"
+      ],
+      "Outputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/level2"
+      ],
+      "DebugActionIndex": 9
+    },
+    {
+      "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/level2.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/level2.resS"
+      ],
+      "Outputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/level2.resS"
+      ],
+      "DebugActionIndex": 10
+    },
+    {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/resources.assets",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -305,7 +332,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/resources.assets"
       ],
-      "DebugActionIndex": 9
+      "DebugActionIndex": 11
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/resources.assets.resS",
@@ -316,7 +343,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/resources.assets.resS"
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/RuntimeInitializeOnLoads.json",
@@ -327,7 +354,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/RuntimeInitializeOnLoads.json"
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/ScriptingAssemblies.json",
@@ -338,7 +365,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/ScriptingAssemblies.json"
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets0.assets",
@@ -349,7 +376,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets0.assets"
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets0.assets.resS",
@@ -360,7 +387,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets0.assets.resS"
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 16
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets0.resource",
@@ -371,7 +398,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets0.resource"
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets1.assets",
@@ -382,7 +409,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets1.assets"
       ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 18
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets1.assets.resS",
@@ -393,7 +420,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets1.assets.resS"
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 19
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets1.resource",
@@ -404,7 +431,40 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets1.resource"
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 20
+    },
+    {
+      "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets2.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets2.assets"
+      ],
+      "Outputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets2.assets"
+      ],
+      "DebugActionIndex": 21
+    },
+    {
+      "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets2.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets2.assets.resS"
+      ],
+      "Outputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets2.assets.resS"
+      ],
+      "DebugActionIndex": 22
+    },
+    {
+      "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets2.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets2.resource"
+      ],
+      "Outputs": [
+        "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/sharedassets2.resource"
+      ],
+      "DebugActionIndex": 23
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Resources/unity_builtin_extra",
@@ -415,7 +475,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Resources/unity_builtin_extra"
       ],
-      "DebugActionIndex": 19
+      "DebugActionIndex": 24
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/StreamingAssets/UnityServicesProjectConfiguration.json",
@@ -426,7 +486,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/StreamingAssets/UnityServicesProjectConfiguration.json"
       ],
-      "DebugActionIndex": 20
+      "DebugActionIndex": 25
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AIModule.dll",
@@ -437,7 +497,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AIModule.dll"
       ],
-      "DebugActionIndex": 21
+      "DebugActionIndex": 26
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ARModule.dll",
@@ -448,7 +508,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ARModule.dll"
       ],
-      "DebugActionIndex": 22
+      "DebugActionIndex": 27
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -459,7 +519,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AccessibilityModule.dll"
       ],
-      "DebugActionIndex": 23
+      "DebugActionIndex": 28
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -470,7 +530,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AndroidJNIModule.dll"
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 29
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -481,7 +541,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AnimationModule.dll"
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 30
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -492,7 +552,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AssetBundleModule.dll"
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 31
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AudioModule.dll",
@@ -503,7 +563,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.AudioModule.dll"
       ],
-      "DebugActionIndex": 27
+      "DebugActionIndex": 32
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ClothModule.dll",
@@ -514,7 +574,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ClothModule.dll"
       ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 33
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -525,7 +585,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ClusterInputModule.dll"
       ],
-      "DebugActionIndex": 29
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -536,7 +596,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ClusterRendererModule.dll"
       ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.CoreModule.dll",
@@ -547,7 +607,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.CoreModule.dll"
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -558,7 +618,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.CrashReportingModule.dll"
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -569,7 +629,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.DSPGraphModule.dll"
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -580,7 +640,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.DirectorModule.dll"
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.GIModule.dll",
@@ -591,7 +651,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.GIModule.dll"
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -602,7 +662,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.GameCenterModule.dll"
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.GridModule.dll",
@@ -613,7 +673,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.GridModule.dll"
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -624,7 +684,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.HotReloadModule.dll"
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -635,7 +695,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.IMGUIModule.dll"
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -646,7 +706,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ImageConversionModule.dll"
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -657,7 +717,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.InputLegacyModule.dll"
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.InputModule.dll",
@@ -668,7 +728,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.InputModule.dll"
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -679,7 +739,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.JSONSerializeModule.dll"
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -690,7 +750,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.LocalizationModule.dll"
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -701,7 +761,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.NVIDIAModule.dll"
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -712,7 +772,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ParticleSystemModule.dll"
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -723,7 +783,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.PerformanceReportingModule.dll"
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -734,7 +794,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Physics2DModule.dll"
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -745,7 +805,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.PhysicsModule.dll"
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ProfilerModule.dll",
@@ -756,7 +816,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ProfilerModule.dll"
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -767,7 +827,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -778,7 +838,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.ScreenCaptureModule.dll"
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -789,7 +849,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SharedInternalsModule.dll"
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -800,7 +860,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SpriteMaskModule.dll"
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -811,7 +871,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SpriteShapeModule.dll"
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -822,7 +882,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.StreamingModule.dll"
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -833,7 +893,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SubstanceModule.dll"
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -844,7 +904,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SubsystemsModule.dll"
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TLSModule.dll",
@@ -855,7 +915,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TLSModule.dll"
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -866,7 +926,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TerrainModule.dll"
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -877,7 +937,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -888,7 +948,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -899,7 +959,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -910,7 +970,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TextRenderingModule.dll"
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -921,7 +981,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.TilemapModule.dll"
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -932,7 +992,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UIElementsModule.dll"
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UIElementsNativeModule.dll",
@@ -943,7 +1003,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UIElementsNativeModule.dll"
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UIModule.dll",
@@ -954,7 +1014,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UIModule.dll"
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UNETModule.dll",
@@ -965,7 +1025,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UNETModule.dll"
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -976,7 +1036,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UmbraModule.dll"
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -987,7 +1047,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll"
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -998,7 +1058,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -1009,7 +1069,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityConnectModule.dll"
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -1020,7 +1080,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityCurlModule.dll"
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -1031,7 +1091,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -1042,7 +1102,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -1053,7 +1113,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -1064,7 +1124,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestModule.dll"
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -1075,7 +1135,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -1086,7 +1146,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VFXModule.dll",
@@ -1097,7 +1157,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VFXModule.dll"
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VRModule.dll",
@@ -1108,7 +1168,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VRModule.dll"
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -1119,7 +1179,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VehiclesModule.dll"
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VideoModule.dll",
@@ -1130,7 +1190,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VideoModule.dll"
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -1141,7 +1201,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.VirtualTexturingModule.dll"
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.WindModule.dll",
@@ -1152,7 +1212,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.WindModule.dll"
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.XRModule.dll",
@@ -1163,7 +1223,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.XRModule.dll"
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.dll",
@@ -1174,7 +1234,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.dll"
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Assembly-CSharp.dll",
@@ -1185,7 +1245,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Assembly-CSharp.dll"
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonChat.dll",
@@ -1196,7 +1256,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonChat.dll"
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Purchasing.Common.dll",
@@ -1207,7 +1267,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Purchasing.Common.dll"
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.dll",
@@ -1218,7 +1278,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.dll"
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTCore.dll",
@@ -1229,7 +1289,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTCore.dll"
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Telemetry.dll",
@@ -1240,7 +1300,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Telemetry.dll"
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Networking.dll",
@@ -1251,7 +1311,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Networking.dll"
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityStub.dll",
@@ -1262,7 +1322,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityStub.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Advertisements.dll",
@@ -1273,7 +1333,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Advertisements.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Internal.dll",
@@ -1284,7 +1344,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Internal.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UI.dll",
@@ -1295,7 +1355,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SpatialTracking.dll",
@@ -1306,7 +1366,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.SpatialTracking.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Configuration.dll",
@@ -1317,7 +1377,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Configuration.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleCore.dll",
@@ -1328,7 +1388,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleCore.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Analytics.DataPrivacy.dll",
@@ -1339,7 +1399,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Analytics.DataPrivacy.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTStub.dll",
@@ -1350,7 +1410,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.WinRTStub.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonUnityNetworking.dll",
@@ -1361,7 +1421,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonUnityNetworking.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Registration.dll",
@@ -1372,7 +1432,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Registration.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Codeless.dll",
@@ -1383,7 +1443,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Codeless.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.Internal.dll",
@@ -1394,7 +1454,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.Internal.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Threading.dll",
@@ -1405,7 +1465,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Threading.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleStub.dll",
@@ -1416,7 +1476,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleStub.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.dll",
@@ -1427,7 +1487,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Timeline.dll",
@@ -1438,7 +1498,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.TextMeshPro.dll",
@@ -1449,7 +1509,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Analytics.dll",
@@ -1460,7 +1520,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Analytics.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonRealtime.dll",
@@ -1471,7 +1531,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonRealtime.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Utilities.dll",
@@ -1482,7 +1542,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Utilities.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.dll",
@@ -1493,7 +1553,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Analytics.dll",
@@ -1504,7 +1564,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Analytics.dll"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityCore.dll",
@@ -1515,7 +1575,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.SecurityCore.dll"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll",
@@ -1526,7 +1586,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.dll",
@@ -1537,7 +1597,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Environments.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Scheduler.dll",
@@ -1548,7 +1608,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Scheduler.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Demos.dll",
@@ -1559,7 +1619,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/PhotonUnityNetworking.Demos.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Stores.dll",
@@ -1570,7 +1630,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/UnityEngine.Purchasing.Stores.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Device.dll",
@@ -1581,7 +1641,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Unity.Services.Core.Device.dll"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Newtonsoft.Json.dll",
@@ -1592,7 +1652,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Cryptography.Cng.dll",
@@ -1603,7 +1663,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Cryptography.Cng.dll"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.AccessControl.dll",
@@ -1614,7 +1674,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.AccessControl.dll"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Permissions.dll",
@@ -1625,7 +1685,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Permissions.dll"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Photon3Unity3D.dll",
@@ -1636,7 +1696,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Photon3Unity3D.dll"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Microsoft.Extensions.ObjectPool.dll",
@@ -1647,7 +1707,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Microsoft.Extensions.ObjectPool.dll"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Cryptography.Xml.dll",
@@ -1658,7 +1718,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Cryptography.Xml.dll"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/NaCl.dll",
@@ -1669,7 +1729,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/NaCl.dll"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/AsyncIO.dll",
@@ -1680,7 +1740,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/AsyncIO.dll"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Cryptography.Pkcs.dll",
@@ -1691,7 +1751,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Cryptography.Pkcs.dll"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.ServiceModel.Primitives.dll",
@@ -1702,7 +1762,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.ServiceModel.Primitives.dll"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/NetMQ.dll",
@@ -1713,7 +1773,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/NetMQ.dll"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/websocket-sharp.dll",
@@ -1724,7 +1784,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/websocket-sharp.dll"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Formats.Asn1.dll",
@@ -1735,7 +1795,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Formats.Asn1.dll"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/MathParser.org-mXparser.dll",
@@ -1746,7 +1806,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/MathParser.org-mXparser.dll"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -1757,7 +1817,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Microsoft.Bcl.AsyncInterfaces.dll"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Private.ServiceModel.dll",
@@ -1768,7 +1828,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Private.ServiceModel.dll"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Principal.Windows.dll",
@@ -1779,7 +1839,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.Principal.Windows.dll"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Runtime.CompilerServices.Unsafe.dll",
@@ -1790,7 +1850,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Runtime.CompilerServices.Unsafe.dll"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Buffers.dll",
@@ -1801,7 +1861,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Buffers.dll"
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Memory.dll",
@@ -1812,7 +1872,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Memory.dll"
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Reflection.DispatchProxy.dll",
@@ -1823,7 +1883,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Reflection.DispatchProxy.dll"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Runtime.dll",
@@ -1834,7 +1894,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Runtime.dll"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Threading.Tasks.Extensions.dll",
@@ -1845,7 +1905,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Threading.Tasks.Extensions.dll"
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/netstandard.dll",
@@ -1856,7 +1916,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Mono.Security.dll",
@@ -1867,7 +1927,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1878,7 +1938,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Configuration.dll",
@@ -1889,7 +1949,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Core.dll",
@@ -1900,7 +1960,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1911,7 +1971,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Data.dll",
@@ -1922,7 +1982,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Drawing.dll",
@@ -1933,7 +1993,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.EnterpriseServices.dll",
@@ -1944,7 +2004,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1955,7 +2015,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.IO.Compression.dll",
@@ -1966,7 +2026,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Net.Http.dll",
@@ -1977,7 +2037,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Numerics.Vectors.dll",
@@ -1988,7 +2048,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Numerics.Vectors.dll"
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Numerics.dll",
@@ -1999,7 +2059,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Runtime.Serialization.dll",
@@ -2010,7 +2070,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.dll",
@@ -2021,7 +2081,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2032,7 +2092,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Transactions.dll",
@@ -2043,7 +2103,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Xml.Linq.dll",
@@ -2054,7 +2114,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Xml.dll",
@@ -2065,7 +2125,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.dll",
@@ -2076,7 +2136,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/mscorlib.dll",
@@ -2087,7 +2147,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
@@ -2098,7 +2158,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 172
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/app.info",
@@ -2110,9 +2170,9 @@
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/app.info"
       ],
       "ToBuildDependencies": [
-        172
+        177
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Resources/unity default resources",
@@ -2123,7 +2183,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator.exe",
@@ -2134,7 +2194,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/CDA_Simulator.exe"
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/UnityCrashHandler64.exe",
@@ -2145,7 +2205,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/UnityPlayer.dll",
@@ -2156,7 +2216,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -2167,7 +2227,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -2178,7 +2238,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -2189,7 +2249,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/config",
@@ -2200,7 +2260,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -2211,7 +2271,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -2222,7 +2282,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -2233,7 +2293,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -2244,7 +2304,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -2255,7 +2315,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -2266,7 +2326,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -2277,7 +2337,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -2288,7 +2348,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 189
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -2299,7 +2359,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -2310,7 +2370,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 191
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -2321,7 +2381,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -2332,7 +2392,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -2343,7 +2403,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -2354,7 +2414,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -2365,7 +2425,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 196
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "CopyFiles D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -2376,7 +2436,7 @@
       "Outputs": [
         "D:/Repos/StocksSimulator/Stock-marget-Multi-Agent-Simulator/CDA_Sim/Builds_External/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 197
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "Player",
@@ -2555,11 +2615,11 @@
         169,
         170,
         171,
+        172,
         173,
         174,
         175,
         176,
-        177,
         178,
         179,
         180,
@@ -2579,10 +2639,15 @@
         194,
         195,
         196,
-        197
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 198
+      "DebugActionIndex": 203
     }
   ],
   "FileSignatures": [
@@ -2779,7 +2844,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 198
+          "Player": 203
         }
 ,  "DefaultNodes": [
     0

@@ -277,6 +277,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableDirector_SendOnPlayableDirectorP
 	}
 	{
 		Action_1_tB645F646DB079054A9500B09427CB02A88372D3F* L_2 = __this->___played_4;
+		NullCheck(L_2);
 		Action_1_Invoke_m1DDC149E3BDDF7CAA1CCEBDA6D58D6971F126303_inline(L_2, __this, NULL);
 	}
 
@@ -300,6 +301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableDirector_SendOnPlayableDirectorP
 	}
 	{
 		Action_1_tB645F646DB079054A9500B09427CB02A88372D3F* L_2 = __this->___paused_5;
+		NullCheck(L_2);
 		Action_1_Invoke_m1DDC149E3BDDF7CAA1CCEBDA6D58D6971F126303_inline(L_2, __this, NULL);
 	}
 
@@ -323,6 +325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableDirector_SendOnPlayableDirectorS
 	}
 	{
 		Action_1_tB645F646DB079054A9500B09427CB02A88372D3F* L_2 = __this->___stopped_6;
+		NullCheck(L_2);
 		Action_1_Invoke_m1DDC149E3BDDF7CAA1CCEBDA6D58D6971F126303_inline(L_2, __this, NULL);
 	}
 

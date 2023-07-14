@@ -12,6 +12,7 @@ public class ClientUIManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
+
     public GameObject synchronised_LOB_master;
     public GameObject graph_Client_Master;
     public RectTransform selectedIcon;

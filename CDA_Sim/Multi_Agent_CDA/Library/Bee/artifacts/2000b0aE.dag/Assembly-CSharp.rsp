@@ -425,10 +425,12 @@
 "Assets/Globalpaths.cs"
 "Assets/HumansOnBothSidesIdentifier.cs"
 "Assets/HumanTraderInterface.cs"
+"Assets/InitMenu.cs"
 "Assets/LOB_ReaderTest.cs"
 "Assets/MainPanel.cs"
 "Assets/MyOrderMenuItem.cs"
 "Assets/OrderIndexer.cs"
+"Assets/PersistentSettings.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
@@ -439,6 +441,7 @@
 "Assets/SessionSettings.cs"
 "Assets/SessionSettingsManager.cs"
 "Assets/SettingsButton.cs"
+"Assets/static_settings.cs"
 "Assets/TestInputManager.cs"
 "Assets/TestNamespace.cs"
 "Assets/TopPanelTextControl.cs"
@@ -447,6 +450,7 @@
 "Assets/TraderHumansGoIdentifier.cs"
 "Assets/TraderViewUI.cs"
 "Assets/TransactionSynchroniser.cs"
+"Assets/UIManagerDirectory.cs"
 "Assets/WhiteLevel.cs"
 -langversion:9.0
 /unsafe+

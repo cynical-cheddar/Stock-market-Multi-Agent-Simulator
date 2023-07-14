@@ -124,7 +124,7 @@ public class PythonCommunicator : MonoBehaviour
     // Receive data, update packets received
     private void ReceiveData()
     {
-        while (true)
+        while (true && PhotonNetwork.IsMasterClient)
         {
                 IPEndPoint anyIP = new IPEndPoint(IPAddress.Any, 0);
                 byte[] data = client.Receive(ref anyIP);

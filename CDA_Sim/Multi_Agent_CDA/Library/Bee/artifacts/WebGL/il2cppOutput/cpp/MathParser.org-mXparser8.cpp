@@ -1985,8 +1985,9 @@ IL_00b1:
 		il2cpp_codegen_runtime_class_init_inline(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var);
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_31 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___EI_42;
 		int32_t L_32 = V_0;
+		NullCheck(L_31);
 		int32_t L_33 = ((int32_t)il2cpp_codegen_subtract(L_32, 7));
-		double L_34 = (L_31)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_33));
+		double L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
 		double L_35 = V_7;
 		double L_36 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
@@ -3551,8 +3552,9 @@ IL_00ac:
 		double L_26 = ___x0;
 		___x0 = ((double)il2cpp_codegen_subtract(L_26, (1.0)));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_27 = V_3;
+		NullCheck(L_27);
 		int32_t L_28 = 0;
-		double L_29 = (L_27)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_28));
+		double L_29 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_28));
 		V_4 = L_29;
 		double L_30 = ___x0;
 		double L_31 = V_2;
@@ -3566,8 +3568,9 @@ IL_00e2:
 		double L_32 = V_4;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_33 = V_3;
 		int32_t L_34 = V_6;
+		NullCheck(L_33);
 		int32_t L_35 = L_34;
-		double L_36 = (L_33)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_35));
+		double L_36 = (L_33)->GetAt(static_cast<il2cpp_array_size_t>(L_35));
 		double L_37 = ___x0;
 		int32_t L_38 = V_6;
 		V_4 = ((double)il2cpp_codegen_add(L_32, ((double)(L_36/((double)il2cpp_codegen_add(L_37, ((double)L_38)))))));
@@ -3579,6 +3582,7 @@ IL_00f7:
 	{
 		int32_t L_40 = V_6;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_41 = V_3;
+		NullCheck(L_41);
 		if ((((int32_t)L_40) < ((int32_t)((int32_t)(((RuntimeArray*)L_41)->max_length)))))
 		{
 			goto IL_00e2;
@@ -7573,56 +7577,68 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SpecialFunctions_seriesEval_m84005971C
 	{
 		il2cpp_codegen_runtime_class_init_inline(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var);
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_0 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_0);
 		int32_t L_1 = 8;
-		double L_2 = (L_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_1));
+		double L_2 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_1));
 		double L_3 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_4 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_4);
 		int32_t L_5 = ((int32_t)9);
-		double L_6 = (L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_5));
+		double L_6 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
 		double L_7 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_8 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_8);
 		int32_t L_9 = ((int32_t)10);
-		double L_10 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9));
+		double L_10 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		double L_11 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_12 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_12);
 		int32_t L_13 = ((int32_t)11);
-		double L_14 = (L_12)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+		double L_14 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		V_0 = ((double)il2cpp_codegen_add(L_2, ((double)il2cpp_codegen_multiply(L_3, ((double)il2cpp_codegen_add(L_6, ((double)il2cpp_codegen_multiply(L_7, ((double)il2cpp_codegen_add(L_10, ((double)il2cpp_codegen_multiply(L_11, L_14))))))))))));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_15 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_15);
 		int32_t L_16 = 5;
-		double L_17 = (L_15)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_16));
+		double L_17 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
 		double L_18 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_19 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_19);
 		int32_t L_20 = 6;
-		double L_21 = (L_19)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_20));
+		double L_21 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
 		double L_22 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_23 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_23);
 		int32_t L_24 = 7;
-		double L_25 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+		double L_25 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
 		double L_26 = ___r0;
 		double L_27 = V_0;
 		V_1 = ((double)il2cpp_codegen_add(L_17, ((double)il2cpp_codegen_multiply(L_18, ((double)il2cpp_codegen_add(L_21, ((double)il2cpp_codegen_multiply(L_22, ((double)il2cpp_codegen_add(L_25, ((double)il2cpp_codegen_multiply(L_26, L_27))))))))))));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_28 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_28);
 		int32_t L_29 = 1;
-		double L_30 = (L_28)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_29));
+		double L_30 = (L_28)->GetAt(static_cast<il2cpp_array_size_t>(L_29));
 		double L_31 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_32 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_32);
 		int32_t L_33 = 2;
-		double L_34 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_33));
+		double L_34 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
 		double L_35 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_36 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_36);
 		int32_t L_37 = 3;
-		double L_38 = (L_36)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_37));
+		double L_38 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_37));
 		double L_39 = ___r0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_40 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_40);
 		int32_t L_41 = 4;
-		double L_42 = (L_40)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		double L_42 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		double L_43 = ___r0;
 		double L_44 = V_1;
 		V_2 = ((double)il2cpp_codegen_add(L_30, ((double)il2cpp_codegen_multiply(L_31, ((double)il2cpp_codegen_add(L_34, ((double)il2cpp_codegen_multiply(L_35, ((double)il2cpp_codegen_add(L_38, ((double)il2cpp_codegen_multiply(L_39, ((double)il2cpp_codegen_add(L_42, ((double)il2cpp_codegen_multiply(L_43, L_44))))))))))))))));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_45 = ((Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_StaticFields*)il2cpp_codegen_static_fields_for(Coefficients_tC4F2C69FC4573F26417C81C76C721EFD98ECE4FD_il2cpp_TypeInfo_var))->___lambertWqNearZero_47;
+		NullCheck(L_45);
 		int32_t L_46 = 0;
-		double L_47 = (L_45)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_46));
+		double L_47 = (L_45)->GetAt(static_cast<il2cpp_array_size_t>(L_46));
 		double L_48 = ___r0;
 		double L_49 = V_2;
 		return ((double)il2cpp_codegen_add(L_47, ((double)il2cpp_codegen_multiply(L_48, L_49))));
@@ -8561,6 +8577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__ctor_m3989DEF
 	}
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_21 = (List_1_t1066F23710B975B7F8366D381935E50E21D1418A*)il2cpp_codegen_object_new(List_1_t1066F23710B975B7F8366D381935E50E21D1418A_il2cpp_TypeInfo_var);
+		NullCheck(L_21);
 		List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2(L_21, List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAsin_104 = L_21;
@@ -8578,6 +8595,7 @@ IL_00c5:
 	}
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_23 = (List_1_t1066F23710B975B7F8366D381935E50E21D1418A*)il2cpp_codegen_object_new(List_1_t1066F23710B975B7F8366D381935E50E21D1418A_il2cpp_TypeInfo_var);
+		NullCheck(L_23);
 		List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2(L_23, List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAtan_106 = L_23;
@@ -8595,6 +8613,7 @@ IL_00d6:
 	}
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_25 = (List_1_t1066F23710B975B7F8366D381935E50E21D1418A*)il2cpp_codegen_object_new(List_1_t1066F23710B975B7F8366D381935E50E21D1418A_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
 		List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2(L_25, List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAcsc_109 = L_25;
@@ -8609,21 +8628,27 @@ IL_00e7:
 		double L_28 = __this->___xrad_111;
 		double L_29 = __this->___xdeg_112;
 		SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_30 = (SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE*)il2cpp_codegen_object_new(SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE_il2cpp_TypeInfo_var);
+		NullCheck(L_30);
 		SpecialValue__ctor_m621DB13322C183B756AA6131B9321E96C9319F4F(L_30, L_27, L_28, L_29, NULL);
+		NullCheck(L_26);
 		List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_inline(L_26, L_30, List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_RuntimeMethod_var);
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_31 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAtan_106;
 		double L_32 = ___tan3;
 		double L_33 = __this->___xrad_111;
 		double L_34 = __this->___xdeg_112;
 		SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_35 = (SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE*)il2cpp_codegen_object_new(SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE_il2cpp_TypeInfo_var);
+		NullCheck(L_35);
 		SpecialValue__ctor_m621DB13322C183B756AA6131B9321E96C9319F4F(L_35, L_32, L_33, L_34, NULL);
+		NullCheck(L_31);
 		List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_inline(L_31, L_35, List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_RuntimeMethod_var);
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_36 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAcsc_109;
 		double L_37 = ___csc6;
 		double L_38 = __this->___xrad_111;
 		double L_39 = __this->___xdeg_112;
 		SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_40 = (SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE*)il2cpp_codegen_object_new(SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE_il2cpp_TypeInfo_var);
+		NullCheck(L_40);
 		SpecialValue__ctor_m621DB13322C183B756AA6131B9321E96C9319F4F(L_40, L_37, L_38, L_39, NULL);
+		NullCheck(L_36);
 		List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_inline(L_36, L_40, List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_RuntimeMethod_var);
 	}
 
@@ -8656,6 +8681,7 @@ IL_013d:
 	}
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_46 = (List_1_t1066F23710B975B7F8366D381935E50E21D1418A*)il2cpp_codegen_object_new(List_1_t1066F23710B975B7F8366D381935E50E21D1418A_il2cpp_TypeInfo_var);
+		NullCheck(L_46);
 		List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2(L_46, List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAcos_105 = L_46;
@@ -8673,6 +8699,7 @@ IL_0179:
 	}
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_48 = (List_1_t1066F23710B975B7F8366D381935E50E21D1418A*)il2cpp_codegen_object_new(List_1_t1066F23710B975B7F8366D381935E50E21D1418A_il2cpp_TypeInfo_var);
+		NullCheck(L_48);
 		List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2(L_48, List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListActan_107 = L_48;
@@ -8690,6 +8717,7 @@ IL_018a:
 	}
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_50 = (List_1_t1066F23710B975B7F8366D381935E50E21D1418A*)il2cpp_codegen_object_new(List_1_t1066F23710B975B7F8366D381935E50E21D1418A_il2cpp_TypeInfo_var);
+		NullCheck(L_50);
 		List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2(L_50, List_1__ctor_mD6AA4B186AA22429AF10461FF54926DFC0E3A7D2_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAsec_108 = L_50;
@@ -8704,21 +8732,27 @@ IL_019b:
 		double L_53 = __this->___xrad_111;
 		double L_54 = __this->___xdeg_112;
 		SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_55 = (SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE*)il2cpp_codegen_object_new(SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE_il2cpp_TypeInfo_var);
+		NullCheck(L_55);
 		SpecialValue__ctor_m621DB13322C183B756AA6131B9321E96C9319F4F(L_55, L_52, L_53, L_54, NULL);
+		NullCheck(L_51);
 		List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_inline(L_51, L_55, List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_RuntimeMethod_var);
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_56 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListActan_107;
 		double L_57 = ___ctan4;
 		double L_58 = __this->___xrad_111;
 		double L_59 = __this->___xdeg_112;
 		SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_60 = (SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE*)il2cpp_codegen_object_new(SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE_il2cpp_TypeInfo_var);
+		NullCheck(L_60);
 		SpecialValue__ctor_m621DB13322C183B756AA6131B9321E96C9319F4F(L_60, L_57, L_58, L_59, NULL);
+		NullCheck(L_56);
 		List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_inline(L_56, L_60, List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_RuntimeMethod_var);
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_61 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListAsec_108;
 		double L_62 = ___sec5;
 		double L_63 = __this->___xrad_111;
 		double L_64 = __this->___xdeg_112;
 		SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_65 = (SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE*)il2cpp_codegen_object_new(SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE_il2cpp_TypeInfo_var);
+		NullCheck(L_65);
 		SpecialValue__ctor_m621DB13322C183B756AA6131B9321E96C9319F4F(L_65, L_62, L_63, L_64, NULL);
+		NullCheck(L_61);
 		List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_inline(L_61, L_65, List_1_Add_m1A0C0F205CD97C4CCB00A82D115B41E600F28D43_RuntimeMethod_var);
 	}
 
@@ -8779,10 +8813,12 @@ IL_001e:
 	{
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_5 = V_0;
 		int32_t L_6 = V_1;
+		NullCheck(L_5);
 		int32_t L_7 = L_6;
-		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_8 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_7));
+		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		V_2 = L_8;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_9 = V_2;
+		NullCheck(L_9);
 		double L_10 = L_9->___xradFrom_113;
 		double L_11 = ___xrad0;
 		if ((!(((double)L_10) <= ((double)L_11))))
@@ -8793,6 +8829,7 @@ IL_001e:
 	{
 		double L_12 = ___xrad0;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_13 = V_2;
+		NullCheck(L_13);
 		double L_14 = L_13->___xradTo_114;
 		if ((!(((double)L_12) <= ((double)L_14))))
 		{
@@ -8814,6 +8851,7 @@ IL_003a:
 	{
 		int32_t L_17 = V_1;
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_18 = V_0;
+		NullCheck(L_18);
 		if ((((int32_t)L_17) < ((int32_t)((int32_t)(((RuntimeArray*)L_18)->max_length)))))
 		{
 			goto IL_001e;
@@ -8977,6 +9015,7 @@ IL_000a:
 IL_0014:
 	{
 		List_1_t1066F23710B975B7F8366D381935E50E21D1418A* L_4 = ___valuesList1;
+		NullCheck(L_4);
 		Enumerator_tFABBE84B8F3266AE85EE0A7129F74AA80C531EC8 L_5;
 		L_5 = List_1_GetEnumerator_mA27B29129107C505D7C7C80A302D0806599108FB(L_4, List_1_GetEnumerator_mA27B29129107C505D7C7C80A302D0806599108FB_RuntimeMethod_var);
 		V_0 = L_5;
@@ -9003,6 +9042,7 @@ IL_001d_1:
 				L_6 = Enumerator_get_Current_mED5D57CC27CE7B1A31B4F4BBF702E27E36F66767_inline((&V_0), Enumerator_get_Current_mED5D57CC27CE7B1A31B4F4BBF702E27E36F66767_RuntimeMethod_var);
 				V_1 = L_6;
 				SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_7 = V_1;
+				NullCheck(L_7);
 				double L_8 = L_7->___xFrom_2;
 				double L_9 = ___x0;
 				if ((!(((double)L_8) <= ((double)L_9))))
@@ -9013,6 +9053,7 @@ IL_001d_1:
 			{
 				double L_10 = ___x0;
 				SpecialValue_tA73BFB34E8EB29029C37C82982E01389F907AFBE* L_11 = V_1;
+				NullCheck(L_11);
 				double L_12 = L_11->___xTo_3;
 				if ((!(((double)L_10) <= ((double)L_12))))
 				{
@@ -9267,9 +9308,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_91 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_0_5;
 		double L_92 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_0_6;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_93 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_93);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_93, (0.0), L_87, L_88, L_89, L_90, L_91, L_92, NULL);
+		NullCheck(L_86);
 		ArrayElementTypeCheck (L_86, L_93);
-		(L_86)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_93);
+		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(0), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_93);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_94 = L_86;
 		double L_95 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_0_1;
 		double L_96 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_0_2;
@@ -9278,9 +9321,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_99 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_0_5;
 		double L_100 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_0_6;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_101 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_101);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_101, (2.0), L_95, L_96, L_97, L_98, L_99, L_100, NULL);
+		NullCheck(L_94);
 		ArrayElementTypeCheck (L_94, L_101);
-		(L_94)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(1), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_101);
+		(L_94)->SetAt(static_cast<il2cpp_array_size_t>(1), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_101);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_102 = L_94;
 		double L_103 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_0_1;
 		double L_104 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_0_2;
@@ -9289,9 +9334,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_107 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_0_5;
 		double L_108 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_0_6;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_109 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_109);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_109, (-2.0), L_103, L_104, L_105, L_106, L_107, L_108, NULL);
+		NullCheck(L_102);
 		ArrayElementTypeCheck (L_102, L_109);
-		(L_102)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(2), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_109);
+		(L_102)->SetAt(static_cast<il2cpp_array_size_t>(2), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_109);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_110 = L_102;
 		double L_111 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_0_1;
 		double L_112 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_0_2;
@@ -9300,9 +9347,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_115 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_0_5;
 		double L_116 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_0_6;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_117 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_117);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_117, (4.0), L_111, L_112, L_113, L_114, L_115, L_116, NULL);
+		NullCheck(L_110);
 		ArrayElementTypeCheck (L_110, L_117);
-		(L_110)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(3), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_117);
+		(L_110)->SetAt(static_cast<il2cpp_array_size_t>(3), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_117);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_118 = L_110;
 		double L_119 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_0_1;
 		double L_120 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_0_2;
@@ -9311,9 +9360,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_123 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_0_5;
 		double L_124 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_0_6;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_125 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_125);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_125, (-4.0), L_119, L_120, L_121, L_122, L_123, L_124, NULL);
+		NullCheck(L_118);
 		ArrayElementTypeCheck (L_118, L_125);
-		(L_118)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(4), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_125);
+		(L_118)->SetAt(static_cast<il2cpp_array_size_t>(4), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_125);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_126 = L_118;
 		double L_127 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_30_7;
 		double L_128 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_30_8;
@@ -9322,9 +9373,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_131 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_30_11;
 		double L_132 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_30_12;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_133 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_133);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_133, (0.16666666666666666), L_127, L_128, L_129, L_130, L_131, L_132, NULL);
+		NullCheck(L_126);
 		ArrayElementTypeCheck (L_126, L_133);
-		(L_126)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(5), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_133);
+		(L_126)->SetAt(static_cast<il2cpp_array_size_t>(5), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_133);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_134 = L_126;
 		double L_135 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_30_7;
 		double L_136 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_30_8;
@@ -9333,9 +9386,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_139 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_30_11;
 		double L_140 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_30_12;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_141 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_141);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_141, (2.1666666666666665), L_135, L_136, L_137, L_138, L_139, L_140, NULL);
+		NullCheck(L_134);
 		ArrayElementTypeCheck (L_134, L_141);
-		(L_134)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(6), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_141);
+		(L_134)->SetAt(static_cast<il2cpp_array_size_t>(6), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_141);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_142 = L_134;
 		double L_143 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_30_7;
 		double L_144 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_30_8;
@@ -9344,9 +9399,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_147 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_30_11;
 		double L_148 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_30_12;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_149 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_149);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_149, (-1.8333333333333333), L_143, L_144, L_145, L_146, L_147, L_148, NULL);
+		NullCheck(L_142);
 		ArrayElementTypeCheck (L_142, L_149);
-		(L_142)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(7), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_149);
+		(L_142)->SetAt(static_cast<il2cpp_array_size_t>(7), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_149);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_150 = L_142;
 		double L_151 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_30_7;
 		double L_152 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_30_8;
@@ -9355,9 +9412,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_155 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_30_11;
 		double L_156 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_30_12;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_157 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_157);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_157, (4.166666666666667), L_151, L_152, L_153, L_154, L_155, L_156, NULL);
+		NullCheck(L_150);
 		ArrayElementTypeCheck (L_150, L_157);
-		(L_150)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(8), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_157);
+		(L_150)->SetAt(static_cast<il2cpp_array_size_t>(8), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_157);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_158 = L_150;
 		double L_159 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_30_7;
 		double L_160 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_30_8;
@@ -9366,9 +9425,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_163 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_30_11;
 		double L_164 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_30_12;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_165 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_165);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_165, (-3.8333333333333335), L_159, L_160, L_161, L_162, L_163, L_164, NULL);
+		NullCheck(L_158);
 		ArrayElementTypeCheck (L_158, L_165);
-		(L_158)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)9)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_165);
+		(L_158)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_165);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_166 = L_158;
 		double L_167 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_45_13;
 		double L_168 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_45_14;
@@ -9377,9 +9438,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_171 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_45_17;
 		double L_172 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_45_18;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_173 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_173);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_173, (0.25), L_167, L_168, L_169, L_170, L_171, L_172, NULL);
+		NullCheck(L_166);
 		ArrayElementTypeCheck (L_166, L_173);
-		(L_166)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)10)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_173);
+		(L_166)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_173);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_174 = L_166;
 		double L_175 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_45_13;
 		double L_176 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_45_14;
@@ -9388,9 +9451,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_179 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_45_17;
 		double L_180 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_45_18;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_181 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_181);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_181, (2.25), L_175, L_176, L_177, L_178, L_179, L_180, NULL);
+		NullCheck(L_174);
 		ArrayElementTypeCheck (L_174, L_181);
-		(L_174)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)11)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_181);
+		(L_174)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_181);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_182 = L_174;
 		double L_183 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_45_13;
 		double L_184 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_45_14;
@@ -9399,9 +9464,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_187 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_45_17;
 		double L_188 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_45_18;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_189 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_189);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_189, (-1.75), L_183, L_184, L_185, L_186, L_187, L_188, NULL);
+		NullCheck(L_182);
 		ArrayElementTypeCheck (L_182, L_189);
-		(L_182)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)12)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_189);
+		(L_182)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_189);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_190 = L_182;
 		double L_191 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_45_13;
 		double L_192 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_45_14;
@@ -9410,9 +9477,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_195 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_45_17;
 		double L_196 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_45_18;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_197 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_197);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_197, (4.25), L_191, L_192, L_193, L_194, L_195, L_196, NULL);
+		NullCheck(L_190);
 		ArrayElementTypeCheck (L_190, L_197);
-		(L_190)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)13)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_197);
+		(L_190)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_197);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_198 = L_190;
 		double L_199 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_45_13;
 		double L_200 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_45_14;
@@ -9421,9 +9490,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_203 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_45_17;
 		double L_204 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_45_18;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_205 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_205);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_205, (-3.75), L_199, L_200, L_201, L_202, L_203, L_204, NULL);
+		NullCheck(L_198);
 		ArrayElementTypeCheck (L_198, L_205);
-		(L_198)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)14)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_205);
+		(L_198)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_205);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_206 = L_198;
 		double L_207 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_60_19;
 		double L_208 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_60_20;
@@ -9432,9 +9503,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_211 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_60_23;
 		double L_212 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_60_24;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_213 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_213);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_213, (0.33333333333333331), L_207, L_208, L_209, L_210, L_211, L_212, NULL);
+		NullCheck(L_206);
 		ArrayElementTypeCheck (L_206, L_213);
-		(L_206)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)15)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_213);
+		(L_206)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_213);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_214 = L_206;
 		double L_215 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_60_19;
 		double L_216 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_60_20;
@@ -9443,9 +9516,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_219 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_60_23;
 		double L_220 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_60_24;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_221 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_221);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_221, (2.3333333333333335), L_215, L_216, L_217, L_218, L_219, L_220, NULL);
+		NullCheck(L_214);
 		ArrayElementTypeCheck (L_214, L_221);
-		(L_214)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)16)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_221);
+		(L_214)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_221);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_222 = L_214;
 		double L_223 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_60_19;
 		double L_224 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_60_20;
@@ -9454,9 +9529,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_227 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_60_23;
 		double L_228 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_60_24;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_229 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_229);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_229, (-1.6666666666666667), L_223, L_224, L_225, L_226, L_227, L_228, NULL);
+		NullCheck(L_222);
 		ArrayElementTypeCheck (L_222, L_229);
-		(L_222)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)17)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_229);
+		(L_222)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_229);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_230 = L_222;
 		double L_231 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_60_19;
 		double L_232 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_60_20;
@@ -9465,9 +9542,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_235 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_60_23;
 		double L_236 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_60_24;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_237 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_237);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_237, (4.333333333333333), L_231, L_232, L_233, L_234, L_235, L_236, NULL);
+		NullCheck(L_230);
 		ArrayElementTypeCheck (L_230, L_237);
-		(L_230)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)18)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_237);
+		(L_230)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)18)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_237);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_238 = L_230;
 		double L_239 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_60_19;
 		double L_240 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_60_20;
@@ -9476,9 +9555,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_243 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_60_23;
 		double L_244 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_60_24;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_245 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_245);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_245, (-3.6666666666666665), L_239, L_240, L_241, L_242, L_243, L_244, NULL);
+		NullCheck(L_238);
 		ArrayElementTypeCheck (L_238, L_245);
-		(L_238)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)19)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_245);
+		(L_238)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)19)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_245);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_246 = L_238;
 		double L_247 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_90_25;
 		double L_248 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_90_26;
@@ -9487,9 +9568,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_251 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_90_29;
 		double L_252 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_90_30;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_253 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_253);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_253, (0.5), L_247, L_248, L_249, L_250, L_251, L_252, NULL);
+		NullCheck(L_246);
 		ArrayElementTypeCheck (L_246, L_253);
-		(L_246)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)20)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_253);
+		(L_246)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)20)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_253);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_254 = L_246;
 		double L_255 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_90_25;
 		double L_256 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_90_26;
@@ -9498,9 +9581,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_259 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_90_29;
 		double L_260 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_90_30;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_261 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_261);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_261, (2.5), L_255, L_256, L_257, L_258, L_259, L_260, NULL);
+		NullCheck(L_254);
 		ArrayElementTypeCheck (L_254, L_261);
-		(L_254)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)21)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_261);
+		(L_254)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)21)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_261);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_262 = L_254;
 		double L_263 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_90_25;
 		double L_264 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_90_26;
@@ -9509,9 +9594,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_267 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_90_29;
 		double L_268 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_90_30;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_269 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_269);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_269, (-1.5), L_263, L_264, L_265, L_266, L_267, L_268, NULL);
+		NullCheck(L_262);
 		ArrayElementTypeCheck (L_262, L_269);
-		(L_262)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)22)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_269);
+		(L_262)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_269);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_270 = L_262;
 		double L_271 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_90_25;
 		double L_272 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_90_26;
@@ -9520,9 +9607,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_275 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_90_29;
 		double L_276 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_90_30;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_277 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_277);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_277, (4.5), L_271, L_272, L_273, L_274, L_275, L_276, NULL);
+		NullCheck(L_270);
 		ArrayElementTypeCheck (L_270, L_277);
-		(L_270)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)23)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_277);
+		(L_270)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_277);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_278 = L_270;
 		double L_279 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_90_25;
 		double L_280 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_90_26;
@@ -9531,9 +9620,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_283 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_90_29;
 		double L_284 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_90_30;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_285 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_285);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_285, (-3.5), L_279, L_280, L_281, L_282, L_283, L_284, NULL);
+		NullCheck(L_278);
 		ArrayElementTypeCheck (L_278, L_285);
-		(L_278)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)24)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_285);
+		(L_278)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)24)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_285);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_286 = L_278;
 		double L_287 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_120_31;
 		double L_288 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_120_32;
@@ -9542,9 +9633,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_291 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_120_35;
 		double L_292 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_120_36;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_293 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_293);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_293, (0.66666666666666663), L_287, L_288, L_289, L_290, L_291, L_292, NULL);
+		NullCheck(L_286);
 		ArrayElementTypeCheck (L_286, L_293);
-		(L_286)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)25)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_293);
+		(L_286)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_293);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_294 = L_286;
 		double L_295 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_120_31;
 		double L_296 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_120_32;
@@ -9553,9 +9646,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_299 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_120_35;
 		double L_300 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_120_36;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_301 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_301);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_301, (2.6666666666666665), L_295, L_296, L_297, L_298, L_299, L_300, NULL);
+		NullCheck(L_294);
 		ArrayElementTypeCheck (L_294, L_301);
-		(L_294)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)26)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_301);
+		(L_294)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)26)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_301);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_302 = L_294;
 		double L_303 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_120_31;
 		double L_304 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_120_32;
@@ -9564,9 +9659,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_307 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_120_35;
 		double L_308 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_120_36;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_309 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_309);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_309, (-1.3333333333333333), L_303, L_304, L_305, L_306, L_307, L_308, NULL);
+		NullCheck(L_302);
 		ArrayElementTypeCheck (L_302, L_309);
-		(L_302)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)27)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_309);
+		(L_302)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)27)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_309);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_310 = L_302;
 		double L_311 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_120_31;
 		double L_312 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_120_32;
@@ -9575,9 +9672,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_315 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_120_35;
 		double L_316 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_120_36;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_317 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_317);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_317, (4.666666666666667), L_311, L_312, L_313, L_314, L_315, L_316, NULL);
+		NullCheck(L_310);
 		ArrayElementTypeCheck (L_310, L_317);
-		(L_310)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)28)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_317);
+		(L_310)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)28)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_317);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_318 = L_310;
 		double L_319 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_120_31;
 		double L_320 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_120_32;
@@ -9586,9 +9685,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_323 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_120_35;
 		double L_324 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_120_36;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_325 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_325);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_325, (-3.3333333333333335), L_319, L_320, L_321, L_322, L_323, L_324, NULL);
+		NullCheck(L_318);
 		ArrayElementTypeCheck (L_318, L_325);
-		(L_318)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)29)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_325);
+		(L_318)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)29)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_325);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_326 = L_318;
 		double L_327 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_135_37;
 		double L_328 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_135_38;
@@ -9597,9 +9698,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_331 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_135_41;
 		double L_332 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_135_42;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_333 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_333);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_333, (0.75), L_327, L_328, L_329, L_330, L_331, L_332, NULL);
+		NullCheck(L_326);
 		ArrayElementTypeCheck (L_326, L_333);
-		(L_326)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)30)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_333);
+		(L_326)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)30)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_333);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_334 = L_326;
 		double L_335 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_135_37;
 		double L_336 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_135_38;
@@ -9608,9 +9711,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_339 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_135_41;
 		double L_340 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_135_42;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_341 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_341);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_341, (2.75), L_335, L_336, L_337, L_338, L_339, L_340, NULL);
+		NullCheck(L_334);
 		ArrayElementTypeCheck (L_334, L_341);
-		(L_334)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)31)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_341);
+		(L_334)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)31)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_341);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_342 = L_334;
 		double L_343 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_135_37;
 		double L_344 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_135_38;
@@ -9619,9 +9724,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_347 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_135_41;
 		double L_348 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_135_42;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_349 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_349);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_349, (-1.25), L_343, L_344, L_345, L_346, L_347, L_348, NULL);
+		NullCheck(L_342);
 		ArrayElementTypeCheck (L_342, L_349);
-		(L_342)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)32)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_349);
+		(L_342)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)32)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_349);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_350 = L_342;
 		double L_351 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_135_37;
 		double L_352 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_135_38;
@@ -9630,9 +9737,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_355 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_135_41;
 		double L_356 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_135_42;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_357 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_357);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_357, (4.75), L_351, L_352, L_353, L_354, L_355, L_356, NULL);
+		NullCheck(L_350);
 		ArrayElementTypeCheck (L_350, L_357);
-		(L_350)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)33)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_357);
+		(L_350)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)33)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_357);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_358 = L_350;
 		double L_359 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_135_37;
 		double L_360 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_135_38;
@@ -9641,9 +9750,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_363 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_135_41;
 		double L_364 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_135_42;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_365 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_365);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_365, (-3.25), L_359, L_360, L_361, L_362, L_363, L_364, NULL);
+		NullCheck(L_358);
 		ArrayElementTypeCheck (L_358, L_365);
-		(L_358)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)34)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_365);
+		(L_358)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)34)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_365);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_366 = L_358;
 		double L_367 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_150_43;
 		double L_368 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_150_44;
@@ -9652,9 +9763,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_371 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_150_47;
 		double L_372 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_150_48;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_373 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_373);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_373, (0.83333333333333337), L_367, L_368, L_369, L_370, L_371, L_372, NULL);
+		NullCheck(L_366);
 		ArrayElementTypeCheck (L_366, L_373);
-		(L_366)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)35)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_373);
+		(L_366)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)35)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_373);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_374 = L_366;
 		double L_375 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_150_43;
 		double L_376 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_150_44;
@@ -9663,9 +9776,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_379 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_150_47;
 		double L_380 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_150_48;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_381 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_381);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_381, (2.8333333333333335), L_375, L_376, L_377, L_378, L_379, L_380, NULL);
+		NullCheck(L_374);
 		ArrayElementTypeCheck (L_374, L_381);
-		(L_374)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)36)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_381);
+		(L_374)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)36)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_381);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_382 = L_374;
 		double L_383 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_150_43;
 		double L_384 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_150_44;
@@ -9674,9 +9789,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_387 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_150_47;
 		double L_388 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_150_48;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_389 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_389);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_389, (-1.1666666666666667), L_383, L_384, L_385, L_386, L_387, L_388, NULL);
+		NullCheck(L_382);
 		ArrayElementTypeCheck (L_382, L_389);
-		(L_382)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)37)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_389);
+		(L_382)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)37)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_389);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_390 = L_382;
 		double L_391 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_150_43;
 		double L_392 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_150_44;
@@ -9685,9 +9802,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_395 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_150_47;
 		double L_396 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_150_48;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_397 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_397);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_397, (4.833333333333333), L_391, L_392, L_393, L_394, L_395, L_396, NULL);
+		NullCheck(L_390);
 		ArrayElementTypeCheck (L_390, L_397);
-		(L_390)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)38)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_397);
+		(L_390)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)38)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_397);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_398 = L_390;
 		double L_399 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_150_43;
 		double L_400 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_150_44;
@@ -9696,9 +9815,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_403 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_150_47;
 		double L_404 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_150_48;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_405 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_405);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_405, (-3.1666666666666665), L_399, L_400, L_401, L_402, L_403, L_404, NULL);
+		NullCheck(L_398);
 		ArrayElementTypeCheck (L_398, L_405);
-		(L_398)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)39)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_405);
+		(L_398)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)39)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_405);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_406 = L_398;
 		double L_407 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_180_49;
 		double L_408 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_180_50;
@@ -9707,9 +9828,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_411 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_180_53;
 		double L_412 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_180_54;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_413 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_413);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_413, (1.0), L_407, L_408, L_409, L_410, L_411, L_412, NULL);
+		NullCheck(L_406);
 		ArrayElementTypeCheck (L_406, L_413);
-		(L_406)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)40)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_413);
+		(L_406)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)40)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_413);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_414 = L_406;
 		double L_415 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_180_49;
 		double L_416 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_180_50;
@@ -9718,9 +9841,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_419 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_180_53;
 		double L_420 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_180_54;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_421 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_421);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_421, (3.0), L_415, L_416, L_417, L_418, L_419, L_420, NULL);
+		NullCheck(L_414);
 		ArrayElementTypeCheck (L_414, L_421);
-		(L_414)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)41)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_421);
+		(L_414)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)41)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_421);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_422 = L_414;
 		double L_423 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_180_49;
 		double L_424 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_180_50;
@@ -9729,9 +9854,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_427 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_180_53;
 		double L_428 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_180_54;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_429 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_429);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_429, (-1.0), L_423, L_424, L_425, L_426, L_427, L_428, NULL);
+		NullCheck(L_422);
 		ArrayElementTypeCheck (L_422, L_429);
-		(L_422)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)42)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_429);
+		(L_422)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)42)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_429);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_430 = L_422;
 		double L_431 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_180_49;
 		double L_432 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_180_50;
@@ -9740,9 +9867,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_435 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_180_53;
 		double L_436 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_180_54;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_437 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_437);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_437, (5.0), L_431, L_432, L_433, L_434, L_435, L_436, NULL);
+		NullCheck(L_430);
 		ArrayElementTypeCheck (L_430, L_437);
-		(L_430)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)43)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_437);
+		(L_430)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)43)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_437);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_438 = L_430;
 		double L_439 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_180_49;
 		double L_440 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_180_50;
@@ -9751,9 +9880,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_443 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_180_53;
 		double L_444 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_180_54;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_445 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_445);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_445, (-3.0), L_439, L_440, L_441, L_442, L_443, L_444, NULL);
+		NullCheck(L_438);
 		ArrayElementTypeCheck (L_438, L_445);
-		(L_438)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)44)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_445);
+		(L_438)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)44)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_445);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_446 = L_438;
 		double L_447 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_210_55;
 		double L_448 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_210_56;
@@ -9762,9 +9893,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_451 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_210_59;
 		double L_452 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_210_60;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_453 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_453);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_453, (1.1666666666666667), L_447, L_448, L_449, L_450, L_451, L_452, NULL);
+		NullCheck(L_446);
 		ArrayElementTypeCheck (L_446, L_453);
-		(L_446)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)45)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_453);
+		(L_446)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)45)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_453);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_454 = L_446;
 		double L_455 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_210_55;
 		double L_456 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_210_56;
@@ -9773,9 +9906,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_459 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_210_59;
 		double L_460 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_210_60;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_461 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_461);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_461, (3.1666666666666665), L_455, L_456, L_457, L_458, L_459, L_460, NULL);
+		NullCheck(L_454);
 		ArrayElementTypeCheck (L_454, L_461);
-		(L_454)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)46)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_461);
+		(L_454)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)46)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_461);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_462 = L_454;
 		double L_463 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_210_55;
 		double L_464 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_210_56;
@@ -9784,9 +9919,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_467 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_210_59;
 		double L_468 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_210_60;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_469 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_469);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_469, (-0.83333333333333337), L_463, L_464, L_465, L_466, L_467, L_468, NULL);
+		NullCheck(L_462);
 		ArrayElementTypeCheck (L_462, L_469);
-		(L_462)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)47)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_469);
+		(L_462)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)47)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_469);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_470 = L_462;
 		double L_471 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_210_55;
 		double L_472 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_210_56;
@@ -9795,9 +9932,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_475 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_210_59;
 		double L_476 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_210_60;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_477 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_477);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_477, (5.166666666666667), L_471, L_472, L_473, L_474, L_475, L_476, NULL);
+		NullCheck(L_470);
 		ArrayElementTypeCheck (L_470, L_477);
-		(L_470)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)48)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_477);
+		(L_470)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)48)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_477);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_478 = L_470;
 		double L_479 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_210_55;
 		double L_480 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_210_56;
@@ -9806,9 +9945,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_483 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_210_59;
 		double L_484 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_210_60;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_485 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_485);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_485, (-2.8333333333333335), L_479, L_480, L_481, L_482, L_483, L_484, NULL);
+		NullCheck(L_478);
 		ArrayElementTypeCheck (L_478, L_485);
-		(L_478)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)49)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_485);
+		(L_478)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)49)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_485);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_486 = L_478;
 		double L_487 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_225_61;
 		double L_488 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_225_62;
@@ -9817,9 +9958,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_491 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_225_65;
 		double L_492 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_225_66;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_493 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_493);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_493, (1.25), L_487, L_488, L_489, L_490, L_491, L_492, NULL);
+		NullCheck(L_486);
 		ArrayElementTypeCheck (L_486, L_493);
-		(L_486)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)50)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_493);
+		(L_486)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)50)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_493);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_494 = L_486;
 		double L_495 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_225_61;
 		double L_496 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_225_62;
@@ -9828,9 +9971,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_499 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_225_65;
 		double L_500 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_225_66;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_501 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_501);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_501, (3.25), L_495, L_496, L_497, L_498, L_499, L_500, NULL);
+		NullCheck(L_494);
 		ArrayElementTypeCheck (L_494, L_501);
-		(L_494)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)51)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_501);
+		(L_494)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)51)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_501);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_502 = L_494;
 		double L_503 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_225_61;
 		double L_504 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_225_62;
@@ -9839,9 +9984,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_507 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_225_65;
 		double L_508 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_225_66;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_509 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_509);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_509, (-0.75), L_503, L_504, L_505, L_506, L_507, L_508, NULL);
+		NullCheck(L_502);
 		ArrayElementTypeCheck (L_502, L_509);
-		(L_502)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)52)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_509);
+		(L_502)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)52)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_509);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_510 = L_502;
 		double L_511 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_225_61;
 		double L_512 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_225_62;
@@ -9850,9 +9997,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_515 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_225_65;
 		double L_516 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_225_66;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_517 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_517);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_517, (5.25), L_511, L_512, L_513, L_514, L_515, L_516, NULL);
+		NullCheck(L_510);
 		ArrayElementTypeCheck (L_510, L_517);
-		(L_510)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)53)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_517);
+		(L_510)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)53)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_517);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_518 = L_510;
 		double L_519 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_225_61;
 		double L_520 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_225_62;
@@ -9861,9 +10010,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_523 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_225_65;
 		double L_524 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_225_66;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_525 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_525);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_525, (-2.75), L_519, L_520, L_521, L_522, L_523, L_524, NULL);
+		NullCheck(L_518);
 		ArrayElementTypeCheck (L_518, L_525);
-		(L_518)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)54)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_525);
+		(L_518)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)54)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_525);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_526 = L_518;
 		double L_527 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_240_67;
 		double L_528 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_240_68;
@@ -9872,9 +10023,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_531 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_240_71;
 		double L_532 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_240_72;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_533 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_533);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_533, (1.3333333333333333), L_527, L_528, L_529, L_530, L_531, L_532, NULL);
+		NullCheck(L_526);
 		ArrayElementTypeCheck (L_526, L_533);
-		(L_526)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)55)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_533);
+		(L_526)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)55)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_533);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_534 = L_526;
 		double L_535 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_240_67;
 		double L_536 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_240_68;
@@ -9883,9 +10036,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_539 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_240_71;
 		double L_540 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_240_72;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_541 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_541);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_541, (3.3333333333333335), L_535, L_536, L_537, L_538, L_539, L_540, NULL);
+		NullCheck(L_534);
 		ArrayElementTypeCheck (L_534, L_541);
-		(L_534)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)56)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_541);
+		(L_534)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)56)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_541);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_542 = L_534;
 		double L_543 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_240_67;
 		double L_544 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_240_68;
@@ -9894,9 +10049,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_547 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_240_71;
 		double L_548 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_240_72;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_549 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_549);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_549, (-0.66666666666666663), L_543, L_544, L_545, L_546, L_547, L_548, NULL);
+		NullCheck(L_542);
 		ArrayElementTypeCheck (L_542, L_549);
-		(L_542)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)57)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_549);
+		(L_542)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)57)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_549);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_550 = L_542;
 		double L_551 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_240_67;
 		double L_552 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_240_68;
@@ -9905,9 +10062,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_555 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_240_71;
 		double L_556 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_240_72;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_557 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_557);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_557, (5.333333333333333), L_551, L_552, L_553, L_554, L_555, L_556, NULL);
+		NullCheck(L_550);
 		ArrayElementTypeCheck (L_550, L_557);
-		(L_550)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)58)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_557);
+		(L_550)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)58)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_557);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_558 = L_550;
 		double L_559 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_240_67;
 		double L_560 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_240_68;
@@ -9916,9 +10075,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_563 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_240_71;
 		double L_564 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_240_72;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_565 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_565);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_565, (-2.6666666666666665), L_559, L_560, L_561, L_562, L_563, L_564, NULL);
+		NullCheck(L_558);
 		ArrayElementTypeCheck (L_558, L_565);
-		(L_558)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)59)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_565);
+		(L_558)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)59)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_565);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_566 = L_558;
 		double L_567 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_270_73;
 		double L_568 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_270_74;
@@ -9927,9 +10088,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_571 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_270_77;
 		double L_572 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_270_78;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_573 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_573);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_573, (1.5), L_567, L_568, L_569, L_570, L_571, L_572, NULL);
+		NullCheck(L_566);
 		ArrayElementTypeCheck (L_566, L_573);
-		(L_566)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)60)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_573);
+		(L_566)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)60)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_573);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_574 = L_566;
 		double L_575 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_270_73;
 		double L_576 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_270_74;
@@ -9938,9 +10101,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_579 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_270_77;
 		double L_580 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_270_78;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_581 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_581);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_581, (3.5), L_575, L_576, L_577, L_578, L_579, L_580, NULL);
+		NullCheck(L_574);
 		ArrayElementTypeCheck (L_574, L_581);
-		(L_574)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)61)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_581);
+		(L_574)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)61)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_581);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_582 = L_574;
 		double L_583 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_270_73;
 		double L_584 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_270_74;
@@ -9949,9 +10114,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_587 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_270_77;
 		double L_588 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_270_78;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_589 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_589);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_589, (-0.5), L_583, L_584, L_585, L_586, L_587, L_588, NULL);
+		NullCheck(L_582);
 		ArrayElementTypeCheck (L_582, L_589);
-		(L_582)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)62)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_589);
+		(L_582)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)62)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_589);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_590 = L_582;
 		double L_591 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_270_73;
 		double L_592 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_270_74;
@@ -9960,9 +10127,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_595 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_270_77;
 		double L_596 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_270_78;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_597 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_597);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_597, (5.5), L_591, L_592, L_593, L_594, L_595, L_596, NULL);
+		NullCheck(L_590);
 		ArrayElementTypeCheck (L_590, L_597);
-		(L_590)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)63)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_597);
+		(L_590)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)63)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_597);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_598 = L_590;
 		double L_599 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_270_73;
 		double L_600 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_270_74;
@@ -9971,9 +10140,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_603 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_270_77;
 		double L_604 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_270_78;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_605 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_605);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_605, (-2.5), L_599, L_600, L_601, L_602, L_603, L_604, NULL);
+		NullCheck(L_598);
 		ArrayElementTypeCheck (L_598, L_605);
-		(L_598)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)64)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_605);
+		(L_598)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)64)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_605);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_606 = L_598;
 		double L_607 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_300_79;
 		double L_608 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_300_80;
@@ -9982,9 +10153,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_611 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_300_83;
 		double L_612 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_300_84;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_613 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_613);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_613, (1.6666666666666667), L_607, L_608, L_609, L_610, L_611, L_612, NULL);
+		NullCheck(L_606);
 		ArrayElementTypeCheck (L_606, L_613);
-		(L_606)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)65)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_613);
+		(L_606)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)65)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_613);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_614 = L_606;
 		double L_615 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_300_79;
 		double L_616 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_300_80;
@@ -9993,9 +10166,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_619 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_300_83;
 		double L_620 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_300_84;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_621 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_621);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_621, (3.6666666666666665), L_615, L_616, L_617, L_618, L_619, L_620, NULL);
+		NullCheck(L_614);
 		ArrayElementTypeCheck (L_614, L_621);
-		(L_614)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)66)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_621);
+		(L_614)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)66)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_621);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_622 = L_614;
 		double L_623 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_300_79;
 		double L_624 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_300_80;
@@ -10004,9 +10179,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_627 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_300_83;
 		double L_628 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_300_84;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_629 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_629);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_629, (-0.33333333333333331), L_623, L_624, L_625, L_626, L_627, L_628, NULL);
+		NullCheck(L_622);
 		ArrayElementTypeCheck (L_622, L_629);
-		(L_622)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)67)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_629);
+		(L_622)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)67)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_629);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_630 = L_622;
 		double L_631 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_300_79;
 		double L_632 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_300_80;
@@ -10015,9 +10192,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_635 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_300_83;
 		double L_636 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_300_84;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_637 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_637);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_637, (5.666666666666667), L_631, L_632, L_633, L_634, L_635, L_636, NULL);
+		NullCheck(L_630);
 		ArrayElementTypeCheck (L_630, L_637);
-		(L_630)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)68)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_637);
+		(L_630)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)68)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_637);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_638 = L_630;
 		double L_639 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_300_79;
 		double L_640 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_300_80;
@@ -10026,9 +10205,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_643 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_300_83;
 		double L_644 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_300_84;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_645 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_645);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_645, (-2.3333333333333335), L_639, L_640, L_641, L_642, L_643, L_644, NULL);
+		NullCheck(L_638);
 		ArrayElementTypeCheck (L_638, L_645);
-		(L_638)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)69)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_645);
+		(L_638)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)69)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_645);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_646 = L_638;
 		double L_647 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_315_85;
 		double L_648 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_315_86;
@@ -10037,9 +10218,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_651 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_315_89;
 		double L_652 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_315_90;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_653 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_653);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_653, (1.75), L_647, L_648, L_649, L_650, L_651, L_652, NULL);
+		NullCheck(L_646);
 		ArrayElementTypeCheck (L_646, L_653);
-		(L_646)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)70)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_653);
+		(L_646)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)70)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_653);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_654 = L_646;
 		double L_655 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_315_85;
 		double L_656 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_315_86;
@@ -10048,9 +10231,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_659 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_315_89;
 		double L_660 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_315_90;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_661 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_661);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_661, (3.75), L_655, L_656, L_657, L_658, L_659, L_660, NULL);
+		NullCheck(L_654);
 		ArrayElementTypeCheck (L_654, L_661);
-		(L_654)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)71)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_661);
+		(L_654)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)71)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_661);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_662 = L_654;
 		double L_663 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_315_85;
 		double L_664 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_315_86;
@@ -10059,9 +10244,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_667 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_315_89;
 		double L_668 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_315_90;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_669 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_669);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_669, (-0.25), L_663, L_664, L_665, L_666, L_667, L_668, NULL);
+		NullCheck(L_662);
 		ArrayElementTypeCheck (L_662, L_669);
-		(L_662)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)72)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_669);
+		(L_662)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)72)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_669);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_670 = L_662;
 		double L_671 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_315_85;
 		double L_672 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_315_86;
@@ -10070,9 +10257,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_675 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_315_89;
 		double L_676 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_315_90;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_677 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_677);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_677, (5.75), L_671, L_672, L_673, L_674, L_675, L_676, NULL);
+		NullCheck(L_670);
 		ArrayElementTypeCheck (L_670, L_677);
-		(L_670)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)73)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_677);
+		(L_670)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)73)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_677);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_678 = L_670;
 		double L_679 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_315_85;
 		double L_680 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_315_86;
@@ -10081,9 +10270,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_683 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_315_89;
 		double L_684 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_315_90;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_685 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_685);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_685, (-2.25), L_679, L_680, L_681, L_682, L_683, L_684, NULL);
+		NullCheck(L_678);
 		ArrayElementTypeCheck (L_678, L_685);
-		(L_678)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)74)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_685);
+		(L_678)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)74)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_685);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_686 = L_678;
 		double L_687 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_330_91;
 		double L_688 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_330_92;
@@ -10092,9 +10283,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_691 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_330_95;
 		double L_692 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_330_96;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_693 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_693);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_693, (1.8333333333333333), L_687, L_688, L_689, L_690, L_691, L_692, NULL);
+		NullCheck(L_686);
 		ArrayElementTypeCheck (L_686, L_693);
-		(L_686)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)75)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_693);
+		(L_686)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)75)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_693);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_694 = L_686;
 		double L_695 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_330_91;
 		double L_696 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_330_92;
@@ -10103,9 +10296,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_699 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_330_95;
 		double L_700 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_330_96;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_701 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_701);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_701, (3.8333333333333335), L_695, L_696, L_697, L_698, L_699, L_700, NULL);
+		NullCheck(L_694);
 		ArrayElementTypeCheck (L_694, L_701);
-		(L_694)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)76)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_701);
+		(L_694)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)76)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_701);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_702 = L_694;
 		double L_703 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_330_91;
 		double L_704 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_330_92;
@@ -10114,9 +10309,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_707 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_330_95;
 		double L_708 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_330_96;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_709 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_709);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_709, (-0.16666666666666666), L_703, L_704, L_705, L_706, L_707, L_708, NULL);
+		NullCheck(L_702);
 		ArrayElementTypeCheck (L_702, L_709);
-		(L_702)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)77)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_709);
+		(L_702)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)77)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_709);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_710 = L_702;
 		double L_711 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_330_91;
 		double L_712 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_330_92;
@@ -10125,9 +10322,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_715 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_330_95;
 		double L_716 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_330_96;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_717 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_717);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_717, (5.833333333333333), L_711, L_712, L_713, L_714, L_715, L_716, NULL);
+		NullCheck(L_710);
 		ArrayElementTypeCheck (L_710, L_717);
-		(L_710)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)78)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_717);
+		(L_710)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)78)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_717);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_718 = L_710;
 		double L_719 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_330_91;
 		double L_720 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_330_92;
@@ -10136,9 +10335,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_723 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_330_95;
 		double L_724 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_330_96;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_725 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_725);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_725, (-2.1666666666666665), L_719, L_720, L_721, L_722, L_723, L_724, NULL);
+		NullCheck(L_718);
 		ArrayElementTypeCheck (L_718, L_725);
-		(L_718)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)79)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_725);
+		(L_718)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)79)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_725);
 		SpecialValueTrigonometricU5BU5D_tCDE990BAC09F02D0A71548C54B160EB5AE0A8754* L_726 = L_718;
 		double L_727 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SIN_360_97;
 		double L_728 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___COS_360_98;
@@ -10147,9 +10348,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialValueTrigonometric__cctor_m805A21
 		double L_731 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___SEC_360_101;
 		double L_732 = ((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___CSC_360_102;
 		SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811* L_733 = (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)il2cpp_codegen_object_new(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var);
+		NullCheck(L_733);
 		SpecialValueTrigonometric__ctor_m3989DEFB00BD76D2AD2A99D25FD23AE83ACF3CB8(L_733, (6.0), L_727, L_728, L_729, L_730, L_731, L_732, NULL);
+		NullCheck(L_726);
 		ArrayElementTypeCheck (L_726, L_733);
-		(L_726)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)80)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_733);
+		(L_726)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)80)), (SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811*)L_733);
 		((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListTrig_103 = L_726;
 		Il2CppCodeGenWriteBarrier((void**)(&((SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_StaticFields*)il2cpp_codegen_static_fields_for(SpecialValueTrigonometric_tC3496BADBAFD5F189DB7E49921D448D9F8735811_il2cpp_TypeInfo_var))->___valuesListTrig_103), (void*)L_726);
 		return;
@@ -10600,6 +10803,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Statistics_avg_m0E31403DD3E040CB0F88A1
 IL_000d:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_1 = ___numbers0;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_001b;
@@ -10612,6 +10816,7 @@ IL_000d:
 IL_001b:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_2 = ___numbers0;
+		NullCheck(L_2);
 		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))) == ((uint32_t)1))))
 		{
 			goto IL_0025;
@@ -10619,8 +10824,9 @@ IL_001b:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_3 = ___numbers0;
+		NullCheck(L_3);
 		int32_t L_4 = 0;
-		double L_5 = (L_3)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
+		double L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		return L_5;
 	}
 
@@ -10637,8 +10843,9 @@ IL_0035:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_7 = V_1;
 		int32_t L_8 = V_2;
+		NullCheck(L_7);
 		int32_t L_9 = L_8;
-		double L_10 = (L_7)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9));
+		double L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		V_3 = L_10;
 		il2cpp_codegen_runtime_class_init_inline(mXparser_t0E0EA678C4D0C2C0BA270B2C5BB50B2B8FD3220E_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -10679,6 +10886,7 @@ IL_0064:
 	{
 		int32_t L_17 = V_2;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_18 = V_1;
+		NullCheck(L_18);
 		if ((((int32_t)L_17) < ((int32_t)((int32_t)(((RuntimeArray*)L_18)->max_length)))))
 		{
 			goto IL_0035;
@@ -10687,6 +10895,7 @@ IL_0064:
 	{
 		double L_19 = V_0;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_20 = ___numbers0;
+		NullCheck(L_20);
 		return ((double)(L_19/((double)((int32_t)(((RuntimeArray*)L_20)->max_length)))));
 	}
 }
@@ -10718,6 +10927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Statistics_var_m4BE7E45163DD5706DF7842
 IL_000d:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_1 = ___numbers0;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_001b;
@@ -10730,6 +10940,7 @@ IL_000d:
 IL_001b:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_2 = ___numbers0;
+		NullCheck(L_2);
 		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))) == ((uint32_t)1))))
 		{
 			goto IL_003f;
@@ -10737,8 +10948,9 @@ IL_001b:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_3 = ___numbers0;
+		NullCheck(L_3);
 		int32_t L_4 = 0;
-		double L_5 = (L_3)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
+		double L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		bool L_6;
 		L_6 = Double_IsNaN_mF2BC6D1FD4813179B2CAE58D29770E42830D0883_inline(L_5, NULL);
 		if (!L_6)
@@ -10772,8 +10984,9 @@ IL_0056:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_10 = V_2;
 		int32_t L_11 = V_3;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		double L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		double L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		V_4 = L_13;
 		il2cpp_codegen_runtime_class_init_inline(mXparser_t0E0EA678C4D0C2C0BA270B2C5BB50B2B8FD3220E_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -10817,6 +11030,7 @@ IL_008f:
 	{
 		int32_t L_23 = V_3;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_24 = V_2;
+		NullCheck(L_24);
 		if ((((int32_t)L_23) < ((int32_t)((int32_t)(((RuntimeArray*)L_24)->max_length)))))
 		{
 			goto IL_0056;
@@ -10825,6 +11039,7 @@ IL_008f:
 	{
 		double L_25 = V_1;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_26 = ___numbers0;
+		NullCheck(L_26);
 		return ((double)(L_25/((double)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_26)->max_length)), 1)))));
 	}
 }
@@ -10851,6 +11066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Statistics_std_m5009B24C3CD6CF6F980A02
 IL_000d:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_1 = ___numbers0;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_001b;
@@ -10863,6 +11079,7 @@ IL_000d:
 IL_001b:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_2 = ___numbers0;
+		NullCheck(L_2);
 		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))) == ((uint32_t)1))))
 		{
 			goto IL_003f;
@@ -10870,8 +11087,9 @@ IL_001b:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_3 = ___numbers0;
+		NullCheck(L_3);
 		int32_t L_4 = 0;
-		double L_5 = (L_3)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
+		double L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		bool L_6;
 		L_6 = Double_IsNaN_mF2BC6D1FD4813179B2CAE58D29770E42830D0883_inline(L_5, NULL);
 		if (!L_6)
@@ -10928,6 +11146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Statistics_median_m484B9C936D3F898996F
 IL_000d:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_1 = ___numbers0;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_001b;
@@ -10940,6 +11159,7 @@ IL_000d:
 IL_001b:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_2 = ___numbers0;
+		NullCheck(L_2);
 		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))) == ((uint32_t)1))))
 		{
 			goto IL_0025;
@@ -10947,14 +11167,16 @@ IL_001b:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_3 = ___numbers0;
+		NullCheck(L_3);
 		int32_t L_4 = 0;
-		double L_5 = (L_3)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
+		double L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		return L_5;
 	}
 
 IL_0025:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_6 = ___numbers0;
+		NullCheck(L_6);
 		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_6)->max_length))) == ((uint32_t)2))))
 		{
 			goto IL_003d;
@@ -10962,11 +11184,13 @@ IL_0025:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_7 = ___numbers0;
+		NullCheck(L_7);
 		int32_t L_8 = 0;
-		double L_9 = (L_7)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_8));
+		double L_9 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_10 = ___numbers0;
+		NullCheck(L_10);
 		int32_t L_11 = 1;
-		double L_12 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_11));
+		double L_12 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
 		return ((double)(((double)il2cpp_codegen_add(L_9, L_12))/(2.0)));
 	}
 
@@ -10982,8 +11206,9 @@ IL_0043:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_14 = V_0;
 		int32_t L_15 = V_1;
+		NullCheck(L_14);
 		int32_t L_16 = L_15;
-		double L_17 = (L_14)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_16));
+		double L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
 		V_2 = L_17;
 		il2cpp_codegen_runtime_class_init_inline(mXparser_t0E0EA678C4D0C2C0BA270B2C5BB50B2B8FD3220E_il2cpp_TypeInfo_var);
 		bool L_18;
@@ -11021,6 +11246,7 @@ IL_006e:
 	{
 		int32_t L_22 = V_1;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_23 = V_0;
+		NullCheck(L_23);
 		if ((((int32_t)L_22) < ((int32_t)((int32_t)(((RuntimeArray*)L_23)->max_length)))))
 		{
 			goto IL_0043;
@@ -11032,6 +11258,7 @@ IL_006e:
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25;
 		L_25 = NumberTheory_sortAsc_mB12F9135DC039EB26C807A9557D70E5E83D6BA6B(L_24, NULL);
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_26 = ___numbers0;
+		NullCheck(L_26);
 		if ((!(((uint32_t)((int32_t)(((int32_t)(((RuntimeArray*)L_26)->max_length))%2))) == ((uint32_t)1))))
 		{
 			goto IL_008f;
@@ -11039,26 +11266,31 @@ IL_006e:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_27 = ___numbers0;
+		NullCheck(L_27);
 		V_3 = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_27)->max_length)), 1))/2));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_28 = ___numbers0;
 		int32_t L_29 = V_3;
+		NullCheck(L_28);
 		int32_t L_30 = L_29;
-		double L_31 = (L_28)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_30));
+		double L_31 = (L_28)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
 		return L_31;
 	}
 
 IL_008f:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_32 = ___numbers0;
+		NullCheck(L_32);
 		V_4 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((int32_t)(((RuntimeArray*)L_32)->max_length))/2)), 1));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_33 = ___numbers0;
 		int32_t L_34 = V_4;
+		NullCheck(L_33);
 		int32_t L_35 = L_34;
-		double L_36 = (L_33)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_35));
+		double L_36 = (L_33)->GetAt(static_cast<il2cpp_array_size_t>(L_35));
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_37 = ___numbers0;
 		int32_t L_38 = V_4;
+		NullCheck(L_37);
 		int32_t L_39 = ((int32_t)il2cpp_codegen_add(L_38, 1));
-		double L_40 = (L_37)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_39));
+		double L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
 		return ((double)(((double)il2cpp_codegen_add(L_36, L_40))/(2.0)));
 	}
 }
@@ -11089,6 +11321,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Statistics_mode_m7D6BC5B4A0AA64E00D873
 IL_000d:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_1 = ___numbers0;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_001b;
@@ -11101,6 +11334,7 @@ IL_000d:
 IL_001b:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_2 = ___numbers0;
+		NullCheck(L_2);
 		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))) == ((uint32_t)1))))
 		{
 			goto IL_0025;
@@ -11108,8 +11342,9 @@ IL_001b:
 	}
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_3 = ___numbers0;
+		NullCheck(L_3);
 		int32_t L_4 = 0;
-		double L_5 = (L_3)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
+		double L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		return L_5;
 	}
 
@@ -11125,8 +11360,9 @@ IL_002b:
 	{
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_7 = V_0;
 		int32_t L_8 = V_1;
+		NullCheck(L_7);
 		int32_t L_9 = L_8;
-		double L_10 = (L_7)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9));
+		double L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		V_2 = L_10;
 		il2cpp_codegen_runtime_class_init_inline(mXparser_t0E0EA678C4D0C2C0BA270B2C5BB50B2B8FD3220E_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -11164,6 +11400,7 @@ IL_0056:
 	{
 		int32_t L_15 = V_1;
 		DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* L_16 = V_0;
+		NullCheck(L_16);
 		if ((((int32_t)L_15) < ((int32_t)((int32_t)(((RuntimeArray*)L_16)->max_length)))))
 		{
 			goto IL_002b;
@@ -11174,8 +11411,9 @@ IL_0056:
 		il2cpp_codegen_runtime_class_init_inline(NumberTheory_tDB8B84BB7209E2A62467F31121733CC1A7DBEED6_il2cpp_TypeInfo_var);
 		DoubleU5BU2CU5D_tA10EAF4C451E6EBC345A8881EBB9EF9441D01AAE* L_18;
 		L_18 = NumberTheory_getDistValues_m20F733F76F329ACB0C12908E52E170F14BC161F0(L_17, (bool)1, NULL);
+		NullCheck(L_18);
 		double L_19;
-		L_19 = (L_18)->GetAtUnchecked(0, 0);
+		L_19 = (L_18)->GetAt(0, 0);
 		return L_19;
 	}
 }
@@ -12352,6 +12590,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		V_1 = L_2;
 		int32_t L_3 = V_1;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
 		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
 		{
 			goto IL_0034;
@@ -12363,7 +12602,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
 		RuntimeObject* L_8 = ___item0;
-		(L_6)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
 	}
 
