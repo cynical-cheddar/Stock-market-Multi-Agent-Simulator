@@ -84,7 +84,7 @@ public class MainPanel : MonoBehaviourPunCallbacks
         PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
 
         RoomNameInputField.text = "Session " + Random.Range(1000, 10000);
-        MaxPlayersInputField.text = "10";
+        MaxPlayersInputField.text = "16";
     }
 
 

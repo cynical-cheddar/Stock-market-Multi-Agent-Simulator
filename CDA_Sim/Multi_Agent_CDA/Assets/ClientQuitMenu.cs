@@ -60,7 +60,21 @@ private void Start()
     public void AbandonGame()
     {
         Debug.Log("Abandoning game");
-        
+        if (PhotonNetwork.IsMasterClient)
+        {
+            FindObjectOfType<AuctionSessionManager>().HostLeave();
+        }
+        TransferInterfacePhotonView();
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LeaveLobby();
+        PhotonNetwork.Disconnect();
+        StartCoroutine(nameof(EnsureLeave));
+    }
+
+    public void AbandonGameMasterClient()
+    {
+        Debug.Log("Abandoning game");
+
         TransferInterfacePhotonView();
         PhotonNetwork.LeaveRoom();
         PhotonNetwork.LeaveLobby();

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 
 public class AuctionSessionManager : MonoBehaviourPunCallbacks, IPunObservable
@@ -221,6 +222,32 @@ class TimeAndClose
             Debug.Log("Player loaded");
             menuManager.UpdateConnectedPlayers(loadedPlayers, PhotonNetwork.CurrentRoom.PlayerCount);
         }
+    }
+
+
+    public void HostLeave()
+    {
+        GetComponent<PhotonView>().RPC(nameof(AllLeaveRPC), RpcTarget.All);
+    }
+
+    [PunRPC]
+    void AllLeaveRPC()
+    {
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LeaveLobby();
+        PhotonNetwork.Disconnect();
+        Debug.Log("HOST QUIT");
+        StartCoroutine(nameof(EnsureLeave));
+    }
+
+
+    IEnumerator EnsureLeave()
+    {
+        Debug.Log("ensure leave start");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(FindObjectOfType<ClientQuitMenu>().returnScene);
+        Debug.Log("should have left");
+        yield return null;
     }
 
     // Update is called once per frame
